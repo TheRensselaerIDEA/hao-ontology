@@ -1,0 +1,325 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
+@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/> .
+
+<http://idea.tw.rpi.edu/projects/heals/hao/hao.ttl>
+    rdf:type owl:Ontology ;
+    dct:title "Health Risk Factor Analysis Ontology"^^xsd:string ;
+    dct:creator "Sabbir M. Rashid"^^xsd:string, "Alexander S. New"^^xsd:string, "John S. Erickson"^^xsd:string, "Deborah L. McGuinness"^^xsd:string, "Kristin P. Bennett" ;
+    dct:created "2018-05-15T12:00:00"^^xsd:dateTime ;
+    dct:modified "2018-05-19T14:30:00"^^xsd:dateTime ;
+    dct:contributor "Shruthi Chari"^^xsd:string, "Miao Qi"^^xsd:string ;
+    dct:description "The Health Risk Factor Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports."^^xsd:string ;
+    owl:imports 
+        #<http://semanticscience.org/ontology/sio.owl>, 
+        <http://purl.obolibrary.org/obo/obi.owl>, 
+        <http://purl.obofoundry.org/obo/stato.owl>, 
+        <http://purl.obolibrary.org/obo/obcs.owl> ;
+    dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+    owl:versionIRI <http://idea.tw.rpi.edu/projects/heals/hao/0.9> .
+
+# count
+sio:Count rdf:type owl:Class ;
+    rdfs:subClassOf sio:DimensionlessQuantity.
+
+sio:DimensionlessQuantity rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+# Max
+sio:MaximalValue rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+# Min
+sio:MinimalValue rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+# Mode
+sio:Mode rdf:type owl:Class ;
+    rdfs:subClassOf sio:CentralityMeasure .
+
+sio:CentralityMeasure rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+sio:Quantity rdf:type owl:Class ;
+    rdfs:subClassOf sio:MeasurementValue.
+
+sio:MeasurementValue rdf:type owl:Class ;
+    rdfs:subClassOf sio:Number.
+
+# Mean
+sio:Mean rdf:type owl:Class ;
+    rdfs:subClassOf sio:CentralityMeasure .
+
+# Number
+sio:Number rdf:type owl:Class ;
+    rdfs:subClassOf sio:MathematicalEntity .
+
+# Algorithm
+sio:Algorithm rdf:type owl:Class ;
+    rdfs:subClassOf sio:MathematicalEntity .
+
+# Mathematical Entity
+sio:MathematicalEntity rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+sio:InformationContentEntity rdf:type owl:Class ;
+    rdfs:subClassOf sio:Object .
+
+sio:Object rdf:type owl:Class ;
+    rdfs:subClassOf sio:Entity .
+
+# Likelihood
+sio:Likelihood rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+# Control Variable
+sio:ControlVariable rdf:type owl:Class ;
+    rdfs:subClassOf sio:Variable .
+
+# Variable
+sio:Variable rdf:type owl:Class ;
+    rdfs:subClassOf sio:MathematicalEntity .
+
+# p-value
+obi:0000175 rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# FWER adjusted p-value (BH p-value)
+obi:0001265 rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# data transformation
+obi:0200000 rdf:type owl:Class ;
+    rdfs:subClassOf sio:Process .
+
+# Process
+sio:Process rdf:type owl:Class ;
+    rdfs:subClassOf sio:Entity .
+
+# scale factors transformation
+:Standardization rdf:type owl:Class ;
+    rdfs:label "Standardization Transformation"^^xsd:string ;
+    rdfs:subClassOf obi:0200000 .
+
+# logarithmic transformation
+obi:0200094 rdf:type owl:Class ;
+    rdfs:subClassOf obi:0200000 .
+
+# regression coefficient
+stato:0000565 rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# nObs - study group population size
+stato:0000088 rdf:type owl:Class ;
+    rdfs:subClassOf sio:Count .
+
+# standard error of estimate
+stato:0000562 rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+# standard error of the mean
+stato:0000037 rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+# standard deviation
+stato:0000237 rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+sio:StandardDeviation rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quantity.
+
+# variable
+stato:0000258 rdf:type owl:Class ;
+    rdfs:subClassOf sio:Variable .
+
+# continuous variable
+stato:0000251 rdf:type owl:Class ;
+    rdfs:label "Continuous Variable"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+# binary variable
+:BinaryVariable rdf:type owl:Class ;
+    rdfs:label "Binary Variable"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+# categorical variable
+stato:0000252 rdf:type owl:Class ;
+    rdfs:label "Categorical Variable"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+# regression model
+stato:0000390 rdf:type owl:Class ;
+    rdfs:subClassOf sio:Model .
+
+sio:Model rdf:type owl:Class ;
+    rdfs:subClassOf sio:Representation .
+
+sio:Representation rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# binomial logistic regression for analysis of dichotomous dependent variable
+stato:0000149 rdf:type owl:Class ;
+    rdfs:subClassOf stato:0000390 .
+
+# linear regression for analysis of continuous dependent variable
+stato:0000108 rdf:type owl:Class ;
+    rdfs:subClassOf stato:0000390 .
+
+# confounding variable specification
+obcs:0000039 rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# data distribution
+stato:0000161 rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# normal distribution
+stato:0000227 rdf:type owl:Class ;
+    rdfs:subClassOf stato:0000161 .
+
+:RightSkewed rdf:type owl:Class ;
+    rdfs:label "Right Skewed Data Distribution"^^xsd:string ;
+    rdfs:subClassOf stato:0000161 .
+
+:LeftSkewed rdf:type owl:Class ;
+    rdfs:label "Left Skewed Data Distribution"^^xsd:string ;
+    rdfs:subClassOf stato:0000161 .
+
+:Component rdf:type owl:Class ;
+    rdfs:label "Component"^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+sio:Category rdf:type owl:Class ;
+    rdfs:subClassOf sio:Concept .
+
+sio:Concept rdf:type owl:Class ;
+    rdfs:subClassOf sio:Term .
+
+sio:Term rdf:type owl:Class ;
+    rdfs:subClassOf sio:Phrase .
+
+sio:Phrase rdf:type owl:Class ;
+    rdfs:subClassOf sio:LanguageEntity .
+
+sio:LanguageEntity rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+:RiskFactorCategory rdf:type owl:Class ;
+    rdfs:label "Risk Factor Category"^^xsd:string ;
+    rdfs:subClassOf sio:Category .
+
+:Code rdf:type owl:Class ;
+    rdfs:label "Code"^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+:Cartridge rdf:type owl:Class ;
+    rdfs:label "Cartridge"^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+:InputCartridge rdf:type owl:Class ;
+    rdfs:label "Input Cartridge"^^xsd:string ;
+    rdfs:subClassOf :Cartridge .
+
+:OutputCartridge rdf:type owl:Class ;
+    rdfs:label "Output Cartridge"^^xsd:string ;
+    rdfs:subClassOf :Cartridge .
+
+:RiskFactorCartridge rdf:type owl:Class ;
+    rdfs:label "Risk Factor Cartridge"^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:CohortCartridge rdf:type owl:Class ;
+    rdfs:label "Cohort Cartridge"^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:ParameterCartridge rdf:type owl:Class ;
+    rdfs:label "Parameter Cartridge"^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:ResponseCartridge rdf:type owl:Class ;
+    rdfs:label "Response Cartridge"^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:ResultCartridge rdf:type owl:Class ;
+    rdfs:label "Result Cartridge"^^xsd:string ;
+    rdfs:subClassOf :OutputCartridge .
+
+# significance threshold
+:Threshold rdf:type owl:Class ;
+    rdfs:label "Threshold"^^xsd:string ;
+    rdfs:subClassOf sio:InformationalQuality .
+
+sio:InformationalQuality rdf:type owl:Class ;
+    rdfs:subClassOf sio:Quality .
+
+sio:Quality rdf:type owl:Class ;
+    rdfs:subClassOf sio:Attribute .
+
+:StudyVariable rdf:type owl:Class ;
+    rdfs:label "Study Variable"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+:TargetVariable rdf:type owl:Class ;
+    rdfs:label "Target Variable"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+:DataType rdf:type owl:Class ;
+    rdfs:label "Data Type"^^xsd:string .
+
+:Exception rdf:type owl:Class ;
+    rdfs:label "Exception"^^xsd:string .
+
+:Condition rdf:type owl:Class ;
+    rdfs:label "Condition"^^xsd:string .
+
+:Conjunction rdf:type owl:Class ;
+    rdfs:label "Conjunction"^^xsd:string .
+
+:RHS rdf:type owl:Class ;
+    rdfs:label "Right Hand Side"^^xsd:string .
+
+:LHS rdf:type owl:Class ;
+    rdfs:label "Left Hand Side"^^xsd:string .
+
+:Relationship rdf:type owl:Class ;
+    rdfs:label "Relationship"^^xsd:string .
+
+:AnalysisQuestion rdf:type owl:Class ;
+    rdfs:label "Analysis Question"^^xsd:string .
+
+sio:Definition rdf:type owl:Class ;
+    rdfs:subClassOf sio:Description .
+
+sio:Description rdf:type owl:Class ;
+    rdfs:subClassOf sio:LanguageEntity .
+
+:FileKey rdf:type owl:Class ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# If a target variable is continuous, model using linear regression
+#hao:TargetVariable(?var) ^ stato:0000251(?var) -> sio:isModelledBy(?var,?model) ^ stato:0000108(?model)
+
+# If a target variable is binary, model using logistic regression
+#hao:TargetVariable(?var) ^ hao:BinaryVariable(?var) -> sio:isModelledBy(?var,?model) ^ stato:0000149(?model)
+
+# If a study variable is right-skewed, apply a log transformation before analysis
+#hao:StudyVariable(?var) ^ hao:hasDistribution(?dist) ^ hao:RightSkewed(?dist) -> hao:applyTransformation(?var,?transformation) ^ obi:0200094(?transformation)
+
+#If a study variable has continuous, standardize it before analysis
+#hao:StudyVariable(?var) ^ stato:0000251(?var) -> hao:applyTransformation(?var,?transformation) ^ hao:Standardization(?transformation)
+
+
+
+
+
+
+
