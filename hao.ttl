@@ -1,0 +1,505 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
+@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/> .
+
+<http://idea.tw.rpi.edu/projects/heals/hao/hao.ttl>
+    rdf:type owl:Ontology ;
+    dct:title "Health Risk Factor Analysis Ontology"^^xsd:string ;
+    dct:creator "Sabbir M. Rashid"^^xsd:string, "Alexander S. New"^^xsd:string, "Miao Qi"^^xsd:string,"Shruthi Chari"^^xsd:string, "John S. Erickson"^^xsd:string, "Deborah L. McGuinness"^^xsd:string, "Kristin P. Bennett" ;
+    dct:created "2018-05-15T12:00:00"^^xsd:dateTime ;
+    dct:modified "2018-05-19T14:30:00"^^xsd:dateTime ;
+    dct:description "The Health Risk Factor Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports."^^xsd:string ;
+    owl:imports 
+        #<http://semanticscience.org/ontology/sio.owl>, 
+        <http://purl.obolibrary.org/obo/obi.owl>, 
+        <http://purl.obofoundry.org/obo/stato.owl>, 
+        <http://purl.obolibrary.org/obo/obcs.owl> ;
+    dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+    owl:versionIRI <http://idea.tw.rpi.edu/projects/heals/hao/0.9> .
+
+# count
+sio:Count rdf:type owl:Class ;
+	rdfs:label "count"^^xsd:string ;
+	dct:description "The number of elements of a finite set of objects."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:DimensionlessQuantity.
+
+sio:DimensionlessQuantity rdf:type owl:Class ;
+	rdfs:label "dimensionless quantity"^^xsd:string ;
+	dct:description "A dimensionless quantity is a quantity that has no associated unit."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Quantity.
+
+# Max
+sio:MaximalValue rdf:type owl:Class ;
+	rdfs:label "maximal value"^^xsd:string ;
+	dct:description "A maximal value is largest value of an attribute for the entities in the defined set."^^xsd:string;
+	sio:hasSynonym "max"^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Quantity.
+
+# Min
+sio:MinimalValue rdf:type owl:Class ;
+	rdfs:label "minimal value"^^xsd:string ;
+	dct:description "A minimal value is smallest value of an attribute for the entities in the defined set"^^xsd:string;
+	sio:hasSynonym "min"^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Quantity.
+
+# Mode
+sio:Mode rdf:type owl:Class ;
+	rdfs:label "mode"^^xsd:string ;
+	dct:description "A mode is the value that appears most often in a set of data."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:CentralityMeasure .
+
+sio:CentralityMeasure rdf:type owl:Class ;
+	rdfs:label "centrality measure"^^xsd:string ;
+	dct:description "A central tendency measure is a central value or a typical value for a probability distribution."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Quantity.
+
+sio:Quantity rdf:type owl:Class ;
+	rdfs:label "quantity"^^xsd:string ;
+	dct:description "A quantity is an informational entity that gives the magnitude of a property."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:MeasurementValue.
+
+sio:MeasurementValue rdf:type owl:Class ;
+	rdfs:label "measurement value"^^xsd:string ;
+	dct:description "A measurement value is a quantitative description that reflects the magnitude of some attribute."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Number.
+
+# Mean
+sio:Mean rdf:type owl:Class ;
+	rdfs:label "mean"^^xsd:string ;
+	dct:description "A mean is the central tendency of a collection of numbers taken as the sum of the numbers divided by the size of the collection."^^xsd:string;
+	sio:hasSynonym "arithmeritic mean"^^xsd:string;
+	sio:hasSynonym "average"^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:CentralityMeasure .
+
+# Number
+sio:Number rdf:type owl:Class ;
+	rdfs:label "number"^^xsd:string ;
+	dct:description "A number is a mathematical object used to count, label, and measure."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:MathematicalEntity .
+
+# Algorithm
+sio:Algorithm rdf:type owl:Class ;
+	rdfs:label "algorithm"^^xsd:string ;
+	dct:description "An algorithm is an effective method expressed as a finite list of well-defined instructions for calculating a function."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:MathematicalEntity .
+
+# Mathematical Entity
+sio:MathematicalEntity rdf:type owl:Class ;
+	rdfs:label "mathematical entity"^^xsd:string ;
+	dct:description "A mathematical entity is an information content entity that are components of a mathematical system or can be defined in mathematical terms."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+sio:InformationContentEntity rdf:type owl:Class ;
+	rdfs:label "information content"^^xsd:string ;
+	dct:description "information content entity is an object that requires some background knowledge or procedure to correctly interpret."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Object .
+
+sio:Object rdf:type owl:Class ;
+	rdfs:label "object"^^xsd:string ;
+	dct:description "An object is an entity that is wholly identifiable at any instant of time during which it exists."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Entity .
+
+# Likelihood
+sio:Likelihood rdf:type owl:Class ;
+	rdfs:label "likelihood"^^xsd:string ;
+	dct:description "Likelihood is the hypothetical probability that an event that has already occurred would yield a specific outcome."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Quantity.
+
+# Control Variable
+sio:ControlVariable rdf:type owl:Class ;
+	rdfs:label "control variable"^^xsd:string ;
+	dct:description " control variable that is believed to alter the dependent or independent variables, but may not actually be the focus of the experiment. So that variable will be kept constant or monitored to try to minimise its effect on the experiment."^^xsd:string ;
+	sio:hasSynonym "controlled variable"^^xsd:string;
+	sio:hasSynonym "extraneous variable"^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Variable .
+
+# Variable
+sio:Variable rdf:type owl:Class ;
+	rdfs:label "variable"^^xsd:string ;
+	dct:description "A variable is a value that may change within the scope of a given problem or set of operations."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:MathematicalEntity .
+
+# p-value
+obi:0000175 rdf:type owl:Class ;
+	rdfs:label "p-value"^^xsd:string ;
+	dct:description "A quantitative confidence value that represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone."^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# FWER adjusted p-value (BH p-value)
+obi:0001265 rdf:type owl:Class ;
+	rdfs:label "FWER adjusted p-value"^^xsd:string ;
+	dct:description "A quantitative confidence value resulting from a multiple testing error correction method which adjusts the p-value used as input to control for Type I error in the context of multiple pairwise tests."^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# data transformation
+obi:0200000 rdf:type owl:Class ;
+	rdfs:label "data transformation"^^xsd:string ;
+	dct:description "A planned process that produces output data from input data."^^xsd:string ;
+    rdfs:subClassOf sio:Process .
+
+# Process
+sio:Process rdf:type owl:Class ;
+	rdfs:label "process"^^xsd:string ;
+	dct:description "A process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Entity .
+
+# scale factors transformation
+:Standardization rdf:type owl:Class ;
+    rdfs:label "Standardization Transformation"^^xsd:string ;
+	skos:definition "Mathematical transformation applied to univariate random variables. The transformed distribution is shifted and scaled so it has a mean of zero and a variance of one."^^xsd:string ;
+    rdfs:subClassOf obi:0200000 .
+
+# logarithmic transformation
+obi:0200094 rdf:type owl:Class ;
+	rdfs:label "logarithmic transformation"^^xsd:string ;
+	dct:description "A logarithmic transformation is a data transformation consisting in the application of the logarithm function with a given base a (where a&gt;0 and a is not equal to 1) to a (one dimensional) positive real number input. The logarithm function with base a can be defined as the inverse of the exponential function with the same base. See e.g. http://en.wikipedia.org/wiki/Logarithm."^^xsd:string ;
+    rdfs:subClassOf obi:0200000 .
+
+# regression coefficient
+stato:0000565 rdf:type owl:Class ;
+	rdfs:label "regression coefficient"^^xsd:string ;
+	dct:description "a regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number."^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# nObs - study group population size
+stato:0000088 rdf:type owl:Class ;
+	rdfs:label "study group population size"^^xsd:string ;
+	dct:description "statistical sample size is a count evaluating the number of individual experimental units"^^xsd:string ;
+    rdfs:subClassOf sio:Count .
+
+# standard error of estimate
+stato:0000562 rdf:type owl:Class ;
+	rdfs:label "standard error of estimate"^^xsd:string ;
+	dct:description "It is a measure of how precise is an estimate of the statistical parameter is.Standard error is the estimated standard deviation of an estimate. It measures the uncertainty associated with the estimate. Compared with the standard deviations of the underlying distribution, which are usually unknown, standard errors can be calculated from observed data."^^xsd:string ;
+    rdfs:subClassOf sio:Quantity.
+
+# standard error of the mean
+stato:0000037 rdf:type owl:Class ;
+	rdfs:label "standard error of the mean"^^xsd:string ;
+	dct:description "The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&apos;s estimate of a population mean.It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample."^^xsd:string ;
+    rdfs:subClassOf sio:Quantity.
+
+# standard deviation
+stato:0000237 rdf:type owl:Class ;
+	rdfs:label "standard deviation"^^xsd:string ;
+	dct:description "The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance."^^xsd:string ;
+    rdfs:subClassOf sio:Quantity.
+
+sio:StandardDeviation rdf:type owl:Class ;
+	rdfs:label "standard deviation"^^xsd:string ;
+	dct:description "A standard deviation (represented by the symbol σ) is the quantity of  variation from the average (mean, or expected value)."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Quantity.
+
+# variable
+stato:0000258 rdf:type owl:Class ;
+	rdfs:label "variable"^^xsd:string ;
+	dct:description "a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation."^^xsd:string ;
+    rdfs:subClassOf sio:Variable .
+
+# continuous variable
+stato:0000251 rdf:type owl:Class ;
+	rdfs:label "continuous variabl"^^xsd:string ;
+	dct:description "A continuous variable is one for which, within the limits the variable ranges, any value is possible."^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+# binary variable
+:BinaryVariable rdf:type owl:Class ;
+    rdfs:label "binary variable"^^xsd:string ;
+	skos:definition "Variable taking values of 0 and 1."^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+# categorical variable
+stato:0000252 rdf:type owl:Class ;
+    rdfs:label "categorical variable"^^xsd:string ;
+	dct:description "a categorical variable  is a variable  which that can only assume a finite number  of value and cast observation in a small number of categories"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+# regression model
+stato:0000390 rdf:type owl:Class ;
+	rdfs:label "regression model"^^xsd:string ;
+	dct:description "A regression model is a statistical model used in a type of analysis knowns as regression analysis, whereby a function is used to determine the relation between a response variable and an independent variable , with a set of unknown parameters."^^xsd:string ;
+    rdfs:subClassOf sio:Model .
+
+sio:Model rdf:type owl:Class ;
+	rdfs:label "model"^^xsd:string ;
+	dct:description "A model is a representation of some thing."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Representation .
+
+sio:Representation rdf:type owl:Class ;
+	rdfs:label "representation"^^xsd:string ;
+	dct:description "A representation is a entity that in some way represents another entity (or attribute thereof)."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# binomial logistic regression for analysis of dichotomous dependent variable
+stato:0000149 rdf:type owl:Class ;
+	rdfs:label "binomial logistic regression for analysis of dichotomous dependent variable"^^xsd:string ;
+	dct:description "binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function."^^xsd:string ;
+    rdfs:subClassOf stato:0000390 .
+
+# linear regression for analysis of continuous dependent variable
+stato:0000108 rdf:type owl:Class ;
+	rdfs:label "linear regression for analysis of continuous dependent variable"^^xsd:string ;
+	dct:description "linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)"^^xsd:string ;
+    rdfs:subClassOf stato:0000390 .
+
+# confounding variable specification
+obcs:0000039 rdf:type owl:Class ;
+	rdfs:label "confounding variable specification"^^xsd:string ;
+	dct:description "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable."^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# data distribution
+stato:0000161 rdf:type owl:Class ;
+	rdfs:label "data distribution"^^xsd:string ;
+	dct:description "variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit."^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+# normal distribution
+stato:0000227 rdf:type owl:Class ;
+	rdfs:label "normal distribution"^^xsd:string ;
+	dct:description "a normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html"^^xsd:string ;
+    rdfs:subClassOf stato:0000161 .
+
+:RightSkewed rdf:type owl:Class ;
+    rdfs:label "right skewed data distribution"^^xsd:string ;
+	skos:definition "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail."^^xsd:string ;
+	skos:example "Most environmental exposure risk factor distributions"^^xsd:string ;
+    rdfs:subClassOf stato:0000161 .
+
+:LeftSkewed rdf:type owl:Class ;
+    rdfs:label "left skewed data distribution"^^xsd:string ;
+	skos:definition "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a left-hand tail that is longer than the right-hand tail."^^xsd:string ;
+    rdfs:subClassOf stato:0000161 .
+
+:Component rdf:type owl:Class ;
+    rdfs:label "component"^^xsd:string ;
+	skos:definition "Category of data tables in NHANES"^^xsd:string ;
+	skos:example "Laboratory"^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+sio:Category rdf:type owl:Class ;
+	rdfs:label "category"^^xsd:string ;
+	dct:description "A category is a class of entities having particular shared characteristics."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Concept .
+
+sio:Concept rdf:type owl:Class ;
+	rdfs:label "concept"^^xsd:string ;
+	dct:description "A concept is term that refers to a generalization of a set of attributes or entities."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Term .
+
+sio:Term rdf:type owl:Class ;
+	rdfs:label "term"^^xsd:string ;
+	dct:description "A term is a word or phrase used to denote one or more entities."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Phrase .
+
+sio:Phrase rdf:type owl:Class ;
+	rdfs:label "phrase"^^xsd:string ;
+	dct:description "A phrase is a group of words functioning as a single unit in the syntax of a sentence."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:LanguageEntity .
+
+sio:LanguageEntity rdf:type owl:Class ;
+	rdfs:label "language entity"^^xsd:string ;
+	dct:description "A language entity implements some language specification for the visual interpretation and is part of some document."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+:RiskFactorCategory rdf:type owl:Class ;
+    rdfs:label "risk factor category"^^xsd:string ;
+	skos:definition "Category of similar potential risk factors, where “similarity” is defined by domain experts"^^xsd:string ;
+	skos:example "Polyaromatic hydrocarbons"^^xsd:string ;
+    rdfs:subClassOf sio:Category .
+
+:Code rdf:type owl:Class ;
+    rdfs:label "code"^^xsd:string ;
+	skos:definition "String sequence used to represent a constructed response variable in data tables"^^xsd:string ;
+	skos:example "hyp"^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+:Cartridge rdf:type owl:Class ;
+    rdfs:label "cartridge"^^xsd:string ;
+	skos:definition "Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+:InputCartridge rdf:type owl:Class ;
+    rdfs:label "input cartridge"^^xsd:string ;
+	skos:definition "Type of cartridge used to define input parameters / configurations when constructing a study"^^xsd:string ;
+	skos:example "Response variable cartridge defining hypertension"^^xsd:string ;
+    rdfs:subClassOf :Cartridge .
+
+:OutputCartridge rdf:type owl:Class ;
+    rdfs:label "output cartridge"^^xsd:string ;
+	skos:definition "Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them"^^xsd:string ;
+	skos:example "Results cartridge describing environmental risk factors for hypertension in obese women"^^xsd:string ;
+    rdfs:subClassOf :Cartridge .
+
+:RiskFactorCartridge rdf:type owl:Class ;
+    rdfs:label "risk factor cartridge"^^xsd:string ;
+	skos:definition "Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. "^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:CohortCartridge rdf:type owl:Class ;
+    rdfs:label "Cohort Cartridge"^^xsd:string ;
+	skos:definition "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study."^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:ParameterCartridge rdf:type owl:Class ;
+    rdfs:label "parameter cartridge"^^xsd:string ;
+	skos:definition "Parameter cartridges contain rules to complete the chosen analysis workflow. "^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:ResponseCartridge rdf:type owl:Class ;
+    rdfs:label "response cartridge"^^xsd:string ;
+	skos:definition "Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease"^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:ResultCartridge rdf:type owl:Class ;
+    rdfs:label "result cartridge"^^xsd:string ;
+	skos:definition "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges"^^xsd:string ;
+    rdfs:subClassOf :OutputCartridge .
+
+# significance threshold
+:Threshold rdf:type owl:Class ;
+    rdfs:label "threshold"^^xsd:string ;
+    rdfs:subClassOf sio:InformationalQuality .
+
+sio:InformationalQuality rdf:type owl:Class ;
+	rdfs:label "informational quality"^^xsd:string ;
+	dct:description "An informational quality is a quality that pertains to information."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Quality .
+
+sio:Quality rdf:type owl:Class ;
+	rdfs:label "quality"^^xsd:string ;
+	dct:description "A quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Attribute .
+
+:StudyVariable rdf:type owl:Class ;
+    rdfs:label "study variable"^^xsd:string ;
+	skos:definition "Variable that potentially has a significant association with the response variable"^^xsd:string ;
+	skos:example "Urinary cadmium"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+:TargetVariable rdf:type owl:Class ;
+    rdfs:label "target variable"^^xsd:string ;
+	skos:definition "Variable used as response variable / target feature in modeling analyses"^^xsd:string ;
+	skos:example "Hypertension"^^xsd:string ;
+    rdfs:subClassOf stato:0000258 .
+
+:DataType rdf:type owl:Class ;
+    rdfs:label "data type"^^xsd:string ;
+	skos:definition "Data type of response variable"^^xsd:string ;
+	skos:example "Binary variable"^^xsd:string.
+
+
+:Exception rdf:type owl:Class ;
+    rdfs:label "exception"^^xsd:string ;
+	skos:definition "Variable names in risk factor tables that have names that look like risk factors but aren’t"^^xsd:string ;
+	skos:example "URXUCR"^^xsd:string .
+
+
+:Condition rdf:type owl:Class ;
+    rdfs:label "condition"^^xsd:string ;
+	skos:definition "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side"^^xsd:string.
+
+:Conjunction rdf:type owl:Class ;
+    rdfs:label "conjunction"^^xsd:string ;
+	skos:definition "Mathematical operator used to combine expressions in response variable definitions"^^xsd:string ;
+	skos:example "prod"^^xsd:string .
+
+:RHS rdf:type owl:Class ;
+    rdfs:label "right hand side"^^xsd:string ;
+	skos:definition "Right-hand side of expression in response variable definitions"^^xsd:string ;
+	skos:example "90"^^xsd:string .
+
+
+:LHS rdf:type owl:Class ;
+    rdfs:label "left hand side"^^xsd:string ;
+	skos:definition "Left-hand side of expression in response variable definitions"^^xsd:string ;
+	skos:example "sbp"^^xsd:string .
+
+
+:Relationship rdf:type owl:Class ;
+    rdfs:label "relationship"^^xsd:string ;
+	skos:definition "Mathematical operator used in response variable definitions"^^xsd:string ;
+	skos:example "Greater-than-or-equal"^^xsd:string .
+
+
+:AnalysisQuestion rdf:type owl:Class ;
+    rdfs:label "analysis question"^^xsd:string ;
+	skos:definition "Natural language description of what question a given analysis answers"^^xsd:string ;
+	skos:example "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?"^^xsd:string .
+
+
+sio:Definition rdf:type owl:Class ;
+	rdfs:label "definition"^^xsd:string ;
+	dct:description "A definition is a description that succintly characterizes an entity."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:Description .
+
+sio:Description rdf:type owl:Class ;
+	rdfs:label "description"^^xsd:string ;
+	dct:description "A description is language entity in which elements of a language (formal or natural) are used to characterize an entity."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:LanguageEntity .
+
+:FileKey rdf:type owl:Class ;
+	rdfs:label "file key"^^xsd:string ;
+	skos:definition "Character sequence mapping risk factor categories to data table filenames"^^xsd:string ;
+	skos:example "Data table filenames containing “ins” contain risk factor measurements of the category Organophosphate Insecticides "^^xsd:string ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+#New Terms Constructed in Feb. 2019
+:Note rdf:type owl:Class;
+	rdfs:label "note"^^xsd:string ;
+	dct:description "A note to describe the data in the file."^^xsd:string.
+
+:ModelCartridge rdf:type owl:Class ;
+    rdfs:label "model cartridge"^^xsd:string ;
+	skos:definition "Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:SubpopulationCartridge rdf:type owl:Class ;
+    rdfs:label "subpopulation cartridge"^^xsd:string ;
+	skos:definition "Subpopulation cartridges give "Table 1s" (cohort-description tables) of discovered subpopulations. "^^xsd:string ;
+    rdfs:subClassOf :InputCartridge .
+
+:IncludedRiskFactor rdf:type owl:Class ;
+	rdfs:label "model parameter"^^xsd:string ;
+	dct:description "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. a model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
+    rdfs:subClassOf stato:DataItem .
