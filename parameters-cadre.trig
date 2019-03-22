@@ -1,0 +1,148 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
+@prefix sco: <http://idea.tw.rpi.edu/projects/heals/sco/> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
+@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/kb/> .
+
+
+
+:parameters-cadre-cartridge-f22233185ff332babf78dcae623f0fe6 {
+    :scale_factors-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:Standardization ;
+        rdfs:label "Scale Factors"^^xsd:string ;
+        sio:hasValue "yes"^^xsd:string .
+
+
+    :significance_threshold-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:Threshold ;
+        rdfs:label "Significance Threshold"^^xsd:string ;
+        sio:hasValue "0.02"^^xsd:float .
+
+
+    :min_pos-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:MinPositive ;
+        rdfs:label "Min Positive"^^xsd:string ;
+        sio:hasValue "1"^^xsd:integer .
+
+
+    :model_class-f22233185ff332babf78dcae623f0fe6
+        rdf:type    sio:Model ;
+        rdfs:label "Model Class"^^xsd:string ;
+        sio:hasValue "cadre_models"^^xsd:string .
+
+
+    :model_class-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:Workflow ;
+        rdfs:label "Workflow Class"^^xsd:string ;
+        sio:hasValue "EWAS"^^xsd:string .
+
+
+    :hyperparameters-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:Hyperparameter ;
+        rdfs:label "Hyperparameter"^^xsd:string ;
+        sio:hasAttribute :M-f22233185ff332babf78dcae623f0fe6 ,
+                        lambda_d-f22233185ff332babf78dcae623f0fe6 ,
+                        lambda_W-f22233185ff332babf78dcae623f0fe6 ,
+                        alpha_d-f22233185ff332babf78dcae623f0fe6 ,
+                        alpha_W-f22233185ff332babf78dcae623f0fe6 ,
+                        gamma-f22233185ff332babf78dcae623f0fe6 ,
+                        Tmax-f22233185ff332babf78dcae623f0fe6 .
+
+
+    :M-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:CadreCount ;
+        rdfs:label "Cadre Count"^^xsd:string ;
+        sio:hasValue "2"^^xsd:integer ,
+                        "3"^^xsd:integer .
+
+
+    :lambda_d-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:RegularizationStrengthD ;
+        rdfs:label "Regularization Strength for Feature Selection Parameter"^^xsd:string ;
+        sio:hasValue "0.1"^^xsd:float ,
+                        "0.01"^^xsd:float ,
+                        "0.001"^^xsd:float .
+
+
+    :lambda_W-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:RegularizationStrengthW ;
+        rdfs:label "Regularization Strength for Regression Hyperplane Weights"^^xsd:string ;
+        sio:hasValue "0.1"^^xsd:float ,
+                        "0.01"^^xsd:float ,
+                        "0.001"^^xsd:float .
+
+
+    :alpha_d-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:ElasticNetMixingWeightD ;
+        rdfs:label "Elastic-net Mixing Weight for Feature Selection Parameter"^^xsd:string ;
+        sio:hasValue "0.1"^^xsd:float ,
+                        "0.9"^^xsd:float .
+
+
+    :alpha_W-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:ElasticNetMixingWeightW ;
+        rdfs:label "Elastic-net Mixing Weight for Regression Hyperplane Weights"^^xsd:string ;
+        sio:hasValue "0.1"^^xsd:float ,
+                        "0.9"^^xsd:float .
+
+
+    :gamma-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:Sharpness   ;
+        rdfs:label " Cadre-assignment Sharpness "^^xsd:string ;
+        sio:hasValue "10.0"^^xsd:float .
+
+
+    :Tmax-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao: ;
+        rdfs:label ""^^xsd:string ;
+        sio:hasValue "2001"^^xsd:integer .
+
+
+    :feature_usage-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:FeatureUsage ;
+        rdfs:label "Feature Usage"^^xsd:string ;
+        sio:hasAttribute :cadre_assignment-f22233185ff332babf78dcae623f0fe6 ,
+                        target_prediction-f22233185ff332babf78dcae623f0fe6 .
+
+
+    :cadre_assignment-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:CardreAssignment ;
+        rdfs:label "Cardre Assignment"^^xsd:string ;
+        sio:hasValue "control_features"^^xsd:string .
+
+    :target_prediction-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:TargetPrediction ;
+        rdfs:label "Target Prediction"^^xsd:string ;
+        sio:hasValue "control_features"^^xsd:string ,
+                        "risk_factor"^^xsd:string .
+
+
+    :selection_metric-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:Metric ;
+        rdfs:label "Selection Metric"^^xsd:string ;
+        sio:hasValue "BIC"^^xsd:string .
+
+
+    :generate_cohort_summary_tables-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:GenerateCohortSummaryTable ;
+        rdfs:label "Generate Cohort Summary Table"^^xsd:string ;
+        sio:hasValue "yes"^^xsd:string .
+
+
+    :use_survey_weights-f22233185ff332babf78dcae623f0fe6
+        rdf:type    hao:UseSurveyWeight ;
+        rdfs:label "Use Survey Weight"^^xsd:string ;
+        sio:hasValue "yes"^^xsd:string .
+
+
+}
