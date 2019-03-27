@@ -42,7 +42,7 @@
 
 
     :ParametersCartridge-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:Paramethvlartridge ;
+        rdf:type    hao:ParameterCartridge ;
         rdfs:label "Parameter Cartridge Json File"^^xsd:string ;
         sio:hasValue "parameters-cadre.json"^^xsd:string .
 
