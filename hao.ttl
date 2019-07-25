@@ -496,7 +496,7 @@ sio:Description rdf:type owl:Class ;
 
 :SubpopulationCartridge rdf:type owl:Class ;
     rdfs:label "subpopulation cartridge"^^xsd:string ;
-	skos:definition "Subpopulation cartridges give "Table 1s" (cohort-description tables) of discovered subpopulations. "^^xsd:string ;
+	skos:definition "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations. "^^xsd:string ;
     rdfs:subClassOf :InputCartridge .
 
 :IncludedRiskFactor rdf:type owl:Class ;
