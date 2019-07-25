@@ -109,12 +109,12 @@
         sio:hasAttribute :agebase_mean-335ea58a52268d9a4eda89694febaaac ,
              :bmi_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :female_base_mean-335ea58a52268d9a4eda89694febaaac ,
-             :male_base_mean-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican_base_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack_base_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite_base_mean-335ea58a52268d9a4eda89694febaaac .
-             :Other_base_mean-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic_base_mean-335ea58a52268d9a4eda89694febaaac .
+             :male_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :Other_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :pir_base_mean-335ea58a52268d9a4eda89694febaaac .
 
     :CovariateStdErrs_base-335ea58a52268d9a4eda89694febaaac
@@ -123,12 +123,12 @@
         sio:hasAttribute :agebase_stderr-335ea58a52268d9a4eda89694febaaac ,
              :bmi_base_stderr-335ea58a52268d9a4eda89694febaaac ,
              :female_base_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :male_base_stderr-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican_base_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack_base_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite_base_stderr-335ea58a52268d9a4eda89694febaaac .
-             :Other_base_stderr-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic_base_stderr-335ea58a52268d9a4eda89694febaaac .
+             :male_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :Other_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic_base_stderr-335ea58a52268d9a4eda89694febaaac ,
              :pir_base_stderr-335ea58a52268d9a4eda89694febaaac .
 
      :age_base_mean-335ea58a52268d9a4eda89694febaaac
