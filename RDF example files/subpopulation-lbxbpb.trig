@@ -254,12 +254,12 @@
              :age1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :bmi1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :female1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :male1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :Other1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
+             :male1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :Other1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :pir1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_2_subpop_mean-335ea58a52268d9a4eda89694febaaac
@@ -268,12 +268,12 @@
              :age2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :bmi2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :female2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :male2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :Other2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
+             :male2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :Other2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :pir2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_3_subpop_mean-335ea58a52268d9a4eda89694febaaac
@@ -282,12 +282,12 @@
              :age3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :bmi3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :female3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :male3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :Other3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
+             :male3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :Other3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :pir3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
@@ -296,12 +296,12 @@
              :age1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :bmi1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :female1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :male1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :Other1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
+             :male1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :Other1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :pir1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
@@ -310,12 +310,12 @@
              :age2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :bmi2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :female2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :male2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :Other2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
+             :male2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :Other2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :pir2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
@@ -324,12 +324,12 @@
              :age3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :bmi3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :female3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :male3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :MexicanAmerican3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicBlack3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :NonHispanicWhite3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :Other3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
-             :OtherHispanic3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
+             :male3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :MexicanAmerican3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicBlack3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :NonHispanicWhite3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :Other3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :OtherHispanic3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :pir3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
 
      :CadreInd_1_subpop_mean-335ea58a52268d9a4eda89694febaaac
