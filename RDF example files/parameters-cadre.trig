@@ -51,12 +51,12 @@
         rdf:type    hao:Hyperparameter ;
         rdfs:label "Hyperparameter"^^xsd:string ;
         sio:hasAttribute :M-f22233185ff332babf78dcae623f0fe6 ,
-                        lambda_d-f22233185ff332babf78dcae623f0fe6 ,
-                        lambda_W-f22233185ff332babf78dcae623f0fe6 ,
-                        alpha_d-f22233185ff332babf78dcae623f0fe6 ,
-                        alpha_W-f22233185ff332babf78dcae623f0fe6 ,
-                        gamma-f22233185ff332babf78dcae623f0fe6 ,
-                        Tmax-f22233185ff332babf78dcae623f0fe6 .
+                        :lambda_d-f22233185ff332babf78dcae623f0fe6 ,
+                        :lambda_W-f22233185ff332babf78dcae623f0fe6 ,
+                        :alpha_d-f22233185ff332babf78dcae623f0fe6 ,
+                        :alpha_W-f22233185ff332babf78dcae623f0fe6 ,
+                        :gamma-f22233185ff332babf78dcae623f0fe6 ,
+                        :Tmax-f22233185ff332babf78dcae623f0fe6 .
 
 
     :M-f22233185ff332babf78dcae623f0fe6
@@ -112,7 +112,7 @@
         rdf:type    hao:FeatureUsage ;
         rdfs:label "Feature Usage"^^xsd:string ;
         sio:hasAttribute :cadre_assignment-f22233185ff332babf78dcae623f0fe6 ,
-                        target_prediction-f22233185ff332babf78dcae623f0fe6 .
+                        :target_prediction-f22233185ff332babf78dcae623f0fe6 .
 
 
     :cadre_assignment-f22233185ff332babf78dcae623f0fe6
