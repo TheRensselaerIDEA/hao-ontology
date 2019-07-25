@@ -81,10 +81,10 @@
         rdf:type    hao:ModelHyperparameter ;
         rdfs:label "Model Hyperparameter"^^xsd:string ;
         sio:hasAttribute :M-a0142f122e3218f79313f0b76d57b2f6 ,
-                        lambda_d-a0142f122e3218f79313f0b76d57b2f6 ,
-                        lambda_W-a0142f122e3218f79313f0b76d57b2f6 ,
-                        alpha_d-a0142f122e3218f79313f0b76d57b2f6 ,
-                        alpha_W-a0142f122e3218f79313f0b76d57b2f6 .
+                        :lambda_d-a0142f122e3218f79313f0b76d57b2f6 ,
+                        :lambda_W-a0142f122e3218f79313f0b76d57b2f6 ,
+                        :alpha_d-a0142f122e3218f79313f0b76d57b2f6 ,
+                        :alpha_W-a0142f122e3218f79313f0b76d57b2f6 .
 
 
     :M-a0142f122e3218f79313f0b76d57b2f6
@@ -116,9 +116,9 @@
         rdf:type    hao:ModelParameter ;
         rdfs:label "Model Parameter"^^xsd:string ;
         sio:hasAttribute :d-a0142f122e3218f79313f0b76d57b2f6 ,
-                        W-a0142f122e3218f79313f0b76d57b2f6 ,
-                        C-a0142f122e3218f79313f0b76d57b2f6 ,
-                        W0-a0142f122e3218f79313f0b76d57b2f6 .
+                        :W-a0142f122e3218f79313f0b76d57b2f6 ,
+                        :C-a0142f122e3218f79313f0b76d57b2f6 ,
+                        :W0-a0142f122e3218f79313f0b76d57b2f6 .
 
 
     :d-a0142f122e3218f79313f0b76d57b2f6
