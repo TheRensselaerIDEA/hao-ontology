@@ -172,7 +172,7 @@ sio:Process rdf:type owl:Class ;
     rdfs:subClassOf sio:Entity .
 
 # scale factors transformation
-:Standardization rdf:type owl:Class ;
+hao:Standardization rdf:type owl:Class ;
     rdfs:label "Standardization Transformation"^^xsd:string ;
 	skos:definition "Mathematical transformation applied to univariate random variables. The transformed distribution is shifted and scaled so it has a mean of zero and a variance of one."^^xsd:string ;
     rdfs:subClassOf obi:0200000 .
@@ -232,7 +232,7 @@ stato:0000251 rdf:type owl:Class ;
     rdfs:subClassOf stato:0000258 .
 
 # binary variable
-:BinaryVariable rdf:type owl:Class ;
+hao:BinaryVariable rdf:type owl:Class ;
     rdfs:label "binary variable"^^xsd:string ;
 	skos:definition "Variable taking values of 0 and 1."^^xsd:string ;
     rdfs:subClassOf stato:0000258 .
@@ -291,18 +291,18 @@ stato:0000227 rdf:type owl:Class ;
 	dct:description "a normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html"^^xsd:string ;
     rdfs:subClassOf stato:0000161 .
 
-:RightSkewed rdf:type owl:Class ;
+hao:RightSkewed rdf:type owl:Class ;
     rdfs:label "right skewed data distribution"^^xsd:string ;
 	skos:definition "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail."^^xsd:string ;
 	skos:example "Most environmental exposure risk factor distributions"^^xsd:string ;
     rdfs:subClassOf stato:0000161 .
 
-:LeftSkewed rdf:type owl:Class ;
+hao:LeftSkewed rdf:type owl:Class ;
     rdfs:label "left skewed data distribution"^^xsd:string ;
 	skos:definition "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a left-hand tail that is longer than the right-hand tail."^^xsd:string ;
     rdfs:subClassOf stato:0000161 .
 
-:Component rdf:type owl:Class ;
+hao:Component rdf:type owl:Class ;
     rdfs:label "component"^^xsd:string ;
 	skos:definition "Category of data tables in NHANES"^^xsd:string ;
 	skos:example "Laboratory"^^xsd:string ;
@@ -338,62 +338,62 @@ sio:LanguageEntity rdf:type owl:Class ;
 	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
     rdfs:subClassOf sio:InformationContentEntity .
 
-:RiskFactorCategory rdf:type owl:Class ;
+hao:RiskFactorCategory rdf:type owl:Class ;
     rdfs:label "risk factor category"^^xsd:string ;
 	skos:definition "Category of similar potential risk factors, where “similarity” is defined by domain experts"^^xsd:string ;
 	skos:example "Polyaromatic hydrocarbons"^^xsd:string ;
     rdfs:subClassOf sio:Category .
 
-:Code rdf:type owl:Class ;
+hao:Code rdf:type owl:Class ;
     rdfs:label "code"^^xsd:string ;
 	skos:definition "String sequence used to represent a constructed response variable in data tables"^^xsd:string ;
 	skos:example "hyp"^^xsd:string ;
     rdfs:subClassOf sio:InformationContentEntity .
 
-:Cartridge rdf:type owl:Class ;
+hao:Cartridge rdf:type owl:Class ;
     rdfs:label "cartridge"^^xsd:string ;
 	skos:definition "Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."^^xsd:string ;
     rdfs:subClassOf sio:InformationContentEntity .
 
-:InputCartridge rdf:type owl:Class ;
+hao:InputCartridge rdf:type owl:Class ;
     rdfs:label "input cartridge"^^xsd:string ;
 	skos:definition "Type of cartridge used to define input parameters / configurations when constructing a study"^^xsd:string ;
 	skos:example "Response variable cartridge defining hypertension"^^xsd:string ;
     rdfs:subClassOf :Cartridge .
 
-:OutputCartridge rdf:type owl:Class ;
+hao:OutputCartridge rdf:type owl:Class ;
     rdfs:label "output cartridge"^^xsd:string ;
 	skos:definition "Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them"^^xsd:string ;
 	skos:example "Results cartridge describing environmental risk factors for hypertension in obese women"^^xsd:string ;
     rdfs:subClassOf :Cartridge .
 
-:RiskFactorCartridge rdf:type owl:Class ;
+hao:RiskFactorCartridge rdf:type owl:Class ;
     rdfs:label "risk factor cartridge"^^xsd:string ;
 	skos:definition "Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. "^^xsd:string ;
     rdfs:subClassOf :InputCartridge .
 
-:CohortCartridge rdf:type owl:Class ;
+hao:CohortCartridge rdf:type owl:Class ;
     rdfs:label "Cohort Cartridge"^^xsd:string ;
 	skos:definition "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study."^^xsd:string ;
     rdfs:subClassOf :InputCartridge .
 
-:ParameterCartridge rdf:type owl:Class ;
+hao:ParameterCartridge rdf:type owl:Class ;
     rdfs:label "parameter cartridge"^^xsd:string ;
 	skos:definition "Parameter cartridges contain rules to complete the chosen analysis workflow. "^^xsd:string ;
     rdfs:subClassOf :InputCartridge .
 
-:ResponseCartridge rdf:type owl:Class ;
+hao:ResponseCartridge rdf:type owl:Class ;
     rdfs:label "response cartridge"^^xsd:string ;
 	skos:definition "Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease"^^xsd:string ;
     rdfs:subClassOf :InputCartridge .
 
-:ResultCartridge rdf:type owl:Class ;
+hao:ResultCartridge rdf:type owl:Class ;
     rdfs:label "result cartridge"^^xsd:string ;
 	skos:definition "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges"^^xsd:string ;
     rdfs:subClassOf :OutputCartridge .
 
 # significance threshold
-:Threshold rdf:type owl:Class ;
+hao:Threshold rdf:type owl:Class ;
     rdfs:label "threshold"^^xsd:string ;
     rdfs:subClassOf sio:InformationalQuality .
 
@@ -409,62 +409,56 @@ sio:Quality rdf:type owl:Class ;
 	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
     rdfs:subClassOf sio:Attribute .
 
-:StudyVariable rdf:type owl:Class ;
+hao:StudyVariable rdf:type owl:Class ;
     rdfs:label "study variable"^^xsd:string ;
 	skos:definition "Variable that potentially has a significant association with the response variable"^^xsd:string ;
 	skos:example "Urinary cadmium"^^xsd:string ;
     rdfs:subClassOf stato:0000258 .
 
-:TargetVariable rdf:type owl:Class ;
+hao:TargetVariable rdf:type owl:Class ;
     rdfs:label "target variable"^^xsd:string ;
 	skos:definition "Variable used as response variable / target feature in modeling analyses"^^xsd:string ;
 	skos:example "Hypertension"^^xsd:string ;
     rdfs:subClassOf stato:0000258 .
 
-:DataType rdf:type owl:Class ;
+hao:DataType rdf:type owl:Class ;
     rdfs:label "data type"^^xsd:string ;
 	skos:definition "Data type of response variable"^^xsd:string ;
 	skos:example "Binary variable"^^xsd:string.
 
-
-:Exception rdf:type owl:Class ;
+hao:Exception rdf:type owl:Class ;
     rdfs:label "exception"^^xsd:string ;
 	skos:definition "Variable names in risk factor tables that have names that look like risk factors but aren’t"^^xsd:string ;
 	skos:example "URXUCR"^^xsd:string .
 
-
-:Condition rdf:type owl:Class ;
+hao:Condition rdf:type owl:Class ;
     rdfs:label "condition"^^xsd:string ;
 	skos:definition "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side"^^xsd:string.
 
-:Conjunction rdf:type owl:Class ;
+hao:Conjunction rdf:type owl:Class ;
     rdfs:label "conjunction"^^xsd:string ;
 	skos:definition "Mathematical operator used to combine expressions in response variable definitions"^^xsd:string ;
 	skos:example "prod"^^xsd:string .
 
-:RHS rdf:type owl:Class ;
+hao:RHS rdf:type owl:Class ;
     rdfs:label "right hand side"^^xsd:string ;
 	skos:definition "Right-hand side of expression in response variable definitions"^^xsd:string ;
 	skos:example "90"^^xsd:string .
 
-
-:LHS rdf:type owl:Class ;
+hao:LHS rdf:type owl:Class ;
     rdfs:label "left hand side"^^xsd:string ;
 	skos:definition "Left-hand side of expression in response variable definitions"^^xsd:string ;
 	skos:example "sbp"^^xsd:string .
 
-
-:Relationship rdf:type owl:Class ;
+hao:Relationship rdf:type owl:Class ;
     rdfs:label "relationship"^^xsd:string ;
 	skos:definition "Mathematical operator used in response variable definitions"^^xsd:string ;
 	skos:example "Greater-than-or-equal"^^xsd:string .
 
-
-:AnalysisQuestion rdf:type owl:Class ;
+hao:AnalysisQuestion rdf:type owl:Class ;
     rdfs:label "analysis question"^^xsd:string ;
 	skos:definition "Natural language description of what question a given analysis answers"^^xsd:string ;
 	skos:example "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?"^^xsd:string .
-
 
 sio:Definition rdf:type owl:Class ;
 	rdfs:label "definition"^^xsd:string ;
@@ -478,28 +472,28 @@ sio:Description rdf:type owl:Class ;
 	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
     rdfs:subClassOf sio:LanguageEntity .
 
-:FileKey rdf:type owl:Class ;
+hao:FileKey rdf:type owl:Class ;
 	rdfs:label "file key"^^xsd:string ;
 	skos:definition "Character sequence mapping risk factor categories to data table filenames"^^xsd:string ;
 	skos:example "Data table filenames containing “ins” contain risk factor measurements of the category Organophosphate Insecticides "^^xsd:string ;
     rdfs:subClassOf sio:InformationContentEntity .
 
 #New Terms Constructed in Feb. 2019
-:Note rdf:type owl:Class;
+hao:Note rdf:type owl:Class;
 	rdfs:label "note"^^xsd:string ;
 	dct:description "A note to describe the data in the file."^^xsd:string.
 
-:ModelCartridge rdf:type owl:Class ;
+hao:ModelCartridge rdf:type owl:Class ;
     rdfs:label "model cartridge"^^xsd:string ;
 	skos:definition "Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "^^xsd:string ;
     rdfs:subClassOf :InputCartridge .
 
-:SubpopulationCartridge rdf:type owl:Class ;
+hao:SubpopulationCartridge rdf:type owl:Class ;
     rdfs:label "subpopulation cartridge"^^xsd:string ;
 	skos:definition "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations. "^^xsd:string ;
     rdfs:subClassOf :InputCartridge .
 
-:IncludedRiskFactor rdf:type owl:Class ;
+hao:IncludedRiskFactor rdf:type owl:Class ;
 	rdfs:label "model parameter"^^xsd:string ;
 	dct:description "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. a model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
     rdfs:subClassOf stato:DataItem .
