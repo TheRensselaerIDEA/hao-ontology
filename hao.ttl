@@ -7,6 +7,7 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
 @prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
@@ -17,7 +18,7 @@
     dct:title "Health Risk Factor Analysis Ontology"^^xsd:string ;
     dct:creator "Sabbir M. Rashid"^^xsd:string, "Alexander S. New"^^xsd:string, "Miao Qi"^^xsd:string,"Shruthi Chari"^^xsd:string, "John S. Erickson"^^xsd:string, "Deborah L. McGuinness"^^xsd:string, "Kristin P. Bennett" ;
     dct:created "2018-05-15T12:00:00"^^xsd:dateTime ;
-    dct:modified "2018-05-19T14:30:00"^^xsd:dateTime ;
+    dct:modified "2019-09-19T14:30:00"^^xsd:dateTime ;
     dct:description "The Health Risk Factor Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports."^^xsd:string ;
     owl:imports 
         #<http://semanticscience.org/ontology/sio.owl>, 
@@ -68,6 +69,18 @@ sio:CentralityMeasure rdf:type owl:Class ;
 	dct:description "A central tendency measure is a central value or a typical value for a probability distribution."^^xsd:string;
 	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
     rdfs:subClassOf sio:Quantity.
+
+sio:Conjunctionand rdf:type owl:Class ;
+	rdfs:label "conjunction (and)"^^xsd:string ;
+	dct:description "AND is a logical operator that has the value true if both of its operands are true, otherwise a value of false."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:LogicalOperator.
+
+sio:LogicalOperator rdf:type owl:Class ;
+	rdfs:label "logical operator"^^xsd:string ;
+	dct:description "A logical operator is a unary or binary relation to construct logical expressions."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:MathematicalEntity.
 
 sio:Quantity rdf:type owl:Class ;
 	rdfs:label "quantity"^^xsd:string ;
@@ -359,38 +372,43 @@ hao:InputCartridge rdf:type owl:Class ;
     rdfs:label "input cartridge"^^xsd:string ;
 	skos:definition "Type of cartridge used to define input parameters / configurations when constructing a study"^^xsd:string ;
 	skos:example "Response variable cartridge defining hypertension"^^xsd:string ;
-    rdfs:subClassOf :Cartridge .
+    rdfs:subClassOf hao:Cartridge .
 
 hao:OutputCartridge rdf:type owl:Class ;
     rdfs:label "output cartridge"^^xsd:string ;
 	skos:definition "Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them"^^xsd:string ;
 	skos:example "Results cartridge describing environmental risk factors for hypertension in obese women"^^xsd:string ;
-    rdfs:subClassOf :Cartridge .
+    rdfs:subClassOf hao:Cartridge .
 
 hao:RiskFactorCartridge rdf:type owl:Class ;
     rdfs:label "risk factor cartridge"^^xsd:string ;
+    dct:description "How categories of semantically-similar risk factors should be modeled."^^xsd:string ;
 	skos:definition "Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. "^^xsd:string ;
-    rdfs:subClassOf :InputCartridge .
+    rdfs:subClassOf hao:InputCartridge .
 
 hao:CohortCartridge rdf:type owl:Class ;
     rdfs:label "Cohort Cartridge"^^xsd:string ;
+    dct:description "Inclusion criteria used to determine if a given subject may be included in the user's study, which can be chosen on-the-fly or adapted from existing studies."^^xsd:string ;
 	skos:definition "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study."^^xsd:string ;
-    rdfs:subClassOf :InputCartridge .
+    rdfs:subClassOf hao:InputCartridge .
 
 hao:ParameterCartridge rdf:type owl:Class ;
     rdfs:label "parameter cartridge"^^xsd:string ;
+    dct:description "Rules to complete chosen analysis workflow and potential hyperparameter configurations for chosen model."^^xsd:string ;
 	skos:definition "Parameter cartridges contain rules to complete the chosen analysis workflow. "^^xsd:string ;
-    rdfs:subClassOf :InputCartridge .
+    rdfs:subClassOf hao:InputCartridge .
 
 hao:ResponseCartridge rdf:type owl:Class ;
     rdfs:label "response cartridge"^^xsd:string ;
+    dct:description "Analysis concepts and background domain axioms necessary to model a given health condition."^^xsd:string ;
 	skos:definition "Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease"^^xsd:string ;
-    rdfs:subClassOf :InputCartridge .
+    rdfs:subClassOf hao:InputCartridge .
 
 hao:ResultCartridge rdf:type owl:Class ;
     rdfs:label "result cartridge"^^xsd:string ;
+    dct:description "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values"^^xsd:string ;
 	skos:definition "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges"^^xsd:string ;
-    rdfs:subClassOf :OutputCartridge .
+    rdfs:subClassOf hao:OutputCartridge .
 
 # significance threshold
 hao:Threshold rdf:type owl:Class ;
@@ -424,41 +442,49 @@ hao:TargetVariable rdf:type owl:Class ;
 hao:DataType rdf:type owl:Class ;
     rdfs:label "data type"^^xsd:string ;
 	skos:definition "Data type of response variable"^^xsd:string ;
-	skos:example "Binary variable"^^xsd:string.
+	skos:example "Binary variable"^^xsd:string ;
+    rdfs:subClassOf  ncit:C42645 .
 
 hao:Exception rdf:type owl:Class ;
     rdfs:label "exception"^^xsd:string ;
 	skos:definition "Variable names in risk factor tables that have names that look like risk factors but aren’t"^^xsd:string ;
-	skos:example "URXUCR"^^xsd:string .
+	skos:example "URXUCR"^^xsd:string ;
+    rdfs:subClassOf  ncit:C54420 .
 
 hao:Condition rdf:type owl:Class ;
     rdfs:label "condition"^^xsd:string ;
-	skos:definition "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side"^^xsd:string.
+	skos:definition "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side"^^xsd:string ;
+    rdfs:subClassOf ncit:C25652  .
 
 hao:Conjunction rdf:type owl:Class ;
     rdfs:label "conjunction"^^xsd:string ;
 	skos:definition "Mathematical operator used to combine expressions in response variable definitions"^^xsd:string ;
-	skos:example "prod"^^xsd:string .
+	skos:example "prod"^^xsd:string ;
+    rdfs:subClassOf sio:Conjunctionand  .
 
 hao:RHS rdf:type owl:Class ;
     rdfs:label "right hand side"^^xsd:string ;
 	skos:definition "Right-hand side of expression in response variable definitions"^^xsd:string ;
-	skos:example "90"^^xsd:string .
+	skos:example "90"^^xsd:string ;
+    rdfs:subClassOf ncit:C80488  .
 
 hao:LHS rdf:type owl:Class ;
     rdfs:label "left hand side"^^xsd:string ;
 	skos:definition "Left-hand side of expression in response variable definitions"^^xsd:string ;
-	skos:example "sbp"^^xsd:string .
+	skos:example "sbp"^^xsd:string ;
+    rdfs:subClassOf ncit:C80488  .
 
 hao:Relationship rdf:type owl:Class ;
     rdfs:label "relationship"^^xsd:string ;
 	skos:definition "Mathematical operator used in response variable definitions"^^xsd:string ;
-	skos:example "Greater-than-or-equal"^^xsd:string .
+	skos:example "Greater-than-or-equal"^^xsd:string ;
+    rdfs:subClassOf sio:LogicalOperator .
 
 hao:AnalysisQuestion rdf:type owl:Class ;
     rdfs:label "analysis question"^^xsd:string ;
 	skos:definition "Natural language description of what question a given analysis answers"^^xsd:string ;
-	skos:example "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?"^^xsd:string .
+	skos:example "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?"^^xsd:string ;
+    rdfs:subClassOf ncit:C41116 .
 
 sio:Definition rdf:type owl:Class ;
 	rdfs:label "definition"^^xsd:string ;
@@ -481,19 +507,22 @@ hao:FileKey rdf:type owl:Class ;
 #New Terms Constructed in Feb. 2019
 hao:Note rdf:type owl:Class;
 	rdfs:label "note"^^xsd:string ;
-	dct:description "A note to describe the data in the file."^^xsd:string.
+	dct:description "A note to describe the data in the file."^^xsd:string ;
+    rdfs:subClassOf sio:Description .
 
 hao:ModelCartridge rdf:type owl:Class ;
     rdfs:label "model cartridge"^^xsd:string ;
+    dct:description "The hyperparameters used to train a model, the parameter estimates learned during training, and the rules by which it is applied to new observations."^^xsd:string ;
 	skos:definition "Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "^^xsd:string ;
-    rdfs:subClassOf :InputCartridge .
+    rdfs:subClassOf hao:OutputCartridge .
 
 hao:SubpopulationCartridge rdf:type owl:Class ;
     rdfs:label "subpopulation cartridge"^^xsd:string ;
-	skos:definition "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations. "^^xsd:string ;
-    rdfs:subClassOf :InputCartridge .
+    dct:description "Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates."^^xsd:string ;
+	skos:definition "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations."^^xsd:string ;
+    rdfs:subClassOf hao:OutputCartridge .
 
 hao:IncludedRiskFactor rdf:type owl:Class ;
 	rdfs:label "model parameter"^^xsd:string ;
-	dct:description "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. a model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
+	dct:description "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
     rdfs:subClassOf stato:DataItem .
