@@ -522,7 +522,70 @@ hao:SubpopulationCartridge rdf:type owl:Class ;
 	skos:definition "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations."^^xsd:string ;
     rdfs:subClassOf hao:OutputCartridge .
 
-hao:IncludedRiskFactor rdf:type owl:Class ;
+hao:ModelParameter rdf:type owl:Class ;
 	rdfs:label "model parameter"^^xsd:string ;
 	dct:description "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
     rdfs:subClassOf stato:DataItem .
+
+hao:Metric rdf:type owl:Class .
+
+hao:TargetPrediction rdf:type owl:Class .
+
+hao:CadreAssignment rdf:type owl:Class .
+
+hao:Sharpness rdf:type owl:Class .
+
+hao:RegularizationStrength rdf:type owl:Class .
+
+hao:RegularizationStrengthD rdf:type owl:Class ;
+    rdfs:subClassOf hao:RegularizationStrength .
+
+hao:RegularizationStrengthW rdf:type owl:Class ;
+    rdfs:subClassOf hao:RegularizationStrength .
+
+hao:ElasticNetMixingWeight rdf:type owl:Class .
+
+hao:ElasticNetMixingWeightW rdf:type owl:Class ;
+    rdfs:subClassOf hao:ElasticNetMixingWeight .
+
+hao:ElasticNetMixingWeightD rdf:type owl:Class ;
+    rdfs:subClassOf hao:ElasticNetMixingWeight .
+
+hao:FeatureUsage rdf:type owl:Class .
+
+hao:Hyperparameter rdf:type owl:Class .
+
+hao:IncludedRiskFactor rdf:type owl:Class .
+
+hao:Result rdf:type owl:Class .
+
+hao:ResultCount rdf:type owl:Class .
+
+hao:Estimate rdf:type owl:Class .
+
+hao:CadreCount rdf:type owl:Class .
+
+hao:CadreSizeList rdf:type owl:Class .
+
+hao:CadreSize rdf:type owl:Class .
+
+hao:CadreIndex rdf:type owl:Class .
+
+hao:MinPositive rdf:type owl:Class .
+
+hao:HyperplaneParameter rdf:type owl:Class .
+
+hao:FeatureSelectionParameter rdf:type owl:Class .
+
+hao:TMax rdf:type owl:Class .
+
+hao:Workflow rdf:type owl:Class .
+
+hao:BaseRate rdf:type owl:Class .
+
+hao:CovariateMean rdf:type owl:Class .
+
+hao:CovariateStdError rdf:type owl:Class .
+
+hao:SubpopulationCharacteristic rdf:type owl:Class .
+
