@@ -21,7 +21,7 @@
     dct:modified "2019-09-19T14:30:00"^^xsd:dateTime ;
     dct:description "The Health Risk Factor Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports."^^xsd:string ;
     owl:imports 
-        #<http://semanticscience.org/ontology/sio.owl>, 
+        <http://semanticscience.org/ontology/sio-subset-labels.owl>, 
         <http://purl.obolibrary.org/obo/obi.owl>, 
         <http://purl.obofoundry.org/obo/stato.owl>, 
         <http://purl.obolibrary.org/obo/obcs.owl> ;
