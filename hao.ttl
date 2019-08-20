@@ -16,7 +16,7 @@
 <http://idea.tw.rpi.edu/projects/heals/hao/hao.ttl>
     rdf:type owl:Ontology ;
     dct:title "Health Risk Factor Analysis Ontology"^^xsd:string ;
-    dct:creator "Sabbir M. Rashid"^^xsd:string, "Alexander S. New"^^xsd:string, "Miao Qi"^^xsd:string,"Shruthi Chari"^^xsd:string, "John S. Erickson"^^xsd:string, "Deborah L. McGuinness"^^xsd:string, "Kristin P. Bennett" ;
+    dct:creator "Sabbir M. Rashid"^^xsd:string, "Alexander S. New"^^xsd:string, "Miao Qi"^^xsd:string,"Shruthi Chari"^^xsd:string, "John S. Erickson"^^xsd:string, "Deborah L. McGuinness"^^xsd:string, "Kristin P. Bennett"^^xsd:string ;
     dct:created "2018-05-15T12:00:00"^^xsd:dateTime ;
     dct:modified "2019-09-19T14:30:00"^^xsd:dateTime ;
     dct:description "The Health Risk Factor Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports."^^xsd:string ;
