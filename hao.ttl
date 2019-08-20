@@ -542,7 +542,7 @@ hao:ModelParameter rdf:type owl:Class ;
 
 hao:Metric rdf:type owl:Class  ;
     rdfs:label "metric"^^xsd:string ;
-    dct:description ""^^xsd:string ;
+    dct:description "How to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error."^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf ncit:C25209 .
 
@@ -631,13 +631,13 @@ hao:BaseRate rdf:type owl:Class .
 
 hao:FeatureUsage rdf:type owl:Class  ;
     rdfs:label "feature usage"^^xsd:string ;
-    dct:description ""^^xsd:string ;
+    dct:description "How to divide supplied features into cadre-assignment and target-prediction categories."^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf prov:Usage .
 
 hao:Hyperparameter rdf:type owl:Class ;
     rdfs:label "hyperparameter"^^xsd:string ;
-    dct:description ""^^xsd:string ;
+    dct:description "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric."^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf sio:Parameter .
 
@@ -667,7 +667,13 @@ hao:Estimate rdf:type owl:Class ;
 
 hao:CadreCount rdf:type owl:Class ;
     rdfs:label "cadre count"^^xsd:string ;
-    dct:description ""^^xsd:string ;
+    dct:description "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection."^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Count .
+
+hao:CadreSize rdf:type owl:Class ;
+    rdfs:label "cadre size"^^xsd:string ;
+    dct:description "How many observations each subpopulation contains."^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf sio:Count .
 
@@ -721,7 +727,7 @@ hao:AnalysisWorkflow rdf:type owl:Class ;
 
 hao:BaseRate rdf:type owl:Class ;
     rdfs:label "base rate"^^xsd:string ;
-    dct:description ""^^xsd:string ;
+    dct:description "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge."^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf sio:RateOfChange .
 
@@ -739,6 +745,6 @@ hao:CovariateStdError rdf:type owl:Class ;
 
 hao:SubpopulationCharacteristic rdf:type owl:Class ;
     rdfs:label "subpopulation characteristic"^^xsd:string ;
-    dct:description ""^^xsd:string ;
+    dct:description "Mean and standard-error-of-mean estimates for each discovered subpopulation."^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf sio:Attribute .
