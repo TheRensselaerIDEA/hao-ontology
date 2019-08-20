@@ -387,7 +387,7 @@ hao:RiskFactorCartridge rdf:type owl:Class ;
     rdfs:subClassOf hao:InputCartridge .
 
 hao:CohortCartridge rdf:type owl:Class ;
-    rdfs:label "Cohort Cartridge"^^xsd:string ;
+    rdfs:label "cohort cartridge"^^xsd:string ;
     dct:description "Inclusion criteria used to determine if a given subject may be included in the user's study, which can be chosen on-the-fly or adapted from existing studies."^^xsd:string ;
 	skos:definition "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study."^^xsd:string ;
     rdfs:subClassOf hao:InputCartridge .
@@ -527,65 +527,176 @@ hao:ModelParameter rdf:type owl:Class ;
 	dct:description "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
     rdfs:subClassOf stato:DataItem .
 
-hao:Metric rdf:type owl:Class .
+hao:Metric rdf:type owl:Class  ;
+    rdfs:label "metric"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf ncit:C25209 .
 
-hao:TargetPrediction rdf:type owl:Class .
+hao:TargetPrediction rdf:type owl:Class ;
+    rdfs:label "target prediction"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf ncit:C54156 .
 
-hao:CadreAssignment rdf:type owl:Class .
+hao:CadreAssignment rdf:type owl:Class ;
+    rdfs:label "cadre assignment"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf ncit:C25426 .
 
-hao:Sharpness rdf:type owl:Class .
+hao:Sharpness rdf:type owl:Class ;
+    rdfs:label "sharpness"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Attribute .
 
-hao:RegularizationStrength rdf:type owl:Class .
+hao:RegularizationStrength rdf:type owl:Class ;
+    rdfs:label "regularization strength"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf hao:Hyperparameter .
 
 hao:RegularizationStrengthD rdf:type owl:Class ;
+    rdfs:label "regularization strength D"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
     rdfs:subClassOf hao:RegularizationStrength .
 
 hao:RegularizationStrengthW rdf:type owl:Class ;
+    rdfs:label "regularization strength W"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
     rdfs:subClassOf hao:RegularizationStrength .
 
-hao:ElasticNetMixingWeight rdf:type owl:Class .
+hao:ElasticNetMixingWeight rdf:type owl:Class ;
+    rdfs:label "elastic net mixing weight"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf hao:Hyperparameter .
 
 hao:ElasticNetMixingWeightW rdf:type owl:Class ;
+    rdfs:label "elastic net mixing weight W"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
     rdfs:subClassOf hao:ElasticNetMixingWeight .
 
 hao:ElasticNetMixingWeightD rdf:type owl:Class ;
+    rdfs:label "elastic net mixing weight D"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
     rdfs:subClassOf hao:ElasticNetMixingWeight .
 
-hao:FeatureUsage rdf:type owl:Class .
+hao:FeatureUsage rdf:type owl:Class  ;
+    rdfs:label "feature usage"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf prov:Usage .
 
-hao:Hyperparameter rdf:type owl:Class .
+hao:Hyperparameter rdf:type owl:Class ;
+    rdfs:label "hyperparameter"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Parameter .
 
-hao:IncludedRiskFactor rdf:type owl:Class .
+hao:RiskFactor rdf:type owl:Class ;
+    rdfs:label "risk factor"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf ncit:C17103 .
 
-hao:Result rdf:type owl:Class .
+hao:Result rdf:type owl:Class ;
+    rdfs:label "result"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf ncit:C76125 .
 
-hao:ResultCount rdf:type owl:Class .
+hao:ResultCount rdf:type owl:Class ;
+    rdfs:label "result count"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Count .
 
-hao:Estimate rdf:type owl:Class .
+hao:Estimate rdf:type owl:Class ;
+    rdfs:label "estimate"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf ncit:C25498 .
 
-hao:CadreCount rdf:type owl:Class .
+hao:CadreCount rdf:type owl:Class ;
+    rdfs:label "cadre count"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Count .
 
-hao:CadreSizeList rdf:type owl:Class .
+hao:CadreList rdf:type owl:Class ;
+    rdfs:label "cadre list"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:List .
 
-hao:CadreSize rdf:type owl:Class .
+hao:CadreSizeList rdf:type owl:Class ;
+    rdfs:label "cadre size list"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:List .
 
-hao:CadreIndex rdf:type owl:Class .
+hao:CadreIndex rdf:type owl:Class ;
+    rdfs:label "cadre index"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf ncit:C25390 .
 
-hao:MinPositive rdf:type owl:Class .
+hao:MinPositive rdf:type owl:Class ;
+    rdfs:label "minimum positive"^^xsd:string ;
+    dct:description "Minimum number of positive observations."^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Count .
 
-hao:HyperplaneParameter rdf:type owl:Class .
+hao:HyperplaneParameter rdf:type owl:Class ;
+    rdfs:label "hyperplane parameter"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Parameter .
 
-hao:FeatureSelectionParameter rdf:type owl:Class .
+hao:FeatureSelectionParameter rdf:type owl:Class ;
+    rdfs:label "feature selection parameter"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Parameter .
 
-hao:TMax rdf:type owl:Class .
+hao:TMax rdf:type owl:Class ;
+    rdfs:label "T max"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:MaximalValue .
 
-hao:Workflow rdf:type owl:Class .
+hao:AnalysisWorkflow rdf:type owl:Class ;
+    rdfs:label "analysis workflow"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Workflow .
 
-hao:BaseRate rdf:type owl:Class .
+hao:BaseRate rdf:type owl:Class ;
+    rdfs:label "base rate"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:RateOfChange .
 
-hao:CovariateMean rdf:type owl:Class .
+hao:CovariateMean rdf:type owl:Class ;
+    rdfs:label "covariate mean"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Mean .
 
-hao:CovariateStdError rdf:type owl:Class .
+hao:CovariateStdError rdf:type owl:Class ;
+    rdfs:label "covariate standard error"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf stato:0000562 .
 
-hao:SubpopulationCharacteristic rdf:type owl:Class .
-
+hao:SubpopulationCharacteristic rdf:type owl:Class ;
+    rdfs:label "subpopulation characteristic"^^xsd:string ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
+    rdfs:subClassOf sio:Attribute .
