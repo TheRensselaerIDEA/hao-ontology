@@ -408,7 +408,20 @@ hao:ResultCartridge rdf:type owl:Class ;
     rdfs:label "result cartridge"^^xsd:string ;
     dct:description "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values"^^xsd:string ;
 	skos:definition "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges"^^xsd:string ;
-    rdfs:subClassOf hao:OutputCartridge .
+	rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasPart ;
+    	owl:someValuesFrom hao:CadreList
+	], hao:OutputCartridge .
+
+hao:CadreList rdf:type owl:Class ;
+	rdfs:subClassOf sio:List ;
+	rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasPart ;
+    	owl:someValuesFrom hao:Cadre
+	] .
+
 
 # significance threshold
 hao:Threshold rdf:type owl:Class ;
@@ -586,6 +599,35 @@ hao:ElasticNetMixingWeightD rdf:type owl:Class ;
     dct:description ""^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf hao:ElasticNetMixingWeight .
+
+sio:Analysis rdf:type owl:Class ;
+	rdfs:label "analysis" ;
+	rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasImplementation ;
+    owl:someValuesFrom hao:AnalysisWorkflow
+  ], 
+  [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:AnalysisQuestion
+  ] .
+
+hao:AnalysisWorkflow rdf:type owl:Class ;
+	rdfs:label "analysis workflow" ;
+	rdfs:subClassOf sio:Workflow ;
+	rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasComponentPart ;
+    owl:someValuesFrom hao:InputCartridge
+  ],
+  [
+    a owl:Restriction ;
+    owl:onProperty sio:hasComponentPart ;
+    owl:someValuesFrom hao:OutputCartridge
+  ] .
+
+hao:BaseRate rdf:type owl:Class .
 
 hao:FeatureUsage rdf:type owl:Class  ;
     rdfs:label "feature usage"^^xsd:string ;
