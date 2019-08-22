@@ -602,6 +602,8 @@ hao:ElasticNetMixingWeightD rdf:type owl:Class ;
 
 sio:Analysis rdf:type owl:Class ;
 	rdfs:label "analysis" ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
 	rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty sio:hasImplementation ;
@@ -616,6 +618,8 @@ sio:Analysis rdf:type owl:Class ;
 hao:AnalysisWorkflow rdf:type owl:Class ;
 	rdfs:label "analysis workflow" ;
 	rdfs:subClassOf sio:Workflow ;
+    dct:description ""^^xsd:string ;
+	skos:definition ""^^xsd:string ;
 	rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty sio:hasComponentPart ;
@@ -626,8 +630,6 @@ hao:AnalysisWorkflow rdf:type owl:Class ;
     owl:onProperty sio:hasComponentPart ;
     owl:someValuesFrom hao:OutputCartridge
   ] .
-
-hao:BaseRate rdf:type owl:Class .
 
 hao:FeatureUsage rdf:type owl:Class  ;
     rdfs:label "feature usage"^^xsd:string ;
@@ -715,15 +717,9 @@ hao:FeatureSelectionParameter rdf:type owl:Class ;
 
 hao:TMax rdf:type owl:Class ;
     rdfs:label "T max"^^xsd:string ;
-    dct:description ""^^xsd:string ;
+    dct:description "The maximum number of stochastic gradient descent steps taken."^^xsd:string ;
 	skos:definition ""^^xsd:string ;
     rdfs:subClassOf sio:MaximalValue .
-
-hao:AnalysisWorkflow rdf:type owl:Class ;
-    rdfs:label "analysis workflow"^^xsd:string ;
-    dct:description ""^^xsd:string ;
-	skos:definition ""^^xsd:string ;
-    rdfs:subClassOf sio:Workflow .
 
 hao:BaseRate rdf:type owl:Class ;
     rdfs:label "base rate"^^xsd:string ;
