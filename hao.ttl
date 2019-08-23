@@ -422,6 +422,9 @@ hao:CadreList rdf:type owl:Class ;
     	owl:someValuesFrom hao:Cadre
 	] .
 
+hao:Cadre rdf:type owl:Class ;
+	rdfs:label "cadre" ;
+	rdfs:subClassOf ncit:C43418 .
 
 # significance threshold
 hao:Threshold rdf:type owl:Class ;
