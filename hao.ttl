@@ -10,10 +10,10 @@
 @prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
-@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/> .
+@prefix hao: <https://purl.org/heals/hao/> .
+@prefix : <https://purl.org/heals/hao/> .
 
-<http://idea.tw.rpi.edu/projects/heals/hao/hao.ttl>
+<https://purl.org/heals/hao/>
     rdf:type owl:Ontology ;
     dct:title "Health Risk Factor Analysis Ontology"^^xsd:string ;
     dct:creator "Sabbir M. Rashid"^^xsd:string, "Alexander New"^^xsd:string, "Miao Qi"^^xsd:string,"Shruthi Chari"^^xsd:string, "John S. Erickson"^^xsd:string, "Deborah L. McGuinness"^^xsd:string, "Kristin P. Bennett"^^xsd:string ;
@@ -26,7 +26,7 @@
         <http://purl.obofoundry.org/obo/stato.owl>, 
         <http://purl.obolibrary.org/obo/obcs.owl> ;
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
-    owl:versionIRI <http://idea.tw.rpi.edu/projects/heals/hao/0.9> .
+    owl:versionIRI <https://purl.org/heals/hao/0.9/> .
 
 # count
 sio:Count rdf:type owl:Class ;
