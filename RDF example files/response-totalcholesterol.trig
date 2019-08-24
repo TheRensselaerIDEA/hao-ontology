@@ -1,0 +1,68 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
+@prefix sco: <http://idea.tw.rpi.edu/projects/heals/sco/> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
+@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/kb/> .
+
+
+:response-totalcholesterol-cartridge-fdq2ag0kz58tcu216isiyjusoujdwqi6 {
+
+    :study_variable_code-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type    hao:Code ;
+        rdfs:label    "Code"^^xsd:string ;
+        sio:hasValue    "LBXTC"^^xsd:string .
+
+    :variable_name-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type    hao:TargetVariable ;
+        rdfs:label    "Target Variable"^^xsd:string ;
+        sio:hasValue "total cholesterol"^^xsd:string .
+    
+    :data_type-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type    hao:DataType ;
+        rdfs:label    "Data Type"^^xsd:string ;
+        sio:hasValue    [ rdf:type stato:0000251 ] .
+
+    :model_type-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type    sio:Model ;
+        rdfs:label    "Model"^^xsd:string ;
+        sio:hasValue    [ rdf:type stato:0000108 ] .
+
+    :confounders-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type    obcs:0000039 ;
+        rdfs:label    "Confounders"^^xsd:string ;
+        sio:hasAttribute :variables-fdq2ag0kz58tcu216isiyjusoujdwqi6 , 
+            :provenance1-rfdq2ag0kz58tcu216isiyjusoujdwqi6.
+    
+    :variables-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type   stato:0000258  ;
+        rdfs:label    "Variables"^^xsd:string ;
+        sio:hasAttribute    [ rdf:type sio:BiologicalSex ] ,
+            [ rdf:type chear:BMI ] , 
+            [ rdf:type sio:Education ] , 
+			[ rdf:type sio:MaritalStatus ] ,
+			[ rdf:type sio:Drink ] ,
+			[ rdf:type sio:Smoke ] ,
+            [ rdf:type sco:PovertyIncomeRatio ] , 
+            [ rdf:type sio:Age ] .
+            
+     :provenance1-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type    obcs:0000039 ;
+        rdfs:label    "Derived From"^^xsd:string ;
+        prov:wasDerivedFrom <https://doi.org/10.1007/s11356-018-1845-1> .   
+
+
+    :analysis_question-fdq2ag0kz58tcu216isiyjusoujdwqi6
+        rdf:type    hao:AnalysisQuestion ;
+        rdfs:label    "Analysis Question"^^xsd:string ;
+        sio:hasValue    "Are higher exposure amounts of a risk factor significantly associated with higher total cholesterol?"^^xsd:string .
+}
