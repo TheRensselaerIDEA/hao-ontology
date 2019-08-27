@@ -1,0 +1,1025 @@
+@prefix : <https://purl.org/heals/hao/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/heals/hao/> .
+
+<https://purl.org/heals/hao/> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://purl.org/heals/hao/0.9/> ;
+                               owl:imports <http://purl.obofoundry.org/obo/stato.owl#> ,
+                                           <http://semanticscience.org/ontology/sio-subset-labels.owl> ;
+                               <http://purl.org/dc/terms/created> "2018-05-15T12:00:00"^^xsd:dateTime ;
+                               <http://purl.org/dc/terms/creator> "Alexander New" ,
+                                                                  "Deborah L. McGuinness" ,
+                                                                  "John S. Erickson" ,
+                                                                  "Kristin P. Bennett" ,
+                                                                  "Miao Qi" ,
+                                                                  "Sabbir M. Rashid" ,
+                                                                  "Shruthi Chari" ;
+                               <http://purl.org/dc/terms/description> "The Health Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports. It captures the data domain and analysis workflow in cartridges that represent domain knowledge, analytics knowledge, and other components of the analysis pipeline" ;
+                               <http://purl.org/dc/terms/modified> "2019-08-27T14:30:00"^^xsd:dateTime ;
+                               <http://purl.org/dc/terms/title> "Health Analysis Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/NCIT_C17103
+<http://purl.obolibrary.org/obo/NCIT_C17103> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25209
+<http://purl.obolibrary.org/obo/NCIT_C25209> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25390
+<http://purl.obolibrary.org/obo/NCIT_C25390> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25426
+<http://purl.obolibrary.org/obo/NCIT_C25426> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25498
+<http://purl.obolibrary.org/obo/NCIT_C25498> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25652
+<http://purl.obolibrary.org/obo/NCIT_C25652> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41116
+<http://purl.obolibrary.org/obo/NCIT_C41116> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C42645
+<http://purl.obolibrary.org/obo/NCIT_C42645> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C43418
+<http://purl.obolibrary.org/obo/NCIT_C43418> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C54156
+<http://purl.obolibrary.org/obo/NCIT_C54156> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C54420
+<http://purl.obolibrary.org/obo/NCIT_C54420> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C76125
+<http://purl.obolibrary.org/obo/NCIT_C76125> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C80488
+<http://purl.obolibrary.org/obo/NCIT_C80488> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBCS_0000039
+<http://purl.obolibrary.org/obo/OBCS_0000039> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                              <http://purl.org/dc/terms/description> "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable." ;
+                                              rdfs:label "confounding variable specification" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000175
+<http://purl.obolibrary.org/obo/OBI_0000175> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000175> ;
+                                             rdfs:label "p-value" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A quantitative confidence value that represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone." .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001265
+<http://purl.obolibrary.org/obo/OBI_0001265> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                             rdfs:label "FWER adjusted p-value" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A quantitative confidence value resulting from a multiple testing error correction method which adjusts the p-value used as input to control for Type I error in the context of multiple pairwise tests." .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0200000
+<http://purl.obolibrary.org/obo/OBI_0200000> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/Process> ;
+                                             <http://purl.org/dc/terms/description> "A planned process that produces output data from input data." ;
+                                             rdfs:label "data transformation" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0200094
+<http://purl.obolibrary.org/obo/OBI_0200094> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0200000> ;
+                                             <http://purl.org/dc/terms/description> "A logarithmic transformation is a data transformation consisting in the application of the logarithm function with a given base a (where a&gt;0 and a is not equal to 1) to a (one dimensional) positive real number input. The logarithm function with base a can be defined as the inverse of the exponential function with the same base. See e.g. http://en.wikipedia.org/wiki/Logarithm." ;
+                                             rdfs:label "logarithmic transformation" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000037
+<http://purl.obolibrary.org/obo/STATO_0000037> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                               <http://purl.org/dc/terms/description> "The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&apos;s estimate of a population mean.It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample." ;
+                                               rdfs:label "standard error of the mean" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000088
+<http://purl.obolibrary.org/obo/STATO_0000088> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Count> ;
+                                               <http://purl.org/dc/terms/description> "Statistical sample size is a count evaluating the number of individual experimental units" ;
+                                               rdfs:label "study group population size" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000108
+<http://purl.obolibrary.org/obo/STATO_0000108> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000390> ;
+                                               <http://purl.org/dc/terms/description> "linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)" ;
+                                               rdfs:label "linear regression for analysis of continuous dependent variable" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000149
+<http://purl.obolibrary.org/obo/STATO_0000149> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000390> ;
+                                               <http://purl.org/dc/terms/description> "binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function." ;
+                                               rdfs:label "binomial logistic regression for analysis of dichotomous dependent variable" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000161
+<http://purl.obolibrary.org/obo/STATO_0000161> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                               <http://purl.org/dc/terms/description> "variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit." ;
+                                               rdfs:label "data distribution" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000227
+<http://purl.obolibrary.org/obo/STATO_0000227> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000161> ;
+                                               <http://purl.org/dc/terms/description> "a normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html" ;
+                                               rdfs:label "normal distribution" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000237
+<http://purl.obolibrary.org/obo/STATO_0000237> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                               <http://purl.org/dc/terms/description> "The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance." ;
+                                               rdfs:label "standard deviation" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000251
+<http://purl.obolibrary.org/obo/STATO_0000251> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000258> ;
+                                               <http://purl.org/dc/terms/description> "A continuous variable is one for which, within the limits the variable ranges, any value is possible." ;
+                                               rdfs:label "continuous variabl" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000252
+<http://purl.obolibrary.org/obo/STATO_0000252> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000258> ;
+                                               <http://purl.org/dc/terms/description> "a categorical variable  is a variable  which that can only assume a finite number  of value and cast observation in a small number of categories" ;
+                                               rdfs:label "categorical variable" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000258
+<http://purl.obolibrary.org/obo/STATO_0000258> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Variable> ;
+                                               <http://purl.org/dc/terms/description> "a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation." ;
+                                               rdfs:label "variable" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000390
+<http://purl.obolibrary.org/obo/STATO_0000390> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Model> ;
+                                               <http://purl.org/dc/terms/description> "A regression model is a statistical model used in a type of analysis knowns as regression analysis, whereby a function is used to determine the relation between a response variable and an independent variable , with a set of unknown parameters." ;
+                                               rdfs:label "regression model" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000562
+<http://purl.obolibrary.org/obo/STATO_0000562> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                               <http://purl.org/dc/terms/description> "It is a measure of how precise is an estimate of the statistical parameter is.Standard error is the estimated standard deviation of an estimate. It measures the uncertainty associated with the estimate. Compared with the standard deviations of the underlying distribution, which are usually unknown, standard errors can be calculated from observed data." ;
+                                               rdfs:label "standard error of estimate" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000565
+<http://purl.obolibrary.org/obo/STATO_0000565> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                               <http://purl.org/dc/terms/description> "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number." ;
+                                               rdfs:label "regression coefficient" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_DataItem
+<http://purl.obolibrary.org/obo/STATO_DataItem> rdf:type owl:Class .
+
+
+###  http://semanticscience.org/resource/Algorithm
+<http://semanticscience.org/resource/Algorithm> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://semanticscience.org/resource/MathematicalEntity> ;
+                                                <http://purl.org/dc/terms/description> "An algorithm is an effective method expressed as a finite list of well-defined instructions for calculating a function." ;
+                                                rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                rdfs:label "algorithm" .
+
+
+###  http://semanticscience.org/resource/Analysis
+<http://semanticscience.org/resource/Analysis> rdf:type owl:Class ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                 owl:someValuesFrom :AnalysisQuestion
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://semanticscience.org/resource/hasImplementation> ;
+                                                                 owl:someValuesFrom :AnalysisWorkflow
+                                                               ] ;
+                                               <http://purl.org/dc/terms/description> "" ;
+                                               rdfs:label "analysis" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  http://semanticscience.org/resource/Category
+<http://semanticscience.org/resource/Category> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Concept> ;
+                                               <http://purl.org/dc/terms/description> "A category is a class of entities having particular shared characteristics." ;
+                                               rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                               rdfs:label "category" .
+
+
+###  http://semanticscience.org/resource/CentralityMeasure
+<http://semanticscience.org/resource/CentralityMeasure> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                                        <http://purl.org/dc/terms/description> "A central tendency measure is a central value or a typical value for a probability distribution." ;
+                                                        rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                        rdfs:label "centrality measure" .
+
+
+###  http://semanticscience.org/resource/Concept
+<http://semanticscience.org/resource/Concept> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://semanticscience.org/resource/Term> ;
+                                              <http://purl.org/dc/terms/description> "A concept is term that refers to a generalization of a set of attributes or entities." ;
+                                              rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                              rdfs:label "concept" .
+
+
+###  http://semanticscience.org/resource/Conjunctionand
+<http://semanticscience.org/resource/Conjunctionand> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://semanticscience.org/resource/LogicalOperator> ;
+                                                     <http://purl.org/dc/terms/description> "AND is a logical operator that has the value true if both of its operands are true, otherwise a value of false." ;
+                                                     rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                     rdfs:label "conjunction (and)" .
+
+
+###  http://semanticscience.org/resource/ControlVariable
+<http://semanticscience.org/resource/ControlVariable> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://semanticscience.org/resource/Variable> ;
+                                                      <http://purl.org/dc/terms/description> " A control variable that is believed to alter the dependent or independent variables, but may not actually be the focus of the experiment. So that variable will be kept constant or monitored to try to minimise its effect on the experiment." ;
+                                                      <http://semanticscience.org/resource/hasSynonym> "controlled variable" ,
+                                                                                                       "extraneous variable" ;
+                                                      rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                      rdfs:label "control variable" .
+
+
+###  http://semanticscience.org/resource/Count
+<http://semanticscience.org/resource/Count> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://semanticscience.org/resource/DimensionlessQuantity> ;
+                                            <http://purl.org/dc/terms/description> "The number of elements of a finite set of objects." ;
+                                            rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                            rdfs:label "count" .
+
+
+###  http://semanticscience.org/resource/Definition
+<http://semanticscience.org/resource/Definition> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/Description> ;
+                                                 <http://purl.org/dc/terms/description> "A definition is a description that succintly characterizes an entity." ;
+                                                 rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                 rdfs:label "definition" .
+
+
+###  http://semanticscience.org/resource/Description
+<http://semanticscience.org/resource/Description> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://semanticscience.org/resource/LanguageEntity> ;
+                                                  <http://purl.org/dc/terms/description> "A description is language entity in which elements of a language (formal or natural) are used to characterize an entity." ;
+                                                  rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                  rdfs:label "description" .
+
+
+###  http://semanticscience.org/resource/DimensionlessQuantity
+<http://semanticscience.org/resource/DimensionlessQuantity> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                                            <http://purl.org/dc/terms/description> "A dimensionless quantity is a quantity that has no associated unit." ;
+                                                            rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                            rdfs:label "dimensionless quantity" .
+
+
+###  http://semanticscience.org/resource/InformationContentEntity
+<http://semanticscience.org/resource/InformationContentEntity> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://semanticscience.org/resource/Object> ;
+                                                               <http://purl.org/dc/terms/description> "Information content entity is an object that requires some background knowledge or procedure to correctly interpret." ;
+                                                               rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                               rdfs:label "information content entity" .
+
+
+###  http://semanticscience.org/resource/InformationalQuality
+<http://semanticscience.org/resource/InformationalQuality> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://semanticscience.org/resource/Quality> ;
+                                                           <http://purl.org/dc/terms/description> "An informational quality is a quality that pertains to information." ;
+                                                           rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                           rdfs:label "informational quality" .
+
+
+###  http://semanticscience.org/resource/LanguageEntity
+<http://semanticscience.org/resource/LanguageEntity> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                                     <http://purl.org/dc/terms/description> "A language entity implements some language specification for the visual interpretation and is part of some document." ;
+                                                     rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                     rdfs:label "language entity" .
+
+
+###  http://semanticscience.org/resource/Likelihood
+<http://semanticscience.org/resource/Likelihood> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                                 <http://purl.org/dc/terms/description> "Likelihood is the hypothetical probability that an event that has already occurred would yield a specific outcome." ;
+                                                 rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                 rdfs:label "likelihood" .
+
+
+###  http://semanticscience.org/resource/LogicalOperator
+<http://semanticscience.org/resource/LogicalOperator> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://semanticscience.org/resource/MathematicalEntity> ;
+                                                      <http://purl.org/dc/terms/description> "A logical operator is a unary or binary relation to construct logical expressions." ;
+                                                      rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                      rdfs:label "logical operator" .
+
+
+###  http://semanticscience.org/resource/MathematicalEntity
+<http://semanticscience.org/resource/MathematicalEntity> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                                         <http://purl.org/dc/terms/description> "A mathematical entity is an information content entity that are components of a mathematical system or can be defined in mathematical terms." ;
+                                                         rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                         rdfs:label "mathematical entity" .
+
+
+###  http://semanticscience.org/resource/MaximalValue
+<http://semanticscience.org/resource/MaximalValue> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                                   <http://purl.org/dc/terms/description> "A maximal value is largest value of an attribute for the entities in the defined set." ;
+                                                   <http://semanticscience.org/resource/hasSynonym> "max" ;
+                                                   rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                   rdfs:label "maximal value" .
+
+
+###  http://semanticscience.org/resource/Mean
+<http://semanticscience.org/resource/Mean> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://semanticscience.org/resource/CentralityMeasure> ;
+                                           <http://purl.org/dc/terms/description> "A mean is the central tendency of a collection of numbers taken as the sum of the numbers divided by the size of the collection." ;
+                                           <http://semanticscience.org/resource/hasSynonym> "arithmeritic mean" ,
+                                                                                            "average" ;
+                                           rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                           rdfs:label "mean" .
+
+
+###  http://semanticscience.org/resource/MeasurementValue
+<http://semanticscience.org/resource/MeasurementValue> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://semanticscience.org/resource/Number> ;
+                                                       <http://purl.org/dc/terms/description> "A measurement value is a quantitative description that reflects the magnitude of some attribute." ;
+                                                       rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                       rdfs:label "measurement value" .
+
+
+###  http://semanticscience.org/resource/MinimalValue
+<http://semanticscience.org/resource/MinimalValue> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                                   <http://purl.org/dc/terms/description> "A minimal value is smallest value of an attribute for the entities in the defined set." ;
+                                                   <http://semanticscience.org/resource/hasSynonym> "min" ;
+                                                   rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                   rdfs:label "minimal value" .
+
+
+###  http://semanticscience.org/resource/Mode
+<http://semanticscience.org/resource/Mode> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://semanticscience.org/resource/CentralityMeasure> ;
+                                           <http://purl.org/dc/terms/description> "A mode is the value that appears most often in a set of data." ;
+                                           rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                           rdfs:label "mode" .
+
+
+###  http://semanticscience.org/resource/Model
+<http://semanticscience.org/resource/Model> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://semanticscience.org/resource/Representation> ;
+                                            <http://purl.org/dc/terms/description> "A model is a representation of some thing." ;
+                                            rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                            rdfs:label "model" .
+
+
+###  http://semanticscience.org/resource/Number
+<http://semanticscience.org/resource/Number> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/MathematicalEntity> ;
+                                             <http://purl.org/dc/terms/description> "A number is a mathematical object used to count, label, and measure." ;
+                                             rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                             rdfs:label "number" .
+
+
+###  http://semanticscience.org/resource/Object
+<http://semanticscience.org/resource/Object> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/Entity> ;
+                                             <http://purl.org/dc/terms/description> "An object is an entity that is wholly identifiable at any instant of time during which it exists." ;
+                                             rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                             rdfs:label "object" .
+
+
+###  http://semanticscience.org/resource/Phrase
+<http://semanticscience.org/resource/Phrase> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/LanguageEntity> ;
+                                             <http://purl.org/dc/terms/description> "A phrase is a group of words functioning as a single unit in the syntax of a sentence." ;
+                                             rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                             rdfs:label "phrase" .
+
+
+###  http://semanticscience.org/resource/Process
+<http://semanticscience.org/resource/Process> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://semanticscience.org/resource/Entity> ;
+                                              <http://purl.org/dc/terms/description> "A process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists." ;
+                                              rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                              rdfs:label "process" .
+
+
+###  http://semanticscience.org/resource/Quality
+<http://semanticscience.org/resource/Quality> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+                                              <http://purl.org/dc/terms/description> "A quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary." ;
+                                              rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                              rdfs:label "quality" .
+
+
+###  http://semanticscience.org/resource/Quantity
+<http://semanticscience.org/resource/Quantity> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/MeasurementValue> ;
+                                               <http://purl.org/dc/terms/description> "A quantity is an informational entity that gives the magnitude of a property." ;
+                                               rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                               rdfs:label "quantity" .
+
+
+###  http://semanticscience.org/resource/Representation
+<http://semanticscience.org/resource/Representation> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                                     <http://purl.org/dc/terms/description> "A representation is a entity that in some way represents another entity (or attribute thereof)." ;
+                                                     rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                     rdfs:label "representation" .
+
+
+###  http://semanticscience.org/resource/StandardDeviation
+<http://semanticscience.org/resource/StandardDeviation> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
+                                                        <http://purl.org/dc/terms/description> "A standard deviation (represented by the symbol σ) is the quantity of  variation from the average (mean, or expected value)." ;
+                                                        rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                                        rdfs:label "standard deviation" .
+
+
+###  http://semanticscience.org/resource/Term
+<http://semanticscience.org/resource/Term> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://semanticscience.org/resource/Phrase> ;
+                                           <http://purl.org/dc/terms/description> "A term is a word or phrase used to denote one or more entities." ;
+                                           rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                           rdfs:label "term" .
+
+
+###  http://semanticscience.org/resource/Variable
+<http://semanticscience.org/resource/Variable> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/MathematicalEntity> ;
+                                               <http://purl.org/dc/terms/description> "A variable is a value that may change within the scope of a given problem or set of operations." ;
+                                               rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
+                                               rdfs:label "variable" .
+
+
+###  http://www.w3.org/ns/prov#Usage
+<http://www.w3.org/ns/prov#Usage> rdf:type owl:Class .
+
+
+###  https://purl.org/heals/hao/AnalysisQuestion
+:AnalysisQuestion rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41116> ;
+                  rdfs:label "analysis question" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Natural language description of what question a given analysis answers" ;
+                  <http://www.w3.org/2004/02/skos/core#example> "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?" .
+
+
+###  https://purl.org/heals/hao/AnalysisWorkflow
+:AnalysisWorkflow rdf:type owl:Class ;
+                  rdfs:subClassOf <http://semanticscience.org/resource/Workflow> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/hasComponentPart> ;
+                                    owl:someValuesFrom :InputCartridge
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/hasComponentPart> ;
+                                    owl:someValuesFrom :OutputCartridge
+                                  ] ;
+                  <http://purl.org/dc/terms/description> "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results." ;
+                  rdfs:label "analysis workflow" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/BaseRate
+:BaseRate rdf:type owl:Class ;
+          rdfs:subClassOf <http://semanticscience.org/resource/RateOfChange> ;
+          <http://purl.org/dc/terms/description> "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge." ;
+          rdfs:label "base rate" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/BinaryVariable
+:BinaryVariable rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000258> ;
+                rdfs:label "binary variable" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Variable taking values of 0 and 1." .
+
+
+###  https://purl.org/heals/hao/Cadre
+:Cadre rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C43418> ;
+       rdfs:label "cadre" .
+
+
+###  https://purl.org/heals/hao/CadreAssignment
+:CadreAssignment rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25426> ;
+                 <http://purl.org/dc/terms/description> "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres." ;
+                 rdfs:label "cadre assignment" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/CadreCount
+:CadreCount rdf:type owl:Class ;
+            rdfs:subClassOf <http://semanticscience.org/resource/Count> ;
+            <http://purl.org/dc/terms/description> "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection." ;
+            rdfs:label "cadre count" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/CadreIndex
+:CadreIndex rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25390> ;
+            <http://purl.org/dc/terms/description> "An index assigned to each subpopulation." ;
+            rdfs:label "cadre index" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/CadreList
+:CadreList rdf:type owl:Class ;
+           rdfs:subClassOf <http://semanticscience.org/resource/List> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://semanticscience.org/resource/hasPart> ;
+                             owl:someValuesFrom :Cadre
+                           ] ;
+           <http://purl.org/dc/terms/description> "" ;
+           rdfs:label "cadre list" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/CadreSize
+:CadreSize rdf:type owl:Class ;
+           rdfs:subClassOf <http://semanticscience.org/resource/Count> ;
+           <http://purl.org/dc/terms/description> "How many observations each subpopulation contains." ;
+           rdfs:label "cadre size" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/CadreSizeList
+:CadreSizeList rdf:type owl:Class ;
+               rdfs:subClassOf <http://semanticscience.org/resource/List> ;
+               <http://purl.org/dc/terms/description> "The number of subjects in the training data assigned to each cadre." ;
+               rdfs:label "cadre size list" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/Cartridge
+:Cartridge rdf:type owl:Class ;
+           rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+           rdfs:label "cartridge" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study." ;
+           <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
+
+
+###  https://purl.org/heals/hao/Code
+:Code rdf:type owl:Class ;
+      rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+      rdfs:label "code" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "String sequence used to represent a constructed response variable in data tables" ;
+      <http://www.w3.org/2004/02/skos/core#example> "hyp" .
+
+
+###  https://purl.org/heals/hao/CohortCartridge
+:CohortCartridge rdf:type owl:Class ;
+                 rdfs:subClassOf :InputCartridge ;
+                 <http://purl.org/dc/terms/description> "Inclusion criteria used to determine if a given subject may be included in the user's study, which can be chosen on-the-fly or adapted from existing studies." ;
+                 rdfs:label "cohort cartridge" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study." .
+
+
+###  https://purl.org/heals/hao/Component
+:Component rdf:type owl:Class ;
+           rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+           rdfs:label "component" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Category of data tables in NHANES" ;
+           <http://www.w3.org/2004/02/skos/core#example> "Laboratory" .
+
+
+###  https://purl.org/heals/hao/Condition
+:Condition rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25652> ;
+           rdfs:label "condition" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side" .
+
+
+###  https://purl.org/heals/hao/Conjunction
+:Conjunction rdf:type owl:Class ;
+             rdfs:subClassOf <http://semanticscience.org/resource/Conjunctionand> ;
+             rdfs:label "conjunction" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Mathematical operator used to combine expressions in response variable definitions" ;
+             <http://www.w3.org/2004/02/skos/core#example> "prod" .
+
+
+###  https://purl.org/heals/hao/CovariateMean
+:CovariateMean rdf:type owl:Class ;
+               rdfs:subClassOf <http://semanticscience.org/resource/Mean> ;
+               <http://purl.org/dc/terms/description> "In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation." ;
+               rdfs:label "covariate mean" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/CovariateStdError
+:CovariateStdError rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
+                   <http://purl.org/dc/terms/description> "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation." ;
+                   rdfs:label "covariate standard error" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/DataType
+:DataType rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C42645> ;
+          rdfs:label "data type" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Data type of response variable" ;
+          <http://www.w3.org/2004/02/skos/core#example> "Binary variable" .
+
+
+###  https://purl.org/heals/hao/ElasticNetMixingWeight
+:ElasticNetMixingWeight rdf:type owl:Class ;
+                        rdfs:subClassOf :Hyperparameter ;
+                        <http://purl.org/dc/terms/description> "The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter's regularization looks more like l1 regularization or l2 regularization." ;
+                        rdfs:label "elastic net mixing weight" ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/ElasticNetMixingWeightD
+:ElasticNetMixingWeightD rdf:type owl:Class ;
+                         rdfs:subClassOf :ElasticNetMixingWeight ;
+                         <http://purl.org/dc/terms/description> "Alpha d, the elastic net mixing weights for the d parameter." ;
+                         rdfs:label "elastic net mixing weight D" ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/ElasticNetMixingWeightW
+:ElasticNetMixingWeightW rdf:type owl:Class ;
+                         rdfs:subClassOf :ElasticNetMixingWeight ;
+                         <http://purl.org/dc/terms/description> "Alpha W, the elastic net mixing weights for the W parameter." ;
+                         rdfs:label "elastic net mixing weight W" ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/Estimate
+:Estimate rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25498> ;
+          <http://purl.org/dc/terms/description> "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable." ;
+          rdfs:label "estimate" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/Exception
+:Exception rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C54420> ;
+           rdfs:label "exception" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Variable names in risk factor tables that have names that look like risk factors but aren’t" ;
+           <http://www.w3.org/2004/02/skos/core#example> "URXUCR" .
+
+
+###  https://purl.org/heals/hao/FeatureSelectionParameter
+:FeatureSelectionParameter rdf:type owl:Class ;
+                           rdfs:subClassOf <http://semanticscience.org/resource/Parameter> ;
+                           <http://purl.org/dc/terms/description> "The name of the parameter d." ;
+                           rdfs:label "cadre assignment feature selection parameter" ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/FeatureUsage
+:FeatureUsage rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Usage> ;
+              <http://purl.org/dc/terms/description> "How to divide supplied features into cadre-assignment and target-prediction categories." ;
+              rdfs:label "feature usage" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/FileKey
+:FileKey rdf:type owl:Class ;
+         rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+         rdfs:label "file key" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Character sequence mapping risk factor categories to data table filenames" ;
+         <http://www.w3.org/2004/02/skos/core#example> "Data table filenames containing “ins” contain risk factor measurements of the category Organophosphate Insecticides " .
+
+
+###  https://purl.org/heals/hao/Hyperparameter
+:Hyperparameter rdf:type owl:Class ;
+                rdfs:subClassOf <http://semanticscience.org/resource/Parameter> ;
+                <http://purl.org/dc/terms/description> "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric." ;
+                rdfs:label "hyperparameter" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/HyperplaneParameter
+:HyperplaneParameter rdf:type owl:Class ;
+                     rdfs:subClassOf <http://semanticscience.org/resource/Parameter> ;
+                     <http://purl.org/dc/terms/description> "Each column of the parameter W defines a hyperplane which determines each cadre's target prediction function." ;
+                     rdfs:label "hyperplane parameter" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/InputCartridge
+:InputCartridge rdf:type owl:Class ;
+                rdfs:subClassOf :Cartridge ;
+                rdfs:label "input cartridge" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Type of cartridge used to define input parameters / configurations when constructing a study" ;
+                <http://www.w3.org/2004/02/skos/core#example> "Response variable cartridge defining hypertension" .
+
+
+###  https://purl.org/heals/hao/LHS
+:LHS rdf:type owl:Class ;
+     rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C80488> ;
+     rdfs:label "left hand side" ;
+     <http://www.w3.org/2004/02/skos/core#definition> "Left-hand side of expression in response variable definitions" ;
+     <http://www.w3.org/2004/02/skos/core#example> "sbp" .
+
+
+###  https://purl.org/heals/hao/LeftSkewed
+:LeftSkewed rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000161> ;
+            rdfs:label "left skewed data distribution" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a left-hand tail that is longer than the right-hand tail." .
+
+
+###  https://purl.org/heals/hao/Metric
+:Metric rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25209> ;
+        <http://purl.org/dc/terms/description> "How to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error." ;
+        rdfs:label "metric" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/MinPositive
+:MinPositive rdf:type owl:Class ;
+             rdfs:subClassOf <http://semanticscience.org/resource/Count> ;
+             <http://purl.org/dc/terms/description> "Minimum number of positive observations." ;
+             rdfs:label "minimum positive" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/ModelCartridge
+:ModelCartridge rdf:type owl:Class ;
+                rdfs:subClassOf :OutputCartridge ;
+                <http://purl.org/dc/terms/description> "The hyperparameters used to train a model, the parameter estimates learned during training, and the rules by which it is applied to new observations." ;
+                rdfs:label "model cartridge" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. " .
+
+
+###  https://purl.org/heals/hao/ModelParameter
+:ModelParameter rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_DataItem> ;
+                <http://purl.org/dc/terms/description> "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population." ;
+                rdfs:label "model parameter" .
+
+
+###  https://purl.org/heals/hao/Note
+:Note rdf:type owl:Class ;
+      rdfs:subClassOf <http://semanticscience.org/resource/Description> ;
+      <http://purl.org/dc/terms/description> "A note to describe the data in the file." ;
+      rdfs:label "note" .
+
+
+###  https://purl.org/heals/hao/OutputCartridge
+:OutputCartridge rdf:type owl:Class ;
+                 rdfs:subClassOf :Cartridge ;
+                 rdfs:label "output cartridge" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them" ;
+                 <http://www.w3.org/2004/02/skos/core#example> "Results cartridge describing environmental risk factors for hypertension in obese women" .
+
+
+###  https://purl.org/heals/hao/ParameterCartridge
+:ParameterCartridge rdf:type owl:Class ;
+                    rdfs:subClassOf :InputCartridge ;
+                    <http://purl.org/dc/terms/description> "Rules to complete chosen analysis workflow and potential hyperparameter configurations for chosen model." ;
+                    rdfs:label "parameter cartridge" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Parameter cartridges contain rules to complete the chosen analysis workflow. " .
+
+
+###  https://purl.org/heals/hao/RHS
+:RHS rdf:type owl:Class ;
+     rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C80488> ;
+     rdfs:label "right hand side" ;
+     <http://www.w3.org/2004/02/skos/core#definition> "Right-hand side of expression in response variable definitions" ;
+     <http://www.w3.org/2004/02/skos/core#example> "90" .
+
+
+###  https://purl.org/heals/hao/RegularizationStrength
+:RegularizationStrength rdf:type owl:Class ;
+                        rdfs:subClassOf :Hyperparameter ;
+                        <http://purl.org/dc/terms/description> "Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well." ;
+                        rdfs:label "regularization strength" ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/RegularizationStrengthD
+:RegularizationStrengthD rdf:type owl:Class ;
+                         rdfs:subClassOf :RegularizationStrength ;
+                         <http://purl.org/dc/terms/description> "Regularization strength for the d parameter." ;
+                         rdfs:label "regularization strength d" ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/RegularizationStrengthW
+:RegularizationStrengthW rdf:type owl:Class ;
+                         rdfs:subClassOf :RegularizationStrength ;
+                         <http://purl.org/dc/terms/description> "Regularization strength for the W parameter." ;
+                         rdfs:label "regularization strength W" ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/Relationship
+:Relationship rdf:type owl:Class ;
+              rdfs:subClassOf <http://semanticscience.org/resource/LogicalOperator> ;
+              rdfs:label "relationship" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Mathematical operator used in response variable definitions" ;
+              <http://www.w3.org/2004/02/skos/core#example> "Greater-than-or-equal" .
+
+
+###  https://purl.org/heals/hao/ResponseCartridge
+:ResponseCartridge rdf:type owl:Class ;
+                   rdfs:subClassOf :InputCartridge ;
+                   <http://purl.org/dc/terms/description> "Analysis concepts and background domain axioms necessary to model a given health condition." ;
+                   rdfs:label "response cartridge" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease" .
+
+
+###  https://purl.org/heals/hao/Result
+:Result rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C76125> ;
+        <http://purl.org/dc/terms/description> "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value." ;
+        rdfs:label "result" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/ResultCartridge
+:ResultCartridge rdf:type owl:Class ;
+                 rdfs:subClassOf :OutputCartridge ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/hasPart> ;
+                                   owl:someValuesFrom :CadreList
+                                 ] ;
+                 <http://purl.org/dc/terms/description> "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values" ;
+                 rdfs:label "result cartridge" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges" .
+
+
+###  https://purl.org/heals/hao/ResultCount
+:ResultCount rdf:type owl:Class ;
+             rdfs:subClassOf <http://semanticscience.org/resource/Count> ;
+             <http://purl.org/dc/terms/description> "" ;
+             rdfs:label "result count" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/RightSkewed
+:RightSkewed rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000161> ;
+             rdfs:label "right skewed data distribution" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail." ;
+             <http://www.w3.org/2004/02/skos/core#example> "Most environmental exposure risk factor distributions" .
+
+
+###  https://purl.org/heals/hao/RiskFactor
+:RiskFactor rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
+            <http://purl.org/dc/terms/description> "A risk factor is a variable that has a potential association with a response variable." ;
+            rdfs:label "risk factor" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/RiskFactorCartridge
+:RiskFactorCartridge rdf:type owl:Class ;
+                     rdfs:subClassOf :InputCartridge ;
+                     <http://purl.org/dc/terms/description> "How categories of semantically-similar risk factors should be modeled." ;
+                     rdfs:label "risk factor cartridge" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. " .
+
+
+###  https://purl.org/heals/hao/RiskFactorCategory
+:RiskFactorCategory rdf:type owl:Class ;
+                    rdfs:subClassOf <http://semanticscience.org/resource/Category> ;
+                    rdfs:label "risk factor category" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Category of similar potential risk factors, where “similarity” is defined by domain experts" ;
+                    <http://www.w3.org/2004/02/skos/core#example> "Polyaromatic hydrocarbons" .
+
+
+###  https://purl.org/heals/hao/Sharpness
+:Sharpness rdf:type owl:Class ;
+           rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+           <http://purl.org/dc/terms/description> "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts." ;
+           rdfs:label "sharpness" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/Standardization
+:Standardization rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0200000> ;
+                 rdfs:label "Standardization Transformation" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Mathematical transformation is applied to univariate random variables. The transformed distribution is shifted and scaled so it has a mean of zero and a variance of one." .
+
+
+###  https://purl.org/heals/hao/StudyVariable
+:StudyVariable rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000258> ;
+               rdfs:label "study variable" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Variable that potentially has a significant association with the response variable" ;
+               <http://www.w3.org/2004/02/skos/core#example> "Urinary cadmium" .
+
+
+###  https://purl.org/heals/hao/SubpopulationCartridge
+:SubpopulationCartridge rdf:type owl:Class ;
+                        rdfs:subClassOf :OutputCartridge ;
+                        <http://purl.org/dc/terms/description> "Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates." ;
+                        rdfs:label "subpopulation cartridge" ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations." .
+
+
+###  https://purl.org/heals/hao/SubpopulationCharacteristic
+:SubpopulationCharacteristic rdf:type owl:Class ;
+                             rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+                             <http://purl.org/dc/terms/description> "Mean and standard-error-of-mean estimates for each discovered subpopulation." ;
+                             rdfs:label "subpopulation characteristic" ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/TMax
+:TMax rdf:type owl:Class ;
+      rdfs:subClassOf <http://semanticscience.org/resource/MaximalValue> ;
+      <http://purl.org/dc/terms/description> "The maximum number of stochastic gradient descent steps taken." ;
+      rdfs:label "T max" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/TargetPrediction
+:TargetPrediction rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C54156> ;
+                  <http://purl.org/dc/terms/description> "A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject's risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject's response variable value." ;
+                  rdfs:label "target prediction" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "" .
+
+
+###  https://purl.org/heals/hao/TargetVariable
+:TargetVariable rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000258> ;
+                rdfs:label "target variable" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Variable used as response variable / target feature in modeling analyses" ;
+                <http://www.w3.org/2004/02/skos/core#example> "Hypertension" .
+
+
+###  https://purl.org/heals/hao/Threshold
+:Threshold rdf:type owl:Class ;
+           rdfs:subClassOf <http://semanticscience.org/resource/InformationalQuality> ;
+           rdfs:label "threshold" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/heals/hao/Alex
+:Alex rdf:type owl:NamedIndividual ,
+               <http://semanticscience.org/resource/Person> ;
+      rdfs:label "Alexander New" .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

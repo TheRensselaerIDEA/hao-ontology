@@ -1,0 +1,1590 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/heals/hao/"
+     xml:base="https://purl.org/heals/hao/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/">
+    <owl:Ontology rdf:about="https://purl.org/heals/hao/">
+        <owl:versionIRI rdf:resource="https://purl.org/heals/hao/0.9/"/>
+        <owl:imports rdf:resource="http://purl.obofoundry.org/obo/stato.owl#"/>
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio-subset-labels.owl"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-15T12:00:00</terms:created>
+        <terms:creator>Alexander New</terms:creator>
+        <terms:creator>Deborah L. McGuinness</terms:creator>
+        <terms:creator>John S. Erickson</terms:creator>
+        <terms:creator>Kristin P. Bennett</terms:creator>
+        <terms:creator>Miao Qi</terms:creator>
+        <terms:creator>Sabbir M. Rashid</terms:creator>
+        <terms:creator>Shruthi Chari</terms:creator>
+        <terms:description>The Health Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports. It captures the data domain and analysis workflow in cartridges that represent domain knowledge, analytics knowledge, and other components of the analysis pipeline</terms:description>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-27T14:30:00</terms:modified>
+        <terms:title>Health Analysis Ontology</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17103 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17103"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25209 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25209"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25390 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25390"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25426 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25426"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25498 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25498"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25652 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25652"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C41116 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C41116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C42645 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C42645"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C43418 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C43418"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54156 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54156"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54420 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54420"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C76125 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C76125"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C80488 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C80488"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000039 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000039">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <terms:description>A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable.</terms:description>
+        <rdfs:label>confounding variable specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000175 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000175">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        <rdfs:label>p-value</rdfs:label>
+        <skos:definition>A quantitative confidence value that represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001265 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001265">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <rdfs:label>FWER adjusted p-value</rdfs:label>
+        <skos:definition>A quantitative confidence value resulting from a multiple testing error correction method which adjusts the p-value used as input to control for Type I error in the context of multiple pairwise tests.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Process"/>
+        <terms:description>A planned process that produces output data from input data.</terms:description>
+        <rdfs:label>data transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200094 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <terms:description>A logarithmic transformation is a data transformation consisting in the application of the logarithm function with a given base a (where a&amp;gt;0 and a is not equal to 1) to a (one dimensional) positive real number input. The logarithm function with base a can be defined as the inverse of the exponential function with the same base. See e.g. http://en.wikipedia.org/wiki/Logarithm.</terms:description>
+        <rdfs:label>logarithmic transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000037 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000037">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&amp;apos;s estimate of a population mean.It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample.</terms:description>
+        <rdfs:label>standard error of the mean</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000088 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000088">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Count"/>
+        <terms:description>Statistical sample size is a count evaluating the number of individual experimental units</terms:description>
+        <rdfs:label>study group population size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000108 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000390"/>
+        <terms:description>linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)</terms:description>
+        <rdfs:label>linear regression for analysis of continuous dependent variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000149 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000390"/>
+        <terms:description>binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function.</terms:description>
+        <rdfs:label>binomial logistic regression for analysis of dichotomous dependent variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000161 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000161">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <terms:description>variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit.</terms:description>
+        <rdfs:label>data distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000227 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000161"/>
+        <terms:description>a normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html</terms:description>
+        <rdfs:label>normal distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000237 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000237">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance.</terms:description>
+        <rdfs:label>standard deviation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000251 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        <terms:description>A continuous variable is one for which, within the limits the variable ranges, any value is possible.</terms:description>
+        <rdfs:label>continuous variabl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000252 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        <terms:description>a categorical variable  is a variable  which that can only assume a finite number  of value and cast observation in a small number of categories</terms:description>
+        <rdfs:label>categorical variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000258 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000258">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Variable"/>
+        <terms:description>a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation.</terms:description>
+        <rdfs:label>variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000390 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000390">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Model"/>
+        <terms:description>A regression model is a statistical model used in a type of analysis knowns as regression analysis, whereby a function is used to determine the relation between a response variable and an independent variable , with a set of unknown parameters.</terms:description>
+        <rdfs:label>regression model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000562 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000562">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>It is a measure of how precise is an estimate of the statistical parameter is.Standard error is the estimated standard deviation of an estimate. It measures the uncertainty associated with the estimate. Compared with the standard deviations of the underlying distribution, which are usually unknown, standard errors can be calculated from observed data.</terms:description>
+        <rdfs:label>standard error of estimate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000565 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000565">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <terms:description>A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number.</terms:description>
+        <rdfs:label>regression coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_DataItem -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_DataItem"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/Algorithm -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Algorithm">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/MathematicalEntity"/>
+        <terms:description>An algorithm is an effective method expressed as a finite list of well-defined instructions for calculating a function.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Analysis -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Analysis">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/hasAttribute"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/hao/AnalysisQuestion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/hasImplementation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/hao/AnalysisWorkflow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description></terms:description>
+        <rdfs:label>analysis</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Category -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Category">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Concept"/>
+        <terms:description>A category is a class of entities having particular shared characteristics.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/CentralityMeasure -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/CentralityMeasure">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>A central tendency measure is a central value or a typical value for a probability distribution.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>centrality measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Concept -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Concept">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Term"/>
+        <terms:description>A concept is term that refers to a generalization of a set of attributes or entities.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Conjunctionand -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Conjunctionand">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/LogicalOperator"/>
+        <terms:description>AND is a logical operator that has the value true if both of its operands are true, otherwise a value of false.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>conjunction (and)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/ControlVariable -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/ControlVariable">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Variable"/>
+        <terms:description> A control variable that is believed to alter the dependent or independent variables, but may not actually be the focus of the experiment. So that variable will be kept constant or monitored to try to minimise its effect on the experiment.</terms:description>
+        <resource:hasSynonym>controlled variable</resource:hasSynonym>
+        <resource:hasSynonym>extraneous variable</resource:hasSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>control variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Count -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Count">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/DimensionlessQuantity"/>
+        <terms:description>The number of elements of a finite set of objects.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Definition -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Definition">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Description"/>
+        <terms:description>A definition is a description that succintly characterizes an entity.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>definition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Description -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Description">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/LanguageEntity"/>
+        <terms:description>A description is language entity in which elements of a language (formal or natural) are used to characterize an entity.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/DimensionlessQuantity -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/DimensionlessQuantity">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>A dimensionless quantity is a quantity that has no associated unit.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>dimensionless quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/InformationContentEntity -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/InformationContentEntity">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Object"/>
+        <terms:description>Information content entity is an object that requires some background knowledge or procedure to correctly interpret.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/InformationalQuality -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/InformationalQuality">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quality"/>
+        <terms:description>An informational quality is a quality that pertains to information.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>informational quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/LanguageEntity -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/LanguageEntity">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <terms:description>A language entity implements some language specification for the visual interpretation and is part of some document.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>language entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Likelihood -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Likelihood">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>Likelihood is the hypothetical probability that an event that has already occurred would yield a specific outcome.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>likelihood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/LogicalOperator -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/LogicalOperator">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/MathematicalEntity"/>
+        <terms:description>A logical operator is a unary or binary relation to construct logical expressions.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>logical operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/MathematicalEntity -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/MathematicalEntity">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <terms:description>A mathematical entity is an information content entity that are components of a mathematical system or can be defined in mathematical terms.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>mathematical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/MaximalValue -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/MaximalValue">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>A maximal value is largest value of an attribute for the entities in the defined set.</terms:description>
+        <resource:hasSynonym>max</resource:hasSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>maximal value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Mean -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Mean">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CentralityMeasure"/>
+        <terms:description>A mean is the central tendency of a collection of numbers taken as the sum of the numbers divided by the size of the collection.</terms:description>
+        <resource:hasSynonym>arithmeritic mean</resource:hasSynonym>
+        <resource:hasSynonym>average</resource:hasSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>mean</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/MeasurementValue -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/MeasurementValue">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Number"/>
+        <terms:description>A measurement value is a quantitative description that reflects the magnitude of some attribute.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>measurement value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/MinimalValue -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/MinimalValue">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>A minimal value is smallest value of an attribute for the entities in the defined set.</terms:description>
+        <resource:hasSynonym>min</resource:hasSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>minimal value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Mode -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Mode">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/CentralityMeasure"/>
+        <terms:description>A mode is the value that appears most often in a set of data.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>mode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Model -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Model">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Representation"/>
+        <terms:description>A model is a representation of some thing.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Number -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Number">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/MathematicalEntity"/>
+        <terms:description>A number is a mathematical object used to count, label, and measure.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Object -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Object">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Entity"/>
+        <terms:description>An object is an entity that is wholly identifiable at any instant of time during which it exists.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Phrase -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Phrase">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/LanguageEntity"/>
+        <terms:description>A phrase is a group of words functioning as a single unit in the syntax of a sentence.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>phrase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Process -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Process">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Entity"/>
+        <terms:description>A process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Quality -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Quality">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Attribute"/>
+        <terms:description>A quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Quantity -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Quantity">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/MeasurementValue"/>
+        <terms:description>A quantity is an informational entity that gives the magnitude of a property.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Representation -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Representation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <terms:description>A representation is a entity that in some way represents another entity (or attribute thereof).</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>representation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/StandardDeviation -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/StandardDeviation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Quantity"/>
+        <terms:description>A standard deviation (represented by the symbol σ) is the quantity of  variation from the average (mean, or expected value).</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>standard deviation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Term -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Term">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Phrase"/>
+        <terms:description>A term is a word or phrase used to denote one or more entities.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/Variable -->
+
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/Variable">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/MathematicalEntity"/>
+        <terms:description>A variable is a value that may change within the scope of a given problem or set of operations.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:label>variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Usage -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Usage"/>
+    
+
+
+    <!-- https://purl.org/heals/hao/AnalysisQuestion -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/AnalysisQuestion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41116"/>
+        <rdfs:label>analysis question</rdfs:label>
+        <skos:definition>Natural language description of what question a given analysis answers</skos:definition>
+        <skos:example>Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/AnalysisWorkflow -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/AnalysisWorkflow">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Workflow"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/hasComponentPart"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/hao/InputCartridge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/hasComponentPart"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/hao/OutputCartridge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results.</terms:description>
+        <rdfs:label>analysis workflow</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/BaseRate -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/BaseRate">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/RateOfChange"/>
+        <terms:description>Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge.</terms:description>
+        <rdfs:label>base rate</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/BinaryVariable -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/BinaryVariable">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        <rdfs:label>binary variable</rdfs:label>
+        <skos:definition>Variable taking values of 0 and 1.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Cadre -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Cadre">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43418"/>
+        <rdfs:label>cadre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CadreAssignment -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CadreAssignment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25426"/>
+        <terms:description>A cadre assignment function maps a subject record to a probability distribution characterizing that subject&apos;s probability of belonging to one of M cadres.</terms:description>
+        <rdfs:label>cadre assignment</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CadreCount -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CadreCount">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Count"/>
+        <terms:description>How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection.</terms:description>
+        <rdfs:label>cadre count</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CadreIndex -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CadreIndex">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25390"/>
+        <terms:description>An index assigned to each subpopulation.</terms:description>
+        <rdfs:label>cadre index</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CadreList -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CadreList">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/List"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/hao/Cadre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description></terms:description>
+        <rdfs:label>cadre list</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CadreSize -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CadreSize">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Count"/>
+        <terms:description>How many observations each subpopulation contains.</terms:description>
+        <rdfs:label>cadre size</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CadreSizeList -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CadreSizeList">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/List"/>
+        <terms:description>The number of subjects in the training data assigned to each cadre.</terms:description>
+        <rdfs:label>cadre size list</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Cartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Cartridge">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <rdfs:label>cartridge</rdfs:label>
+        <skos:definition>Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study.</skos:definition>
+        <prov:wasAttributedTo rdf:resource="https://purl.org/heals/hao/Alex"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Code -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Code">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <rdfs:label>code</rdfs:label>
+        <skos:definition>String sequence used to represent a constructed response variable in data tables</skos:definition>
+        <skos:example>hyp</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CohortCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CohortCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/InputCartridge"/>
+        <terms:description>Inclusion criteria used to determine if a given subject may be included in the user&apos;s study, which can be chosen on-the-fly or adapted from existing studies.</terms:description>
+        <rdfs:label>cohort cartridge</rdfs:label>
+        <skos:definition>Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Component -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Component">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <rdfs:label>component</rdfs:label>
+        <skos:definition>Category of data tables in NHANES</skos:definition>
+        <skos:example>Laboratory</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Condition -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Condition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25652"/>
+        <rdfs:label>condition</rdfs:label>
+        <skos:definition>Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Conjunction -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Conjunction">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Conjunctionand"/>
+        <rdfs:label>conjunction</rdfs:label>
+        <skos:definition>Mathematical operator used to combine expressions in response variable definitions</skos:definition>
+        <skos:example>prod</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CovariateMean -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CovariateMean">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Mean"/>
+        <terms:description>In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation.</terms:description>
+        <rdfs:label>covariate mean</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/CovariateStdError -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/CovariateStdError">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000562"/>
+        <terms:description>In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation.</terms:description>
+        <rdfs:label>covariate standard error</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/DataType -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/DataType">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C42645"/>
+        <rdfs:label>data type</rdfs:label>
+        <skos:definition>Data type of response variable</skos:definition>
+        <skos:example>Binary variable</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ElasticNetMixingWeight -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ElasticNetMixingWeight">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/Hyperparameter"/>
+        <terms:description>The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter&apos;s regularization looks more like l1 regularization or l2 regularization.</terms:description>
+        <rdfs:label>elastic net mixing weight</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ElasticNetMixingWeightD -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ElasticNetMixingWeightD">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/ElasticNetMixingWeight"/>
+        <terms:description>Alpha d, the elastic net mixing weights for the d parameter.</terms:description>
+        <rdfs:label>elastic net mixing weight D</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ElasticNetMixingWeightW -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ElasticNetMixingWeightW">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/ElasticNetMixingWeight"/>
+        <terms:description>Alpha W, the elastic net mixing weights for the W parameter.</terms:description>
+        <rdfs:label>elastic net mixing weight W</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Estimate -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Estimate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25498"/>
+        <terms:description>An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable.</terms:description>
+        <rdfs:label>estimate</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Exception -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Exception">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54420"/>
+        <rdfs:label>exception</rdfs:label>
+        <skos:definition>Variable names in risk factor tables that have names that look like risk factors but aren’t</skos:definition>
+        <skos:example>URXUCR</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/FeatureSelectionParameter -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/FeatureSelectionParameter">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Parameter"/>
+        <terms:description>The name of the parameter d.</terms:description>
+        <rdfs:label>cadre assignment feature selection parameter</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/FeatureUsage -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/FeatureUsage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+        <terms:description>How to divide supplied features into cadre-assignment and target-prediction categories.</terms:description>
+        <rdfs:label>feature usage</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/FileKey -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/FileKey">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationContentEntity"/>
+        <rdfs:label>file key</rdfs:label>
+        <skos:definition>Character sequence mapping risk factor categories to data table filenames</skos:definition>
+        <skos:example>Data table filenames containing “ins” contain risk factor measurements of the category Organophosphate Insecticides </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Hyperparameter -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Hyperparameter">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Parameter"/>
+        <terms:description>During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric.</terms:description>
+        <rdfs:label>hyperparameter</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/HyperplaneParameter -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/HyperplaneParameter">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Parameter"/>
+        <terms:description>Each column of the parameter W defines a hyperplane which determines each cadre&apos;s target prediction function.</terms:description>
+        <rdfs:label>hyperplane parameter</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/InputCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/InputCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/Cartridge"/>
+        <rdfs:label>input cartridge</rdfs:label>
+        <skos:definition>Type of cartridge used to define input parameters / configurations when constructing a study</skos:definition>
+        <skos:example>Response variable cartridge defining hypertension</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/LHS -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/LHS">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80488"/>
+        <rdfs:label>left hand side</rdfs:label>
+        <skos:definition>Left-hand side of expression in response variable definitions</skos:definition>
+        <skos:example>sbp</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/LeftSkewed -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/LeftSkewed">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000161"/>
+        <rdfs:label>left skewed data distribution</rdfs:label>
+        <skos:definition>Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a left-hand tail that is longer than the right-hand tail.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Metric -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Metric">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25209"/>
+        <terms:description>How to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error.</terms:description>
+        <rdfs:label>metric</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/MinPositive -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/MinPositive">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Count"/>
+        <terms:description>Minimum number of positive observations.</terms:description>
+        <rdfs:label>minimum positive</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ModelCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ModelCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/OutputCartridge"/>
+        <terms:description>The hyperparameters used to train a model, the parameter estimates learned during training, and the rules by which it is applied to new observations.</terms:description>
+        <rdfs:label>model cartridge</rdfs:label>
+        <skos:definition>Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ModelParameter -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ModelParameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_DataItem"/>
+        <terms:description>A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population.</terms:description>
+        <rdfs:label>model parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Note -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Note">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Description"/>
+        <terms:description>A note to describe the data in the file.</terms:description>
+        <rdfs:label>note</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/OutputCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/OutputCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/Cartridge"/>
+        <rdfs:label>output cartridge</rdfs:label>
+        <skos:definition>Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them</skos:definition>
+        <skos:example>Results cartridge describing environmental risk factors for hypertension in obese women</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ParameterCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ParameterCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/InputCartridge"/>
+        <terms:description>Rules to complete chosen analysis workflow and potential hyperparameter configurations for chosen model.</terms:description>
+        <rdfs:label>parameter cartridge</rdfs:label>
+        <skos:definition>Parameter cartridges contain rules to complete the chosen analysis workflow. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RHS -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RHS">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80488"/>
+        <rdfs:label>right hand side</rdfs:label>
+        <skos:definition>Right-hand side of expression in response variable definitions</skos:definition>
+        <skos:example>90</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RegularizationStrength -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RegularizationStrength">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/Hyperparameter"/>
+        <terms:description>Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well.</terms:description>
+        <rdfs:label>regularization strength</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RegularizationStrengthD -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RegularizationStrengthD">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/RegularizationStrength"/>
+        <terms:description>Regularization strength for the d parameter.</terms:description>
+        <rdfs:label>regularization strength d</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RegularizationStrengthW -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RegularizationStrengthW">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/RegularizationStrength"/>
+        <terms:description>Regularization strength for the W parameter.</terms:description>
+        <rdfs:label>regularization strength W</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Relationship -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Relationship">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/LogicalOperator"/>
+        <rdfs:label>relationship</rdfs:label>
+        <skos:definition>Mathematical operator used in response variable definitions</skos:definition>
+        <skos:example>Greater-than-or-equal</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ResponseCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ResponseCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/InputCartridge"/>
+        <terms:description>Analysis concepts and background domain axioms necessary to model a given health condition.</terms:description>
+        <rdfs:label>response cartridge</rdfs:label>
+        <skos:definition>Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Result -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Result">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C76125"/>
+        <terms:description>A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value.</terms:description>
+        <rdfs:label>result</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ResultCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ResultCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/OutputCartridge"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/hao/CadreList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values</terms:description>
+        <rdfs:label>result cartridge</rdfs:label>
+        <skos:definition>Type of output cartridge describing a single study’s statistical findings and constituent input cartridges</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/ResultCount -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/ResultCount">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Count"/>
+        <terms:description></terms:description>
+        <rdfs:label>result count</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RightSkewed -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RightSkewed">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000161"/>
+        <rdfs:label>right skewed data distribution</rdfs:label>
+        <skos:definition>Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail.</skos:definition>
+        <skos:example>Most environmental exposure risk factor distributions</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RiskFactor -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RiskFactor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17103"/>
+        <terms:description>A risk factor is a variable that has a potential association with a response variable.</terms:description>
+        <rdfs:label>risk factor</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RiskFactorCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RiskFactorCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/InputCartridge"/>
+        <terms:description>How categories of semantically-similar risk factors should be modeled.</terms:description>
+        <rdfs:label>risk factor cartridge</rdfs:label>
+        <skos:definition>Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/RiskFactorCategory -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/RiskFactorCategory">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Category"/>
+        <rdfs:label>risk factor category</rdfs:label>
+        <skos:definition>Category of similar potential risk factors, where “similarity” is defined by domain experts</skos:definition>
+        <skos:example>Polyaromatic hydrocarbons</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Sharpness -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Sharpness">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Attribute"/>
+        <terms:description>The sharpness hyperparameter affects how quickly, as a subject&apos;s attributes shift, their cadre assignment function shifts.</terms:description>
+        <rdfs:label>sharpness</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Standardization -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Standardization">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:label>Standardization Transformation</rdfs:label>
+        <skos:definition>Mathematical transformation is applied to univariate random variables. The transformed distribution is shifted and scaled so it has a mean of zero and a variance of one.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/StudyVariable -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/StudyVariable">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        <rdfs:label>study variable</rdfs:label>
+        <skos:definition>Variable that potentially has a significant association with the response variable</skos:definition>
+        <skos:example>Urinary cadmium</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/SubpopulationCartridge -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/SubpopulationCartridge">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/hao/OutputCartridge"/>
+        <terms:description>Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates.</terms:description>
+        <rdfs:label>subpopulation cartridge</rdfs:label>
+        <skos:definition>Subpopulation cartridges give &apos;Table 1s&apos; (cohort-description tables) of discovered subpopulations.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/SubpopulationCharacteristic -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/SubpopulationCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/Attribute"/>
+        <terms:description>Mean and standard-error-of-mean estimates for each discovered subpopulation.</terms:description>
+        <rdfs:label>subpopulation characteristic</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/TMax -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/TMax">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/MaximalValue"/>
+        <terms:description>The maximum number of stochastic gradient descent steps taken.</terms:description>
+        <rdfs:label>T max</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/TargetPrediction -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/TargetPrediction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54156"/>
+        <terms:description>A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject&apos;s risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject&apos;s response variable value.</terms:description>
+        <rdfs:label>target prediction</rdfs:label>
+        <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/TargetVariable -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/TargetVariable">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        <rdfs:label>target variable</rdfs:label>
+        <skos:definition>Variable used as response variable / target feature in modeling analyses</skos:definition>
+        <skos:example>Hypertension</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/hao/Threshold -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/hao/Threshold">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/InformationalQuality"/>
+        <rdfs:label>threshold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/heals/hao/Alex -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/hao/Alex">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/Person"/>
+        <rdfs:label>Alexander New</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
