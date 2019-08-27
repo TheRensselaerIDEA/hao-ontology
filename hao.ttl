@@ -50,7 +50,7 @@ sio:MaximalValue rdf:type owl:Class ;
 # Min
 sio:MinimalValue rdf:type owl:Class ;
 	rdfs:label "minimal value"^^xsd:string ;
-	dct:description "A minimal value is smallest value of an attribute for the entities in the defined set"^^xsd:string;
+	dct:description "A minimal value is smallest value of an attribute for the entities in the defined set."^^xsd:string;
 	sio:hasSynonym "min"^^xsd:string;
 	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
     rdfs:subClassOf sio:Quantity.
