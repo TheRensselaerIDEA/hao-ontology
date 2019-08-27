@@ -160,13 +160,14 @@ sio:Variable rdf:type owl:Class ;
 # p-value
 obi:0000175 rdf:type owl:Class ;
 	rdfs:label "p-value"^^xsd:string ;
-	dct:description "A quantitative confidence value that represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone."^^xsd:string ;
+	skos:definition "A quantitative confidence value that represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone."^^xsd:string ;
+	rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000175>;
     rdfs:subClassOf sio:InformationContentEntity .
 
 # FWER adjusted p-value (BH p-value)
 obi:0001265 rdf:type owl:Class ;
 	rdfs:label "FWER adjusted p-value"^^xsd:string ;
-	dct:description "A quantitative confidence value resulting from a multiple testing error correction method which adjusts the p-value used as input to control for Type I error in the context of multiple pairwise tests."^^xsd:string ;
+	skos:definition "A quantitative confidence value resulting from a multiple testing error correction method which adjusts the p-value used as input to control for Type I error in the context of multiple pairwise tests."^^xsd:string ;
     rdfs:subClassOf sio:InformationContentEntity .
 
 # data transformation
