@@ -364,7 +364,12 @@ hao:Code rdf:type owl:Class ;
 hao:Cartridge rdf:type owl:Class ;
     rdfs:label "cartridge"^^xsd:string ;
 	skos:definition "Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."^^xsd:string ;
-    rdfs:subClassOf sio:InformationContentEntity .
+    rdfs:subClassOf sio:InformationContentEntity ;
+    prov:wasAttributedTo hao:Alex .
+
+
+hao:Alex a sio:Person ;
+	rdfs:label "Alexander New" .
 
 hao:InputCartridge rdf:type owl:Class ;
     rdfs:label "input cartridge"^^xsd:string ;
