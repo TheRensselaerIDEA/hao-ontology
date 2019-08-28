@@ -208,10 +208,10 @@
         rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0"^^xsd:float .
 
-     :marital_status_married0_d-a0142f122e3218f79313f0b76d57b2f6
+     :marital_status_partner0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
         rdfs:label "partnership"^^xsd:string ;
-        sio:hasValue    "0.1643179655"^^xsd:float .
+        sio:hasValue    "0.0"^^xsd:float .
 
      :marital_status_separated0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
