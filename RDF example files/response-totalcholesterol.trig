@@ -30,15 +30,12 @@
 
 
     :data_type-bcf761c50c19f51ee19c8667eba141f0
-        rdf:type    hao:DataType;
-        rdfs:label "data type"^^xsd:string ;
-        sio:hasValue stato:0000251 .
-
+        rdf:type    hao:DataType,  stato:0000251;
+        rdfs:label "data type"^^xsd:string .
 
     :model_type-bcf761c50c19f51ee19c8667eba141f0
-        rdf:type    sio:Model ;
-        rdfs:label "model type"^^xsd:string ;
-        sio:hasValue stato:0000108 .
+        rdf:type    sio:Model, stato:0000108 ;
+        rdfs:label "model type"^^xsd:string .
 
 
     :confounders-bcf761c50c19f51ee19c8667eba141f0
