@@ -458,6 +458,8 @@ hao:Cadre rdf:type owl:Class ;
 # significance threshold
 hao:Threshold rdf:type owl:Class ;
     rdfs:label "threshold"^^xsd:string ;
+	skos:definition "A threshold is the minimal value to show some significance exist."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:InformationalQuality .
 
 sio:InformationalQuality rdf:type owl:Class ;
@@ -474,61 +476,71 @@ sio:Quality rdf:type owl:Class ;
 
 hao:StudyVariable rdf:type owl:Class ;
     rdfs:label "study variable"^^xsd:string ;
-	skos:definition "Variable that potentially has a significant association with the response variable"^^xsd:string ;
+	skos:definition "A study variable is a variable that potentially has a significant association with the response variable"^^xsd:string ;
 	skos:example "Urinary cadmium"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:0000258 .
 
 hao:TargetVariable rdf:type owl:Class ;
     rdfs:label "target variable"^^xsd:string ;
-	skos:definition "Variable used as response variable / target feature in modeling analyses"^^xsd:string ;
+	skos:definition "A target variable is a variable used as response variable / target feature in modeling analyses"^^xsd:string ;
 	skos:example "Hypertension"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:0000258 .
 
 hao:DataType rdf:type owl:Class ;
     rdfs:label "data type"^^xsd:string ;
-	skos:definition "Data type of response variable"^^xsd:string ;
+	skos:definition "A data type is the type of response variable data."^^xsd:string ;
 	skos:example "Binary variable"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf  ncit:C42645 .
 
 hao:Exception rdf:type owl:Class ;
     rdfs:label "exception"^^xsd:string ;
-	skos:definition "Variable names in risk factor tables that have names that look like risk factors but aren’t"^^xsd:string ;
+	skos:definition "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t."^^xsd:string ;
 	skos:example "URXUCR"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf  ncit:C54420 .
 
 hao:Condition rdf:type owl:Class ;
     rdfs:label "condition"^^xsd:string ;
-	skos:definition "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side"^^xsd:string ;
+	skos:definition "A condition is a mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C25652  .
 
 hao:Conjunction rdf:type owl:Class ;
     rdfs:label "conjunction"^^xsd:string ;
-	skos:definition "Mathematical operator used to combine expressions in response variable definitions"^^xsd:string ;
+	skos:definition "A conjunction is a mathematical operator used to combine expressions in response variable definitions."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
 	skos:example "prod"^^xsd:string ;
     rdfs:subClassOf sio:Conjunctionand  .
 
 hao:RHS rdf:type owl:Class ;
     rdfs:label "right hand side"^^xsd:string ;
-	skos:definition "Right-hand side of expression in response variable definitions"^^xsd:string ;
+	skos:definition "Right-hand side of expression in response variable definitions."^^xsd:string ;
 	skos:example "90"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C80488  .
 
 hao:LHS rdf:type owl:Class ;
     rdfs:label "left hand side"^^xsd:string ;
 	skos:definition "Left-hand side of expression in response variable definitions"^^xsd:string ;
 	skos:example "sbp"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C80488  .
 
 hao:Relationship rdf:type owl:Class ;
     rdfs:label "relationship"^^xsd:string ;
-	skos:definition "Mathematical operator used in response variable definitions"^^xsd:string ;
+	skos:definition "Mathematical operator used in response variable definitions."^^xsd:string ;
 	skos:example "Greater-than-or-equal"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:LogicalOperator .
 
 hao:AnalysisQuestion rdf:type owl:Class ;
     rdfs:label "analysis question"^^xsd:string ;
-	skos:definition "Natural language description of what question a given analysis answers"^^xsd:string ;
+	skos:definition "An analysis question is a natural language description of what question a given analysis answers."^^xsd:string ;
 	skos:example "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C41116 .
 
 sio:Definition rdf:type owl:Class ;
@@ -545,97 +557,100 @@ sio:Description rdf:type owl:Class ;
 
 hao:FileKey rdf:type owl:Class ;
 	rdfs:label "file key"^^xsd:string ;
-	skos:definition "Character sequence mapping risk factor categories to data table filenames"^^xsd:string ;
-	skos:example "Data table filenames containing “ins” contain risk factor measurements of the category Organophosphate Insecticides "^^xsd:string ;
+	skos:definition "A file key is a character sequence mapping risk factor categories to data table filenames."^^xsd:string ;
+	skos:example "Data table filenames containing 'ins' contain risk factor measurements of the category Organophosphate Insecticides "^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:InformationContentEntity .
 
-#New Terms Constructed in Feb. 2019
 hao:Note rdf:type owl:Class;
 	rdfs:label "note"^^xsd:string ;
-	dct:description "A note to describe the data in the file."^^xsd:string ;
+	skos:definition "A note to describe the data in the file."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Description .
 
 hao:ModelCartridge rdf:type owl:Class ;
     rdfs:label "model cartridge"^^xsd:string ;
     dct:description "The hyperparameters used to train a model, the parameter estimates learned during training, and the rules by which it is applied to new observations."^^xsd:string ;
-	skos:definition "Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "^^xsd:string ;
+    skos:definition "A model cartridge assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:OutputCartridge .
 
 hao:SubpopulationCartridge rdf:type owl:Class ;
     rdfs:label "subpopulation cartridge"^^xsd:string ;
     dct:description "Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates."^^xsd:string ;
-	skos:definition "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations."^^xsd:string ;
+    skos:definition "A subpopulation cartridges gives 'Table 1s' (cohort-description tables) of discovered subpopulations."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:OutputCartridge .
 
 hao:ModelParameter rdf:type owl:Class ;
 	rdfs:label "model parameter"^^xsd:string ;
-	dct:description "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
+	skos:definition "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:DataItem .
 
 hao:Metric rdf:type owl:Class  ;
     rdfs:label "metric"^^xsd:string ;
-    dct:description "How to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "A metric describes how to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C25209 .
 
 hao:TargetPrediction rdf:type owl:Class ;
     rdfs:label "target prediction"^^xsd:string ;
-    dct:description "A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject's risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject's response variable value."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject's risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject's response variable value."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C54156 .
 
 hao:CadreAssignment rdf:type owl:Class ;
     rdfs:label "cadre assignment"^^xsd:string ;
-    dct:description "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
-    rdfs:subClassOf ncit:C25426 .
+    skos:definition "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
+	rdfs:subClassOf ncit:C25426 .
 
 hao:Sharpness rdf:type owl:Class ;
     rdfs:label "sharpness"^^xsd:string ;
-    dct:description "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts."^^xsd:string ;
     rdfs:subClassOf sio:Attribute .
 
 hao:RegularizationStrength rdf:type owl:Class ;
     rdfs:label "regularization strength"^^xsd:string ;
-    dct:description "Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:Hyperparameter .
 
 hao:RegularizationStrengthD rdf:type owl:Class ;
     rdfs:label "regularization strength d"^^xsd:string ;
-    dct:description "Regularization strength for the d parameter."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Regularization strength for the d parameter."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:RegularizationStrength .
 
 hao:RegularizationStrengthW rdf:type owl:Class ;
     rdfs:label "regularization strength W"^^xsd:string ;
-    dct:description "Regularization strength for the W parameter."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+   skos:definition "Regularization strength for the W parameter."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:RegularizationStrength .
 
 hao:ElasticNetMixingWeight rdf:type owl:Class ;
     rdfs:label "elastic net mixing weight"^^xsd:string ;
-    dct:description "The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter's regularization looks more like l1 regularization or l2 regularization."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter's regularization looks more like l1 regularization or l2 regularization."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:Hyperparameter .
 
 hao:ElasticNetMixingWeightW rdf:type owl:Class ;
     rdfs:label "elastic net mixing weight W"^^xsd:string ;
-    dct:description "Alpha W, the elastic net mixing weights for the W parameter."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Alpha W, the elastic net mixing weights for the W parameter."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:ElasticNetMixingWeight .
 
 hao:ElasticNetMixingWeightD rdf:type owl:Class ;
     rdfs:label "elastic net mixing weight D"^^xsd:string ;
-    dct:description "Alpha d, the elastic net mixing weights for the d parameter."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Alpha d, the elastic net mixing weights for the d parameter."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:ElasticNetMixingWeight .
 
-sio:Analysis rdf:type owl:Class ;
-	rdfs:label "analysis" ;
-    dct:description ""^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+sio:DataAnalysis rdf:type owl:Class ;
+	rdfs:label "data analysis" ;
+    	dct:description "Data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making."^^xsd:string ;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
 	rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty sio:hasImplementation ;
@@ -650,8 +665,8 @@ sio:Analysis rdf:type owl:Class ;
 hao:AnalysisWorkflow rdf:type owl:Class ;
 	rdfs:label "analysis workflow" ;
 	rdfs:subClassOf sio:Workflow ;
-    dct:description "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+  	skos:definition "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
 	rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty sio:hasComponentPart ;
@@ -665,114 +680,108 @@ hao:AnalysisWorkflow rdf:type owl:Class ;
 
 hao:FeatureUsage rdf:type owl:Class  ;
     rdfs:label "feature usage"^^xsd:string ;
-    dct:description "How to divide supplied features into cadre-assignment and target-prediction categories."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "How to divide supplied features into cadre-assignment and target-prediction categories."^^xsd:string ;
+     prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf prov:Usage .
 
 hao:Hyperparameter rdf:type owl:Class ;
     rdfs:label "hyperparameter"^^xsd:string ;
-    dct:description "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Parameter .
 
 hao:RiskFactor rdf:type owl:Class ;
     rdfs:label "risk factor"^^xsd:string ;
-    dct:description "A risk factor is a variable that has a potential association with a response variable."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "A risk factor is a variable that has a potential association with a response variable."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C17103 .
 
 hao:Result rdf:type owl:Class ;
     rdfs:label "result"^^xsd:string ;
-    dct:description "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C76125 .
 
 hao:ResultCount rdf:type owl:Class ;
     rdfs:label "result count"^^xsd:string ;
-    dct:description ""^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "A result count is the number of results."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Count .
 
 hao:Estimate rdf:type owl:Class ;
     rdfs:label "estimate"^^xsd:string ;
-    dct:description "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C25498 .
 
 hao:CadreCount rdf:type owl:Class ;
     rdfs:label "cadre count"^^xsd:string ;
-    dct:description "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Count .
 
 hao:CadreSize rdf:type owl:Class ;
     rdfs:label "cadre size"^^xsd:string ;
-    dct:description "How many observations each subpopulation contains."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "How many observations each subpopulation contains."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Count .
-
-hao:CadreList rdf:type owl:Class ;
-    rdfs:label "cadre list"^^xsd:string ;
-    dct:description ""^^xsd:string ;
-	skos:definition ""^^xsd:string ;
-    rdfs:subClassOf sio:List .
 
 hao:CadreSizeList rdf:type owl:Class ;
     rdfs:label "cadre size list"^^xsd:string ;
-    dct:description "The number of subjects in the training data assigned to each cadre."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "The number of subjects in the training data assigned to each cadre."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:List .
 
 hao:CadreIndex rdf:type owl:Class ;
     rdfs:label "cadre index"^^xsd:string ;
-    dct:description "An index assigned to each subpopulation."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "An index assigned to each subpopulation."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C25390 .
 
 hao:MinPositive rdf:type owl:Class ;
     rdfs:label "minimum positive"^^xsd:string ;
-    dct:description "Minimum number of positive observations."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Minimum number of positive observations."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Count .
 
 hao:HyperplaneParameter rdf:type owl:Class ;
     rdfs:label "hyperplane parameter"^^xsd:string ;
-    dct:description "Each column of the parameter W defines a hyperplane which determines each cadre's target prediction function."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Each column of the parameter W defines a hyperplane which determines each cadre's target prediction function."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Parameter .
 
 hao:FeatureSelectionParameter rdf:type owl:Class ;
     rdfs:label "cadre assignment feature selection parameter"^^xsd:string ;
-    dct:description "The name of the parameter d."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "The name of the parameter d."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Parameter .
 
 hao:TMax rdf:type owl:Class ;
     rdfs:label "T max"^^xsd:string ;
-    dct:description "The maximum number of stochastic gradient descent steps taken."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "The maximum number of stochastic gradient descent steps taken."^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:MaximalValue .
 
 hao:BaseRate rdf:type owl:Class ;
     rdfs:label "base rate"^^xsd:string ;
-    dct:description "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:RateOfChange .
 
 hao:CovariateMean rdf:type owl:Class ;
     rdfs:label "covariate mean"^^xsd:string ;
-    dct:description "In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Mean .
 
 hao:CovariateStdError rdf:type owl:Class ;
     rdfs:label "covariate standard error"^^xsd:string ;
-    dct:description "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:0000562 .
 
 hao:SubpopulationCharacteristic rdf:type owl:Class ;
     rdfs:label "subpopulation characteristic"^^xsd:string ;
-    dct:description "Mean and standard-error-of-mean estimates for each discovered subpopulation."^^xsd:string ;
-	skos:definition ""^^xsd:string ;
+    skos:definition "Mean and standard-error-of-mean estimates for each discovered subpopulation."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Attribute .
