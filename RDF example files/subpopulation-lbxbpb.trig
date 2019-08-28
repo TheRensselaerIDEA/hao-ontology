@@ -26,43 +26,44 @@
     :RiskFactorCartridge-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:RiskFactorCartridge ;
         rdfs:label "risk factor cartridge"^^xsd:string ;
-        sio:hasValue "riskfactors-clm.json"^^xsd:string .
+        dct:source <https://github.com/CognitiveHorizons/RPI-HEALS-Risk-Browser/blob/master/risk_browser/precision/riskfactor-clm-cartridge.trig> .
 
 
     :ResponseCartridge-335ea58a52268d9a4eda89694febaaac
          rdf:type    hao:ResponseCartridge ;
         rdfs:label "response cartridge"^^xsd:string ;
-        sio:hasValue "response-totalcholesterol.json"^^xsd:string .
+        dct:source <https://github.com/TheRensselaerIDEA/hao-ontology/blob/master/RDF%20example%20files/response-totalcholesterol.trig>.
 
 
     :CohortCartridge-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CohortCartridge ;
         rdfs:label "cohort cartridge"^^xsd:string ;
-        sio:hasValue "cohort-population.json"^^xsd:string .
+        dct:source <https://github.com/CognitiveHorizons/RPI-HEALS-Risk-Browser/blob/master/risk_browser/precision/cohort-population-cartridge.trig> .
 
 
     :ParametersCartridge-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:ParametersCartridge ;
         rdfs:label "parameters cartridge"^^xsd:string ;
-        sio:hasValue "parameters-cadre.json"^^xsd:string .
+        dct:source <https://github.com/CognitiveHorizons/RPI-HEALS-Risk-Browser/blob/master/risk_browser/precision/parameters-cadre.trig> .
 
 
     :ModelCartridge-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:ModelCartridge ;
         rdfs:label "model cartridge"^^xsd:string ;
-        sio:hasValue "model-lbxbpb-lbxtc.json"^^xsd:string .
+        dct:source <https://github.com/CognitiveHorizons/RPI-HEALS-Risk-Browser/blob/master/risk_browser/precision/model-lbxbpb-lbxtc.trig>.
 
 
     :ResultsCartridge-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:ResultsCartridge ;
         rdfs:label "results cartridge"^^xsd:string ;
-        sio:hasValue "results-subpopulation-lbxbpb.json"^^xsd:string .
+        dct:source <https://github.com/CognitiveHorizons/RPI-HEALS-Risk-Browser/blob/master/risk_browser/precision/results-subpopulation-lbxbpb.trig> .
 
 
     :SubpopulationCartridge-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:SubpopulationCartridge ;
         rdfs:label "subpopulation cartridge"^^xsd:string ;
-        sio:hasValue "subpopulation-lbxbpb.json"^^xsd:string .
+        dct:source <https://github.com/CognitiveHorizons/RPI-HEALS-Risk-Browser/blob/master/risk_browser/precision/subpopulation-lbxbpb.trig> .
+
 
 
     :IncludedRiskFactor-335ea58a52268d9a4eda89694febaaac
