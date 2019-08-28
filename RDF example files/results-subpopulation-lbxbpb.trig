@@ -83,16 +83,14 @@
         sio:hasAttribute :cadreInd_1-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :estimate_1-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :std_error_1-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :p-value_1-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :BH_p-value_1-5cfaf8476f83c162c89c954b7c74f0a6 .
+             :p-value_1-5cfaf8476f83c162c89c954b7c74f0a6 .
 
     :result2-5cfaf8476f83c162c89c954b7c74f0a6
         rdfs:label "result 2"^^xsd:string ;
         sio:hasAttribute :cadreInd_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :estimate_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :std_error_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :p-value_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :BH_p-value_2-5cfaf8476f83c162c89c954b7c74f0a6 .
+             :p-value_2-5cfaf8476f83c162c89c954b7c74f0a6 .
 
 
      :cadreInd_1-5cfaf8476f83c162c89c954b7c74f0a6
