@@ -785,3 +785,15 @@ hao:SubpopulationCharacteristic rdf:type owl:Class ;
     skos:definition "Mean and standard-error-of-mean estimates for each discovered subpopulation."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Attribute .
+
+hao:UseCohort rdf:type owl:Class ;
+    rdfs:label "use cohort"^^xsd:string ;
+    skos:definition "Whether the study uses a cohort."^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:Attribute .
+
+hao:FactorKey rdf:type owl:Class ;
+    rdfs:label "factor key"^^xsd:string ;
+    skos:definition "A factor key is the prefix of the variable."^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:InformationContentEntity .
