@@ -166,9 +166,14 @@
         sio:hasValue    "0.2812615633"^^xsd:float .
 
      :drinks_no0_d-a0142f122e3218f79313f0b76d57b2f6
+        rdf:type   hao: ;
+        rdfs:label "drink status d parameter"^^xsd:string ;
+        sio:hasValue    "0.049951829"^^xsd:float .
+        
+    :drinks_status 
         rdf:type   sco:DrinkStatus ;
         rdfs:label "drink status no"^^xsd:string ;
-        sio:hasValue    "0.049951829"^^xsd:float .
+        sio:hasAttribute :drinks_no0_d-a0142f122e3218f79313f0b76d57b2f6 .
 
      :drinks_yes0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
