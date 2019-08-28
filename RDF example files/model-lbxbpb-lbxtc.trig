@@ -11,6 +11,8 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix hao: <https://purl.org/heals/hao/> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
+@prefix sco: <https://purl.org/heals/sco/> .
 @prefix : <https://purl.org/heals/hao/> .
 
 
@@ -25,13 +27,13 @@
     :RiskFactorCartridge-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:RiskFactorCartridge ;
         rdfs:label "risk factor cartridge"^^xsd:string ;
-        sio:hasValue "riskfactors-clm.json"^^xsd:string .
+        dct:source "https://raw.githubusercontent.com/TheRensselaerIDEA/hao-ontology/master/RDF%20example%20files/riskfactor-clm-cartridge.trig"^^xsd:string .
 
 
     :ResponseCartridge-a0142f122e3218f79313f0b76d57b2f6
          rdf:type    hao:ResponseCartridge ;
         rdfs:label "response cartridge"^^xsd:string ;
-        sio:hasValue "response-totalcholesterol.json"^^xsd:string .
+        dct:source ""^^xsd:string .
 
 
     :CohortCartridge-a0142f122e3218f79313f0b76d57b2f6
