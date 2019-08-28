@@ -101,7 +101,7 @@
 
     :Tmax-f22233185ff332babf78dcae623f0fe6
         rdf:type    hao:TMax ;
-        rdfs:label "T max""^^xsd:string ;
+        rdfs:label "T max"^^xsd:string ;
         sio:hasValue "2001"^^xsd:integer .
 
 
