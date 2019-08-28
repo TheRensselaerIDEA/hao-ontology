@@ -40,7 +40,7 @@
 
 
     :workflow_class-f22233185ff332babf78dcae623f0fe6
-        rdf:type    sio:Workflow ;
+        rdf:type    hao:AnalysisWorkflow ;
         rdfs:label "workflow class"^^xsd:string ;
         sio:hasValue "EWAS"^^xsd:string .
 
