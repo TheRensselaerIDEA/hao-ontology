@@ -821,3 +821,15 @@ hao:CenterParameter rdf:type owl:Class ;
     skos:definition "The center of the cadre. "^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Parameter .
+
+hao:PredictionWeightBiasParameter rdf:type owl:Class ;
+    rdfs:label "prediction weight bias parameter"^^xsd:string ;
+    skos:definition "A prediction weight bias parameter is a learnable parameter for the prediction model. "^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:Parameter .
+
+sio:Association rdf:type owl:Class ;
+	rdfs:label "association"^^xsd:string ;
+	dct:description "An assocation is a relationship between two or more entities derived by some informational analysis."^^xsd:string;
+	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
+    rdfs:subClassOf sio:MathematicalEntity.
