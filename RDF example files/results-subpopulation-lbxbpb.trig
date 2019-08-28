@@ -1,86 +1,85 @@
+    
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix np: <http://www.nanopub.org/nschema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
-@prefix sco: <http://idea.tw.rpi.edu/projects/heals/sco/> .
 @prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
 @prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix chear: <http://hadatac.org/ont/chear#> .
-@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/kb/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hao: <https://purl.org/heals/hao/> .
+@prefix : <https://purl.org/heals/hao/> .
 
 
 
 :results-subpopulation-lbxbpb-cartridge-5cfaf8476f83c162c89c954b7c74f0a6 {
     :Note-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:Note ;
-        rdfs:label "Note"^^xsd:string ;
+        rdfs:label "note"^^xsd:string ;
         sio:hasValue "The numbers here are just placeholders"^^xsd:string .
 
 
     :RiskFactorCartridge-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:RiskFactorCartridge ;
-        rdfs:label "Risk Factor Cartridge Json File"^^xsd:string ;
+        rdfs:label "risk factor cartridge"^^xsd:string ;
         sio:hasValue "riskfactors-clm.json"^^xsd:string .
 
 
     :ResponseCartridge-5cfaf8476f83c162c89c954b7c74f0a6
          rdf:type    hao:ResponseCartridge ;
-        rdfs:label "Response Cartridge Json File"^^xsd:string ;
+        rdfs:label "response cartridge"^^xsd:string ;
         sio:hasValue "response-totalcholesterol.json"^^xsd:string .
 
 
     :CohortCartridge-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:CohortCartridge ;
-        rdfs:label "Cohort Cartridge Json File"^^xsd:string ;
+        rdfs:label "cohort cartridge"^^xsd:string ;
         sio:hasValue "cohort-population.json"^^xsd:string .
 
 
     :ParametersCartridge-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    hao:ParameterCartridge ;
-        rdfs:label "Parameter Cartridge Json File"^^xsd:string ;
+        rdf:type    hao:ParametersCartridge ;
+        rdfs:label "parameters cartridge"^^xsd:string ;
         sio:hasValue "parameters-cadre.json"^^xsd:string .
 
 
     :ModelCartridge-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:ModelCartridge ;
-        rdfs:label "Model Cartridge Json File"^^xsd:string ;
+        rdfs:label "model cartridge"^^xsd:string ;
         sio:hasValue "model-lbxbpb-lbxtc.json"^^xsd:string .
 
 
     :ResultsCartridge-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    hao:ResultCartridge ;
-        rdfs:label "Result Cartridge Json File"^^xsd:string ;
+        rdf:type    hao:ResultsCartridge ;
+        rdfs:label "results cartridge"^^xsd:string ;
         sio:hasValue "results-subpopulation-lbxbpb.json"^^xsd:string .
 
 
     :SubpopulationCartridge-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:SubpopulationCartridge ;
-        rdfs:label "Subpopulation Cartridge Json File"^^xsd:string ;
+        rdfs:label "subpopulation cartridge"^^xsd:string ;
         sio:hasValue "subpopulation-lbxbpb.json"^^xsd:string .
 
 
     :IncludedRiskFactor-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    hao:IncludedRiskFactor ;
-        rdfs:label "Included Risk Factor"^^xsd:string ;
+        rdf:type    hao:RiskFactor ;
+        rdfs:label "included risk factor"^^xsd:string ;
         sio:hasValue "LBXBPB"^^xsd:string .
 
 
     :Associations-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:Association ;
-        rdfs:label "Association"^^xsd:string ;
+        rdfs:label "association"^^xsd:string ;
         sio:hasPart :result1-5cfaf8476f83c162c89c954b7c74f0a6 ,
-            :result2-5cfaf8476f83c162c89c954b7c74f0a6 ,
-            :result3-5cfaf8476f83c162c89c954b7c74f0a6 .
+            :result2-5cfaf8476f83c162c89c954b7c74f0a6 .
 
 
     :result1-5cfaf8476f83c162c89c954b7c74f0a6
-        rdfs:label "Result 1"^^xsd:string ;
+        rdfs:label "result 1"^^xsd:string ;
         sio:hasAttribute :cadreInd_1-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :estimate_1-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :std_error_1-5cfaf8476f83c162c89c954b7c74f0a6 ,
@@ -88,99 +87,53 @@
              :BH_p-value_1-5cfaf8476f83c162c89c954b7c74f0a6 .
 
     :result2-5cfaf8476f83c162c89c954b7c74f0a6
-        rdfs:label "Result 2"^^xsd:string ;
+        rdfs:label "result 2"^^xsd:string ;
         sio:hasAttribute :cadreInd_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :estimate_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :std_error_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :p-value_2-5cfaf8476f83c162c89c954b7c74f0a6 ,
              :BH_p-value_2-5cfaf8476f83c162c89c954b7c74f0a6 .
 
-    :result3-5cfaf8476f83c162c89c954b7c74f0a6
-        rdfs:label "Result 3"^^xsd:string ;
-        sio:hasAttribute :cadreInd_3-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :estimate_3-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :std_error_3-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :p-value_3-5cfaf8476f83c162c89c954b7c74f0a6 ,
-             :BH_p-value_3-5cfaf8476f83c162c89c954b7c74f0a6 .
-
-
-
 
      :cadreInd_1-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:CadreIndex ;
-        rdfs:label "Cadre Index"^^xsd:string ;
+        rdfs:label "cadre index"^^xsd:string ;
         sio:hasValue    "0"^^xsd:integer .
 
      :estimate_1-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:Estimate ;
-        rdfs:label "Estimate"^^xsd:string ;
-        sio:hasValue    "2.0624"^^xsd:float .
+        rdfs:label "estimate"^^xsd:string ;
+        sio:hasValue    "3.0665"^^xsd:float .
 
      :std_error_1-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    stato:0000562 ;
-        rdfs:label "Standard Error"^^xsd:string ;
-        sio:hasValue    "0.5177"^^xsd:float .
+        rdfs:label "standard error"^^xsd:string ;
+        sio:hasValue    "0.788"^^xsd:float .
 
      :p-value_1-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    obi:0000175 ;
-        rdfs:label "P Value"^^xsd:string ;
-        sio:hasValue    "0.0002"^^xsd:float .
+        rdfs:label "p value"^^xsd:string ;
+        sio:hasValue    "0.0003"^^xsd:float .
 
-     :BH_p-value_1-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    obi:0001265 ;
-        rdfs:label "BH P Value"^^xsd:string ;
-        sio:hasValue    "0.0007"^^xsd:float .
 
      :cadreInd_2-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:CadreIndex ;
-        rdfs:label "Cadre Index"^^xsd:string ;
+        rdfs:label "cadre index"^^xsd:string ;
         sio:hasValue    "1"^^xsd:integer .
 
      :estimate_2-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:Estimate ;
-        rdfs:label "Estimate"^^xsd:string ;
-        sio:hasValue    "5.1239"^^xsd:float .
+        rdfs:label "estimate"^^xsd:string ;
+        sio:hasValue    "1.2327"^^xsd:float .
 
      :std_error_2-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    stato:0000562 ;
-        rdfs:label "Standard Error"^^xsd:string ;
-        sio:hasValue    "0.7758"^^xsd:float .
+        rdfs:label "standard error"^^xsd:string ;
+        sio:hasValue    " 0.8392"^^xsd:float .
 
      :p-value_2-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    obi:0000175 ;
-        rdfs:label "P Value"^^xsd:string ;
-        sio:hasValue    "1.6738e-08"^^xsd:float .
-
-     :BH_p-value_2-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    obi:0001265 ;
-        rdfs:label "BH P Value"^^xsd:string ;
-        sio:hasValue    "3.4034e-07"^^xsd:float .
-
-     :cadreInd_3-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    hao:CadreIndex ;
-        rdfs:label "Cadre Index"^^xsd:string ;
-        sio:hasValue    "2"^^xsd:integer .
-
-     :estimate_3-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    hao:Estimate ;
-        rdfs:label "Estimate"^^xsd:string ;
-        sio:hasValue    "2.3796"^^xsd:float .
-
-     :std_error_3-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    stato:0000562 ;
-        rdfs:label "Standard Error"^^xsd:string ;
-        sio:hasValue    "0.4436"^^xsd:float .
-
-     :p-value_3-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    obi:0000175 ;
-        rdfs:label "P Value"^^xsd:string ;
-        sio:hasValue    "1.8172e-06"^^xsd:float .
-
-     :BH_p-value_3-5cfaf8476f83c162c89c954b7c74f0a6
-        rdf:type    obi:0001265 ;
-        rdfs:label "BH P Value"^^xsd:string ;
-        sio:hasValue    "0"^^xsd:float .
-
-
+        rdfs:label "p value"^^xsd:string ;
+        sio:hasValue    "0.1484"^^xsd:float .
 
 }
