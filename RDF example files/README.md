@@ -1,4 +1,4 @@
-This folder prototypes how  semantically-targeted analytics (STA) framework allows for precision risk analysis. We give example results of an analysis that sought to discover subpopulations within NHANES for which an environmental risk factor has a significant association with increases in total cholesterol.
+This folder prototypes how the semantically-targeted analytics (STA) framework allows for precision risk analysis. We give example results of an analysis that sought to discover subpopulations within NHANES for which increased concentrations of environmental risk factor in blood and urine have significant associations with increases in total cholesterol.
 
 
 Four types of input cartridge:
@@ -13,7 +13,7 @@ Four types of input cartridge:
 
 Three types of output cartridge:
 
-* `model` cartridges -- SCM objects are serialized in `.pkl` format. The `model` cartridge assocatiated with a `.pkl` file gives the 
+* `model` cartridges -- SCM objects are serialized in `.pkl` format. The `model` cartridge associated with a `.pkl` file gives the 
 parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres.
 * `subopopulation` cartridges -- these give "Table 1s" (cohort-description tables) of discovered subpopulations.
 * `results` cartridges -- these describe a single study’s statistical findings and constituent input cartridges.
