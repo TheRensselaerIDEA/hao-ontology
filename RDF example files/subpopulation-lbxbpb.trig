@@ -10,6 +10,8 @@
 @prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
+@prefix sco: <https://purl.org/heals/sco/> .
 @prefix hao: <https://purl.org/heals/hao/> .
 @prefix : <https://purl.org/heals/hao/> .
 
