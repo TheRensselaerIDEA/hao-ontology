@@ -114,13 +114,12 @@
              :drinks_yes_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :education_college_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :education_highschool_base_mean-335ea58a52268d9a4eda89694febaaac ,
-             :marital_status_divorced2_C-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_divorced_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :marital_status_married_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :marital_status_never_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :marital_status_partner_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :marital_status_separated_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :marital_status_widowed_base_mean-335ea58a52268d9a4eda89694febaaac ,
-             :pir_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :smokes_no_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :smokes_yes_base_mean-335ea58a52268d9a4eda89694febaaac .
 
@@ -188,67 +187,188 @@
      :Other_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:Other;
         rdfs:label "other"^^xsd:string ;
-        sio:hasValue    "0.0595"^^xsd:float .
+        sio:hasValue    "0.0516"^^xsd:float .
 
      :OtherHispanic_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:OtherHispanic ;
         rdfs:label "other Hispanic"^^xsd:string ;
-        sio:hasValue    "0.0433"^^xsd:float .
+        sio:hasValue    "0.0371"^^xsd:float .
 
      :pir_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:PovertyIncomeRatio ;
         rdfs:label "poverty income ratio"^^xsd:string ;
-        sio:hasValue    "2.9311"^^xsd:float .
+        sio:hasValue    "3.0709"^^xsd:float .
 
+     :drinks_no_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status no"^^xsd:string ;
+        sio:hasValue    "0.2507"^^xsd:float .
+
+     :drinks_yes_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status yes"^^xsd:string ;
+        sio:hasValue    "0.7493"^^xsd:float .
+
+     :education_college_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:CollegeGraduate ;
+        rdfs:label "college graduate"^^xsd:string ;
+        sio:hasValue    "0.5798"^^xsd:float .
+
+     :education_highschool_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:HighSchoolGraduate ;
+        rdfs:label "high school graduate"^^xsd:string ;
+        sio:hasValue    "0.4202"^^xsd:float .
+
+	 :marital_status_divorced_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Divorced ;
+        rdfs:label "divorced"^^xsd:string ;
+        sio:hasValue    "0.1017"^^xsd:float .
+
+     :marital_status_married_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Married ;
+        rdfs:label "married"^^xsd:string ;
+        sio:hasValue    "0.5835"^^xsd:float .
+
+     :marital_status_never_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:NeverMarried ;
+        rdfs:label "never married"^^xsd:string ;
+        sio:hasValue    "0.1581"^^xsd:float .
+
+     :marital_status_partner_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Partnership ;
+        rdfs:label "partnership"^^xsd:string ;
+        sio:hasValue    "0.0738"^^xsd:float .
+
+     :marital_status_separated_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Separated ;
+        rdfs:label "separated"^^xsd:string ;
+        sio:hasValue    "0.0224"^^xsd:float .
+
+     :marital_status_widowed_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Widowed ;
+        rdfs:label "widowed"^^xsd:string ;
+        sio:hasValue    "0.0604"^^xsd:float .
+	
+	 :smokes_no_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status no"^^xsd:string ;
+        sio:hasValue    "0.5183"^^xsd:float .
+
+     :smokes_yes_base_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status yes"^^xsd:string ;
+        sio:hasValue    "0.4817"^^xsd:float .
+	 
+	 
      :age_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:001013 ;
         rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "0.2631"^^xsd:float .
+        sio:hasValue    "0.3516"^^xsd:float .
 
      :bmi_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    chear:BMI ;
         rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "0.0804"^^xsd:float .
+        sio:hasValue    "0.1106"^^xsd:float .
 
      :female_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:010052 ;
         rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.0028"^^xsd:float .
+        sio:hasValue    "0.0039"^^xsd:float .
 
      :male_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sio:010048 ;
         rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.0028"^^xsd:float .
+        sio:hasValue    "0.0039"^^xsd:float .
 
      :MexicanAmerican_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:MexicanAmerican;
         rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.0095"^^xsd:float .
+        sio:hasValue    "0.0099"^^xsd:float .
 
      :NonHispanicBlack_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicBlack ;
         rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0.0086"^^xsd:float .
+        sio:hasValue    "0.0084"^^xsd:float .
 
      :NonHispanicWhite_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicWhite ;
         rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.0168"^^xsd:float .
+        sio:hasValue    "0.0169"^^xsd:float .
 
      :Other_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:Other;
         rdfs:label "other"^^xsd:string ;
-        sio:hasValue    "0.0043"^^xsd:float .
+        sio:hasValue    "0.0037"^^xsd:float .
 
      :OtherHispanic_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:OtherHispanic ;
         rdfs:label "other Hispanic"^^xsd:string ;
-        sio:hasValue    "0.0051"^^xsd:float .
+        sio:hasValue    "0.0048"^^xsd:float .
 
      :pir_base_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:PovertyIncomeRatio ;
         rdfs:label "poverty income ratio"^^xsd:string ;
-        sio:hasValue    "0.0379"^^xsd:float .
+        sio:hasValue    "0.0365"^^xsd:float .
+
+     :drinks_no_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status no"^^xsd:string ;
+        sio:hasValue    "0.0095"^^xsd:float .
+
+     :drinks_yes_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status yes"^^xsd:string ;
+        sio:hasValue    "0.0095"^^xsd:float .
+
+     :education_college_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:CollegeGraduate ;
+        rdfs:label "college graduate"^^xsd:string ;
+        sio:hasValue    "0.0097"^^xsd:float .
+
+     :education_highschool_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:HighSchoolGraduate ;
+        rdfs:label "high school graduate"^^xsd:string ;
+        sio:hasValue    "0.0097"^^xsd:float .
+
+	 :marital_status_divorced_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Divorced ;
+        rdfs:label "divorced"^^xsd:string ;
+        sio:hasValue    "0.0035"^^xsd:float .
+
+     :marital_status_married_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Married ;
+        rdfs:label "married"^^xsd:string ;
+        sio:hasValue    "0.0087"^^xsd:float .
+
+     :marital_status_never_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:NeverMarried ;
+        rdfs:label "never married"^^xsd:string ;
+        sio:hasValue    "0.0073"^^xsd:float .
+
+     :marital_status_partner_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Partnership ;
+        rdfs:label "partnership"^^xsd:string ;
+        sio:hasValue    "0.0032"^^xsd:float .
+
+     :marital_status_separated_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Separated ;
+        rdfs:label "separated"^^xsd:string ;
+        sio:hasValue    "0.002"^^xsd:float .
+
+     :marital_status_widowed_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Widowed ;
+        rdfs:label "widowed"^^xsd:string ;
+        sio:hasValue    "0.0029"^^xsd:float .
+	
+	 :smokes_no_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status no"^^xsd:string ;
+        sio:hasValue    "0.0077"^^xsd:float .
+
+     :smokes_yes_base_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status yes"^^xsd:string ;
+        sio:hasValue    "0.0077"^^xsd:float .
 
     :SubpopulationCharacteristics-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:SubpopulationCharacteristics ;
@@ -277,11 +397,23 @@
              :NonHispanicWhite1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :Other1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :OtherHispanic1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :pir1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
+             :pir1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+			 :drinks_no1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :drinks_yes1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :education_college1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :education_highschool1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_divorced1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_married1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_never1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_partner1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_separated1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_widowed1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_no1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_yes1_subpop_mean-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_2_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdfs:label "cadre 2 subpopulation mean"^^xsd:string ;
-        sio:hasAttribute :CadreInd_2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+          rdfs:label "cadre 2 subpopulation mean"^^xsd:string ;
+          sio:hasAttribute :CadreInd_2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :age2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :bmi2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :female2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
@@ -291,7 +423,19 @@
              :NonHispanicWhite2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :Other2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :OtherHispanic2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :pir2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
+             :pir2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+			 :drinks_no2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :drinks_yes2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :education_college2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :education_highschool2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_divorced2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_married2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_never2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_partner2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_separated2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_widowed2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_no2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_yes2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
 
 
     :Cadre_1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
@@ -306,7 +450,19 @@
              :NonHispanicWhite1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :Other1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :OtherHispanic1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :pir1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
+             :pir1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+			 :drinks_no1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :drinks_yes1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :education_college1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :education_highschool1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_divorced1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_married1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_never1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_partner1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_separated1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_widowed1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_no1_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_yes1_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdfs:label "cadre 2 subpopulation standard deviation"^^xsd:string ;
@@ -320,7 +476,19 @@
              :NonHispanicWhite2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :Other2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :OtherHispanic2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :pir2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
+             :pir2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+			 :drinks_no2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :drinks_yes2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :education_college2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :education_highschool2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_divorced2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_married2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_never2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_partner2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_separated2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_widowed2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_no2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_yes2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
 
 
      :CadreInd_1_subpop_mean-335ea58a52268d9a4eda89694febaaac
@@ -331,213 +499,346 @@
      :age1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:001013 ;
         rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "16.3761"^^xsd:float .
+        sio:hasValue    "37.4331"^^xsd:float .
 
      :bmi1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    chear:BMI ;
         rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "22.129"^^xsd:float .
+        sio:hasValue    "27.6899"^^xsd:float .
 
      :female1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:010052 ;
         rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.5183"^^xsd:float .
+        sio:hasValue    "0.5039"^^xsd:float .
 
      :male1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sio:010048 ;
         rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.4817"^^xsd:float .
+        sio:hasValue    "0.4961"^^xsd:float .
 
      :MexicanAmerican1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:MexicanAmerican;
         rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.1574"^^xsd:float .
+        sio:hasValue    "0.0918"^^xsd:float .
 
      :NonHispanicBlack1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicBlack ;
         rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0.1298"^^xsd:float .
+        sio:hasValue    "0.1039"^^xsd:float .
 
      :NonHispanicWhite1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicWhite ;
         rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.5593"^^xsd:float .
+        sio:hasValue    "0.7025"^^xsd:float .
 
      :Other1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:Other;
         rdfs:label "other"^^xsd:string ;
-        sio:hasValue    "0.0812"^^xsd:float .
+        sio:hasValue    "0.0593"^^xsd:float .
 
      :OtherHispanic1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:OtherHispanic ;
         rdfs:label "other Hispanic"^^xsd:string ;
-        sio:hasValue    "0.0722"^^xsd:float .
+        sio:hasValue    "0.0425"^^xsd:float .
 
      :pir1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:PovertyIncomeRatio ;
         rdfs:label "poverty income ratio"^^xsd:string ;
-        sio:hasValue    "2.4158"^^xsd:float .
+        sio:hasValue    "3.079"^^xsd:float .
+
+     :drinks_no1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status no"^^xsd:string ;
+        sio:hasValue    "0.1802"^^xsd:float .
+
+     :drinks_yes1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status yes"^^xsd:string ;
+        sio:hasValue    "0.8198"^^xsd:float .
+
+     :education_college1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:CollegeGraduate ;
+        rdfs:label "college graduate"^^xsd:string ;
+        sio:hasValue    "0.627"^^xsd:float .
+
+     :education_highschool1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:HighSchoolGraduate ;
+        rdfs:label "high school graduate"^^xsd:string ;
+        sio:hasValue    "0.373"^^xsd:float .
+
+	 :marital_status_divorced1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Divorced ;
+        rdfs:label "divorced"^^xsd:string ;
+        sio:hasValue    "0.097"^^xsd:float .
+
+     :marital_status_married1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Married ;
+        rdfs:label "married"^^xsd:string ;
+        sio:hasValue    "0.5624"^^xsd:float .
+
+     :marital_status_never1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:NeverMarried ;
+        rdfs:label "never married"^^xsd:string ;
+        sio:hasValue    "0.2128"^^xsd:float .
+
+     :marital_status_partner1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Partnership ;
+        rdfs:label "partnership"^^xsd:string ;
+        sio:hasValue    "0.0961"^^xsd:float .
+
+     :marital_status_separated1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Separated ;
+        rdfs:label "separated"^^xsd:string ;
+        sio:hasValue    "0.0269"^^xsd:float .
+
+     :marital_status_widowed1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Widowed ;
+        rdfs:label "widowed"^^xsd:string ;
+        sio:hasValue    "0.0048"^^xsd:float .
+	
+	 :smokes_no1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status no"^^xsd:string ;
+        sio:hasValue    "0.4758"^^xsd:float .
+
+     :smokes_yes1_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status yes"^^xsd:string ;
+        sio:hasValue    "0.5242"^^xsd:float .
+
 
      :CadreInd_2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreIndex ;
         rdfs:label "cadre index"^^xsd:string ;
         sio:hasValue    "1"^^xsd:integer .
-
+		
      :age2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:001013 ;
         rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "47.9596"^^xsd:float .
+        sio:hasValue    "64.5953"^^xsd:float .
 
      :bmi2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    chear:BMI ;
         rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "28.0208"^^xsd:float .
+        sio:hasValue    "30.373"^^xsd:float .
 
      :female2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:010052 ;
         rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.5548"^^xsd:float .
+        sio:hasValue    "0.5237"^^xsd:float .
 
      :male2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sio:010048 ;
         rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.4452"^^xsd:float .
+        sio:hasValue    "0.4763"^^xsd:float .
 
      :MexicanAmerican2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:MexicanAmerican;
         rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.0001"^^xsd:float .
+        sio:hasValue    "0.051"^^xsd:float .
 
      :NonHispanicBlack2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicBlack ;
         rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0"^^xsd:float .
+        sio:hasValue    "0.1022"^^xsd:float .
 
      :NonHispanicWhite2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicWhite ;
         rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.9797"^^xsd:float .
+        sio:hasValue    "0.7833"^^xsd:float .
 
      :Other2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:Other;
-        rdfs:label "Other"^^xsd:string ;
-        sio:hasValue    "0.0202"^^xsd:float .
+        rdfs:label "other"^^xsd:string ;
+        sio:hasValue    "0.0369"^^xsd:float .
 
      :OtherHispanic2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:OtherHispanic ;
-        rdfs:label "Other Hispanic"^^xsd:string ;
-        sio:hasValue    "3.4202"^^xsd:float .
-
-     :CadreInd_3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type    hao:CadreIndex ;
-        rdfs:label "cadre index"^^xsd:string ;
-        sio:hasValue    "2"^^xsd:integer .
-
-     :age3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sio:001013 ;
-        rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "53.1369"^^xsd:float .
-
-     :bmi3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type    chear:BMI ;
-        rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "31.848"^^xsd:float .
-
-     :female3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sio:010052 ;
-        rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.4016"^^xsd:float .
-
-     :male3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type   sio:010048 ;
-        rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.5984"^^xsd:float .
-
-     :MexicanAmerican3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sco:MexicanAmerican;
-        rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.1938"^^xsd:float .
-
-     :NonHispanicBlack3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sco:NonHispanicBlack ;
-        rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0.3359"^^xsd:float .
-
-     :NonHispanicWhite3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sco:NonHispanicWhite ;
-        rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.26"^^xsd:float .
-
-     :Other3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type   sco:Other;
-        rdfs:label "other"^^xsd:string ;
-        sio:hasValue    "0.114"^^xsd:float .
-
-     :OtherHispanic3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdf:type   sco:OtherHispanic ;
         rdfs:label "other Hispanic"^^xsd:string ;
-        sio:hasValue    "0.0963"^^xsd:float .
+        sio:hasValue    "0.0267"^^xsd:float .
 
-     :pir3_subpop_mean-335ea58a52268d9a4eda89694febaaac
+     :pir2_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:PovertyIncomeRatio ;
         rdfs:label "poverty income ratio"^^xsd:string ;
-        sio:hasValue    "2.5852"^^xsd:float .
+        sio:hasValue    "3.0553"^^xsd:float .
 
+     :drinks_no2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status no"^^xsd:string ;
+        sio:hasValue    "0.3859"^^xsd:float .
+
+     :drinks_yes2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status yes"^^xsd:string ;
+        sio:hasValue    "0.6141"^^xsd:float .
+
+     :education_college2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:CollegeGraduate ;
+        rdfs:label "college graduate"^^xsd:string ;
+        sio:hasValue    "0.4893"^^xsd:float .
+
+     :education_highschool2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:HighSchoolGraduate ;
+        rdfs:label "high school graduate"^^xsd:string ;
+        sio:hasValue    "0.5107"^^xsd:float .
+
+	 :marital_status_divorced2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Divorced ;
+        rdfs:label "divorced"^^xsd:string ;
+        sio:hasValue    "0.1108"^^xsd:float .
+
+     :marital_status_married2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Married ;
+        rdfs:label "married"^^xsd:string ;
+        sio:hasValue    "0.6239"^^xsd:float .
+
+     :marital_status_never2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:NeverMarried ;
+        rdfs:label "never married"^^xsd:string ;
+        sio:hasValue    "0.053"^^xsd:float .
+
+     :marital_status_partner2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Partnership ;
+        rdfs:label "partnership"^^xsd:string ;
+        sio:hasValue    "0.0312"^^xsd:float .
+
+     :marital_status_separated2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Separated ;
+        rdfs:label "separated"^^xsd:string ;
+        sio:hasValue    "0.0139"^^xsd:float .
+
+     :marital_status_widowed2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Widowed ;
+        rdfs:label "widowed"^^xsd:string ;
+        sio:hasValue    "0.1673"^^xsd:float .
+	
+	 :smokes_no2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status no"^^xsd:string ;
+        sio:hasValue    "0.5998"^^xsd:float .
+
+     :smokes_yes2_subpop_mean-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status yes"^^xsd:string ;
+        sio:hasValue    "0.4002"^^xsd:float .
+
+ 
      :CadreInd_1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreIndex ;
         rdfs:label "cadre index"^^xsd:string ;
         sio:hasValue    "0"^^xsd:integer .
-
-     :age1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+		
+	 :age1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:001013 ;
         rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "0.1391"^^xsd:float .
+        sio:hasValue    "0.2086"^^xsd:float .
 
      :bmi1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    chear:BMI ;
         rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "0.0757"^^xsd:float .
+        sio:hasValue    "0.1247"^^xsd:float .
 
      :female1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:010052 ;
         rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.0058"^^xsd:float .
+        sio:hasValue    "0.004"^^xsd:float .
 
      :male1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sio:010048 ;
         rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.0058"^^xsd:float .
+        sio:hasValue    "0.004"^^xsd:float .
 
      :MexicanAmerican1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:MexicanAmerican;
         rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.0141"^^xsd:float .
+        sio:hasValue    "0.0102"^^xsd:float .
 
      :NonHispanicBlack1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicBlack ;
         rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0.0098"^^xsd:float .
+        sio:hasValue    "0.0084"^^xsd:float .
 
      :NonHispanicWhite1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicWhite ;
         rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.0203"^^xsd:float .
+        sio:hasValue    "0.0172"^^xsd:float .
 
      :Other1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:Other;
         rdfs:label "other"^^xsd:string ;
-        sio:hasValue    "0.0063"^^xsd:float .
+        sio:hasValue    "0.0045"^^xsd:float .
 
      :OtherHispanic1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:OtherHispanic ;
         rdfs:label "other Hispanic"^^xsd:string ;
-        sio:hasValue    "0.0087"^^xsd:float .
+        sio:hasValue    "0.0056"^^xsd:float .
 
      :pir1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:PovertyIncomeRatio ;
         rdfs:label "poverty income ratio"^^xsd:string ;
-        sio:hasValue    "0.047"^^xsd:float .
+        sio:hasValue    "0.0412"^^xsd:float .
 
+     :drinks_no1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status no"^^xsd:string ;
+        sio:hasValue    "0.0081"^^xsd:float .
+
+     :drinks_yes1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status yes"^^xsd:string ;
+        sio:hasValue    "0.0081"^^xsd:float .
+
+     :education_college1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:CollegeGraduate ;
+        rdfs:label "college graduate"^^xsd:string ;
+        sio:hasValue    "0.0112"^^xsd:float .
+
+     :education_highschool1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:HighSchoolGraduate ;
+        rdfs:label "high school graduate"^^xsd:string ;
+        sio:hasValue    "0.0112"^^xsd:float .
+
+	 :marital_status_divorced1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Divorced ;
+        rdfs:label "divorced"^^xsd:string ;
+        sio:hasValue    "0.005"^^xsd:float .
+
+     :marital_status_married1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Married ;
+        rdfs:label "married"^^xsd:string ;
+        sio:hasValue    "0.01"^^xsd:float .
+
+     :marital_status_never1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:NeverMarried ;
+        rdfs:label "never married"^^xsd:string ;
+        sio:hasValue    "0.0088"^^xsd:float .
+
+     :marital_status_partner1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Partnership ;
+        rdfs:label "partnership"^^xsd:string ;
+        sio:hasValue    "0.0048"^^xsd:float .
+
+     :marital_status_separated1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Separated ;
+        rdfs:label "separated"^^xsd:string ;
+        sio:hasValue    "0.0025"^^xsd:float .
+
+     :marital_status_widowed1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Widowed ;
+        rdfs:label "widowed"^^xsd:string ;
+        sio:hasValue    "0.0009"^^xsd:float .
+	
+	 :smokes_no1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status no"^^xsd:string ;
+        sio:hasValue    "0.0102"^^xsd:float .
+
+     :smokes_yes1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status yes"^^xsd:string ;
+        sio:hasValue    "0.0102"^^xsd:float .
+
+ 
      :CadreInd_2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreIndex ;
         rdfs:label "cadre index"^^xsd:string ;
@@ -546,52 +847,112 @@
      :age2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:001013 ;
         rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "0.2468"^^xsd:float .
+        sio:hasValue    "0.2462"^^xsd:float .
 
      :bmi2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    chear:BMI ;
         rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "0.0969"^^xsd:float .
+        sio:hasValue    "0.144"^^xsd:float .
 
      :female2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:010052 ;
         rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.0052"^^xsd:float .
+        sio:hasValue    "0.0074"^^xsd:float .
 
      :male2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sio:010048 ;
         rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.0052"^^xsd:float .
+        sio:hasValue    "0.0074"^^xsd:float .
 
      :MexicanAmerican2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:MexicanAmerican;
         rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.0001"^^xsd:float .
+        sio:hasValue    "0.0096"^^xsd:float .
 
      :NonHispanicBlack2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicBlack ;
         rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0"^^xsd:float .
+        sio:hasValue    "0.0099"^^xsd:float .
 
      :NonHispanicWhite2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicWhite ;
         rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.0023"^^xsd:float .
+        sio:hasValue    "0.0175"^^xsd:float .
 
      :Other2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:Other;
         rdfs:label "other"^^xsd:string ;
-        sio:hasValue    "0.0023"^^xsd:float .
+        sio:hasValue    "0.0043"^^xsd:float .
 
      :OtherHispanic2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:OtherHispanic ;
         rdfs:label "other Hispanic"^^xsd:string ;
-        sio:hasValue    "0"^^xsd:float .
+        sio:hasValue    "0.0044"^^xsd:float .
 
      :pir2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:PovertyIncomeRatio ;
         rdfs:label "poverty income ratio"^^xsd:string ;
-        sio:hasValue    "0.0532"^^xsd:float .
+        sio:hasValue    "0.0438"^^xsd:float .
+
+     :drinks_no2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status no"^^xsd:string ;
+        sio:hasValue    "0.0165"^^xsd:float .
+
+     :drinks_yes2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:DrinkStatus ;
+        rdfs:label "drink status yes"^^xsd:string ;
+        sio:hasValue    "0.0165"^^xsd:float .
+
+     :education_college2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:CollegeGraduate ;
+        rdfs:label "college graduate"^^xsd:string ;
+        sio:hasValue    "0.0121"^^xsd:float .
+
+     :education_highschool2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:HighSchoolGraduate ;
+        rdfs:label "high school graduate"^^xsd:string ;
+        sio:hasValue    "0.0121"^^xsd:float .
+
+	 :marital_status_divorced2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Divorced ;
+        rdfs:label "divorced"^^xsd:string ;
+        sio:hasValue    "0.0067"^^xsd:float .
+
+     :marital_status_married2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Married ;
+        rdfs:label "married"^^xsd:string ;
+        sio:hasValue    "0.0119"^^xsd:float .
+
+     :marital_status_never2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:NeverMarried ;
+        rdfs:label "never married"^^xsd:string ;
+        sio:hasValue    "0.0052"^^xsd:float .
+
+     :marital_status_partner2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Partnership ;
+        rdfs:label "partnership"^^xsd:string ;
+        sio:hasValue    "0.0033"^^xsd:float .
+
+     :marital_status_separated2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Separated ;
+        rdfs:label "separated"^^xsd:string ;
+        sio:hasValue    "0.0021"^^xsd:float .
+
+     :marital_status_widowed2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:Widowed ;
+        rdfs:label "widowed"^^xsd:string ;
+        sio:hasValue    "0.0069"^^xsd:float .
+	
+	 :smokes_no2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status no"^^xsd:string ;
+        sio:hasValue    "0.0086"^^xsd:float .
+
+     :smokes_yes2_subpop_stderr-335ea58a52268d9a4eda89694febaaac
+        rdf:type   sco:SmokeStatus ;
+        rdfs:label "smoke status yes"^^xsd:string ;
+        sio:hasValue    "0.0086"^^xsd:float .    
 
 
 }
