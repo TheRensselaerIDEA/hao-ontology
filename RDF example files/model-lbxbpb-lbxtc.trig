@@ -378,10 +378,10 @@
         rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "-0.0717967004"^^xsd:float .
 
-     :marital_status_married0_W-a0142f122e3218f79313f0b76d57b2f6
+     :marital_status_partner0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
         rdfs:label "partnership"^^xsd:string ;
-        sio:hasValue    "-0.0005172351"^^xsd:float .
+        sio:hasValue    "0.0239916742"^^xsd:float .
 
      :marital_status_separated0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
@@ -473,10 +473,10 @@
         rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0322232172"^^xsd:float .
 
-     :marital_status_married1_W-a0142f122e3218f79313f0b76d57b2f6
+     :marital_status_partner1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
         rdfs:label "partnership"^^xsd:string ;
-        sio:hasValue    "-0.0191291515"^^xsd:float .
+        sio:hasValue    "0.0056992262"^^xsd:float .
 
      :marital_status_separated1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
@@ -568,10 +568,10 @@
         rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "-0.2053283883"^^xsd:float .
 
-     :marital_status_married2_W-a0142f122e3218f79313f0b76d57b2f6
+     :marital_status_partner2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
         rdfs:label "partnership"^^xsd:string ;
-        sio:hasValue    "0.0289681122"^^xsd:float .
+        sio:hasValue    "0.9009162476"^^xsd:float .
 
      :marital_status_separated2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:separated ;
@@ -730,10 +730,10 @@
         rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0276634414"^^xsd:float .
 
-     :marital_status_married0_C-a0142f122e3218f79313f0b76d57b2f6
+     :marital_status_partner0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
         rdfs:label "partnership"^^xsd:string ;
-        sio:hasValue    "-0.0726908222"^^xsd:float .
+        sio:hasValue    "0.0490604825"^^xsd:float .
 
      :marital_status_separated0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
@@ -820,10 +820,10 @@
         rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0470042191"^^xsd:float .
 
-     :marital_status_married1_C-a0142f122e3218f79313f0b76d57b2f6
+     :marital_status_partner1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
         rdfs:label "partnership"^^xsd:string ;
-        sio:hasValue    "0.0443912111"^^xsd:float .
+        sio:hasValue    "0.1362689734"^^xsd:float .
 
      :marital_status_separated1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
@@ -910,10 +910,10 @@
         rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.741584484"^^xsd:float .
 
-     :marital_status_married2_C-a0142f122e3218f79313f0b76d57b2f6
+     :marital_status_partner2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
         rdfs:label "partnership"^^xsd:string ;
-        sio:hasValue    "-1.4903215389"^^xsd:float .
+        sio:hasValue    "0.1615933163"^^xsd:float .
 
      :marital_status_separated2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
