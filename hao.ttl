@@ -284,48 +284,56 @@ sio:Representation rdf:type owl:Class ;
 # binomial logistic regression for analysis of dichotomous dependent variable
 stato:0000149 rdf:type owl:Class ;
 	rdfs:label "binomial logistic regression for analysis of dichotomous dependent variable"^^xsd:string ;
-	dct:description "binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function."^^xsd:string ;
-    rdfs:subClassOf stato:0000390 .
+	skos:definition "Binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function."^^xsd:string ;
+    	rdfs:isDefinedBy <http://purl.obolibrary.org/obo/STATO_0000149>;
+	rdfs:subClassOf stato:0000390 .
 
 # linear regression for analysis of continuous dependent variable
 stato:0000108 rdf:type owl:Class ;
 	rdfs:label "linear regression for analysis of continuous dependent variable"^^xsd:string ;
-	dct:description "linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)"^^xsd:string ;
-    rdfs:subClassOf stato:0000390 .
+	skos:definition "Linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)."^^xsd:string ;
+    	rdfs:isDefinedBy <http://purl.obolibrary.org/obo/STATO_0000108>;
+	rdfs:subClassOf stato:0000390 .
 
 # confounding variable specification
 obcs:0000039 rdf:type owl:Class ;
 	rdfs:label "confounding variable specification"^^xsd:string ;
-	dct:description "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable."^^xsd:string ;
-    rdfs:subClassOf sio:InformationContentEntity .
+	skos:definition "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable."^^xsd:string ;
+    	rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBCS_0000039>;
+	rdfs:subClassOf sio:InformationContentEntity .
 
 # data distribution
 stato:0000161 rdf:type owl:Class ;
 	rdfs:label "data distribution"^^xsd:string ;
-	dct:description "variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit."^^xsd:string ;
-    rdfs:subClassOf sio:InformationContentEntity .
+	skos:definition "Variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit."^^xsd:string ;
+        rdfs:isDefinedBy <http://purl.obolibrary.org/obo/STATO_0000161>;
+	rdfs:subClassOf sio:InformationContentEntity .
 
 # normal distribution
 stato:0000227 rdf:type owl:Class ;
 	rdfs:label "normal distribution"^^xsd:string ;
-	dct:description "a normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html"^^xsd:string ;
-    rdfs:subClassOf stato:0000161 .
+	skos:definition "A normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html"^^xsd:string ;
+    	rdfs:isDefinedBy <http://purl.obolibrary.org/obo/STATO_0000227>;
+	rdfs:subClassOf stato:0000161 .
 
 hao:RightSkewed rdf:type owl:Class ;
     rdfs:label "right skewed data distribution"^^xsd:string ;
-	skos:definition "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail."^^xsd:string ;
+	skos:definition "A right skewed data distribution is a characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail."^^xsd:string ;
 	skos:example "Most environmental exposure risk factor distributions"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:0000161 .
 
 hao:LeftSkewed rdf:type owl:Class ;
     rdfs:label "left skewed data distribution"^^xsd:string ;
-	skos:definition "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a left-hand tail that is longer than the right-hand tail."^^xsd:string ;
+	skos:definition "A left skewed data distribution is a characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a right-hand tail that is longer than the left-hand tail."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:0000161 .
 
 hao:Component rdf:type owl:Class ;
     rdfs:label "component"^^xsd:string ;
-	skos:definition "Category of data tables in NHANES"^^xsd:string ;
+	skos:definition "A component is a category of data tables in NHANES."^^xsd:string ;
 	skos:example "Laboratory"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:InformationContentEntity .
 
 sio:Category rdf:type owl:Class ;
@@ -360,66 +368,70 @@ sio:LanguageEntity rdf:type owl:Class ;
 
 hao:RiskFactorCategory rdf:type owl:Class ;
     rdfs:label "risk factor category"^^xsd:string ;
-	skos:definition "Category of similar potential risk factors, where “similarity” is defined by domain experts"^^xsd:string ;
+	skos:definition "Risk factor category is a category of similar potential risk factors, where 'similarity' is defined by domain experts."^^xsd:string ;
 	skos:example "Polyaromatic hydrocarbons"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Category .
 
 hao:Code rdf:type owl:Class ;
     rdfs:label "code"^^xsd:string ;
-	skos:definition "String sequence used to represent a constructed response variable in data tables"^^xsd:string ;
+	skos:definition "A code is a string sequence used to represent a constructed response variable in data tables."^^xsd:string ;
 	skos:example "hyp"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:InformationContentEntity .
 
 hao:Cartridge rdf:type owl:Class ;
     rdfs:label "cartridge"^^xsd:string ;
-	skos:definition "Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."^^xsd:string ;
-    rdfs:subClassOf sio:InformationContentEntity ;
-    prov:wasAttributedTo hao:Alex .
-
+	skos:definition "A cartridge is the minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:InformationContentEntity .
 
 hao:Alex a sio:Person ;
 	rdfs:label "Alexander New" .
 
 hao:InputCartridge rdf:type owl:Class ;
     rdfs:label "input cartridge"^^xsd:string ;
-	skos:definition "Type of cartridge used to define input parameters / configurations when constructing a study"^^xsd:string ;
+	skos:definition "An input cartridge is a type of cartridge used to define input parameters / configurations when constructing a study."^^xsd:string ;
 	skos:example "Response variable cartridge defining hypertension"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:Cartridge .
 
 hao:OutputCartridge rdf:type owl:Class ;
     rdfs:label "output cartridge"^^xsd:string ;
-	skos:definition "Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them"^^xsd:string ;
+	skos:definition "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them."^^xsd:string ;
 	skos:example "Results cartridge describing environmental risk factors for hypertension in obese women"^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:Cartridge .
 
 hao:RiskFactorCartridge rdf:type owl:Class ;
     rdfs:label "risk factor cartridge"^^xsd:string ;
-    dct:description "How categories of semantically-similar risk factors should be modeled."^^xsd:string ;
-	skos:definition "Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. "^^xsd:string ;
+	skos:definition "A risk factor cartridge describes categories of semantically similar risk factors and details how they should be modeled."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:InputCartridge .
 
 hao:CohortCartridge rdf:type owl:Class ;
     rdfs:label "cohort cartridge"^^xsd:string ;
-    dct:description "Inclusion criteria used to determine if a given subject may be included in the user's study, which can be chosen on-the-fly or adapted from existing studies."^^xsd:string ;
-	skos:definition "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study."^^xsd:string ;
+    skos:definition "A cohort cartridge lists the inclusion criteria used to determine if a given subject may be included in the user’s study."^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:InputCartridge .
 
-hao:ParameterCartridge rdf:type owl:Class ;
-    rdfs:label "parameter cartridge"^^xsd:string ;
-    dct:description "Rules to complete chosen analysis workflow and potential hyperparameter configurations for chosen model."^^xsd:string ;
-	skos:definition "Parameter cartridges contain rules to complete the chosen analysis workflow. "^^xsd:string ;
+hao:ParametersCartridge rdf:type owl:Class ;
+    rdfs:label "parameters cartridge"^^xsd:string ;
+    skos:definition "A parameters cartridge contains rules to complete the chosen analysis workflow. "^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:InputCartridge .
 
 hao:ResponseCartridge rdf:type owl:Class ;
     rdfs:label "response cartridge"^^xsd:string ;
-    dct:description "Analysis concepts and background domain axioms necessary to model a given health condition."^^xsd:string ;
-	skos:definition "Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease"^^xsd:string ;
+    skos:definition "A response variable cartridge provides the analysis concepts and background domain axioms necessary to model a given disease"^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf hao:InputCartridge .
 
-hao:ResultCartridge rdf:type owl:Class ;
-    rdfs:label "result cartridge"^^xsd:string ;
+hao:ResultsCartridge rdf:type owl:Class ;
+    rdfs:label "results cartridge"^^xsd:string ;
     dct:description "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values"^^xsd:string ;
-	skos:definition "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges"^^xsd:string ;
+	skos:definition "A results cartridge is a type of output cartridge describing a single study’s statistical findings and constituent input cartridges."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
 	rdfs:subClassOf [
 		a owl:Restriction ;
     	owl:onProperty sio:hasPart ;
@@ -427,6 +439,9 @@ hao:ResultCartridge rdf:type owl:Class ;
 	], hao:OutputCartridge .
 
 hao:CadreList rdf:type owl:Class ;
+	rdfs:label "cadre list" ;
+	skos:definition "A cadre list contains the information of a list of cadres."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
 	rdfs:subClassOf sio:List ;
 	rdfs:subClassOf [
 		a owl:Restriction ;
@@ -436,6 +451,8 @@ hao:CadreList rdf:type owl:Class ;
 
 hao:Cadre rdf:type owl:Class ;
 	rdfs:label "cadre" ;
+	skos:definition "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are able to perform feature selection and weighting."^^xsd:string ;
+	prov:wasAttributedTo hao:Alex ;
 	rdfs:subClassOf ncit:C43418 .
 
 # significance threshold
