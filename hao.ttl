@@ -382,7 +382,7 @@ hao:Code rdf:type owl:Class ;
 
 hao:Cartridge rdf:type owl:Class ;
     rdfs:label "cartridge"^^xsd:string ;
-	skos:definition "A cartridge is the minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."^^xsd:string ;
+	skos:definition "A cartridge is the minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In STA, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:InformationContentEntity .
 
@@ -451,7 +451,7 @@ hao:CadreList rdf:type owl:Class ;
 
 hao:Cadre rdf:type owl:Class ;
 	rdfs:label "cadre" ;
-	skos:definition "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are able to perform feature selection and weighting."^^xsd:string ;
+	skos:definition "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are identified via supervised learning and may incorporate feature selection or weighting in their definitions."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
 	rdfs:subClassOf ncit:C43418 .
 
@@ -584,7 +584,7 @@ hao:SubpopulationCartridge rdf:type owl:Class ;
 
 hao:ModelParameter rdf:type owl:Class ;
 	rdfs:label "model parameter"^^xsd:string ;
-	skos:definition "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
+	skos:definition "A model parameter is a data item which is part of a model and which is meant to characterize an theoretical or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:DataItem .
 
