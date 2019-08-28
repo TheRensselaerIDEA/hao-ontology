@@ -74,29 +74,23 @@
     :NCadres-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreCount;
         rdfs:label "cadre count"^^xsd:string ;
-        sio:hasValue "3"^^xsd:integer .
+        sio:hasValue "2"^^xsd:integer .
 
 
     :CadreSizes-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreSizeList ;
         rdfs:label "cadre size list"^^xsd:string ;
         sio:hasPart :Cadre_0-335ea58a52268d9a4eda89694febaaac ,
-            :Cadre_1-335ea58a52268d9a4eda89694febaaac ,
-            :Cadre_2-335ea58a52268d9a4eda89694febaaac .
+            :Cadre_1-335ea58a52268d9a4eda89694febaaac .
      :Cadre_0-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreSize;
         rdfs:label "cadre size"^^xsd:string ;
-        sio:hasValue    "11980"^^xsd:integer .
+        sio:hasValue    "7303"^^xsd:integer .
 
      :Cadre_1-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreSize;
         rdfs:label "cadre size"^^xsd:string ;
-        sio:hasValue    "7138"^^xsd:integer .
-
-     :Cadre_2-335ea58a52268d9a4eda89694febaaac
-        rdf:type    hao:CadreSize;
-        rdfs:label "cadre size"^^xsd:string ;
-        sio:hasValue    "8802"^^xsd:integer .
+        sio:hasValue    "5518"^^xsd:integer .
 
     :BaseRates-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:BaseRate ;
@@ -106,7 +100,7 @@
     :CovariateMeans_base-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CovariateMean ;
         rdfs:label "covariate mean for base rate"^^xsd:string ;
-        sio:hasAttribute :agebase_mean-335ea58a52268d9a4eda89694febaaac ,
+        sio:hasAttribute :age_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :bmi_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :female_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :male_base_mean-335ea58a52268d9a4eda89694febaaac ,
@@ -115,12 +109,25 @@
              :NonHispanicWhite_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :Other_base_mean-335ea58a52268d9a4eda89694febaaac ,
              :OtherHispanic_base_mean-335ea58a52268d9a4eda89694febaaac ,
-             :pir_base_mean-335ea58a52268d9a4eda89694febaaac .
+             :pir_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :drinks_no_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :drinks_yes_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :education_college_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :education_highschool_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_divorced2_C-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_married_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_never_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_partner_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_separated_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_widowed_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :pir_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_no_base_mean-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_yes_base_mean-335ea58a52268d9a4eda89694febaaac .
 
     :CovariateStdErrs_base-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CovariateStdError ;
         rdfs:label "covariate standard deviation error for base rate"^^xsd:string ;
-        sio:hasAttribute :agebase_stderr-335ea58a52268d9a4eda89694febaaac ,
+        sio:hasAttribute :age_base_stderr-335ea58a52268d9a4eda89694febaaac ,
              :bmi_base_stderr-335ea58a52268d9a4eda89694febaaac ,
              :female_base_stderr-335ea58a52268d9a4eda89694febaaac ,
              :male_base_stderr-335ea58a52268d9a4eda89694febaaac ,
@@ -129,42 +136,54 @@
              :NonHispanicWhite_base_stderr-335ea58a52268d9a4eda89694febaaac ,
              :Other_base_stderr-335ea58a52268d9a4eda89694febaaac ,
              :OtherHispanic_base_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :pir_base_stderr-335ea58a52268d9a4eda89694febaaac .
+             :pir_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+			 :drinks_no_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :drinks_yes_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :education_college_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :education_highschool_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_divorced_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_married_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_never_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_partner_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_separated_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :marital_status_widowed_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_no_base_stderr-335ea58a52268d9a4eda89694febaaac ,
+             :smokes_yes_base_stderr-335ea58a52268d9a4eda89694febaaac .
 
      :age_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:001013 ;
         rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "39.6081"^^xsd:float .
+        sio:hasValue    "46.7335"^^xsd:float .
 
      :bmi_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    chear:BMI ;
         rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "27.1027"^^xsd:float .
+        sio:hasValue    "28.6086"^^xsd:float .
 
      :female_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sio:010052 ;
         rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.5095"^^xsd:float .
+        sio:hasValue    "0.5107"^^xsd:float .
 
      :male_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sio:010048 ;
         rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.4905"^^xsd:float .
+        sio:hasValue    "0.4893"^^xsd:float .
 
      :MexicanAmerican_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:MexicanAmerican;
         rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.0908"^^xsd:float .
+        sio:hasValue    "0.0778"^^xsd:float .
 
      :NonHispanicBlack_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicBlack ;
         rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0.1142"^^xsd:float .
+        sio:hasValue    "0.1033"^^xsd:float .
 
      :NonHispanicWhite_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    sco:NonHispanicWhite ;
         rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.6922"^^xsd:float .
+        sio:hasValue    "0.7302"^^xsd:float .
 
      :Other_base_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type   sco:Other;
@@ -240,14 +259,12 @@
         rdf:type    hao:CovariateMean ;
         rdfs:label "covariate mean for subpopulation characteristics"^^xsd:string ;
         sio:hasPart :Cadre_1-335ea58a52268d9a4eda89694febaaac ,
-            :Cadre_2-335ea58a52268d9a4eda89694febaaac ,
-            :Cadre_3-335ea58a52268d9a4eda89694febaaac .
+            :Cadre_2-335ea58a52268d9a4eda89694febaaac .
     :CovariateStdErrs_subpop-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CovariateStdError ;
         rdfs:label "covariate standard deviation error for subpopulation characteristics"^^xsd:string ;
         sio:hasPart :Cadre_1-335ea58a52268d9a4eda89694febaaac ,
-            :Cadre_2-335ea58a52268d9a4eda89694febaaac ,
-            :Cadre_3-335ea58a52268d9a4eda89694febaaac .
+            :Cadre_2-335ea58a52268d9a4eda89694febaaac .
     :Cadre_1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdfs:label "cadre 1 subpopulation mean"^^xsd:string ;
         sio:hasAttribute :CadreInd_1_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
@@ -276,19 +293,6 @@
              :OtherHispanic2_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
              :pir2_subpop_mean-335ea58a52268d9a4eda89694febaaac .
 
-    :Cadre_3_subpop_mean-335ea58a52268d9a4eda89694febaaac
-        rdfs:label "cadre 3 subpopulation mean"^^xsd:string ;
-        sio:hasAttribute :CadreInd_3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :age3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :bmi3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :female3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :male3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :MexicanAmerican3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :NonHispanicBlack3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :NonHispanicWhite3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :Other3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :OtherHispanic3_subpop_mean-335ea58a52268d9a4eda89694febaaac ,
-             :pir3_subpop_mean-335ea58a52268d9a4eda89694febaaac .
 
     :Cadre_1_subpop_stderr-335ea58a52268d9a4eda89694febaaac
         rdfs:label "cadre 1 subpopulation standard deviation"^^xsd:string ;
@@ -318,19 +322,6 @@
              :OtherHispanic2_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
              :pir2_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
 
-    :Cadre_3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdfs:label "cadre 3 subpopulation standard deviation"^^xsd:string ;
-        sio:hasAttribute :CadreInd_3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :age3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :bmi3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :female3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :male3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :MexicanAmerican3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :NonHispanicBlack3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :NonHispanicWhite3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :Other3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :OtherHispanic3_subpop_stderr-335ea58a52268d9a4eda89694febaaac ,
-             :pir3_subpop_stderr-335ea58a52268d9a4eda89694febaaac .
 
      :CadreInd_1_subpop_mean-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreIndex ;
@@ -602,59 +593,5 @@
         rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "0.0532"^^xsd:float .
 
-     :CadreInd_3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type    hao:CadreIndex ;
-        rdfs:label "cadre index"^^xsd:string ;
-        sio:hasValue    "2"^^xsd:integer .
-
-     :age3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sio:001013 ;
-        rdfs:label "age"^^xsd:string ;
-        sio:hasValue    "0.4325"^^xsd:float .
-
-     :bmi3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type    chear:BMI ;
-        rdfs:label "body mass index"^^xsd:string ;
-        sio:hasValue    "0.1608"^^xsd:float .
-
-     :female3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sio:010052 ;
-        rdfs:label "female"^^xsd:string ;
-        sio:hasValue    "0.0085"^^xsd:float .
-
-     :male3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type   sio:010048 ;
-        rdfs:label "male"^^xsd:string ;
-        sio:hasValue    "0.0085"^^xsd:float .
-
-     :MexicanAmerican3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sco:MexicanAmerican;
-        rdfs:label "Mexican American"^^xsd:string ;
-        sio:hasValue    "0.0189"^^xsd:float .
-
-     :NonHispanicBlack3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sco:NonHispanicBlack ;
-        rdfs:label "non Hispanic Black"^^xsd:string ;
-        sio:hasValue    "0.0191"^^xsd:float .
-
-     :NonHispanicWhite3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type    sco:NonHispanicWhite ;
-        rdfs:label "non Hispanic White"^^xsd:string ;
-        sio:hasValue    "0.018"^^xsd:float .
-
-     :Other3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type   sco:Other;
-        rdfs:label "other"^^xsd:string ;
-        sio:hasValue    "0.0092"^^xsd:float .
-
-     :OtherHispanic3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type   sco:OtherHispanic ;
-        rdfs:label "other Hispanic"^^xsd:string ;
-        sio:hasValue    "0.0105"^^xsd:float .
-
-     :pir3_subpop_stderr-335ea58a52268d9a4eda89694febaaac
-        rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "poverty income ratio"^^xsd:string ;
-        sio:hasValue    "0.0326"^^xsd:float .
 
 }
