@@ -797,3 +797,27 @@ hao:FactorKey rdf:type owl:Class ;
     skos:definition "A factor key is the prefix of the variable."^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:InformationContentEntity .
+
+hao:GenerateCohortSummaryTable rdf:type owl:Class ;
+    rdfs:label "generate cohort summary table"^^xsd:string ;
+    skos:definition "Whether the cohort summary table is generated."^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:Attribute .
+
+hao:UseSurveyWeight rdf:type owl:Class ;
+    rdfs:label "use survey weight"^^xsd:string ;
+    skos:definition "Whether the survey weight is used in the study."^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:Attribute .
+
+hao:Source rdf:type owl:Class ;
+    rdfs:label "source"^^xsd:string ;
+    skos:definition "The source of the cadre model"^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:InformationContentEntity .
+
+hao:CenterParameter rdf:type owl:Class ;
+    rdfs:label "center parameter"^^xsd:string ;
+    skos:definition "The center of the cadre. "^^xsd:string ;
+    prov:wasAttributedTo hao:Alex ;
+    rdfs:subClassOf sio:Parameter .
