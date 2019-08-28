@@ -18,6 +18,6 @@
 
     :use_cohort-d18bd58b82ed575455afa1d2f574acff
         rdf:type    hao:UseCohort ;
-        rdfs:label    "Use Cohort"^^xsd:string ;
+        rdfs:label    "use cohort"^^xsd:string ;
         sio:hasValue    "no"^^xsd:string .
 }
