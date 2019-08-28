@@ -1,85 +1,84 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix np: <http://www.nanopub.org/nschema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
-@prefix sco: <http://idea.tw.rpi.edu/projects/heals/sco/> .
 @prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
 @prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix chear: <http://hadatac.org/ont/chear#> .
-@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/kb/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hao: <https://purl.org/heals/hao/> .
+@prefix : <https://purl.org/heals/hao/> .
 
 
 
 :model-lbxbpb-lbxtc-cartridge-a0142f122e3218f79313f0b76d57b2f6 {
     :Note-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:Note ;
-        rdfs:label "Note"^^xsd:string ;
+        rdfs:label "note"^^xsd:string ;
         sio:hasValue "The numbers here are just placeholders"^^xsd:string .
 
 
     :RiskFactorCartridge-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:RiskFactorCartridge ;
-        rdfs:label "Risk Factor Cartridge Json File"^^xsd:string ;
+        rdfs:label "risk factor cartridge"^^xsd:string ;
         sio:hasValue "riskfactors-clm.json"^^xsd:string .
 
 
     :ResponseCartridge-a0142f122e3218f79313f0b76d57b2f6
          rdf:type    hao:ResponseCartridge ;
-        rdfs:label "Response Cartridge Json File"^^xsd:string ;
+        rdfs:label "response cartridge"^^xsd:string ;
         sio:hasValue "response-totalcholesterol.json"^^xsd:string .
 
 
     :CohortCartridge-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:CohortCartridge ;
-        rdfs:label "Cohort Cartridge Json File"^^xsd:string ;
+        rdfs:label "cohort cartridge"^^xsd:string ;
         sio:hasValue "cohort-population.json"^^xsd:string .
 
 
     :ParametersCartridge-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:ParameterCartridge ;
-        rdfs:label "Parameter Cartridge Json File"^^xsd:string ;
+        rdf:type    hao:ParametersCartridge ;
+        rdfs:label "parameters cartridge"^^xsd:string ;
         sio:hasValue "parameters-cadre.json"^^xsd:string .
 
 
     :ModelCartridge-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:ModelCartridge ;
-        rdfs:label "Model Cartridge Json File"^^xsd:string ;
+        rdfs:label "model cartridge"^^xsd:string ;
         sio:hasValue "model-lbxbpb-lbxtc.json"^^xsd:string .
 
 
     :ResultsCartridge-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:ResultCartridge ;
-        rdfs:label "Result Cartridge Json File"^^xsd:string ;
+        rdf:type    hao:ResultsCartridge ;
+        rdfs:label "results cartridge"^^xsd:string ;
         sio:hasValue "results-subpopulation-lbxbpb.json"^^xsd:string .
 
 
     :SubpopulationCartridge-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:SubpopulationCartridge ;
-        rdfs:label "Subpopulation Cartridge Json File"^^xsd:string ;
+        rdfs:label "subpopulation cartridge"^^xsd:string ;
         sio:hasValue "subpopulation-lbxbpb.json"^^xsd:string .
 
 
     :IncludedRiskFactor-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:IncludedRiskFactor ;
-        rdfs:label "Included Risk Factor"^^xsd:string ;
+        rdf:type    hao:RiskFactor ;
+        rdfs:label "included risk factor"^^xsd:string ;
         sio:hasValue "LBXBPB"^^xsd:string .
 
 
     :source-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:Source ;
-        rdfs:label "Source"^^xsd:string ;
+        rdfs:label "source"^^xsd:string ;
         sio:hasValue "lbxbpb-lbxtc-cadre-model.pkl"^^xsd:string .
 
 
     :ModelHyperparams-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:ModelHyperparameter ;
-        rdfs:label "Model Hyperparameter"^^xsd:string ;
+        rdf:type    hao:Hyperparameter ;
+        rdfs:label "model hyperparameter"^^xsd:string ;
         sio:hasAttribute :M-a0142f122e3218f79313f0b76d57b2f6 ,
                         :lambda_d-a0142f122e3218f79313f0b76d57b2f6 ,
                         :lambda_W-a0142f122e3218f79313f0b76d57b2f6 ,
@@ -88,33 +87,33 @@
 
 
     :M-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:resultCount ;
-        rdfs:label "result Count"^^xsd:string ;
+        rdf:type    hao:ResultCount ;
+        rdfs:label "result count"^^xsd:string ;
         sio:hasValue "3"^^xsd:integer .
 
     :lambda_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:RegularizationStrengthD ;
-        rdfs:label "Regularization Strength for Feature Selection Parameter"^^xsd:string ;
+        rdfs:label "regularization strength for feature selection parameter"^^xsd:string ;
         sio:hasValue "0.01"^^xsd:float .
 
     :lambda_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:RegularizationStrengthW ;
-        rdfs:label "Regularization Strength for Regression Hyperplane Weights"^^xsd:string ;
+        rdfs:label "regularization strength for regression hyperplane weights"^^xsd:string ;
         sio:hasValue "0.001"^^xsd:float .
 
     :alpha_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:ElasticNetMixingWeightD ;
-        rdfs:label "Elastic-net Mixing Weight for Feature Selection Parameter"^^xsd:string ;
+        rdfs:label "elastic-net mixing weight for feature selection parameter"^^xsd:string ;
         sio:hasValue "0.9"^^xsd:float .
 
     :alpha_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:ElasticNetMixingWeightW ;
-        rdfs:label "Elastic-net Mixing Weight for Regression Hyperplane Weights"^^xsd:string ;
+        rdfs:label "elastic-net mixing weight for regression hyperplane weights"^^xsd:string ;
         sio:hasValue "0.9"^^xsd:float .
 
     :ModelParams-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:ModelParameter ;
-        rdfs:label "Model Parameter"^^xsd:string ;
+        rdfs:label "model parameter"^^xsd:string ;
         sio:hasAttribute :d-a0142f122e3218f79313f0b76d57b2f6 ,
                         :W-a0142f122e3218f79313f0b76d57b2f6 ,
                         :C-a0142f122e3218f79313f0b76d57b2f6 ,
@@ -123,13 +122,13 @@
 
     :d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:FeatureSelectionParameter ;
-        rdfs:label "Feature Selection Parameter d"^^xsd:string ;
+        rdfs:label "feature selection parameter d"^^xsd:string ;
         sio:hasPart :Index0_d-a0142f122e3218f79313f0b76d57b2f6 .
 
 
 
     :Index0_d-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 0 for d"^^xsd:string ;
+        rdfs:label "index 0 for d"^^xsd:string ;
         sio:hasAttribute :URXUCR0_d-a0142f122e3218f79313f0b76d57b2f6 ,
              :age0_d-a0142f122e3218f79313f0b76d57b2f6 ,
              :bmi0_d-a0142f122e3218f79313f0b76d57b2f6 ,
@@ -150,98 +149,98 @@
              :smokes_yes0_d-a0142f122e3218f79313f0b76d57b2f6 .
 
      :URXUCR0_d-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:UrinaryCreatinine ;
-        rdfs:label "Urinary Creatinine"^^xsd:string ;
+        rdf:type    ncit:C399 ;
+        rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasValue    "0.1898186356"^^xsd:float .
 
      :age0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:001013 ;
-        rdfs:label "Age"^^xsd:string ;
+        rdfs:label "age"^^xsd:string ;
         sio:hasValue    "0.2412435859"^^xsd:float .
 
      :bmi0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    chear:BMI ;
-        rdfs:label "Body Mass Index"^^xsd:string ;
+        rdfs:label "body mass index"^^xsd:string ;
         sio:hasValue    "0.2812615633"^^xsd:float .
 
      :drinks_no0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status no"^^xsd:string ;
         sio:hasValue    "0.049951829"^^xsd:float .
 
      :drinks_yes0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status yes"^^xsd:string ;
         sio:hasValue    "0.1568774283"^^xsd:float .
 
      :education_college0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:CollegeGraduate ;
-        rdfs:label "College Graduate"^^xsd:string ;
+        rdfs:label "college graduate"^^xsd:string ;
         sio:hasValue    "0.0893183276"^^xsd:float .
 
      :education_highschool0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:HighSchoolGraduate ;
-        rdfs:label "High School Graduate"^^xsd:string ;
+        rdfs:label "high school graduate"^^xsd:string ;
         sio:hasValue    "0.0006474075"^^xsd:float .
 
      :gender_female0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:010052 ;
-        rdfs:label "Female"^^xsd:string ;
+        rdfs:label "female"^^xsd:string ;
         sio:hasValue    "0.1528696269"^^xsd:float .
 
      :gender_male0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sio:010048 ;
-        rdfs:label "Male"^^xsd:string ;
+        rdfs:label "male"^^xsd:string ;
         sio:hasValue    "0.3470180929"^^xsd:float .
 
      :marital_status_divorced0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Divorced ;
-        rdfs:label "Divorced"^^xsd:string ;
+        rdfs:label "divorced"^^xsd:string ;
         sio:hasValue    "0.0"^^xsd:float .
 
      :marital_status_married0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Married ;
-        rdfs:label "Married"^^xsd:string ;
+        rdfs:label "married"^^xsd:string ;
         sio:hasValue    "0.1643179655"^^xsd:float .
 
      :marital_status_never0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:NeverMarried ;
-        rdfs:label "Never Married"^^xsd:string ;
+        rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0"^^xsd:float .
 
      :marital_status_married0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
-        rdfs:label "Partnership"^^xsd:string ;
+        rdfs:label "partnership"^^xsd:string ;
         sio:hasValue    "0.1643179655"^^xsd:float .
 
      :marital_status_separated0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
-        rdfs:label "Separated"^^xsd:string ;
+        rdfs:label "separated"^^xsd:string ;
         sio:hasValue    "0.0"^^xsd:float .
 
      :marital_status_widowed0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Widowed ;
-        rdfs:label "Widowed"^^xsd:string ;
+        rdfs:label "widowed"^^xsd:string ;
         sio:hasValue    "0.0560456924"^^xsd:float .
 
      :pir0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "Poverty Income Ratio"^^xsd:string ;
+        rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "0.0319956802"^^xsd:float .
 
      :smokes_no0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status no"^^xsd:string ;
         sio:hasValue    "0.0"^^xsd:float .
 
      :smokes_yes0_d-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status yes"^^xsd:string ;
         sio:hasValue    "0.2759364545"^^xsd:float .
 
     :W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:HyperplaneParameter ;
-        rdfs:label "Hyperplane Parameter W"^^xsd:string ;
+        rdfs:label "hyperplane parameter W"^^xsd:string ;
         sio:hasPart :Index0_W-a0142f122e3218f79313f0b76d57b2f6 ,
             :Index1_W-a0142f122e3218f79313f0b76d57b2f6 ,
             :Index2_W--a0142f122e3218f79313f0b76d57b2f6 .
@@ -249,7 +248,7 @@
 
 
     :Index0_W-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 0 for W"^^xsd:string ;
+        rdfs:label "index 0 for W"^^xsd:string ;
         sio:hasAttribute :URXDAZ0_W-a0142f122e3218f79313f0b76d57b2f6 ,
              :URXUCR_0_W-a0142f122e3218f79313f0b76d57b2f6 ,
              :age0_W-a0142f122e3218f79313f0b76d57b2f6 ,
@@ -271,7 +270,7 @@
              :smokes_yes0_W-a0142f122e3218f79313f0b76d57b2f6 .
 
     :Index1_W-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 1 for W"^^xsd:string ;
+        rdfs:label "index 1 for W"^^xsd:string ;
         sio:hasAttribute :URXDAZ1_W-a0142f122e3218f79313f0b76d57b2f6 ,
              :URXUCR_1_W-a0142f122e3218f79313f0b76d57b2f6 ,
              :age1_W-a0142f122e3218f79313f0b76d57b2f6 ,
@@ -293,7 +292,7 @@
              :smokes_yes1_W-a0142f122e3218f79313f0b76d57b2f6 .
 
     :Index2_W-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 2 for W"^^xsd:string ;
+        rdfs:label "index 2 for W"^^xsd:string ;
         sio:hasAttribute :URXDAZ2_W-a0142f122e3218f79313f0b76d57b2f6 ,
              :URXUCR_2_W-a0142f122e3218f79313f0b76d57b2f6 ,
              :age2_W-a0142f122e3218f79313f0b76d57b2f6 ,
@@ -315,243 +314,243 @@
              :smokes_yes2_W-a0142f122e3218f79313f0b76d57b2f6 .
 
      :URXDAZ0_W-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:Daidzein ;
-        rdfs:label "Daidzein"^^xsd:string ;
+        rdf:type    ncit:C1060 ;
+        rdfs:label "daidzein"^^xsd:string ;
         sio:hasValue    "-0.01152803"^^xsd:float .
 
      :URXUCR0_W-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:UrinaryCreatinine ;
-        rdfs:label "Urinary Creatinine"^^xsd:string ;
+        rdf:type    ncit:C399 ;
+        rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasValue    "-0.0117120715"^^xsd:float .
 
      :age0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:001013 ;
-        rdfs:label "Age"^^xsd:string ;
+        rdfs:label "age"^^xsd:string ;
         sio:hasValue    "0.3631272316"^^xsd:float .
 
      :bmi0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    chear:BMI ;
-        rdfs:label "Body Mass Index"^^xsd:string ;
+        rdfs:label "body mass index"^^xsd:string ;
         sio:hasValue    "0.0714791641"^^xsd:float .
 
      :drinks_no0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status no"^^xsd:string ;
         sio:hasValue    "0.0010862171"^^xsd:float .
 
      :drinks_yes0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status yes"^^xsd:string ;
         sio:hasValue    "-0.0010855095"^^xsd:float .
 
      :education_college0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:CollegeGraduate ;
-        rdfs:label "College Graduate"^^xsd:string ;
+        rdfs:label "college graduate"^^xsd:string ;
         sio:hasValue    "0.0018391997"^^xsd:float .
 
      :education_highschool0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:HighSchoolGraduate ;
-        rdfs:label "High School Graduate"^^xsd:string ;
+        rdfs:label "high school graduate"^^xsd:string ;
         sio:hasValue    "-0.0018393599"^^xsd:float .
 
      :gender_female0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:010052 ;
-        rdfs:label "Female"^^xsd:string ;
+        rdfs:label "female"^^xsd:string ;
         sio:hasValue    "0.059384577"^^xsd:float .
 
      :gender_male0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sio:010048 ;
-        rdfs:label "Male"^^xsd:string ;
+        rdfs:label "male"^^xsd:string ;
         sio:hasValue    "-0.125264287"^^xsd:float .
 
      :marital_status_divorced0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Divorced ;
-        rdfs:label "Divorced"^^xsd:string ;
+        rdfs:label "divorced"^^xsd:string ;
         sio:hasValue    "0.0326796956"^^xsd:float .
 
      :marital_status_married0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Married ;
-        rdfs:label "Married"^^xsd:string ;
+        rdfs:label "married"^^xsd:string ;
         sio:hasValue    "-0.0005172351"^^xsd:float .
 
      :marital_status_never0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:NeverMarried ;
-        rdfs:label "Never Married"^^xsd:string ;
+        rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "-0.0717967004"^^xsd:float .
 
      :marital_status_married0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
-        rdfs:label "Partnership"^^xsd:string ;
+        rdfs:label "partnership"^^xsd:string ;
         sio:hasValue    "-0.0005172351"^^xsd:float .
 
      :marital_status_separated0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
-        rdfs:label "Separated"^^xsd:string ;
+        rdfs:label "separated"^^xsd:string ;
         sio:hasValue    "-0.006029251"^^xsd:float .
 
      :marital_status_widowed0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Widowed ;
-        rdfs:label "Widowed"^^xsd:string ;
+        rdfs:label "widowed"^^xsd:string ;
         sio:hasValue    "-0.0008805023"^^xsd:float .
 
      :pir0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "Poverty Income Ratio"^^xsd:string ;
+        rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "-0.0003317205"^^xsd:float .
 
      :smokes_no0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status no"^^xsd:string ;
         sio:hasValue    "-0.011722547"^^xsd:float .
 
      :smokes_yes0_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status yes"^^xsd:string ;
         sio:hasValue    "0.0117162429"^^xsd:float .
 
      :URXDAZ1_W-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:Daidzein ;
-        rdfs:label "Daidzein"^^xsd:string ;
+        rdf:type    ncit:C1060 ;
+        rdfs:label "daidzein"^^xsd:string ;
         sio:hasValue    "-0.0682721436"^^xsd:float .
 
      :URXUCR1_W-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:UrinaryCreatinine ;
-        rdfs:label "Urinary Creatinine"^^xsd:string ;
+        rdf:type    ncit:C399 ;
+        rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasValue    "0.0617051572"^^xsd:float .
 
      :age1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:001013 ;
-        rdfs:label "Age"^^xsd:string ;
+        rdfs:label "age"^^xsd:string ;
         sio:hasValue    "-0.1436154693"^^xsd:float .
 
      :bmi1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    chear:BMI ;
-        rdfs:label "Body Mass Index"^^xsd:string ;
+        rdfs:label "body mass index"^^xsd:string ;
         sio:hasValue    "-0.0715875775"^^xsd:float .
 
      :drinks_no1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status no"^^xsd:string ;
         sio:hasValue    "-0.0007815037"^^xsd:float .
 
      :drinks_yes1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status yes"^^xsd:string ;
         sio:hasValue    "0.0683867484"^^xsd:float .
 
      :education_college1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:CollegeGraduate ;
-        rdfs:label "College Graduate"^^xsd:string ;
+        rdfs:label "college graduate"^^xsd:string ;
         sio:hasValue    "0.0034242522"^^xsd:float .
 
      :education_highschool1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:HighSchoolGraduate ;
-        rdfs:label "High School Graduate"^^xsd:string ;
+        rdfs:label "high school graduate"^^xsd:string ;
         sio:hasValue    "-0.0034244359"^^xsd:float .
 
      :gender_female1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:010052 ;
-        rdfs:label "Female"^^xsd:string ;
+        rdfs:label "female"^^xsd:string ;
         sio:hasValue    "0.0208544862"^^xsd:float .
 
      :gender_male1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sio:010048 ;
-        rdfs:label "Male"^^xsd:string ;
+        rdfs:label "male"^^xsd:string ;
         sio:hasValue    "-0.0091034491"^^xsd:float .
 
      :marital_status_divorced1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Divorced ;
-        rdfs:label "Divorced"^^xsd:string ;
+        rdfs:label "divorced"^^xsd:string ;
         sio:hasValue    "0.0008051884"^^xsd:float .
 
      :marital_status_married1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Married ;
-        rdfs:label "Married"^^xsd:string ;
+        rdfs:label "married"^^xsd:string ;
         sio:hasValue    "-0.0191291515"^^xsd:float .
 
      :marital_status_never1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:NeverMarried ;
-        rdfs:label "Never Married"^^xsd:string ;
+        rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0322232172"^^xsd:float .
 
      :marital_status_married1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
-        rdfs:label "Partnership"^^xsd:string ;
+        rdfs:label "partnership"^^xsd:string ;
         sio:hasValue    "-0.0191291515"^^xsd:float .
 
      :marital_status_separated1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
-        rdfs:label "Separated"^^xsd:string ;
+        rdfs:label "separated"^^xsd:string ;
         sio:hasValue    "0.0011390414"^^xsd:float .
 
      :marital_status_widowed1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Widowed ;
-        rdfs:label "Widowed"^^xsd:string ;
+        rdfs:label "widowed"^^xsd:string ;
         sio:hasValue    "-0.1006910279"^^xsd:float .
 
      :pir1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "Poverty Income Ratio"^^xsd:string ;
+        rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "0.000297701"^^xsd:float .
 
      :smokes_no1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status no"^^xsd:string ;
         sio:hasValue    "-0.0081805773"^^xsd:float .
 
      :smokes_yes1_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status yes"^^xsd:string ;
         sio:hasValue    "0.0081793629"^^xsd:float .
 
      :URXDAZ2_W-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:Daidzein ;
-        rdfs:label "Daidzein"^^xsd:string ;
+        rdf:type    ncit:C1060 ;
+        rdfs:label "daidzein"^^xsd:string ;
         sio:hasValue    "-0.976763829"^^xsd:float .
 
      :URXUCR2_W-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:UrinaryCreatinine ;
-        rdfs:label "Urinary Creatinine"^^xsd:string ;
+        rdf:type    ncit:C399 ;
+        rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasValue    "0.268697174"^^xsd:float .
 
      :age2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:001013 ;
-        rdfs:label "Age"^^xsd:string ;
+        rdfs:label "age"^^xsd:string ;
         sio:hasValue    "0.7586423669"^^xsd:float .
 
      :bmi2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    chear:BMI ;
-        rdfs:label "Body Mass Index"^^xsd:string ;
+        rdfs:label "body mass index"^^xsd:string ;
         sio:hasValue    "0.0350224574"^^xsd:float .
 
      :drinks_no2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status no"^^xsd:string ;
         sio:hasValue    "0.2241775405"^^xsd:float .
 
      :drinks_yes2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status yes"^^xsd:string ;
         sio:hasValue    "1.5900242596"^^xsd:float .
 
      :education_college2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:CollegeGraduate ;
-        rdfs:label "College Graduate"^^xsd:string ;
+        rdfs:label "college graduate"^^xsd:string ;
         sio:hasValue    "-0.8227786012"^^xsd:float .
 
      :education_highschool2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:HighSchoolGraduate ;
-        rdfs:label "High School Graduate"^^xsd:string ;
+        rdfs:label "high school graduate"^^xsd:string ;
         sio:hasValue    "0.3836372317"^^xsd:float .
 
      :gender_female2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:010052 ;
-        rdfs:label "Female"^^xsd:string ;
+        rdfs:label "female"^^xsd:string ;
         sio:hasValue    "1.5270309602"^^xsd:float .
 
      :gender_male2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sio:010048 ;
-        rdfs:label "Male"^^xsd:string ;
+        rdfs:label "male"^^xsd:string ;
         sio:hasValue    "-0.4843469015"^^xsd:float .
 
      :marital_status_divorced2_W-a0142f122e3218f79313f0b76d57b2f6
@@ -561,47 +560,47 @@
 
      :marital_status_married2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Married ;
-        rdfs:label "Married"^^xsd:string ;
+        rdfs:label "married"^^xsd:string ;
         sio:hasValue    "0.0289681122"^^xsd:float .
 
      :marital_status_never2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:NeverMarried ;
-        rdfs:label "Never Married"^^xsd:string ;
+        rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "-0.2053283883"^^xsd:float .
 
      :marital_status_married2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
-        rdfs:label "Partnership"^^xsd:string ;
+        rdfs:label "partnership"^^xsd:string ;
         sio:hasValue    "0.0289681122"^^xsd:float .
 
      :marital_status_separated2_W-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type   sco:Separated ;
-        rdfs:label "Separated"^^xsd:string ;
+        rdf:type   sco:separated ;
+        rdfs:label "separated"^^xsd:string ;
         sio:hasValue    "-0.3293718314"^^xsd:float .
 
      :marital_status_widowed2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Widowed ;
-        rdfs:label "Widowed"^^xsd:string ;
+        rdfs:label "widowed"^^xsd:string ;
         sio:hasValue    "-0.1552113738"^^xsd:float .
 
      :pir2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "Poverty Income Ratio"^^xsd:string ;
+        rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "-0.543251143"^^xsd:float .
 
      :smokes_no2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status no"^^xsd:string ;
         sio:hasValue    "-0.7832317812"^^xsd:float .
 
      :smokes_yes2_W-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status yes"^^xsd:string ;
         sio:hasValue    "2.2779957662"^^xsd:float .
 
     :C-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:resultCenterParameter ;
-        rdfs:label "result Center Parameter C"^^xsd:string ;
+        rdf:type    hao:CenterParameter ;
+        rdfs:label "center parameter C"^^xsd:string ;
         sio:hasPart :Index0_C-a0142f122e3218f79313f0b76d57b2f6 ,
             :Index1_C-a0142f122e3218f79313f0b76d57b2f6 ,
             :Index2_C--a0142f122e3218f79313f0b76d57b2f6 .
@@ -609,7 +608,7 @@
 
 
     :Index0_C-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 0 for C"^^xsd:string ;
+        rdfs:label "index 0 for C"^^xsd:string ;
         sio:hasAttribute :URXUCR0_C-a0142f122e3218f79313f0b76d57b2f6 ,
              :age0_C-a0142f122e3218f79313f0b76d57b2f6 ,
              :bmi0_C-a0142f122e3218f79313f0b76d57b2f6 ,
@@ -672,48 +671,48 @@
              :smokes_yes2_C-a0142f122e3218f79313f0b76d57b2f6 .
 
      :URXUCR0_C-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:UrinaryCreatinine ;
-        rdfs:label "Urinary Creatinine"^^xsd:string ;
+        rdf:type    ncit:C399;
+        rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasValue    "-0.0936708078"^^xsd:float .
 
      :age0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:001013 ;
-        rdfs:label "Age"^^xsd:string ;
+        rdfs:label "age"^^xsd:string ;
         sio:hasValue    "-0.1783151478"^^xsd:float .
 
      :bmi0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    chear:BMI ;
-        rdfs:label "Body Mass Index"^^xsd:string ;
+        rdfs:label "body mass index"^^xsd:string ;
         sio:hasValue    "-0.1587714404"^^xsd:float .
 
      :drinks_no0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status no"^^xsd:string ;
         sio:hasValue    "-0.0573698767"^^xsd:float .
 
      :drinks_yes0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status"^^xsd:string ;
         sio:hasValue    "0.0862004384"^^xsd:float .
 
      :education_college0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:CollegeGraduate ;
-        rdfs:label "College Graduate"^^xsd:string ;
+        rdfs:label "college graduate"^^xsd:string ;
         sio:hasValue    "0.0133385062"^^xsd:float .
 
      :education_highschool0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:HighSchoolGraduate ;
-        rdfs:label "High School Graduate"^^xsd:string ;
+        rdfs:label "high school graduate"^^xsd:string ;
         sio:hasValue    "0.1271443069"^^xsd:float .
 
      :gender_female0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:010052 ;
-        rdfs:label "Female"^^xsd:string ;
+        rdfs:label "female"^^xsd:string ;
         sio:hasValue    "0.1754544973"^^xsd:float .
 
      :gender_male0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sio:010048 ;
-        rdfs:label "Male"^^xsd:string ;
+        rdfs:label "male"^^xsd:string ;
         sio:hasValue    "-0.1767243743"^^xsd:float .
 
      :marital_status_divorced0_C-a0142f122e3218f79313f0b76d57b2f6
@@ -723,227 +722,227 @@
 
      :marital_status_married0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Married ;
-        rdfs:label "Married"^^xsd:string ;
+        rdfs:label "married"^^xsd:string ;
         sio:hasValue    "-0.0726908222"^^xsd:float .
 
      :marital_status_never0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:NeverMarried ;
-        rdfs:label "Never Married"^^xsd:string ;
+        rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0276634414"^^xsd:float .
 
      :marital_status_married0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
-        rdfs:label "Partnership"^^xsd:string ;
+        rdfs:label "partnership"^^xsd:string ;
         sio:hasValue    "-0.0726908222"^^xsd:float .
 
      :marital_status_separated0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
-        rdfs:label "Separated"^^xsd:string ;
+        rdfs:label "separated"^^xsd:string ;
         sio:hasValue    "0.0359138176"^^xsd:float .
 
      :marital_status_widowed0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Widowed ;
-        rdfs:label "Widowed"^^xsd:string ;
+        rdfs:label "widowed"^^xsd:string ;
         sio:hasValue    "0.2219405323"^^xsd:float .
 
      :pir0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "Poverty Income Ratio"^^xsd:string ;
+        rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "-0.1288728565"^^xsd:float .
 
      :smokes_no0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status no"^^xsd:string ;
         sio:hasValue    "-0.0091291806"^^xsd:float .
 
      :smokes_yes0_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status yes"^^xsd:string ;
         sio:hasValue    "-0.0399463065"^^xsd:float .
 
      :URXUCR1_C-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:UrinaryCreatinine ;
-        rdfs:label "Urinary Creatinine"^^xsd:string ;
+        rdf:type    ncit:C399 ;
+        rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasValue    "-0.0228783805"^^xsd:float .
 
      :age1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:001013 ;
-        rdfs:label "Age"^^xsd:string ;
+        rdfs:label "age"^^xsd:string ;
         sio:hasValue    "0.4050041437"^^xsd:float .
 
      :bmi1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    chear:BMI ;
-        rdfs:label "Body Mass Index"^^xsd:string ;
+        rdfs:label "body mass index"^^xsd:string ;
         sio:hasValue    "0.1108148843"^^xsd:float .
 
      :drinks_no1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status no"^^xsd:string ;
         sio:hasValue    "0.006690348"^^xsd:float .
 
      :drinks_yes1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status yes"^^xsd:string ;
         sio:hasValue    "0.1184210256"^^xsd:float .
 
      :education_college1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:CollegeGraduate ;
-        rdfs:label "College Graduate"^^xsd:string ;
+        rdfs:label "college graduate"^^xsd:string ;
         sio:hasValue    "0.0016576743"^^xsd:float .
 
      :education_highschool1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:HighSchoolGraduate ;
-        rdfs:label "High School Graduate"^^xsd:string ;
+        rdfs:label "high school graduate"^^xsd:string ;
         sio:hasValue    "-0.0092187328"^^xsd:float .
 
      :gender_female1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:010052 ;
-        rdfs:label "Female"^^xsd:string ;
+        rdfs:label "female"^^xsd:string ;
         sio:hasValue    "-0.1918250769"^^xsd:float .
 
      :gender_male1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sio:010048 ;
-        rdfs:label "Male"^^xsd:string ;
+        rdfs:label "male"^^xsd:string ;
         sio:hasValue    "0.0332518891"^^xsd:float .
 
      :marital_status_divorced1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Divorced ;
-        rdfs:label "Divorced"^^xsd:string ;
+        rdfs:label "divorced"^^xsd:string ;
         sio:hasValue    "-0.0525924154"^^xsd:float .
 
      :marital_status_married1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Married ;
-        rdfs:label "Married"^^xsd:string ;
+        rdfs:label "married"^^xsd:string ;
         sio:hasValue    "0.0443912111"^^xsd:float .
 
      :marital_status_never1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:NeverMarried ;
-        rdfs:label "Never Married"^^xsd:string ;
+        rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.0470042191"^^xsd:float .
 
      :marital_status_married1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
-        rdfs:label "Partnership"^^xsd:string ;
+        rdfs:label "partnership"^^xsd:string ;
         sio:hasValue    "0.0443912111"^^xsd:float .
 
      :marital_status_separated1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
-        rdfs:label "Separated"^^xsd:string ;
+        rdfs:label "separated"^^xsd:string ;
         sio:hasValue    "0.0457050726"^^xsd:float .
 
      :marital_status_widowed1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Widowed ;
-        rdfs:label "Widowed"^^xsd:string ;
+        rdfs:label "widowed"^^xsd:string ;
         sio:hasValue    "0.1172750071"^^xsd:float .
 
      :pir1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "Poverty Income Ratio"^^xsd:string ;
+        rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "-0.0764461681"^^xsd:float .
 
      :smokes_no1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status no"^^xsd:string ;
         sio:hasValue    "-0.0003581939"^^xsd:float .
 
      :smokes_yes1_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status yes"^^xsd:string ;
         sio:hasValue    "0.0920345336"^^xsd:float .
 
      :URXUCR2_C-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:UrinaryCreatinine ;
-        rdfs:label "Urinary Creatinine"^^xsd:string ;
+        rdf:type    ncit:C399 ;
+        rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasValue    "0.753367813"^^xsd:float .
 
      :age2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:001013 ;
-        rdfs:label "Age"^^xsd:string ;
+        rdfs:label "age"^^xsd:string ;
         sio:hasValue    "0.2090343307"^^xsd:float .
 
      :bmi2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    chear:BMI ;
-        rdfs:label "Body Mass Index"^^xsd:string ;
+        rdfs:label "body mass index"^^xsd:string ;
         sio:hasValue    "1.910424176"^^xsd:float .
 
      :drinks_no2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status no"^^xsd:string ;
         sio:hasValue    "0.2371072645"^^xsd:float .
 
      :drinks_yes2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:DrinkStatus ;
-        rdfs:label "Drink Status"^^xsd:string ;
+        rdfs:label "drink status yes"^^xsd:string ;
         sio:hasValue    "1.0781147444"^^xsd:float .
 
      :education_college2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:CollegeGraduate ;
-        rdfs:label "College Graduate"^^xsd:string ;
+        rdfs:label "college graduate"^^xsd:string ;
         sio:hasValue    "-0.9849067886"^^xsd:float .
 
      :education_highschool2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:HighSchoolGraduate ;
-        rdfs:label "High School Graduate"^^xsd:string ;
+        rdfs:label "high school graduate"^^xsd:string ;
         sio:hasValue    "0.1469083172"^^xsd:float .
 
      :gender_female2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    sio:010052 ;
-        rdfs:label "Female"^^xsd:string ;
+        rdfs:label "female"^^xsd:string ;
         sio:hasValue    "-0.6341990477"^^xsd:float .
 
      :gender_male2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sio:010048 ;
-        rdfs:label "Male"^^xsd:string ;
+        rdfs:label "male"^^xsd:string ;
         sio:hasValue    "0.1886093408"^^xsd:float .
 
      :marital_status_divorced2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Divorced ;
-        rdfs:label "Divorced"^^xsd:string ;
+        rdfs:label "divorced"^^xsd:string ;
         sio:hasValue    "-1.5651479188"^^xsd:float .
 
      :marital_status_married2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Married ;
-        rdfs:label "Married"^^xsd:string ;
+        rdfs:label "married"^^xsd:string ;
         sio:hasValue    "-1.4903215389"^^xsd:float .
 
      :marital_status_never2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:NeverMarried ;
-        rdfs:label "Never Married"^^xsd:string ;
+        rdfs:label "never married"^^xsd:string ;
         sio:hasValue    "0.741584484"^^xsd:float .
 
      :marital_status_married2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Partnership ;
-        rdfs:label "Partnership"^^xsd:string ;
+        rdfs:label "partnership"^^xsd:string ;
         sio:hasValue    "-1.4903215389"^^xsd:float .
 
      :marital_status_separated2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Separated ;
-        rdfs:label "Separated"^^xsd:string ;
+        rdfs:label "separated"^^xsd:string ;
         sio:hasValue    "-0.722503581"^^xsd:float .
 
      :marital_status_widowed2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:Widowed ;
-        rdfs:label "Widowed"^^xsd:string ;
+        rdfs:label "widowed"^^xsd:string ;
         sio:hasValue    "-0.9544059833"^^xsd:float .
 
      :pir2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:PovertyIncomeRatio ;
-        rdfs:label "Poverty Income Ratio"^^xsd:string ;
+        rdfs:label "poverty income ratio"^^xsd:string ;
         sio:hasValue    "-0.598913"^^xsd:float .
 
      :smokes_no2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status no"^^xsd:string ;
         sio:hasValue    "-0.4996067424"^^xsd:float .
 
      :smokes_yes2_C-a0142f122e3218f79313f0b76d57b2f6
         rdf:type   sco:SmokeStatus ;
-        rdfs:label "Smoke Status"^^xsd:string ;
+        rdfs:label "smoke status yes"^^xsd:string ;
         sio:hasValue    "-1.0359346754"^^xsd:float .
 
     :W0-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:HyperplaneParameter ;
-        rdfs:label "Hyperplane Parameter W0"^^xsd:string ;
+        rdfs:label "hyperplane parameter W0"^^xsd:string ;
         sio:hasPart :Index0_W0-a0142f122e3218f79313f0b76d57b2f6 ,
             :Index1_W0-a0142f122e3218f79313f0b76d57b2f6 ,
             :Index2_W0--a0142f122e3218f79313f0b76d57b2f6 .
@@ -951,27 +950,27 @@
 
 
     :Index0_W0-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 0 for W0"^^xsd:string ;
+        rdfs:label "index 0 for W0"^^xsd:string ;
         sio:hasAttribute :w0_0-a0142f122e3218f79313f0b76d57b2f6 .
     :Index1_W0-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 1 for W0"^^xsd:string ;
+        rdfs:label "index 1 for W0"^^xsd:string ;
         sio:hasAttribute :w0_1-a0142f122e3218f79313f0b76d57b2f6 .
     :Index2_W0-a0142f122e3218f79313f0b76d57b2f6
-        rdfs:label "Index 2 for W0"^^xsd:string ;
+        rdfs:label "index 2 for W0"^^xsd:string ;
         sio:hasAttribute :w0_2-a0142f122e3218f79313f0b76d57b2f6 .
      :w0_0-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:w0 ;
-        rdfs:label "w0"^^xsd:string ;
+        rdf:type    hao:PredictionWeightBiasParameter ;
+        rdfs:label "prediction weight bias parameter"^^xsd:string ;
         sio:hasValue    "0.0554988272"^^xsd:float .
 
      :w0_1-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:w0 ;
-        rdfs:label "w0"^^xsd:string ;
+        rdf:type    hao:PredictionWeightBiasParameter ;
+        rdfs:label "prediction weight bias parameter"^^xsd:string ;
         sio:hasValue    "0.1448050588"^^xsd:float .
 
      :w0_2-a0142f122e3218f79313f0b76d57b2f6
-        rdf:type    hao:w0 ;
-        rdfs:label "w0"^^xsd:string ;
+        rdf:type    hao:PredictionWeightBiasParameter ;
+        rdfs:label "prediction weight bias parameter"^^xsd:string ;
         sio:hasValue    "0.1"^^xsd:float .
 
 }
