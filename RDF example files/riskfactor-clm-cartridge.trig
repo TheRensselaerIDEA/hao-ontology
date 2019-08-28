@@ -1,44 +1,43 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix np: <http://www.nanopub.org/nschema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix hao: <http://idea.tw.rpi.edu/projects/heals/hao/> .
-@prefix sco: <http://idea.tw.rpi.edu/projects/heals/sco/> .
 @prefix obi: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
 @prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix chear: <http://hadatac.org/ont/chear#> .
-@prefix : <http://idea.tw.rpi.edu/projects/heals/hao/kb/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hao: <https://purl.org/heals/hao/> .
+@prefix : <https://purl.org/heals/hao/> .
 
 :riskfactor-clm-cartridge-8af1fba833752f0002336284dbe9ej45 {
 
       :risk_factor_category-8af1fba833752f0002336284dbe9ej45
           rdf:type    hao:RiskFactorCategory ;
-          rdfs:label "Risk Factor Category"^^xsd:string ;
+          rdfs:label "risk factor category"^^xsd:string ;
           sio:hasValue    "cadmium, lead, and total mercury"^^xsd:string .
 
       :file_key-8af1fba833752f0002336284dbe9ej45
           rdf:type    hao:FileKey ;
-          rdfs:label "File key"^^xsd:string ;
+          rdfs:label "file key"^^xsd:string ;
           sio:hasValue "clm"^^xsd:string .
           
       :factor_key-8af1fba833752f0002336284dbe9ej45
           rdf:type    hao:FactorKey ;
-          rdfs:label "Factor Key"^^xsd:string ;
+          rdfs:label "factor key"^^xsd:string ;
           sio:hasValue "LBX"^^xsd:string .
 
       :transformation-8af1fba833752f0002336284dbe9ej45
           rdf:type    obi:0200000 ;
-          rdfs:label "Transformation"^^xsd:string ;
+          rdfs:label "transformation"^^xsd:string ;
           sio:hasValue "log"^^xsd:string .
 
       :exceptions-8af1fba833752f0002336284dbe9ej45
           rdf:type    hao:Exception ;
-          rdfs:label "Exceptions"^^xsd:string ;
+          rdfs:label "exception"^^xsd:string ;
           sio:hasValue    "URXUCR"^^xsd:string ,
                           "LBXCOT"^^xsd:string ,
                           "LBXGH"^^xsd:string.
