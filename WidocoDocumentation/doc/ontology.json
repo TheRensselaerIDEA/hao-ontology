@@ -47,6 +47,33 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/useCohort"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/isAbout"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000203"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/isAbout"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Model"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/hasPart"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
@@ -94,14 +121,17 @@
 }, {
   "@id" : "http://purl.obolibrary.org/obo/OBCS_0000039",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBCS_0000039"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "confounding variable specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/OBI_0000175",
@@ -121,6 +151,9 @@
 }, {
   "@id" : "http://purl.obolibrary.org/obo/OBI_0001265",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0001265"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "FWER adjusted p-value"
   } ],
@@ -133,182 +166,248 @@
 }, {
   "@id" : "http://purl.obolibrary.org/obo/OBI_0200000",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A planned process that produces output data from input data."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0200000"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "data transformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A planned process that produces output data from input data."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/OBI_0200094",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A logarithmic transformation is a data transformation consisting in the application of the logarithm function with a given base a (where a&gt;0 and a is not equal to 1) to a (one dimensional) positive real number input. The logarithm function with base a can be defined as the inverse of the exponential function with the same base. See e.g. http://en.wikipedia.org/wiki/Logarithm."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0200094"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "logarithmic transformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/OBI_0200000"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A logarithmic transformation is a data transformation consisting in the application of the logarithm function with a given base a (where a>0 and a is not equal to 1) to a (one dimensional) positive real number input. The logarithm function with base a can be defined as the inverse of the exponential function with the same base. See e.g. http://en.wikipedia.org/wiki/Logarithm."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000037",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&apos;s estimate of a population mean.It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000037"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "standard error of the mean"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Quantity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&apos;s estimate of a population mean.It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000088",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Statistical sample size is a count evaluating the number of individual experimental units"
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000088"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "study group population size"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Count"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Statistical sample size is a count evaluating the number of individual experimental units."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000108",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)"
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000108"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "linear regression for analysis of continuous dependent variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000390"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000149",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000149"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "binomial logistic regression for analysis of dichotomous dependent variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000390"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000161",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000161"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "data distribution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit."
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/STATO_0000193",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "study group population"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference."
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/STATO_0000203",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cohort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000193"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a cohort is a study group population where the members are human beings which meet inclusion criteria and undergo a longitudinal design"
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000227",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "a normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html"
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000227"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "normal distribution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000161"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html"
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000237",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000237"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "standard deviation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Quantity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000251",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A continuous variable is one for which, within the limits the variable ranges, any value is possible."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000251"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "continuous variabl"
+    "@value" : "continuous variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000258"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A continuous variable is one for which, within the limits the variable ranges, any value is possible."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000252",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "a categorical variable  is a variable  which that can only assume a finite number  of value and cast observation in a small number of categories"
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000252"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "categorical variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000258"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A categorical variable is a variable which that can only assume a finite number  of value and cast observation in a small number of categories."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000258",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000258"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Variable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000390",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A regression model is a statistical model used in a type of analysis knowns as regression analysis, whereby a function is used to determine the relation between a response variable and an independent variable , with a set of unknown parameters."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000390"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "regression model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Model"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A regression model is a statistical model used in a type of analysis knowns as regression analysis, whereby a function is used to determine the relation between a response variable and an independent variable , with a set of unknown parameters."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000562",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "It is a measure of how precise is an estimate of the statistical parameter is.Standard error is the estimated standard deviation of an estimate. It measures the uncertainty associated with the estimate. Compared with the standard deviations of the underlying distribution, which are usually unknown, standard errors can be calculated from observed data."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000562"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "standard error of estimate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Quantity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "It is a measure of how precise is an estimate of the statistical parameter is.Standard error is the estimated standard deviation of an estimate. It measures the uncertainty associated with the estimate. Compared with the standard deviations of the underlying distribution, which are usually unknown, standard errors can be calculated from observed data."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_0000565",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number."
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000565"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "regression coefficient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number."
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/STATO_DataItem",
@@ -332,21 +431,19 @@
     "@id" : "http://semanticscience.org/resource/MathematicalEntity"
   } ]
 }, {
-  "@id" : "http://semanticscience.org/resource/Analysis",
+  "@id" : "http://semanticscience.org/resource/Association",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : ""
+    "@value" : "An assocation is a relationship between two or more entities derived by some informational analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://semanticscience.org/ontology/sio.owl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "analysis"
+    "@value" : "association"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
-  }, {
-    "@id" : "_:genid2"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@id" : "http://semanticscience.org/resource/MathematicalEntity"
   } ]
 }, {
   "@id" : "http://semanticscience.org/resource/Category",
@@ -442,6 +539,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/DimensionlessQuantity"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/DataAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://semanticscience.org/ontology/sio.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "data analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "http://semanticscience.org/resource/Definition",
@@ -785,21 +899,6 @@
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
   } ]
 }, {
-  "@id" : "http://semanticscience.org/resource/StandardDeviation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A standard deviation (represented by the symbol σ) is the quantity of  variation from the average (mean, or expected value)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://semanticscience.org/ontology/sio.owl"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "standard deviation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://semanticscience.org/resource/Quantity"
-  } ]
-}, {
   "@id" : "http://semanticscience.org/resource/Term",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -874,8 +973,6 @@
     "@value" : "Health Analysis Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.obofoundry.org/obo/stato.owl#"
-  }, {
     "@id" : "http://semanticscience.org/ontology/sio-subset-labels.owl"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
@@ -897,17 +994,17 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C41116"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Natural language description of what question a given analysis answers"
+    "@value" : "An analysis question is a natural language description of what question a given analysis answers."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/AnalysisWorkflow",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "analysis workflow"
   } ],
@@ -919,14 +1016,14 @@
     "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/BaseRate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "base rate"
   } ],
@@ -934,7 +1031,10 @@
     "@id" : "http://semanticscience.org/resource/RateOfChange"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/BinaryVariable",
@@ -946,7 +1046,10 @@
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000258"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Variable taking values of 0 and 1."
+    "@value" : "A binary variable is a variable taking values of 0 and 1."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Cadre",
@@ -956,13 +1059,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C43418"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are identified via supervised learning and may incorporate feature selection or weighting in their definitions."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CadreAssignment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cadre assignment"
   } ],
@@ -970,14 +1076,14 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C25426"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CadreCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cadre count"
   } ],
@@ -985,14 +1091,14 @@
     "@id" : "http://semanticscience.org/resource/Count"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CadreIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "An index assigned to each subpopulation."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cadre index"
   } ],
@@ -1000,14 +1106,14 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C25390"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "An index assigned to each subpopulation."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CadreList",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : ""
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cadre list"
   } ],
@@ -1017,14 +1123,14 @@
     "@id" : "_:genid5"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "A cadre list contains the information of a list of cadres."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CadreSize",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "How many observations each subpopulation contains."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cadre size"
   } ],
@@ -1032,14 +1138,14 @@
     "@id" : "http://semanticscience.org/resource/Count"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "How many observations each subpopulation contains."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CadreSizeList",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The number of subjects in the training data assigned to each cadre."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cadre size list"
   } ],
@@ -1047,7 +1153,10 @@
     "@id" : "http://semanticscience.org/resource/List"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "The number of subjects in the training data assigned to each cadre."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Cartridge",
@@ -1059,7 +1168,22 @@
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."
+    "@value" : "A cartridge is the minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In STA, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/CenterParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "center parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Parameter"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The center of the cadre. "
   } ],
   "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
     "@id" : "https://purl.org/heals/hao/Alex"
@@ -1074,25 +1198,32 @@
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "String sequence used to represent a constructed response variable in data tables"
+    "@value" : "A code is a string sequence used to represent a constructed response variable in data tables."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "hyp"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CohortCartridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Inclusion criteria used to determine if a given subject may be included in the user's study, which can be chosen on-the-fly or adapted from existing studies."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cohort cartridge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/InputCartridge"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study."
+    "@value" : "A cohort cartridge lists the inclusion criteria used to determine if a given subject may be included in the user’s study."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Component",
@@ -1104,10 +1235,13 @@
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Category of data tables in NHANES"
+    "@value" : "A component is a category of data tables in NHANES."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Laboratory"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Condition",
@@ -1119,7 +1253,10 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C25652"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side"
+    "@value" : "A condition is a mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Conjunction",
@@ -1131,17 +1268,17 @@
     "@id" : "http://semanticscience.org/resource/Conjunctionand"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Mathematical operator used to combine expressions in response variable definitions"
+    "@value" : "A conjunction is a mathematical operator used to combine expressions in response variable definitions."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "prod"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CovariateMean",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "covariate mean"
   } ],
@@ -1149,14 +1286,14 @@
     "@id" : "http://semanticscience.org/resource/Mean"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CovariateStdError",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "covariate standard error"
   } ],
@@ -1164,7 +1301,10 @@
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000562"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/DataType",
@@ -1176,17 +1316,17 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C42645"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Data type of response variable"
+    "@value" : "A data type is the type of response variable data."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Binary variable"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/ElasticNetMixingWeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter's regularization looks more like l1 regularization or l2 regularization."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "elastic net mixing weight"
   } ],
@@ -1194,14 +1334,14 @@
     "@id" : "https://purl.org/heals/hao/Hyperparameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter's regularization looks more like l1 regularization or l2 regularization."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/ElasticNetMixingWeightD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Alpha d, the elastic net mixing weights for the d parameter."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "elastic net mixing weight D"
   } ],
@@ -1209,14 +1349,14 @@
     "@id" : "https://purl.org/heals/hao/ElasticNetMixingWeight"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Alpha d, the elastic net mixing weights for the d parameter."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/ElasticNetMixingWeightW",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Alpha W, the elastic net mixing weights for the W parameter."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "elastic net mixing weight W"
   } ],
@@ -1224,14 +1364,14 @@
     "@id" : "https://purl.org/heals/hao/ElasticNetMixingWeight"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Alpha W, the elastic net mixing weights for the W parameter."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Estimate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "estimate"
   } ],
@@ -1239,7 +1379,10 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C25498"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Exception",
@@ -1251,17 +1394,32 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C54420"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Variable names in risk factor tables that have names that look like risk factors but aren’t"
+    "@value" : "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "URXUCR"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/FactorKey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "factor key"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/InformationContentEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A factor key is the prefix of the variable."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/FeatureSelectionParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The name of the parameter d."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cadre assignment feature selection parameter"
   } ],
@@ -1269,14 +1427,14 @@
     "@id" : "http://semanticscience.org/resource/Parameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "The name of the parameter d."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/FeatureUsage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "How to divide supplied features into cadre-assignment and target-prediction categories."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "feature usage"
   } ],
@@ -1284,7 +1442,10 @@
     "@id" : "http://www.w3.org/ns/prov#Usage"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "How to divide supplied features into cadre-assignment and target-prediction categories."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/FileKey",
@@ -1296,17 +1457,32 @@
     "@id" : "http://semanticscience.org/resource/InformationContentEntity"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Character sequence mapping risk factor categories to data table filenames"
+    "@value" : "A file key is a character sequence mapping risk factor categories to data table filenames."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@value" : "Data table filenames containing “ins” contain risk factor measurements of the category Organophosphate Insecticides "
+    "@value" : "Data table filenames containing 'ins' contain risk factor measurements of the category Organophosphate Insecticides "
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/GenerateCohortSummaryTable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generate cohort summary table"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Attribute"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Whether the cohort summary table is generated."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Hyperparameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hyperparameter"
   } ],
@@ -1314,14 +1490,14 @@
     "@id" : "http://semanticscience.org/resource/Parameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/HyperplaneParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Each column of the parameter W defines a hyperplane which determines each cadre's target prediction function."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hyperplane parameter"
   } ],
@@ -1329,7 +1505,10 @@
     "@id" : "http://semanticscience.org/resource/Parameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Each column of the parameter W defines a hyperplane which determines each cadre's target prediction function."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/InputCartridge",
@@ -1341,10 +1520,13 @@
     "@id" : "https://purl.org/heals/hao/Cartridge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Type of cartridge used to define input parameters / configurations when constructing a study"
+    "@value" : "An input cartridge is a type of cartridge used to define input parameters / configurations when constructing a study."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Response variable cartridge defining hypertension"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/LHS",
@@ -1360,6 +1542,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "sbp"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/LeftSkewed",
@@ -1371,14 +1556,14 @@
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000161"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a left-hand tail that is longer than the right-hand tail."
+    "@value" : "A left skewed data distribution is a characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a right-hand tail that is longer than the left-hand tail."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Metric",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "How to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "metric"
   } ],
@@ -1386,14 +1571,14 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C25209"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "A metric describes how to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/MinPositive",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Minimum number of positive observations."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "minimum positive"
   } ],
@@ -1401,7 +1586,10 @@
     "@id" : "http://semanticscience.org/resource/Count"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Minimum number of positive observations."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/ModelCartridge",
@@ -1414,33 +1602,44 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/OutputCartridge"
+  }, {
+    "@id" : "_:genid8"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "
+    "@value" : "A model cartridge assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/ModelParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "model parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/STATO_DataItem"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A model parameter is a data item which is part of a model and which is meant to characterize an theoretical or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Note",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A note to describe the data in the file."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "note"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Description"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A note to describe the data in the file."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/OutputCartridge",
@@ -1452,25 +1651,43 @@
     "@id" : "https://purl.org/heals/hao/Cartridge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them"
+    "@value" : "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Results cartridge describing environmental risk factors for hypertension in obese women"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
-  "@id" : "https://purl.org/heals/hao/ParameterCartridge",
+  "@id" : "https://purl.org/heals/hao/ParametersCartridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Rules to complete chosen analysis workflow and potential hyperparameter configurations for chosen model."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "parameter cartridge"
+    "@value" : "parameters cartridge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/InputCartridge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Parameter cartridges contain rules to complete the chosen analysis workflow. "
+    "@value" : "A parameters cartridge contains rules to complete the chosen analysis workflow. "
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/PredictionWeightBiasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prediction weight bias parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Parameter"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A prediction weight bias parameter is a learnable parameter for the prediction model. "
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RHS",
@@ -1482,17 +1699,17 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C80488"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Right-hand side of expression in response variable definitions"
+    "@value" : "Right-hand side of expression in response variable definitions."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "90"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RegularizationStrength",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "regularization strength"
   } ],
@@ -1500,14 +1717,14 @@
     "@id" : "https://purl.org/heals/hao/Hyperparameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RegularizationStrengthD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Regularization strength for the d parameter."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "regularization strength d"
   } ],
@@ -1515,14 +1732,14 @@
     "@id" : "https://purl.org/heals/hao/RegularizationStrength"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Regularization strength for the d parameter."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RegularizationStrengthW",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Regularization strength for the W parameter."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "regularization strength W"
   } ],
@@ -1530,7 +1747,10 @@
     "@id" : "https://purl.org/heals/hao/RegularizationStrength"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Regularization strength for the W parameter."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Relationship",
@@ -1542,17 +1762,17 @@
     "@id" : "http://semanticscience.org/resource/LogicalOperator"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Mathematical operator used in response variable definitions"
+    "@value" : "Mathematical operator used in response variable definitions."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Greater-than-or-equal"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/ResponseCartridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Analysis concepts and background domain axioms necessary to model a given health condition."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "response cartridge"
   } ],
@@ -1560,14 +1780,14 @@
     "@id" : "https://purl.org/heals/hao/InputCartridge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease"
+    "@value" : "A response variable cartridge provides the analysis concepts and background domain axioms necessary to model a given disease"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Result",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "result"
   } ],
@@ -1575,31 +1795,14 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C76125"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
-  } ]
-}, {
-  "@id" : "https://purl.org/heals/hao/ResultCartridge",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values"
+    "@value" : "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "result cartridge"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://purl.org/heals/hao/OutputCartridge"
-  }, {
-    "@id" : "_:genid6"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges"
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/ResultCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : ""
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "result count"
   } ],
@@ -1607,7 +1810,30 @@
     "@id" : "http://semanticscience.org/resource/Count"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "A result count is the number of results."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/ResultsCartridge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "results cartridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/hao/OutputCartridge"
+  }, {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A results cartridge is a type of output cartridge describing a single study’s statistical findings and constituent input cartridges."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RightSkewed",
@@ -1619,17 +1845,17 @@
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000161"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail."
+    "@value" : "A right skewed data distribution is a characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Most environmental exposure risk factor distributions"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RiskFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A risk factor is a variable that has a potential association with a response variable."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "risk factor"
   } ],
@@ -1637,14 +1863,14 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "A risk factor is a variable that has a potential association with a response variable."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RiskFactorCartridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "How categories of semantically-similar risk factors should be modeled."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "risk factor cartridge"
   } ],
@@ -1652,7 +1878,10 @@
     "@id" : "https://purl.org/heals/hao/InputCartridge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. "
+    "@value" : "A risk factor cartridge describes categories of semantically similar risk factors and details how they should be modeled."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/RiskFactorCategory",
@@ -1664,17 +1893,17 @@
     "@id" : "http://semanticscience.org/resource/Category"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Category of similar potential risk factors, where “similarity” is defined by domain experts"
+    "@value" : "Risk factor category is a category of similar potential risk factors, where 'similarity' is defined by domain experts."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Polyaromatic hydrocarbons"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Sharpness",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "sharpness"
   } ],
@@ -1682,7 +1911,22 @@
     "@id" : "http://semanticscience.org/resource/Attribute"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts."
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/InformationContentEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The source of the cadre model"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Standardization",
@@ -1695,6 +1939,9 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Mathematical transformation is applied to univariate random variables. The transformed distribution is shifted and scaled so it has a mean of zero and a variance of one."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/StudyVariable",
@@ -1706,10 +1953,13 @@
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000258"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Variable that potentially has a significant association with the response variable"
+    "@value" : "A study variable is a variable that potentially has a significant association with the response variable"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Urinary cadmium"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/SubpopulationCartridge",
@@ -1724,14 +1974,14 @@
     "@id" : "https://purl.org/heals/hao/OutputCartridge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations."
+    "@value" : "A subpopulation cartridges gives 'Table 1s' (cohort-description tables) of discovered subpopulations."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/SubpopulationCharacteristic",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Mean and standard-error-of-mean estimates for each discovered subpopulation."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "subpopulation characteristic"
   } ],
@@ -1739,14 +1989,14 @@
     "@id" : "http://semanticscience.org/resource/Attribute"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "Mean and standard-error-of-mean estimates for each discovered subpopulation."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/TMax",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The maximum number of stochastic gradient descent steps taken."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "T max"
   } ],
@@ -1754,14 +2004,14 @@
     "@id" : "http://semanticscience.org/resource/MaximalValue"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "The maximum number of stochastic gradient descent steps taken."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/TargetPrediction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject's risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject's response variable value."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "target prediction"
   } ],
@@ -1769,7 +2019,10 @@
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C54156"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : ""
+    "@value" : "A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject's risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject's response variable value."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/TargetVariable",
@@ -1781,10 +2034,13 @@
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000258"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Variable used as response variable / target feature in modeling analyses"
+    "@value" : "A target variable is a variable used as response variable / target feature in modeling analyses"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Hypertension"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/Threshold",
@@ -1794,5 +2050,41 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/InformationalQuality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A threshold is the minimal value to show some significance exist."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/UseSurveyWeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "use survey weight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Attribute"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Whether the survey weight is used in the study."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/useCohort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "use cohort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Variable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Whether the study uses a cohort."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 } ]

@@ -1,6 +1,5 @@
 <https://purl.org/heals/hao/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://purl.org/heals/hao/> <http://www.w3.org/2002/07/owl#versionIRI> <https://purl.org/heals/hao/0.9/> .
-<https://purl.org/heals/hao/> <http://www.w3.org/2002/07/owl#imports> <http://purl.obofoundry.org/obo/stato.owl#> .
 <https://purl.org/heals/hao/> <http://www.w3.org/2002/07/owl#imports> <http://semanticscience.org/ontology/sio-subset-labels.owl> .
 <https://purl.org/heals/hao/> <http://purl.org/dc/terms/created> "2018-05-15T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://purl.org/heals/hao/> <http://purl.org/dc/terms/creator> "Alexander New" .
@@ -85,8 +84,9 @@
 # http://purl.obolibrary.org/obo/OBCS_0000039
 <http://purl.obolibrary.org/obo/OBCS_0000039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/OBCS_0000039> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
-<http://purl.obolibrary.org/obo/OBCS_0000039> <http://purl.org/dc/terms/description> "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable." .
+<http://purl.obolibrary.org/obo/OBCS_0000039> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/OBCS_0000039> .
 <http://purl.obolibrary.org/obo/OBCS_0000039> <http://www.w3.org/2000/01/rdf-schema#label> "confounding variable specification" .
+<http://purl.obolibrary.org/obo/OBCS_0000039> <http://www.w3.org/2004/02/skos/core#definition> "A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable." .
 # 
 # http://purl.obolibrary.org/obo/OBI_0000175
 <http://purl.obolibrary.org/obo/OBI_0000175> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -98,98 +98,125 @@
 # http://purl.obolibrary.org/obo/OBI_0001265
 <http://purl.obolibrary.org/obo/OBI_0001265> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/OBI_0001265> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
+<http://purl.obolibrary.org/obo/OBI_0001265> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/OBI_0001265> .
 <http://purl.obolibrary.org/obo/OBI_0001265> <http://www.w3.org/2000/01/rdf-schema#label> "FWER adjusted p-value" .
 <http://purl.obolibrary.org/obo/OBI_0001265> <http://www.w3.org/2004/02/skos/core#definition> "A quantitative confidence value resulting from a multiple testing error correction method which adjusts the p-value used as input to control for Type I error in the context of multiple pairwise tests." .
 # 
 # http://purl.obolibrary.org/obo/OBI_0200000
 <http://purl.obolibrary.org/obo/OBI_0200000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/OBI_0200000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Process> .
-<http://purl.obolibrary.org/obo/OBI_0200000> <http://purl.org/dc/terms/description> "A planned process that produces output data from input data." .
+<http://purl.obolibrary.org/obo/OBI_0200000> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/OBI_0200000> .
 <http://purl.obolibrary.org/obo/OBI_0200000> <http://www.w3.org/2000/01/rdf-schema#label> "data transformation" .
+<http://purl.obolibrary.org/obo/OBI_0200000> <http://www.w3.org/2004/02/skos/core#definition> "A planned process that produces output data from input data." .
 # 
 # http://purl.obolibrary.org/obo/OBI_0200094
 <http://purl.obolibrary.org/obo/OBI_0200094> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/OBI_0200094> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0200000> .
-<http://purl.obolibrary.org/obo/OBI_0200094> <http://purl.org/dc/terms/description> "A logarithmic transformation is a data transformation consisting in the application of the logarithm function with a given base a (where a&gt;0 and a is not equal to 1) to a (one dimensional) positive real number input. The logarithm function with base a can be defined as the inverse of the exponential function with the same base. See e.g. http://en.wikipedia.org/wiki/Logarithm." .
+<http://purl.obolibrary.org/obo/OBI_0200094> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/OBI_0200094> .
 <http://purl.obolibrary.org/obo/OBI_0200094> <http://www.w3.org/2000/01/rdf-schema#label> "logarithmic transformation" .
+<http://purl.obolibrary.org/obo/OBI_0200094> <http://www.w3.org/2004/02/skos/core#definition> "A logarithmic transformation is a data transformation consisting in the application of the logarithm function with a given base a (where a>0 and a is not equal to 1) to a (one dimensional) positive real number input. The logarithm function with base a can be defined as the inverse of the exponential function with the same base. See e.g. http://en.wikipedia.org/wiki/Logarithm." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000037
 <http://purl.obolibrary.org/obo/STATO_0000037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000037> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Quantity> .
-<http://purl.obolibrary.org/obo/STATO_0000037> <http://purl.org/dc/terms/description> "The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&apos;s estimate of a population mean.It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample." .
+<http://purl.obolibrary.org/obo/STATO_0000037> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000037> .
 <http://purl.obolibrary.org/obo/STATO_0000037> <http://www.w3.org/2000/01/rdf-schema#label> "standard error of the mean" .
+<http://purl.obolibrary.org/obo/STATO_0000037> <http://www.w3.org/2004/02/skos/core#definition> "The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&apos;s estimate of a population mean.It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000088
 <http://purl.obolibrary.org/obo/STATO_0000088> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000088> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Count> .
-<http://purl.obolibrary.org/obo/STATO_0000088> <http://purl.org/dc/terms/description> "Statistical sample size is a count evaluating the number of individual experimental units" .
+<http://purl.obolibrary.org/obo/STATO_0000088> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000088> .
 <http://purl.obolibrary.org/obo/STATO_0000088> <http://www.w3.org/2000/01/rdf-schema#label> "study group population size" .
+<http://purl.obolibrary.org/obo/STATO_0000088> <http://www.w3.org/2004/02/skos/core#definition> "Statistical sample size is a count evaluating the number of individual experimental units." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000108
 <http://purl.obolibrary.org/obo/STATO_0000108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000108> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000390> .
-<http://purl.obolibrary.org/obo/STATO_0000108> <http://purl.org/dc/terms/description> "linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)" .
+<http://purl.obolibrary.org/obo/STATO_0000108> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000108> .
 <http://purl.obolibrary.org/obo/STATO_0000108> <http://www.w3.org/2000/01/rdf-schema#label> "linear regression for analysis of continuous dependent variable" .
+<http://purl.obolibrary.org/obo/STATO_0000108> <http://www.w3.org/2004/02/skos/core#definition> "Linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).Linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000149
 <http://purl.obolibrary.org/obo/STATO_0000149> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000149> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000390> .
-<http://purl.obolibrary.org/obo/STATO_0000149> <http://purl.org/dc/terms/description> "binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function." .
+<http://purl.obolibrary.org/obo/STATO_0000149> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000149> .
 <http://purl.obolibrary.org/obo/STATO_0000149> <http://www.w3.org/2000/01/rdf-schema#label> "binomial logistic regression for analysis of dichotomous dependent variable" .
+<http://purl.obolibrary.org/obo/STATO_0000149> <http://www.w3.org/2004/02/skos/core#definition> "Binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000161
 <http://purl.obolibrary.org/obo/STATO_0000161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000161> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
-<http://purl.obolibrary.org/obo/STATO_0000161> <http://purl.org/dc/terms/description> "variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit." .
+<http://purl.obolibrary.org/obo/STATO_0000161> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000161> .
 <http://purl.obolibrary.org/obo/STATO_0000161> <http://www.w3.org/2000/01/rdf-schema#label> "data distribution" .
+<http://purl.obolibrary.org/obo/STATO_0000161> <http://www.w3.org/2004/02/skos/core#definition> "Variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit." .
+# 
+# http://purl.obolibrary.org/obo/STATO_0000193
+<http://purl.obolibrary.org/obo/STATO_0000193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/STATO_0000193> <http://www.w3.org/2000/01/rdf-schema#label> "study group population" .
+<http://purl.obolibrary.org/obo/STATO_0000193> <http://www.w3.org/2004/02/skos/core#definition> "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference." .
+# 
+# http://purl.obolibrary.org/obo/STATO_0000203
+<http://purl.obolibrary.org/obo/STATO_0000203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/STATO_0000203> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000193> .
+<http://purl.obolibrary.org/obo/STATO_0000203> <http://www.w3.org/2000/01/rdf-schema#label> "cohort" .
+<http://purl.obolibrary.org/obo/STATO_0000203> <http://www.w3.org/2004/02/skos/core#definition> "a cohort is a study group population where the members are human beings which meet inclusion criteria and undergo a longitudinal design" .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000227
 <http://purl.obolibrary.org/obo/STATO_0000227> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000227> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000161> .
-<http://purl.obolibrary.org/obo/STATO_0000227> <http://purl.org/dc/terms/description> "a normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html" .
+<http://purl.obolibrary.org/obo/STATO_0000227> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000227> .
 <http://purl.obolibrary.org/obo/STATO_0000227> <http://www.w3.org/2000/01/rdf-schema#label> "normal distribution" .
+<http://purl.obolibrary.org/obo/STATO_0000227> <http://www.w3.org/2004/02/skos/core#definition> "A normal distribution is a continuous probability distribution described by a probability distribution function described here: http://mathworld.wolfram.com/NormalDistribution.html" .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000237
 <http://purl.obolibrary.org/obo/STATO_0000237> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000237> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Quantity> .
-<http://purl.obolibrary.org/obo/STATO_0000237> <http://purl.org/dc/terms/description> "The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance." .
+<http://purl.obolibrary.org/obo/STATO_0000237> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000237> .
 <http://purl.obolibrary.org/obo/STATO_0000237> <http://www.w3.org/2000/01/rdf-schema#label> "standard deviation" .
+<http://purl.obolibrary.org/obo/STATO_0000237> <http://www.w3.org/2004/02/skos/core#definition> "The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000251
 <http://purl.obolibrary.org/obo/STATO_0000251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000251> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000258> .
-<http://purl.obolibrary.org/obo/STATO_0000251> <http://purl.org/dc/terms/description> "A continuous variable is one for which, within the limits the variable ranges, any value is possible." .
-<http://purl.obolibrary.org/obo/STATO_0000251> <http://www.w3.org/2000/01/rdf-schema#label> "continuous variabl" .
+<http://purl.obolibrary.org/obo/STATO_0000251> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000251> .
+<http://purl.obolibrary.org/obo/STATO_0000251> <http://www.w3.org/2000/01/rdf-schema#label> "continuous variable" .
+<http://purl.obolibrary.org/obo/STATO_0000251> <http://www.w3.org/2004/02/skos/core#definition> "A continuous variable is one for which, within the limits the variable ranges, any value is possible." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000252
 <http://purl.obolibrary.org/obo/STATO_0000252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000252> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000258> .
-<http://purl.obolibrary.org/obo/STATO_0000252> <http://purl.org/dc/terms/description> "a categorical variable  is a variable  which that can only assume a finite number  of value and cast observation in a small number of categories" .
+<http://purl.obolibrary.org/obo/STATO_0000252> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000252> .
 <http://purl.obolibrary.org/obo/STATO_0000252> <http://www.w3.org/2000/01/rdf-schema#label> "categorical variable" .
+<http://purl.obolibrary.org/obo/STATO_0000252> <http://www.w3.org/2004/02/skos/core#definition> "A categorical variable is a variable which that can only assume a finite number  of value and cast observation in a small number of categories." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000258
 <http://purl.obolibrary.org/obo/STATO_0000258> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000258> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Variable> .
-<http://purl.obolibrary.org/obo/STATO_0000258> <http://purl.org/dc/terms/description> "a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation." .
+<http://purl.obolibrary.org/obo/STATO_0000258> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000258> .
 <http://purl.obolibrary.org/obo/STATO_0000258> <http://www.w3.org/2000/01/rdf-schema#label> "variable" .
+<http://purl.obolibrary.org/obo/STATO_0000258> <http://www.w3.org/2004/02/skos/core#definition> "A variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000390
 <http://purl.obolibrary.org/obo/STATO_0000390> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000390> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Model> .
-<http://purl.obolibrary.org/obo/STATO_0000390> <http://purl.org/dc/terms/description> "A regression model is a statistical model used in a type of analysis knowns as regression analysis, whereby a function is used to determine the relation between a response variable and an independent variable , with a set of unknown parameters." .
+<http://purl.obolibrary.org/obo/STATO_0000390> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000390> .
 <http://purl.obolibrary.org/obo/STATO_0000390> <http://www.w3.org/2000/01/rdf-schema#label> "regression model" .
+<http://purl.obolibrary.org/obo/STATO_0000390> <http://www.w3.org/2004/02/skos/core#definition> "A regression model is a statistical model used in a type of analysis knowns as regression analysis, whereby a function is used to determine the relation between a response variable and an independent variable , with a set of unknown parameters." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000562
 <http://purl.obolibrary.org/obo/STATO_0000562> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000562> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Quantity> .
-<http://purl.obolibrary.org/obo/STATO_0000562> <http://purl.org/dc/terms/description> "It is a measure of how precise is an estimate of the statistical parameter is.Standard error is the estimated standard deviation of an estimate. It measures the uncertainty associated with the estimate. Compared with the standard deviations of the underlying distribution, which are usually unknown, standard errors can be calculated from observed data." .
+<http://purl.obolibrary.org/obo/STATO_0000562> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000562> .
 <http://purl.obolibrary.org/obo/STATO_0000562> <http://www.w3.org/2000/01/rdf-schema#label> "standard error of estimate" .
+<http://purl.obolibrary.org/obo/STATO_0000562> <http://www.w3.org/2004/02/skos/core#definition> "It is a measure of how precise is an estimate of the statistical parameter is.Standard error is the estimated standard deviation of an estimate. It measures the uncertainty associated with the estimate. Compared with the standard deviations of the underlying distribution, which are usually unknown, standard errors can be calculated from observed data." .
 # 
 # http://purl.obolibrary.org/obo/STATO_0000565
 <http://purl.obolibrary.org/obo/STATO_0000565> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/STATO_0000565> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
-<http://purl.obolibrary.org/obo/STATO_0000565> <http://purl.org/dc/terms/description> "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number." .
+<http://purl.obolibrary.org/obo/STATO_0000565> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.obolibrary.org/obo/STATO_0000565> .
 <http://purl.obolibrary.org/obo/STATO_0000565> <http://www.w3.org/2000/01/rdf-schema#label> "regression coefficient" .
+<http://purl.obolibrary.org/obo/STATO_0000565> <http://www.w3.org/2004/02/skos/core#definition> "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number." .
 # 
 # http://purl.obolibrary.org/obo/STATO_DataItem
 <http://purl.obolibrary.org/obo/STATO_DataItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -201,19 +228,12 @@
 <http://semanticscience.org/resource/Algorithm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
 <http://semanticscience.org/resource/Algorithm> <http://www.w3.org/2000/01/rdf-schema#label> "algorithm" .
 # 
-# http://semanticscience.org/resource/Analysis
-<http://semanticscience.org/resource/Analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://semanticscience.org/resource/Analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisQuestion> .
-<http://semanticscience.org/resource/Analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasImplementation> .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisWorkflow> .
-<http://semanticscience.org/resource/Analysis> <http://purl.org/dc/terms/description> "" .
-<http://semanticscience.org/resource/Analysis> <http://www.w3.org/2000/01/rdf-schema#label> "analysis" .
-<http://semanticscience.org/resource/Analysis> <http://www.w3.org/2004/02/skos/core#definition> "" .
+# http://semanticscience.org/resource/Association
+<http://semanticscience.org/resource/Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/Association> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/MathematicalEntity> .
+<http://semanticscience.org/resource/Association> <http://purl.org/dc/terms/description> "An assocation is a relationship between two or more entities derived by some informational analysis." .
+<http://semanticscience.org/resource/Association> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
+<http://semanticscience.org/resource/Association> <http://www.w3.org/2000/01/rdf-schema#label> "association" .
 # 
 # http://semanticscience.org/resource/Category
 <http://semanticscience.org/resource/Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -258,6 +278,20 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 <http://semanticscience.org/resource/Count> <http://purl.org/dc/terms/description> "The number of elements of a finite set of objects." .
 <http://semanticscience.org/resource/Count> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
 <http://semanticscience.org/resource/Count> <http://www.w3.org/2000/01/rdf-schema#label> "count" .
+# 
+# http://semanticscience.org/resource/DataAnalysis
+<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisQuestion> .
+<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasImplementation> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisWorkflow> .
+<http://semanticscience.org/resource/DataAnalysis> <http://purl.org/dc/terms/description> "Data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making." .
+<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
+<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "data analysis" .
 # 
 # http://semanticscience.org/resource/Definition
 <http://semanticscience.org/resource/Definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -417,13 +451,6 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 <http://semanticscience.org/resource/Representation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
 <http://semanticscience.org/resource/Representation> <http://www.w3.org/2000/01/rdf-schema#label> "representation" .
 # 
-# http://semanticscience.org/resource/StandardDeviation
-<http://semanticscience.org/resource/StandardDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://semanticscience.org/resource/StandardDeviation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Quantity> .
-<http://semanticscience.org/resource/StandardDeviation> <http://purl.org/dc/terms/description> "A standard deviation (represented by the symbol σ) is the quantity of  variation from the average (mean, or expected value)." .
-<http://semanticscience.org/resource/StandardDeviation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
-<http://semanticscience.org/resource/StandardDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "standard deviation" .
-# 
 # http://semanticscience.org/resource/Term
 <http://semanticscience.org/resource/Term> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://semanticscience.org/resource/Term> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Phrase> .
@@ -445,8 +472,9 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C41116> .
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "analysis question" .
-<https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2004/02/skos/core#definition> "Natural language description of what question a given analysis answers" .
+<https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2004/02/skos/core#definition> "An analysis question is a natural language description of what question a given analysis answers." .
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2004/02/skos/core#example> "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?" .
+<https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/AnalysisWorkflow
 <https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -459,48 +487,51 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
 _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/OutputCartridge> .
-<https://purl.org/heals/hao/AnalysisWorkflow> <http://purl.org/dc/terms/description> "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results." .
 <https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#label> "analysis workflow" .
-<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2004/02/skos/core#definition> "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results." .
+<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/BaseRate
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/RateOfChange> .
-<https://purl.org/heals/hao/BaseRate> <http://purl.org/dc/terms/description> "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge." .
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2000/01/rdf-schema#label> "base rate" .
-<https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2004/02/skos/core#definition> "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge." .
+<https://purl.org/heals/hao/BaseRate> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/BinaryVariable
 <https://purl.org/heals/hao/BinaryVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/BinaryVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000258> .
 <https://purl.org/heals/hao/BinaryVariable> <http://www.w3.org/2000/01/rdf-schema#label> "binary variable" .
-<https://purl.org/heals/hao/BinaryVariable> <http://www.w3.org/2004/02/skos/core#definition> "Variable taking values of 0 and 1." .
+<https://purl.org/heals/hao/BinaryVariable> <http://www.w3.org/2004/02/skos/core#definition> "A binary variable is a variable taking values of 0 and 1." .
+<https://purl.org/heals/hao/BinaryVariable> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Cadre
 <https://purl.org/heals/hao/Cadre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C43418> .
 <https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#label> "cadre" .
+<https://purl.org/heals/hao/Cadre> <http://www.w3.org/2004/02/skos/core#definition> "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are identified via supervised learning and may incorporate feature selection or weighting in their definitions." .
+<https://purl.org/heals/hao/Cadre> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CadreAssignment
 <https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25426> .
-<https://purl.org/heals/hao/CadreAssignment> <http://purl.org/dc/terms/description> "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres." .
 <https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2000/01/rdf-schema#label> "cadre assignment" .
-<https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2004/02/skos/core#definition> "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres." .
+<https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CadreCount
 <https://purl.org/heals/hao/CadreCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CadreCount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Count> .
-<https://purl.org/heals/hao/CadreCount> <http://purl.org/dc/terms/description> "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection." .
 <https://purl.org/heals/hao/CadreCount> <http://www.w3.org/2000/01/rdf-schema#label> "cadre count" .
-<https://purl.org/heals/hao/CadreCount> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CadreCount> <http://www.w3.org/2004/02/skos/core#definition> "How many subpopulations the cohort specified by the cohort cartridge was divided into after conclusion of model-selection." .
+<https://purl.org/heals/hao/CadreCount> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CadreIndex
 <https://purl.org/heals/hao/CadreIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CadreIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25390> .
-<https://purl.org/heals/hao/CadreIndex> <http://purl.org/dc/terms/description> "An index assigned to each subpopulation." .
 <https://purl.org/heals/hao/CadreIndex> <http://www.w3.org/2000/01/rdf-schema#label> "cadre index" .
-<https://purl.org/heals/hao/CadreIndex> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CadreIndex> <http://www.w3.org/2004/02/skos/core#definition> "An index assigned to each subpopulation." .
+<https://purl.org/heals/hao/CadreIndex> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CadreList
 <https://purl.org/heals/hao/CadreList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -509,162 +540,199 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
 _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Cadre> .
-<https://purl.org/heals/hao/CadreList> <http://purl.org/dc/terms/description> "" .
 <https://purl.org/heals/hao/CadreList> <http://www.w3.org/2000/01/rdf-schema#label> "cadre list" .
-<https://purl.org/heals/hao/CadreList> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CadreList> <http://www.w3.org/2004/02/skos/core#definition> "A cadre list contains the information of a list of cadres." .
+<https://purl.org/heals/hao/CadreList> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CadreSize
 <https://purl.org/heals/hao/CadreSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CadreSize> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Count> .
-<https://purl.org/heals/hao/CadreSize> <http://purl.org/dc/terms/description> "How many observations each subpopulation contains." .
 <https://purl.org/heals/hao/CadreSize> <http://www.w3.org/2000/01/rdf-schema#label> "cadre size" .
-<https://purl.org/heals/hao/CadreSize> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CadreSize> <http://www.w3.org/2004/02/skos/core#definition> "How many observations each subpopulation contains." .
+<https://purl.org/heals/hao/CadreSize> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CadreSizeList
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/List> .
-<https://purl.org/heals/hao/CadreSizeList> <http://purl.org/dc/terms/description> "The number of subjects in the training data assigned to each cadre." .
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2000/01/rdf-schema#label> "cadre size list" .
-<https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2004/02/skos/core#definition> "The number of subjects in the training data assigned to each cadre." .
+<https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Cartridge
 <https://purl.org/heals/hao/Cartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Cartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
 <https://purl.org/heals/hao/Cartridge> <http://www.w3.org/2000/01/rdf-schema#label> "cartridge" .
-<https://purl.org/heals/hao/Cartridge> <http://www.w3.org/2004/02/skos/core#definition> "Minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In semantalytics, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study." .
+<https://purl.org/heals/hao/Cartridge> <http://www.w3.org/2004/02/skos/core#definition> "A cartridge is the minimal necessary analysis components from the HAO are stored in modular serializations called cartridges. Given a KG, a cartridge is a subgraph containing application-specific  (in this case, analysis-specific) vocabularies that link to the KG’s existing elements and extend the range of problems it may be applied to. In STA, cartridges are loaded and modifiedas the user chooses how to construct their risk analysis study." .
 <https://purl.org/heals/hao/Cartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/CenterParameter
+<https://purl.org/heals/hao/CenterParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/CenterParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
+<https://purl.org/heals/hao/CenterParameter> <http://www.w3.org/2000/01/rdf-schema#label> "center parameter" .
+<https://purl.org/heals/hao/CenterParameter> <http://www.w3.org/2004/02/skos/core#definition> "The center of the cadre. " .
+<https://purl.org/heals/hao/CenterParameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Code
 <https://purl.org/heals/hao/Code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Code> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
 <https://purl.org/heals/hao/Code> <http://www.w3.org/2000/01/rdf-schema#label> "code" .
-<https://purl.org/heals/hao/Code> <http://www.w3.org/2004/02/skos/core#definition> "String sequence used to represent a constructed response variable in data tables" .
+<https://purl.org/heals/hao/Code> <http://www.w3.org/2004/02/skos/core#definition> "A code is a string sequence used to represent a constructed response variable in data tables." .
 <https://purl.org/heals/hao/Code> <http://www.w3.org/2004/02/skos/core#example> "hyp" .
+<https://purl.org/heals/hao/Code> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CohortCartridge
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
-<https://purl.org/heals/hao/CohortCartridge> <http://purl.org/dc/terms/description> "Inclusion criteria used to determine if a given subject may be included in the user's study, which can be chosen on-the-fly or adapted from existing studies." .
+<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/useCohort> .
+<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAbout> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/STATO_0000203> .
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "cohort cartridge" .
-<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Cohort cartridges list the inclusion criteria used to determine if a given subject may be included in the user’s study." .
+<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A cohort cartridge lists the inclusion criteria used to determine if a given subject may be included in the user’s study." .
+<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Component
 <https://purl.org/heals/hao/Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
 <https://purl.org/heals/hao/Component> <http://www.w3.org/2000/01/rdf-schema#label> "component" .
-<https://purl.org/heals/hao/Component> <http://www.w3.org/2004/02/skos/core#definition> "Category of data tables in NHANES" .
+<https://purl.org/heals/hao/Component> <http://www.w3.org/2004/02/skos/core#definition> "A component is a category of data tables in NHANES." .
 <https://purl.org/heals/hao/Component> <http://www.w3.org/2004/02/skos/core#example> "Laboratory" .
+<https://purl.org/heals/hao/Component> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Condition
 <https://purl.org/heals/hao/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25652> .
 <https://purl.org/heals/hao/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
-<https://purl.org/heals/hao/Condition> <http://www.w3.org/2004/02/skos/core#definition> "Mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side" .
+<https://purl.org/heals/hao/Condition> <http://www.w3.org/2004/02/skos/core#definition> "A condition is a mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side." .
+<https://purl.org/heals/hao/Condition> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Conjunction
 <https://purl.org/heals/hao/Conjunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Conjunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Conjunctionand> .
 <https://purl.org/heals/hao/Conjunction> <http://www.w3.org/2000/01/rdf-schema#label> "conjunction" .
-<https://purl.org/heals/hao/Conjunction> <http://www.w3.org/2004/02/skos/core#definition> "Mathematical operator used to combine expressions in response variable definitions" .
+<https://purl.org/heals/hao/Conjunction> <http://www.w3.org/2004/02/skos/core#definition> "A conjunction is a mathematical operator used to combine expressions in response variable definitions." .
 <https://purl.org/heals/hao/Conjunction> <http://www.w3.org/2004/02/skos/core#example> "prod" .
+<https://purl.org/heals/hao/Conjunction> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CovariateMean
 <https://purl.org/heals/hao/CovariateMean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CovariateMean> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Mean> .
-<https://purl.org/heals/hao/CovariateMean> <http://purl.org/dc/terms/description> "In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation." .
 <https://purl.org/heals/hao/CovariateMean> <http://www.w3.org/2000/01/rdf-schema#label> "covariate mean" .
-<https://purl.org/heals/hao/CovariateMean> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CovariateMean> <http://www.w3.org/2004/02/skos/core#definition> "In a subpopulation cartridge, this is the (survey-weighted) estimated mean of a covariate, calculated over the subjects in a specific subpopulation." .
+<https://purl.org/heals/hao/CovariateMean> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CovariateStdError
 <https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000562> .
-<https://purl.org/heals/hao/CovariateStdError> <http://purl.org/dc/terms/description> "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation." .
 <https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/2000/01/rdf-schema#label> "covariate standard error" .
-<https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/2004/02/skos/core#definition> "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation." .
+<https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/DataType
 <https://purl.org/heals/hao/DataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/DataType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C42645> .
 <https://purl.org/heals/hao/DataType> <http://www.w3.org/2000/01/rdf-schema#label> "data type" .
-<https://purl.org/heals/hao/DataType> <http://www.w3.org/2004/02/skos/core#definition> "Data type of response variable" .
+<https://purl.org/heals/hao/DataType> <http://www.w3.org/2004/02/skos/core#definition> "A data type is the type of response variable data." .
 <https://purl.org/heals/hao/DataType> <http://www.w3.org/2004/02/skos/core#example> "Binary variable" .
+<https://purl.org/heals/hao/DataType> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/ElasticNetMixingWeight
 <https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/Hyperparameter> .
-<https://purl.org/heals/hao/ElasticNetMixingWeight> <http://purl.org/dc/terms/description> "The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter's regularization looks more like l1 regularization or l2 regularization." .
 <https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/2000/01/rdf-schema#label> "elastic net mixing weight" .
-<https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/2004/02/skos/core#definition> "The elastic net mixing weight, a number between 0 and 1, controls whether a given parameter's regularization looks more like l1 regularization or l2 regularization." .
+<https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/ElasticNetMixingWeightD
 <https://purl.org/heals/hao/ElasticNetMixingWeightD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ElasticNetMixingWeightD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/ElasticNetMixingWeight> .
-<https://purl.org/heals/hao/ElasticNetMixingWeightD> <http://purl.org/dc/terms/description> "Alpha d, the elastic net mixing weights for the d parameter." .
 <https://purl.org/heals/hao/ElasticNetMixingWeightD> <http://www.w3.org/2000/01/rdf-schema#label> "elastic net mixing weight D" .
-<https://purl.org/heals/hao/ElasticNetMixingWeightD> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/ElasticNetMixingWeightD> <http://www.w3.org/2004/02/skos/core#definition> "Alpha d, the elastic net mixing weights for the d parameter." .
+<https://purl.org/heals/hao/ElasticNetMixingWeightD> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/ElasticNetMixingWeightW
 <https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/ElasticNetMixingWeight> .
-<https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://purl.org/dc/terms/description> "Alpha W, the elastic net mixing weights for the W parameter." .
 <https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/2000/01/rdf-schema#label> "elastic net mixing weight W" .
-<https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/2004/02/skos/core#definition> "Alpha W, the elastic net mixing weights for the W parameter." .
+<https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Estimate
 <https://purl.org/heals/hao/Estimate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Estimate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25498> .
-<https://purl.org/heals/hao/Estimate> <http://purl.org/dc/terms/description> "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable." .
 <https://purl.org/heals/hao/Estimate> <http://www.w3.org/2000/01/rdf-schema#label> "estimate" .
-<https://purl.org/heals/hao/Estimate> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/Estimate> <http://www.w3.org/2004/02/skos/core#definition> "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable." .
+<https://purl.org/heals/hao/Estimate> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Exception
 <https://purl.org/heals/hao/Exception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Exception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C54420> .
 <https://purl.org/heals/hao/Exception> <http://www.w3.org/2000/01/rdf-schema#label> "exception" .
-<https://purl.org/heals/hao/Exception> <http://www.w3.org/2004/02/skos/core#definition> "Variable names in risk factor tables that have names that look like risk factors but aren’t" .
+<https://purl.org/heals/hao/Exception> <http://www.w3.org/2004/02/skos/core#definition> "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t." .
 <https://purl.org/heals/hao/Exception> <http://www.w3.org/2004/02/skos/core#example> "URXUCR" .
+<https://purl.org/heals/hao/Exception> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/FactorKey
+<https://purl.org/heals/hao/FactorKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/FactorKey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
+<https://purl.org/heals/hao/FactorKey> <http://www.w3.org/2000/01/rdf-schema#label> "factor key" .
+<https://purl.org/heals/hao/FactorKey> <http://www.w3.org/2004/02/skos/core#definition> "A factor key is the prefix of the variable." .
+<https://purl.org/heals/hao/FactorKey> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/FeatureSelectionParameter
 <https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
-<https://purl.org/heals/hao/FeatureSelectionParameter> <http://purl.org/dc/terms/description> "The name of the parameter d." .
 <https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2000/01/rdf-schema#label> "cadre assignment feature selection parameter" .
-<https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2004/02/skos/core#definition> "The name of the parameter d." .
+<https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/FeatureUsage
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Usage> .
-<https://purl.org/heals/hao/FeatureUsage> <http://purl.org/dc/terms/description> "How to divide supplied features into cadre-assignment and target-prediction categories." .
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2000/01/rdf-schema#label> "feature usage" .
-<https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2004/02/skos/core#definition> "How to divide supplied features into cadre-assignment and target-prediction categories." .
+<https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/FileKey
 <https://purl.org/heals/hao/FileKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/FileKey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
 <https://purl.org/heals/hao/FileKey> <http://www.w3.org/2000/01/rdf-schema#label> "file key" .
-<https://purl.org/heals/hao/FileKey> <http://www.w3.org/2004/02/skos/core#definition> "Character sequence mapping risk factor categories to data table filenames" .
-<https://purl.org/heals/hao/FileKey> <http://www.w3.org/2004/02/skos/core#example> "Data table filenames containing “ins” contain risk factor measurements of the category Organophosphate Insecticides " .
+<https://purl.org/heals/hao/FileKey> <http://www.w3.org/2004/02/skos/core#definition> "A file key is a character sequence mapping risk factor categories to data table filenames." .
+<https://purl.org/heals/hao/FileKey> <http://www.w3.org/2004/02/skos/core#example> "Data table filenames containing 'ins' contain risk factor measurements of the category Organophosphate Insecticides " .
+<https://purl.org/heals/hao/FileKey> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/GenerateCohortSummaryTable
+<https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/2000/01/rdf-schema#label> "generate cohort summary table" .
+<https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/2004/02/skos/core#definition> "Whether the cohort summary table is generated." .
+<https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Hyperparameter
 <https://purl.org/heals/hao/Hyperparameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Hyperparameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
-<https://purl.org/heals/hao/Hyperparameter> <http://purl.org/dc/terms/description> "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric." .
 <https://purl.org/heals/hao/Hyperparameter> <http://www.w3.org/2000/01/rdf-schema#label> "hyperparameter" .
-<https://purl.org/heals/hao/Hyperparameter> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/Hyperparameter> <http://www.w3.org/2004/02/skos/core#definition> "During model selection, a model is trained with every hyperparameter configuration, and a best model is chosen with respect to a supplied metric." .
+<https://purl.org/heals/hao/Hyperparameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/HyperplaneParameter
 <https://purl.org/heals/hao/HyperplaneParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/HyperplaneParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
-<https://purl.org/heals/hao/HyperplaneParameter> <http://purl.org/dc/terms/description> "Each column of the parameter W defines a hyperplane which determines each cadre's target prediction function." .
 <https://purl.org/heals/hao/HyperplaneParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hyperplane parameter" .
-<https://purl.org/heals/hao/HyperplaneParameter> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/HyperplaneParameter> <http://www.w3.org/2004/02/skos/core#definition> "Each column of the parameter W defines a hyperplane which determines each cadre's target prediction function." .
+<https://purl.org/heals/hao/HyperplaneParameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/InputCartridge
 <https://purl.org/heals/hao/InputCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/InputCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/Cartridge> .
 <https://purl.org/heals/hao/InputCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "input cartridge" .
-<https://purl.org/heals/hao/InputCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Type of cartridge used to define input parameters / configurations when constructing a study" .
+<https://purl.org/heals/hao/InputCartridge> <http://www.w3.org/2004/02/skos/core#definition> "An input cartridge is a type of cartridge used to define input parameters / configurations when constructing a study." .
 <https://purl.org/heals/hao/InputCartridge> <http://www.w3.org/2004/02/skos/core#example> "Response variable cartridge defining hypertension" .
+<https://purl.org/heals/hao/InputCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/LHS
 <https://purl.org/heals/hao/LHS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -672,214 +740,262 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 <https://purl.org/heals/hao/LHS> <http://www.w3.org/2000/01/rdf-schema#label> "left hand side" .
 <https://purl.org/heals/hao/LHS> <http://www.w3.org/2004/02/skos/core#definition> "Left-hand side of expression in response variable definitions" .
 <https://purl.org/heals/hao/LHS> <http://www.w3.org/2004/02/skos/core#example> "sbp" .
+<https://purl.org/heals/hao/LHS> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/LeftSkewed
 <https://purl.org/heals/hao/LeftSkewed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/LeftSkewed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000161> .
 <https://purl.org/heals/hao/LeftSkewed> <http://www.w3.org/2000/01/rdf-schema#label> "left skewed data distribution" .
-<https://purl.org/heals/hao/LeftSkewed> <http://www.w3.org/2004/02/skos/core#definition> "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a left-hand tail that is longer than the right-hand tail." .
+<https://purl.org/heals/hao/LeftSkewed> <http://www.w3.org/2004/02/skos/core#definition> "A left skewed data distribution is a characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean less than the median, and a right-hand tail that is longer than the left-hand tail." .
+<https://purl.org/heals/hao/LeftSkewed> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Metric
 <https://purl.org/heals/hao/Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25209> .
-<https://purl.org/heals/hao/Metric> <http://purl.org/dc/terms/description> "How to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error." .
 <https://purl.org/heals/hao/Metric> <http://www.w3.org/2000/01/rdf-schema#label> "metric" .
-<https://purl.org/heals/hao/Metric> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/Metric> <http://www.w3.org/2004/02/skos/core#definition> "A metric describes how to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error." .
+<https://purl.org/heals/hao/Metric> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/MinPositive
 <https://purl.org/heals/hao/MinPositive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/MinPositive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Count> .
-<https://purl.org/heals/hao/MinPositive> <http://purl.org/dc/terms/description> "Minimum number of positive observations." .
 <https://purl.org/heals/hao/MinPositive> <http://www.w3.org/2000/01/rdf-schema#label> "minimum positive" .
-<https://purl.org/heals/hao/MinPositive> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/MinPositive> <http://www.w3.org/2004/02/skos/core#definition> "Minimum number of positive observations." .
+<https://purl.org/heals/hao/MinPositive> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/ModelCartridge
 <https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/OutputCartridge> .
+<https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAbout> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Model> .
 <https://purl.org/heals/hao/ModelCartridge> <http://purl.org/dc/terms/description> "The hyperparameters used to train a model, the parameter estimates learned during training, and the rules by which it is applied to new observations." .
 <https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "model cartridge" .
-<https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Model cartridges assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. " .
+<https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A model cartridge assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. " .
+<https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/ModelParameter
 <https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_DataItem> .
-<https://purl.org/heals/hao/ModelParameter> <http://purl.org/dc/terms/description> "A model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population." .
 <https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/2000/01/rdf-schema#label> "model parameter" .
+<https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/2004/02/skos/core#definition> "A model parameter is a data item which is part of a model and which is meant to characterize an theoretical or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population." .
+<https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Note
 <https://purl.org/heals/hao/Note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Note> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Description> .
-<https://purl.org/heals/hao/Note> <http://purl.org/dc/terms/description> "A note to describe the data in the file." .
 <https://purl.org/heals/hao/Note> <http://www.w3.org/2000/01/rdf-schema#label> "note" .
+<https://purl.org/heals/hao/Note> <http://www.w3.org/2004/02/skos/core#definition> "A note to describe the data in the file." .
+<https://purl.org/heals/hao/Note> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/OutputCartridge
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/Cartridge> .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "output cartridge" .
-<https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them" .
+<https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2004/02/skos/core#definition> "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them." .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2004/02/skos/core#example> "Results cartridge describing environmental risk factors for hypertension in obese women" .
+<https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
-# https://purl.org/heals/hao/ParameterCartridge
-<https://purl.org/heals/hao/ParameterCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/ParameterCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
-<https://purl.org/heals/hao/ParameterCartridge> <http://purl.org/dc/terms/description> "Rules to complete chosen analysis workflow and potential hyperparameter configurations for chosen model." .
-<https://purl.org/heals/hao/ParameterCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "parameter cartridge" .
-<https://purl.org/heals/hao/ParameterCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Parameter cartridges contain rules to complete the chosen analysis workflow. " .
+# https://purl.org/heals/hao/ParametersCartridge
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "parameters cartridge" .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A parameters cartridge contains rules to complete the chosen analysis workflow. " .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/PredictionWeightBiasParameter
+<https://purl.org/heals/hao/PredictionWeightBiasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/PredictionWeightBiasParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
+<https://purl.org/heals/hao/PredictionWeightBiasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "prediction weight bias parameter" .
+<https://purl.org/heals/hao/PredictionWeightBiasParameter> <http://www.w3.org/2004/02/skos/core#definition> "A prediction weight bias parameter is a learnable parameter for the prediction model. " .
+<https://purl.org/heals/hao/PredictionWeightBiasParameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RHS
 <https://purl.org/heals/hao/RHS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RHS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C80488> .
 <https://purl.org/heals/hao/RHS> <http://www.w3.org/2000/01/rdf-schema#label> "right hand side" .
-<https://purl.org/heals/hao/RHS> <http://www.w3.org/2004/02/skos/core#definition> "Right-hand side of expression in response variable definitions" .
+<https://purl.org/heals/hao/RHS> <http://www.w3.org/2004/02/skos/core#definition> "Right-hand side of expression in response variable definitions." .
 <https://purl.org/heals/hao/RHS> <http://www.w3.org/2004/02/skos/core#example> "90" .
+<https://purl.org/heals/hao/RHS> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RegularizationStrength
 <https://purl.org/heals/hao/RegularizationStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RegularizationStrength> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/Hyperparameter> .
-<https://purl.org/heals/hao/RegularizationStrength> <http://purl.org/dc/terms/description> "Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well." .
 <https://purl.org/heals/hao/RegularizationStrength> <http://www.w3.org/2000/01/rdf-schema#label> "regularization strength" .
-<https://purl.org/heals/hao/RegularizationStrength> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/RegularizationStrength> <http://www.w3.org/2004/02/skos/core#definition> "Regularization strength, a nonnegative number, controls the tradeoff between a model that is simple and one that fits the training data well." .
+<https://purl.org/heals/hao/RegularizationStrength> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RegularizationStrengthD
 <https://purl.org/heals/hao/RegularizationStrengthD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RegularizationStrengthD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/RegularizationStrength> .
-<https://purl.org/heals/hao/RegularizationStrengthD> <http://purl.org/dc/terms/description> "Regularization strength for the d parameter." .
 <https://purl.org/heals/hao/RegularizationStrengthD> <http://www.w3.org/2000/01/rdf-schema#label> "regularization strength d" .
-<https://purl.org/heals/hao/RegularizationStrengthD> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/RegularizationStrengthD> <http://www.w3.org/2004/02/skos/core#definition> "Regularization strength for the d parameter." .
+<https://purl.org/heals/hao/RegularizationStrengthD> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RegularizationStrengthW
 <https://purl.org/heals/hao/RegularizationStrengthW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RegularizationStrengthW> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/RegularizationStrength> .
-<https://purl.org/heals/hao/RegularizationStrengthW> <http://purl.org/dc/terms/description> "Regularization strength for the W parameter." .
 <https://purl.org/heals/hao/RegularizationStrengthW> <http://www.w3.org/2000/01/rdf-schema#label> "regularization strength W" .
-<https://purl.org/heals/hao/RegularizationStrengthW> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/RegularizationStrengthW> <http://www.w3.org/2004/02/skos/core#definition> "Regularization strength for the W parameter." .
+<https://purl.org/heals/hao/RegularizationStrengthW> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Relationship
 <https://purl.org/heals/hao/Relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Relationship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/LogicalOperator> .
 <https://purl.org/heals/hao/Relationship> <http://www.w3.org/2000/01/rdf-schema#label> "relationship" .
-<https://purl.org/heals/hao/Relationship> <http://www.w3.org/2004/02/skos/core#definition> "Mathematical operator used in response variable definitions" .
+<https://purl.org/heals/hao/Relationship> <http://www.w3.org/2004/02/skos/core#definition> "Mathematical operator used in response variable definitions." .
 <https://purl.org/heals/hao/Relationship> <http://www.w3.org/2004/02/skos/core#example> "Greater-than-or-equal" .
+<https://purl.org/heals/hao/Relationship> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/ResponseCartridge
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
-<https://purl.org/heals/hao/ResponseCartridge> <http://purl.org/dc/terms/description> "Analysis concepts and background domain axioms necessary to model a given health condition." .
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "response cartridge" .
-<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Response variable cartridges provide the analysis concepts and background domain axioms necessary to model a given disease" .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A response variable cartridge provides the analysis concepts and background domain axioms necessary to model a given disease" .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Result
 <https://purl.org/heals/hao/Result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Result> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C76125> .
-<https://purl.org/heals/hao/Result> <http://purl.org/dc/terms/description> "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value." .
 <https://purl.org/heals/hao/Result> <http://www.w3.org/2000/01/rdf-schema#label> "result" .
-<https://purl.org/heals/hao/Result> <http://www.w3.org/2004/02/skos/core#definition> "" .
-# 
-# https://purl.org/heals/hao/ResultCartridge
-<https://purl.org/heals/hao/ResultCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/ResultCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/OutputCartridge> .
-<https://purl.org/heals/hao/ResultCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreList> .
-<https://purl.org/heals/hao/ResultCartridge> <http://purl.org/dc/terms/description> "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values" .
-<https://purl.org/heals/hao/ResultCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "result cartridge" .
-<https://purl.org/heals/hao/ResultCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Type of output cartridge describing a single study’s statistical findings and constituent input cartridges" .
+<https://purl.org/heals/hao/Result> <http://www.w3.org/2004/02/skos/core#definition> "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value." .
+<https://purl.org/heals/hao/Result> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/ResultCount
 <https://purl.org/heals/hao/ResultCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ResultCount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Count> .
-<https://purl.org/heals/hao/ResultCount> <http://purl.org/dc/terms/description> "" .
 <https://purl.org/heals/hao/ResultCount> <http://www.w3.org/2000/01/rdf-schema#label> "result count" .
-<https://purl.org/heals/hao/ResultCount> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/ResultCount> <http://www.w3.org/2004/02/skos/core#definition> "A result count is the number of results." .
+<https://purl.org/heals/hao/ResultCount> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/ResultsCartridge
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/OutputCartridge> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreList> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://purl.org/dc/terms/description> "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values" .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "results cartridge" .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A results cartridge is a type of output cartridge describing a single study’s statistical findings and constituent input cartridges." .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RightSkewed
 <https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000161> .
 <https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/2000/01/rdf-schema#label> "right skewed data distribution" .
-<https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/2004/02/skos/core#definition> "Characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail." .
+<https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/2004/02/skos/core#definition> "A right skewed data distribution is a characteristic of univariate random variables denoting some sort of asymmetry in distribution. Often indicated by having a mean greater than the median, and a left-hand tail that is shorter than the right-hand tail." .
 <https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/2004/02/skos/core#example> "Most environmental exposure risk factor distributions" .
+<https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RiskFactor
 <https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
-<https://purl.org/heals/hao/RiskFactor> <http://purl.org/dc/terms/description> "A risk factor is a variable that has a potential association with a response variable." .
 <https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/2000/01/rdf-schema#label> "risk factor" .
-<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/2004/02/skos/core#definition> "A risk factor is a variable that has a potential association with a response variable." .
+<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RiskFactorCartridge
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
-<https://purl.org/heals/hao/RiskFactorCartridge> <http://purl.org/dc/terms/description> "How categories of semantically-similar risk factors should be modeled." .
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "risk factor cartridge" .
-<https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Risk factor cartridges describe categories of semantically similar risk factors and detail how they should be modeled. " .
+<https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A risk factor cartridge describes categories of semantically similar risk factors and details how they should be modeled." .
+<https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/RiskFactorCategory
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Category> .
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2000/01/rdf-schema#label> "risk factor category" .
-<https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2004/02/skos/core#definition> "Category of similar potential risk factors, where “similarity” is defined by domain experts" .
+<https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2004/02/skos/core#definition> "Risk factor category is a category of similar potential risk factors, where 'similarity' is defined by domain experts." .
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2004/02/skos/core#example> "Polyaromatic hydrocarbons" .
+<https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Sharpness
 <https://purl.org/heals/hao/Sharpness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
-<https://purl.org/heals/hao/Sharpness> <http://purl.org/dc/terms/description> "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts." .
 <https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2000/01/rdf-schema#label> "sharpness" .
-<https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2004/02/skos/core#definition> "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts." .
+# 
+# https://purl.org/heals/hao/Source
+<https://purl.org/heals/hao/Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
+<https://purl.org/heals/hao/Source> <http://www.w3.org/2000/01/rdf-schema#label> "source" .
+<https://purl.org/heals/hao/Source> <http://www.w3.org/2004/02/skos/core#definition> "The source of the cadre model" .
+<https://purl.org/heals/hao/Source> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Standardization
 <https://purl.org/heals/hao/Standardization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Standardization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0200000> .
 <https://purl.org/heals/hao/Standardization> <http://www.w3.org/2000/01/rdf-schema#label> "Standardization Transformation" .
 <https://purl.org/heals/hao/Standardization> <http://www.w3.org/2004/02/skos/core#definition> "Mathematical transformation is applied to univariate random variables. The transformed distribution is shifted and scaled so it has a mean of zero and a variance of one." .
+<https://purl.org/heals/hao/Standardization> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/StudyVariable
 <https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000258> .
 <https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/2000/01/rdf-schema#label> "study variable" .
-<https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/2004/02/skos/core#definition> "Variable that potentially has a significant association with the response variable" .
+<https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/2004/02/skos/core#definition> "A study variable is a variable that potentially has a significant association with the response variable" .
 <https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/2004/02/skos/core#example> "Urinary cadmium" .
+<https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/SubpopulationCartridge
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/OutputCartridge> .
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://purl.org/dc/terms/description> "Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates." .
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "subpopulation cartridge" .
-<https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2004/02/skos/core#definition> "Subpopulation cartridges give 'Table 1s' (cohort-description tables) of discovered subpopulations." .
+<https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A subpopulation cartridges gives 'Table 1s' (cohort-description tables) of discovered subpopulations." .
+<https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/SubpopulationCharacteristic
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
-<https://purl.org/heals/hao/SubpopulationCharacteristic> <http://purl.org/dc/terms/description> "Mean and standard-error-of-mean estimates for each discovered subpopulation." .
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "subpopulation characteristic" .
-<https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2004/02/skos/core#definition> "Mean and standard-error-of-mean estimates for each discovered subpopulation." .
+<https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/TMax
 <https://purl.org/heals/hao/TMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/TMax> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/MaximalValue> .
-<https://purl.org/heals/hao/TMax> <http://purl.org/dc/terms/description> "The maximum number of stochastic gradient descent steps taken." .
 <https://purl.org/heals/hao/TMax> <http://www.w3.org/2000/01/rdf-schema#label> "T max" .
-<https://purl.org/heals/hao/TMax> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/TMax> <http://www.w3.org/2004/02/skos/core#definition> "The maximum number of stochastic gradient descent steps taken." .
+<https://purl.org/heals/hao/TMax> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/TargetPrediction
 <https://purl.org/heals/hao/TargetPrediction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/TargetPrediction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C54156> .
-<https://purl.org/heals/hao/TargetPrediction> <http://purl.org/dc/terms/description> "A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject's risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject's response variable value." .
 <https://purl.org/heals/hao/TargetPrediction> <http://www.w3.org/2000/01/rdf-schema#label> "target prediction" .
-<https://purl.org/heals/hao/TargetPrediction> <http://www.w3.org/2004/02/skos/core#definition> "" .
+<https://purl.org/heals/hao/TargetPrediction> <http://www.w3.org/2004/02/skos/core#definition> "A target prediction function maps a subject record to a subpopulation-specific score. If the analysis problem is classification, the score gives that subject's risk of having a condition. If the analysis problem is regression, the score is a scaled estimate of the subject's response variable value." .
+<https://purl.org/heals/hao/TargetPrediction> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/TargetVariable
 <https://purl.org/heals/hao/TargetVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/TargetVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000258> .
 <https://purl.org/heals/hao/TargetVariable> <http://www.w3.org/2000/01/rdf-schema#label> "target variable" .
-<https://purl.org/heals/hao/TargetVariable> <http://www.w3.org/2004/02/skos/core#definition> "Variable used as response variable / target feature in modeling analyses" .
+<https://purl.org/heals/hao/TargetVariable> <http://www.w3.org/2004/02/skos/core#definition> "A target variable is a variable used as response variable / target feature in modeling analyses" .
 <https://purl.org/heals/hao/TargetVariable> <http://www.w3.org/2004/02/skos/core#example> "Hypertension" .
+<https://purl.org/heals/hao/TargetVariable> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/Threshold
 <https://purl.org/heals/hao/Threshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Threshold> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationalQuality> .
 <https://purl.org/heals/hao/Threshold> <http://www.w3.org/2000/01/rdf-schema#label> "threshold" .
+<https://purl.org/heals/hao/Threshold> <http://www.w3.org/2004/02/skos/core#definition> "A threshold is the minimal value to show some significance exist." .
+<https://purl.org/heals/hao/Threshold> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/UseSurveyWeight
+<https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/2000/01/rdf-schema#label> "use survey weight" .
+<https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/2004/02/skos/core#definition> "Whether the survey weight is used in the study." .
+<https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/useCohort
+<https://purl.org/heals/hao/useCohort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/useCohort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Variable> .
+<https://purl.org/heals/hao/useCohort> <http://www.w3.org/2000/01/rdf-schema#label> "use cohort" .
+<https://purl.org/heals/hao/useCohort> <http://www.w3.org/2004/02/skos/core#definition> "Whether the study uses a cohort." .
+<https://purl.org/heals/hao/useCohort> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # 
 # 
