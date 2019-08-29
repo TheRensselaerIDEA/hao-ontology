@@ -52,7 +52,7 @@
     :hyperparameters-f22233185ff332babf78dcae623f0fe6
         rdf:type    hao:Hyperparameter ;
         rdfs:label "hyperparameter"^^xsd:string ;
-        sio:hasAttribute :M-f22233185ff332babf78dcae623f0fe6 ,
+        sio:hasPart :M-f22233185ff332babf78dcae623f0fe6 ,
                         :lambda_d-f22233185ff332babf78dcae623f0fe6 ,
                         :lambda_W-f22233185ff332babf78dcae623f0fe6 ,
                         :alpha_d-f22233185ff332babf78dcae623f0fe6 ,
