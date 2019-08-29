@@ -30,7 +30,7 @@
 
 
     :data_type-bcf761c50c19f51ee19c8667eba141f0
-        rdf:type    hao:DataType,  stato:0000251;
+        rdf:type    ncit:C42645,  stato:0000251;
         rdfs:label "data type"^^xsd:string .
 
     :model_type-bcf761c50c19f51ee19c8667eba141f0
