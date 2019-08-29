@@ -66,7 +66,7 @@
 
 
     :IncludedRiskFactor-335ea58a52268d9a4eda89694febaaac
-        rdf:type    hao:RiskFactor ;
+        rdf:type    ncit:C17103 ;
         rdfs:label "included risk factor"^^xsd:string ;
         sio:hasValue "LBXBPB"^^xsd:string .
 
