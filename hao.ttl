@@ -159,7 +159,7 @@ sio:Variable rdf:type owl:Class ;
 	rdfs:subClassOf [
 		a owl:Restriction ;
     	owl:onProperty sio:hasProperty ;
-    	owl:someValuesFrom hao:DataType
+    	owl:someValuesFrom ncit:C42645
 	], 
 	[
 		a owl:Restriction ;
@@ -438,12 +438,12 @@ hao:RiskFactorCartridge rdf:type owl:Class ;
     rdfs:subClassOf [
 		a owl:Restriction ;
     	owl:onProperty sio:hasAttribute ;
-    	owl:someValuesFrom  hao:RiskFactor
+    	owl:someValuesFrom  ncit:C17103
 	], 
 	[
 		a owl:Restriction ;
     	owl:onProperty sio:hasAttribute ;
-    	owl:someValuesFrom  hao:Exception
+    	owl:someValuesFrom  ncit:C54420
 	], hao:InputCartridge .
 
 hao:CohortCartridge rdf:type owl:Class ;
@@ -468,6 +468,7 @@ stato:0000203 rdf:type owl:Class;
 
 stato:0000193 rdf:type owl:Class;
 	rdfs:label "study group population";
+	rdfs:subClassOf sio:Collection;
 	skos:definition "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference." .
 
 
@@ -495,6 +496,7 @@ ncit:C73619  a                owl:Class ;
 
 ncit:C25447  a                owl:Class ;
         rdfs:label                "Characteristic" ;
+        rdfs:subClassOf           sio:Attribute;
         obo:IAO_0000115           "The distinguishing qualities or prominent aspect of a person, object, action, process, or substance." ;
         obo:IAO_0000412           obo:ncit.owl ;
         obo:NCIT_A11              obo:NCIT_C20189 ;
@@ -627,6 +629,11 @@ hao:Cadre rdf:type owl:Class ;
 	], 
 	[
 		a owl:Restriction ;
+    	owl:onProperty sio:isProductOf ;
+    	owl:someValuesFrom hao:AnalysisWorkflow
+	], 
+	[
+		a owl:Restriction ;
     	owl:onProperty sio:hasAttribute ;
     	owl:someValuesFrom hao:CenterParameter
 	], 
@@ -634,7 +641,7 @@ hao:Cadre rdf:type owl:Class ;
 		a owl:Restriction ;
     	owl:onProperty sio:hasIdentifier ;
     	owl:someValuesFrom hao:CadreIndex
-	],	ncit:C43418 .
+	],	stato:0000203 .
 
 # significance threshold
 hao:Threshold rdf:type owl:Class ;
@@ -669,25 +676,37 @@ hao:TargetVariable rdf:type owl:Class ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf stato:0000258 .
 
-hao:DataType rdf:type owl:Class ;
+ncit:C42645 rdf:type owl:Class ;
     rdfs:label "data type"^^xsd:string ;
 	skos:definition "A data type is the type of response variable data."^^xsd:string ;
 	skos:example "Binary variable"^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf  ncit:C42645 .
+    rdfs:subClassOf  sio:Attribute .
 
-hao:Exception rdf:type owl:Class ;
+ncit:C54420 rdf:type owl:Class ;
     rdfs:label "exception"^^xsd:string ;
 	skos:definition "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t."^^xsd:string ;
 	skos:example "URXUCR"^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf  ncit:C54420 .
+    rdfs:subClassOf  sio:Attribute .
 
 hao:Condition rdf:type owl:Class ;
     rdfs:label "condition"^^xsd:string ;
 	skos:definition "A condition is a mathematical definition of component of response variable definition, containing relationship, right-hand side, and left-hand side."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C25652  .
+
+ncit:C25652  a                owl:Class ;
+        rdfs:label                "Requirement" ;
+        obo:IAO_0000115           "Something that is a necessary condition; something that is obligatory." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C25652" ;
+        obo:NCIT_P106             "Functional Concept" ;
+        obo:NCIT_P108             "Requirement" ;
+        obo:NCIT_P207             "C1514873" ;
+        obo:NCIT_P366             "Required" ;
+        rdfs:subClassOf sio:Entity;
+        oboInOwl:hasExactSynonym  "Requirement" , "Required" , "Mandatory" , "Requisite" .
 
 hao:Conjunction rdf:type owl:Class ;
     rdfs:label "conjunction"^^xsd:string ;
@@ -710,6 +729,18 @@ hao:LHS rdf:type owl:Class ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C80488  .
 
+ncit:C80488  a                owl:Class ;
+        rdfs:label                "Expression" ;
+        obo:IAO_0000115           "A combination of symbols that represents a value." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C80488" ;
+        obo:NCIT_P106             "Classification" ;
+        obo:NCIT_P108             "Expression" ;
+        obo:NCIT_P207             "C2911684" ;
+        obo:NCIT_P366             "Expression_String" ;
+        rdfs:subClassOf           sio:InformationContentEntity;
+        oboInOwl:hasExactSynonym  "Expression" .
+
 hao:Relationship rdf:type owl:Class ;
     rdfs:label "relationship"^^xsd:string ;
 	skos:definition "Mathematical operator used in response variable definitions."^^xsd:string ;
@@ -722,7 +753,7 @@ hao:AnalysisQuestion rdf:type owl:Class ;
 	skos:definition "An analysis question is a natural language description of what question a given analysis answers."^^xsd:string ;
 	skos:example "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?"^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf ncit:C41116 .
+    rdfs:subClassOf sio:Question .
 
 sio:Definition rdf:type owl:Class ;
 	rdfs:label "definition"^^xsd:string ;
@@ -771,13 +802,13 @@ hao:ModelParameter rdf:type owl:Class ;
 	rdfs:label "model parameter"^^xsd:string ;
 	skos:definition "A model parameter is a data item which is part of a model and which is meant to characterize an theoretical or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf stato:DataItem .
+    rdfs:subClassOf sio:Parameter .
 
 hao:Metric rdf:type owl:Class  ;
     rdfs:label "metric"^^xsd:string ;
     skos:definition "A metric describes how to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf ncit:C25209 .
+    rdfs:subClassOf sio:MeasurementValue .
 
 hao:TargetPrediction rdf:type owl:Class ;
     rdfs:label "target prediction"^^xsd:string ;
@@ -785,11 +816,28 @@ hao:TargetPrediction rdf:type owl:Class ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C54156 .
 
+ncit:C54156  a                owl:Class ;
+        rdfs:label                "Prediction" ;
+        obo:IAO_0000115           "An extrapolation of given data into the future." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C54156" ;
+        obo:NCIT_P106             "Idea or Concept" ;
+        obo:NCIT_P108             "Prediction" ;
+        obo:NCIT_P207             "C0681842" ;
+        obo:NCIT_P366             "Prediction" ;
+        rdfs:subClassOf sio:DataItem;
+        oboInOwl:hasExactSynonym  "Predicted" , "Prediction" .
+
 hao:CadreAssignment rdf:type owl:Class ;
-    rdfs:label "cadre assignment"^^xsd:string ;
+    rdfs:label "cadre assignment function"^^xsd:string ;
     skos:definition "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-	rdfs:subClassOf ncit:C25426 .
+	rdfs:subClassOf sio:Function .
+
+hao:CadreModel rdf:type owl:Class ;
+    rdfs:label "cadre assignment function"^^xsd:string ;
+    dct:description "A specialized kind of supervized cadre model technique that discovers sub-populations or cadres"^^xsd:string ;
+	rdfs:subClassOf sio:Model .
 
 hao:Sharpness rdf:type owl:Class ;
     rdfs:label "sharpness"^^xsd:string ;
@@ -889,7 +937,7 @@ hao:Hyperparameter rdf:type owl:Class ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Parameter .
 
-hao:RiskFactor rdf:type owl:Class ;
+ncit:C17103 rdf:type owl:Class ;
     rdfs:label "risk factor"^^xsd:string ;
     skos:definition "A risk factor is a variable that has a potential association with a response variable."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
@@ -902,8 +950,93 @@ hao:RiskFactor rdf:type owl:Class ;
     a owl:Restriction ;
     owl:onProperty sio:hasAttribute ;
     owl:someValuesFrom hao:FactorKey
-  ], 
-  ncit:C17103 .
+  ], ncit:C20047 .
+
+
+ncit:C156749  a               owl:Class ;
+        rdfs:label                "Melanoma Risk Factor" ;
+        rdfs:subClassOf           ncit:C17103 ;
+        obo:IAO_0000115           "Any factor, such as age, ethnicity, genetic factor, family history, or environmental factor, that increases a person's chance of developing melanoma." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C156749" ;
+        obo:NCIT_P106             "Clinical Attribute" ;
+        obo:NCIT_P108             "Melanoma Risk Factor" ;
+        oboInOwl:hasExactSynonym  "Melanoma Risk Factor" .
+
+ncit:C18244  a                owl:Class ;
+        rdfs:label                "Environmental Risk Factor" ;
+        rdfs:subClassOf           ncit:C17103 ;
+        obo:IAO_0000115           "Health hazards at home, in the work place, or in nature (e.g., infectious agents, irritants, respiratory fibrotic agents, asphyxiants, allergens, metabolic poisons, physical agents, mutagens, teratogens, and carcinogens). (Winett et al: Health Psychology and Public Health)" ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C18244" ;
+        obo:NCIT_P106             "Phenomenon or Process" ;
+        obo:NCIT_P108             "Environmental Risk Factor" ;
+        obo:NCIT_P207             "C0686732" ;
+        obo:NCIT_P366             "Environmental_Risk_Factor" ;
+        oboInOwl:hasExactSynonym  "Environmental Factor" , "Environmental Risk Factor" .
+
+ncit:C19745  a                owl:Class ;
+        rdfs:label                "Hormonal Risk Factor" ;
+        rdfs:subClassOf           ncit:C17103 ;
+        obo:IAO_0000115           "Increase in the chance of developing a disease, due to hormonal factors." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C19745" ;
+        obo:NCIT_P106             "Qualitative Concept" ;
+        obo:NCIT_P108             "Hormonal Risk Factor" ;
+        obo:NCIT_P207             "C1512492" ;
+        obo:NCIT_P366             "Hormonal_Risk_Factor" ;
+        oboInOwl:hasExactSynonym  "Hormonal Risk Factor" .
+
+ncit:C20047  a                owl:Class ;
+        rdfs:label                "Diagnostic or Prognostic Factor" ;
+        obo:IAO_0000115           "A characteristic of an organism that contributes to the diagnosis or treatment of a disease or to the prediction of clinical outcomes." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C20047" ;
+        obo:NCIT_P106             "Clinical Attribute" ;
+        obo:NCIT_P108             "Diagnostic or Prognostic Factor" ;
+        obo:NCIT_P207             "C1511887" ;
+        obo:NCIT_P366             "Diagnostic_or_Prognostic_Factor" ;
+        oboInOwl:hasExactSynonym  "Diagnostic or Prognostic Factor" .
+
+ncit:C20199  a                owl:Class ;
+        rdfs:label                "Unspecified Risk Factor" ;
+        rdfs:subClassOf           ncit:C17103 ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C20199" ;
+        obo:NCIT_P106             "Clinical Attribute" ;
+        obo:NCIT_P108             "Unspecified Risk Factor" ;
+        obo:NCIT_P207             "C1519813" ;
+        obo:NCIT_P366             "Unspecified_Risk_Factor" ;
+        obo:NCIT_P375             "Other specified personal risk factors, not elsewhere classified" ;
+        oboInOwl:hasExactSynonym  "Unspecified Risk Factor" .
+
+
+ncit:C102711  a               owl:Class ;
+        rdfs:label                "Social Risk Factor" ;
+        rdfs:subClassOf           ncit:C17103 ;
+        obo:IAO_0000115           "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C102711" ;
+        obo:NCIT_P106             "Clinical Attribute" ;
+        obo:NCIT_P108             "Social Risk Factor" ;
+        obo:NCIT_P207             "C3538984" ;
+        obo:NCIT_P322             "CDISC" ;
+        obo:NCIT_P325             "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease." ;
+        oboInOwl:hasExactSynonym  "RISKSOC" , "Social Risk Factor" ;
+        oboInOwl:inSubset         <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C74559> , <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C103330> , <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830> , <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410> .
+
+
+ncit:C20116  a                owl:Class ;
+        rdfs:label                "Breast Cancer Risk Factor" ;
+        rdfs:subClassOf           ncit:C17103 ;
+        obo:IAO_0000115           "Any factor, such as age, ethnicity, genetic factor, family history, over-exposure to estrogen, or environmental factors, that increases a person's chance of developing breast cancer." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C20116" ;
+        obo:NCIT_P106             "Qualitative Concept" ;
+        obo:NCIT_P108             "Breast Cancer Risk Factor" ;
+        obo:NCIT_P207             "C1511298" ;
+        obo:NCIT_P366             "Breast_Cancer_Risk_Factor" ;
+        oboInOwl:hasExactSynonym  "Breast Cancer Risk Factor" .
 
 hao:Result rdf:type owl:Class ;
     rdfs:label "result"^^xsd:string ;
@@ -911,17 +1044,44 @@ hao:Result rdf:type owl:Class ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C76125 .
 
+ncit:C76125  a       owl:Class ;
+        rdfs:label       "Experimental Result" ;
+        rdfs:subClassOf  obo:NCIT_C20200 ;
+        obo:IAO_0000115  "\nThe outcome of an experiment or set of experiments, including observations and primary, processed, and analyzed data.\n" ;
+        obo:IAO_0000412  obo:ncit.owl .
+
+obo:NCIT_C20200  a       owl:Class ;
+        rdfs:label       "Outcome" ;
+        rdfs:subClassOf sio:InformationContentEntity;
+        obo:IAO_0000115  "The result of an action." ;
+        obo:IAO_0000412  obo:ncit.owl .
+
+
 hao:ResultCount rdf:type owl:Class ;
     rdfs:label "result count"^^xsd:string ;
     skos:definition "A result count is the number of results."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Count .
 
-hao:Estimate rdf:type owl:Class ;
-    rdfs:label "estimate"^^xsd:string ;
+hao:StatisticalEstimate rdf:type owl:Class ;
+    rdfs:label "statistical estimate"^^xsd:string ;
     skos:definition "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C25498 .
+
+ncit:C25498  a                owl:Class ;
+        rdfs:label                "Estimate" ;
+        rdfs:subClassOf           sio:MeasurementValue;
+        obo:IAO_0000115           "To calculate approximately." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C25498" ;
+        obo:NCIT_P106             "Activity" ;
+        obo:NCIT_P108             "Estimate" ;
+        obo:NCIT_P207             "C0680844" ;
+        obo:NCIT_P322             "FDA" ;
+        obo:NCIT_P366             "Estimated" ;
+        oboInOwl:hasExactSynonym  "ESTIMATED" , "Estimation" , "Estimate" , "Estimated" ;
+        oboInOwl:inSubset         <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447> , <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C88088> .
 
 hao:CadreCount rdf:type owl:Class ;
     rdfs:label "cadre count"^^xsd:string ;
@@ -950,6 +1110,30 @@ hao:CadreIndex rdf:type owl:Class ;
     skos:definition "An index assigned to each subpopulation."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf ncit:C25390 .
+
+ncit:C25664  a                owl:Class ;
+        rdfs:label                "Scale" ;
+        rdfs:subClassOf sio:MathematicalEntity;
+        obo:IAO_0000115           "An ordered reference standard used to measure incremental changes." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C25664" ;
+        obo:NCIT_P106             "Intellectual Product" ;
+        obo:NCIT_P108             "Scale" ;
+        obo:NCIT_P207             "C0349674" ;
+        obo:NCIT_P366             "Scale" ;
+        oboInOwl:hasExactSynonym  "Scale" .
+
+ncit:C25390  a                owl:Class ;
+        rdfs:label                "Index" ;
+        rdfs:subClassOf           ncit:C25664 ;
+        obo:IAO_0000115           "A numerical scale used to compare variables with one another or with some reference number; a number used to select an element of a list, vector, array or other sequence." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C25390" ;
+        obo:NCIT_P106             "Intellectual Product" ;
+        obo:NCIT_P108             "Index" ;
+        obo:NCIT_P207             "C0918012" ;
+        obo:NCIT_P366             "Index" ;
+        oboInOwl:hasExactSynonym  "Index" .
 
 hao:MinPositive rdf:type owl:Class ;
     rdfs:label "minimum positive"^^xsd:string ;
