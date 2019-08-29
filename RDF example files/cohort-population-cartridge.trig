@@ -16,6 +16,9 @@
 
 :cohort-population-cartridge-d18bd58b82ed575455afa1d2f574acff {
 
+   :cohort-population-cartridge-d18bd58b82ed575455afa1d2f574acff
+        rdf:type hao:CohortCartridge;
+
     :use_cohort-d18bd58b82ed575455afa1d2f574acff
         rdf:type    hao:UseCohort ;
         rdfs:label    "use cohort"^^xsd:string ;
