@@ -13,7 +13,7 @@ Four types of input cartridge:
 
 Three types of output cartridge:
 
-* `model` cartridges -- SCM objects are serialized in `.pkl` format. The `model` cartridge associated with a `.pkl` file gives the 
+* `model` cartridges -- The `model` cartridge gives the 
 parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres.
 * `results` cartridges -- these describe a single study’s statistical findings and constituent input cartridges. In the example here, for one of the discovered subpopulations, the association between blood lead (LBXBPB) and total cholesterol has a regression coefficient of 3.0665. The association was significant, with a p-value of 0.0003.
 * `subopopulation` cartridges -- these give "Table 1s" (cohort-description tables) of both discovered subpopulations and the overall study cohort. In this example, the subpopulation for which a significant association between blood lead and total cholesterol was found had a lower mean age than the overall study cohort (37.4 years vs. 46.7 years).
