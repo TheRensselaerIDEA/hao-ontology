@@ -25,8 +25,64 @@
 #    Annotation properties
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_A11
+<http://purl.obolibrary.org/obo/NCIT_A11> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_NHC0
+<http://purl.obolibrary.org/obo/NCIT_NHC0> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P106
+<http://purl.obolibrary.org/obo/NCIT_P106> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P108
+<http://purl.obolibrary.org/obo/NCIT_P108> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P207
+<http://purl.obolibrary.org/obo/NCIT_P207> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P322
+<http://purl.obolibrary.org/obo/NCIT_P322> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P325
+<http://purl.obolibrary.org/obo/NCIT_P325> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P366
+<http://purl.obolibrary.org/obo/NCIT_P366> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P371
+<http://purl.obolibrary.org/obo/NCIT_P371> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P375
+<http://purl.obolibrary.org/obo/NCIT_P375> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+<http://www.geneontology.org/formats/oboInOwl#inSubset> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -42,59 +98,306 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
 
+###  http://purl.obolibrary.org/obo/NCIT_C102711
+<http://purl.obolibrary.org/obo/NCIT_C102711> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease." ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                              <http://purl.obolibrary.org/obo/NCIT_NHC0> "C102711" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P108> "Social Risk Factor" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P207> "C3538984" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P322> "CDISC" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P325> "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease." ;
+                                              <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "RISKSOC" ,
+                                                                                                             "Social Risk Factor" ;
+                                              <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C103330> ,
+                                                                                                      <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410> ,
+                                                                                                      <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830> ,
+                                                                                                      <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C74559> ;
+                                              rdfs:label "Social Risk Factor" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C156749
+<http://purl.obolibrary.org/obo/NCIT_C156749> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Any factor, such as age, ethnicity, genetic factor, family history, or environmental factor, that increases a person's chance of developing melanoma." ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                              <http://purl.obolibrary.org/obo/NCIT_NHC0> "C156749" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" ;
+                                              <http://purl.obolibrary.org/obo/NCIT_P108> "Melanoma Risk Factor" ;
+                                              <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Melanoma Risk Factor" ;
+                                              rdfs:label "Melanoma Risk Factor" .
+
+
 ###  http://purl.obolibrary.org/obo/NCIT_C17103
-<http://purl.obolibrary.org/obo/NCIT_C17103> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C17103> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C20047> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                               owl:someValuesFrom :FactorKey
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                               owl:someValuesFrom :RiskFactorCategory
+                                                             ] ;
+                                             rdfs:label "risk factor" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A risk factor is a variable that has a potential association with a response variable." ;
+                                             <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
-###  http://purl.obolibrary.org/obo/NCIT_C25209
-<http://purl.obolibrary.org/obo/NCIT_C25209> rdf:type owl:Class .
+###  http://purl.obolibrary.org/obo/NCIT_C18244
+<http://purl.obolibrary.org/obo/NCIT_C18244> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Health hazards at home, in the work place, or in nature (e.g., infectious agents, irritants, respiratory fibrotic agents, asphyxiants, allergens, metabolic poisons, physical agents, mutagens, teratogens, and carcinogens). (Winett et al: Health Psychology and Public Health)" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C18244" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Phenomenon or Process" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Environmental Risk Factor" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0686732" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Environmental_Risk_Factor" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Environmental Factor" ,
+                                                                                                            "Environmental Risk Factor" ;
+                                             rdfs:label "Environmental Risk Factor" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C19745
+<http://purl.obolibrary.org/obo/NCIT_C19745> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Increase in the chance of developing a disease, due to hormonal factors." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C19745" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Qualitative Concept" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Hormonal Risk Factor" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1512492" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Hormonal_Risk_Factor" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Hormonal Risk Factor" ;
+                                             rdfs:label "Hormonal Risk Factor" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C20047
+<http://purl.obolibrary.org/obo/NCIT_C20047> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A characteristic of an organism that contributes to the diagnosis or treatment of a disease or to the prediction of clinical outcomes." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C20047" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Diagnostic or Prognostic Factor" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1511887" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Diagnostic_or_Prognostic_Factor" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Diagnostic or Prognostic Factor" ;
+                                             rdfs:label "Diagnostic or Prognostic Factor" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C20116
+<http://purl.obolibrary.org/obo/NCIT_C20116> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Any factor, such as age, ethnicity, genetic factor, family history, over-exposure to estrogen, or environmental factors, that increases a person's chance of developing breast cancer." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C20116" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Qualitative Concept" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Breast Cancer Risk Factor" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1511298" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Breast_Cancer_Risk_Factor" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Breast Cancer Risk Factor" ;
+                                             rdfs:label "Breast Cancer Risk Factor" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C20199
+<http://purl.obolibrary.org/obo/NCIT_C20199> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C20199" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Unspecified Risk Factor" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1519813" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Unspecified_Risk_Factor" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P375> "Other specified personal risk factors, not elsewhere classified" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Unspecified Risk Factor" ;
+                                             rdfs:label "Unspecified Risk Factor" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C20200
+<http://purl.obolibrary.org/obo/NCIT_C20200> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The result of an action." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Outcome" .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C25390
-<http://purl.obolibrary.org/obo/NCIT_C25390> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C25390> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25664> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A numerical scale used to compare variables with one another or with some reference number; a number used to select an element of a list, vector, array or other sequence." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25390" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Intellectual Product" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Index" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0918012" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Index" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Index" ;
+                                             rdfs:label "Index" .
 
 
-###  http://purl.obolibrary.org/obo/NCIT_C25426
-<http://purl.obolibrary.org/obo/NCIT_C25426> rdf:type owl:Class .
+###  http://purl.obolibrary.org/obo/NCIT_C25447
+<http://purl.obolibrary.org/obo/NCIT_C25447> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The distinguishing qualities or prominent aspect of a person, object, action, process, or substance." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_A11> <http://purl.obolibrary.org/obo/NCIT_C20189> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25447" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Characteristic" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1521970" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Characteristics" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P371> "Characteristic" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Characteristic" ,
+                                                                                                            "Characteristics" ,
+                                                                                                            "Feature" ,
+                                                                                                            "Features" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506> ,
+                                                                                                     <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259> ;
+                                             rdfs:label "Characteristic" .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C25498
-<http://purl.obolibrary.org/obo/NCIT_C25498> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C25498> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/MeasurementValue> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "To calculate approximately." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25498" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Activity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Estimate" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0680844" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P322> "FDA" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Estimated" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "ESTIMATED" ,
+                                                                                                            "Estimate" ,
+                                                                                                            "Estimated" ,
+                                                                                                            "Estimation" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447> ,
+                                                                                                     <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C88088> ;
+                                             rdfs:label "Estimate" .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C25652
-<http://purl.obolibrary.org/obo/NCIT_C25652> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C25652> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/Entity> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Something that is a necessary condition; something that is obligatory." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25652" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Functional Concept" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Requirement" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C1514873" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Required" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Mandatory" ,
+                                                                                                            "Required" ,
+                                                                                                            "Requirement" ,
+                                                                                                            "Requisite" ;
+                                             rdfs:label "Requirement" .
 
 
-###  http://purl.obolibrary.org/obo/NCIT_C41116
-<http://purl.obolibrary.org/obo/NCIT_C41116> rdf:type owl:Class .
+###  http://purl.obolibrary.org/obo/NCIT_C25664
+<http://purl.obolibrary.org/obo/NCIT_C25664> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/MathematicalEntity> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An ordered reference standard used to measure incremental changes." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25664" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Intellectual Product" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Scale" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0349674" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Scale" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Scale" ;
+                                             rdfs:label "Scale" .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C42645
-<http://purl.obolibrary.org/obo/NCIT_C42645> rdf:type owl:Class .
-
-
-###  http://purl.obolibrary.org/obo/NCIT_C43418
-<http://purl.obolibrary.org/obo/NCIT_C43418> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C42645> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+                                             rdfs:label "data type" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A data type is the type of response variable data." ;
+                                             <http://www.w3.org/2004/02/skos/core#example> "Binary variable" ;
+                                             <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C54156
-<http://purl.obolibrary.org/obo/NCIT_C54156> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C54156> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/DataItem> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An extrapolation of given data into the future." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C54156" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Idea or Concept" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Prediction" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C0681842" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Prediction" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Predicted" ,
+                                                                                                            "Prediction" ;
+                                             rdfs:label "Prediction" .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C54420
-<http://purl.obolibrary.org/obo/NCIT_C54420> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C54420> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+                                             rdfs:label "exception" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t." ;
+                                             <http://www.w3.org/2004/02/skos/core#example> "URXUCR" ;
+                                             <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C73619
+<http://purl.obolibrary.org/obo/NCIT_C73619> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25447> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                               owl:someValuesFrom <http://semanticscience.org/resource/Variable>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/hasProperty> ;
+                                                               owl:someValuesFrom :FeatureUsage
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A prominent or identifiable aspect, region, or site of interest." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C73619" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Qualitative Concept" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Feature" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2348519" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Feature" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Feature" ;
+                                             rdfs:label "Feature" .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C76125
-<http://purl.obolibrary.org/obo/NCIT_C76125> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C76125> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C20200> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> """
+The outcome of an experiment or set of experiments, including observations and primary, processed, and analyzed data.
+""" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Experimental Result" .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C80488
-<http://purl.obolibrary.org/obo/NCIT_C80488> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/NCIT_C80488> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A combination of symbols that represents a value." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C80488" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Classification" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Expression" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2911684" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Expression_String" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Expression" ;
+                                             rdfs:label "Expression" .
 
 
 ###  http://purl.obolibrary.org/obo/OBCS_0000039
@@ -179,6 +482,7 @@
 
 ###  http://purl.obolibrary.org/obo/STATO_0000193
 <http://purl.obolibrary.org/obo/STATO_0000193> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/Collection> ;
                                                rdfs:label "study group population" ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference." .
 
@@ -252,10 +556,6 @@
                                                rdfs:isDefinedBy <http://purl.obolibrary.org/obo/STATO_0000565> ;
                                                rdfs:label "regression coefficient" ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number." .
-
-
-###  http://purl.obolibrary.org/obo/STATO_DataItem
-<http://purl.obolibrary.org/obo/STATO_DataItem> rdf:type owl:Class .
 
 
 ###  http://semanticscience.org/resource/Algorithm
@@ -457,7 +757,23 @@
 
 ###  http://semanticscience.org/resource/Model
 <http://semanticscience.org/resource/Model> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://semanticscience.org/resource/Representation> ;
+                                            rdfs:subClassOf <http://semanticscience.org/resource/Representation> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:someValuesFrom :Hyperparameter
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                              owl:someValuesFrom :Parameter
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasComponentPart> ;
+                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/NCIT_C73619>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/hasComponentPart> ;
+                                                              owl:someValuesFrom <http://semanticscience.org/resource/Variable>
+                                                            ] ;
                                             <http://purl.org/dc/terms/description> "A model is a representation of some thing." ;
                                             rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
                                             rdfs:label "model" .
@@ -529,7 +845,19 @@
 
 ###  http://semanticscience.org/resource/Variable
 <http://semanticscience.org/resource/Variable> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://semanticscience.org/resource/MathematicalEntity> ;
+                                               rdfs:subClassOf <http://semanticscience.org/resource/MathematicalEntity> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                 owl:someValuesFrom :BaseRate
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://semanticscience.org/resource/hasProperty> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/NCIT_C42645>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://semanticscience.org/resource/hasProperty> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0200000>
+                                                               ] ;
                                                <http://purl.org/dc/terms/description> "A variable is a value that may change within the scope of a given problem or set of operations." ;
                                                rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl> ;
                                                rdfs:label "variable" .
@@ -541,7 +869,7 @@
 
 ###  https://purl.org/heals/hao/AnalysisQuestion
 :AnalysisQuestion rdf:type owl:Class ;
-                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41116> ;
+                  rdfs:subClassOf <http://semanticscience.org/resource/Question> ;
                   rdfs:label "analysis question" ;
                   <http://www.w3.org/2004/02/skos/core#definition> "An analysis question is a natural language description of what question a given analysis answers." ;
                   <http://www.w3.org/2004/02/skos/core#example> "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?" ;
@@ -558,6 +886,10 @@
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://semanticscience.org/resource/hasComponentPart> ;
                                     owl:someValuesFrom :OutputCartridge
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/isImplementationOf> ;
+                                    owl:someValuesFrom <http://semanticscience.org/resource/Model>
                                   ] ;
                   rdfs:label "analysis workflow" ;
                   <http://www.w3.org/2004/02/skos/core#definition> "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results." ;
@@ -566,7 +898,15 @@
 
 ###  https://purl.org/heals/hao/BaseRate
 :BaseRate rdf:type owl:Class ;
-          rdfs:subClassOf <http://semanticscience.org/resource/RateOfChange> ;
+          rdfs:subClassOf <http://semanticscience.org/resource/RateOfChange> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                            owl:someValuesFrom :CovariateMean
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                            owl:someValuesFrom :CovariateStdError
+                          ] ;
           rdfs:label "base rate" ;
           <http://www.w3.org/2004/02/skos/core#definition> "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge." ;
           <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -582,7 +922,23 @@
 
 ###  https://purl.org/heals/hao/Cadre
 :Cadre rdf:type owl:Class ;
-       rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C43418> ;
+       rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000203> ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                         owl:someValuesFrom :CadreSize
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                         owl:someValuesFrom :CenterParameter
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://semanticscience.org/resource/hasIdentifier> ;
+                         owl:someValuesFrom :CadreIndex
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://semanticscience.org/resource/isAssociatedWith> ;
+                         owl:someValuesFrom <http://semanticscience.org/resource/Parameter>
+                       ] ;
        rdfs:label "cadre" ;
        <http://www.w3.org/2004/02/skos/core#definition> "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are identified via supervised learning and may incorporate feature selection or weighting in their definitions." ;
        <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -590,8 +946,8 @@
 
 ###  https://purl.org/heals/hao/CadreAssignment
 :CadreAssignment rdf:type owl:Class ;
-                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25426> ;
-                 rdfs:label "cadre assignment" ;
+                 rdfs:subClassOf <http://semanticscience.org/resource/Function> ;
+                 rdfs:label "cadre assignment function" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres." ;
                  <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
@@ -624,6 +980,13 @@
            <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
+###  https://purl.org/heals/hao/CadreModel
+:CadreModel rdf:type owl:Class ;
+            rdfs:subClassOf <http://semanticscience.org/resource/Model> ;
+            <http://purl.org/dc/terms/description> "A specialized kind of supervized cadre model technique that discovers sub-populations or cadres" ;
+            rdfs:label "cadre model" .
+
+
 ###  https://purl.org/heals/hao/CadreSize
 :CadreSize rdf:type owl:Class ;
            rdfs:subClassOf <http://semanticscience.org/resource/Count> ;
@@ -634,7 +997,11 @@
 
 ###  https://purl.org/heals/hao/CadreSizeList
 :CadreSizeList rdf:type owl:Class ;
-               rdfs:subClassOf <http://semanticscience.org/resource/List> ;
+               rdfs:subClassOf <http://semanticscience.org/resource/List> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://semanticscience.org/resource/hasPart> ;
+                                 owl:someValuesFrom :CadreSize
+                               ] ;
                rdfs:label "cadre size list" ;
                <http://www.w3.org/2004/02/skos/core#definition> "The number of subjects in the training data assigned to each cadre." ;
                <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -670,7 +1037,7 @@
                  rdfs:subClassOf :InputCartridge ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
-                                   owl:someValuesFrom :useCohort
+                                   owl:someValuesFrom :UseCohort
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://semanticscience.org/resource/isAbout> ;
@@ -723,15 +1090,6 @@
                    <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
-###  https://purl.org/heals/hao/DataType
-:DataType rdf:type owl:Class ;
-          rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C42645> ;
-          rdfs:label "data type" ;
-          <http://www.w3.org/2004/02/skos/core#definition> "A data type is the type of response variable data." ;
-          <http://www.w3.org/2004/02/skos/core#example> "Binary variable" ;
-          <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
-
-
 ###  https://purl.org/heals/hao/ElasticNetMixingWeight
 :ElasticNetMixingWeight rdf:type owl:Class ;
                         rdfs:subClassOf :Hyperparameter ;
@@ -756,23 +1114,6 @@
                          <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
-###  https://purl.org/heals/hao/Estimate
-:Estimate rdf:type owl:Class ;
-          rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25498> ;
-          rdfs:label "estimate" ;
-          <http://www.w3.org/2004/02/skos/core#definition> "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable." ;
-          <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
-
-
-###  https://purl.org/heals/hao/Exception
-:Exception rdf:type owl:Class ;
-           rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C54420> ;
-           rdfs:label "exception" ;
-           <http://www.w3.org/2004/02/skos/core#definition> "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t." ;
-           <http://www.w3.org/2004/02/skos/core#example> "URXUCR" ;
-           <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
-
-
 ###  https://purl.org/heals/hao/FactorKey
 :FactorKey rdf:type owl:Class ;
            rdfs:subClassOf <http://semanticscience.org/resource/InformationContentEntity> ;
@@ -784,14 +1125,22 @@
 ###  https://purl.org/heals/hao/FeatureSelectionParameter
 :FeatureSelectionParameter rdf:type owl:Class ;
                            rdfs:subClassOf <http://semanticscience.org/resource/Parameter> ;
-                           rdfs:label "cadre assignment feature selection parameter" ;
+                           rdfs:label "feature selection parameter" ;
                            <http://www.w3.org/2004/02/skos/core#definition> "The name of the parameter d." ;
                            <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
 ###  https://purl.org/heals/hao/FeatureUsage
 :FeatureUsage rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/ns/prov#Usage> ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Usage> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                owl:someValuesFrom :CadreAssignment
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                owl:someValuesFrom :TargetPrediction
+                              ] ;
               rdfs:label "feature usage" ;
               <http://www.w3.org/2004/02/skos/core#definition> "How to divide supplied features into cadre-assignment and target-prediction categories." ;
               <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -808,7 +1157,7 @@
 
 ###  https://purl.org/heals/hao/GenerateCohortSummaryTable
 :GenerateCohortSummaryTable rdf:type owl:Class ;
-                            rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+                            rdfs:subClassOf <http://semanticscience.org/resource/Parameter> ;
                             rdfs:label "generate cohort summary table" ;
                             <http://www.w3.org/2004/02/skos/core#definition> "Whether the cohort summary table is generated." ;
                             <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -858,7 +1207,7 @@
 
 ###  https://purl.org/heals/hao/Metric
 :Metric rdf:type owl:Class ;
-        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25209> ;
+        rdfs:subClassOf <http://semanticscience.org/resource/MeasurementValue> ;
         rdfs:label "metric" ;
         <http://www.w3.org/2004/02/skos/core#definition> "A metric describes how to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error." ;
         <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -876,6 +1225,10 @@
 :ModelCartridge rdf:type owl:Class ;
                 rdfs:subClassOf :OutputCartridge ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/NCIT_C17103>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://semanticscience.org/resource/isAbout> ;
                                   owl:someValuesFrom <http://semanticscience.org/resource/Model>
                                 ] ;
@@ -887,7 +1240,7 @@
 
 ###  https://purl.org/heals/hao/ModelParameter
 :ModelParameter rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_DataItem> ;
+                rdfs:subClassOf <http://semanticscience.org/resource/Parameter> ;
                 rdfs:label "model parameter" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A model parameter is a data item which is part of a model and which is meant to characterize an theoretical or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population." ;
                 <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -903,16 +1256,60 @@
 
 ###  https://purl.org/heals/hao/OutputCartridge
 :OutputCartridge rdf:type owl:Class ;
-                 rdfs:subClassOf :Cartridge ;
+                 rdfs:subClassOf :Cartridge ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/hasSource> ;
+                                   owl:someValuesFrom :InputCartridge
+                                 ] ;
                  rdfs:label "output cartridge" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them." ;
                  <http://www.w3.org/2004/02/skos/core#example> "Results cartridge describing environmental risk factors for hypertension in obese women" ;
                  <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
+###  https://purl.org/heals/hao/Parameter
+:Parameter rdf:type owl:Class .
+
+
 ###  https://purl.org/heals/hao/ParametersCartridge
 :ParametersCartridge rdf:type owl:Class ;
-                     rdfs:subClassOf :InputCartridge ;
+                     rdfs:subClassOf :InputCartridge ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                       owl:someValuesFrom <http://semanticscience.org/resource/MaximalValue>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                       owl:someValuesFrom <http://semanticscience.org/resource/MinimalValue>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                       owl:someValuesFrom :CadreCount
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                       owl:someValuesFrom :FeatureUsage
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                       owl:someValuesFrom :Metric
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasMeasurementValue> ;
+                                       owl:someValuesFrom :MinPositive
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasPart> ;
+                                       owl:someValuesFrom :Hyperparameter
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasProperty> ;
+                                       owl:someValuesFrom <http://semanticscience.org/resource/Model>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/isAbout> ;
+                                       owl:someValuesFrom <http://semanticscience.org/resource/Parameter>
+                                     ] ;
                      rdfs:label "parameters cartridge" ;
                      <http://www.w3.org/2004/02/skos/core#definition> "A parameters cartridge contains rules to complete the chosen analysis workflow. " ;
                      <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -970,7 +1367,31 @@
 
 ###  https://purl.org/heals/hao/ResponseCartridge
 :ResponseCartridge rdf:type owl:Class ;
-                   rdfs:subClassOf :InputCartridge ;
+                   rdfs:subClassOf :InputCartridge ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                     owl:someValuesFrom <http://purl.obolibrary.org/obo/OBCS_0000039>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                     owl:someValuesFrom <http://semanticscience.org/resource/Variable>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                     owl:someValuesFrom :AnalysisQuestion
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                     owl:someValuesFrom :TargetVariable
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/hasProperty> ;
+                                     owl:someValuesFrom <http://semanticscience.org/resource/Model>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+                                     owl:someValuesFrom xsd:string
+                                   ] ;
                    rdfs:label "response cartridge" ;
                    <http://www.w3.org/2004/02/skos/core#definition> "A response variable cartridge provides the analysis concepts and background domain axioms necessary to model a given disease" ;
                    <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -978,7 +1399,11 @@
 
 ###  https://purl.org/heals/hao/Result
 :Result rdf:type owl:Class ;
-        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C76125> ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C76125> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                          owl:someValuesFrom :ResultCount
+                        ] ;
         rdfs:label "result" ;
         <http://www.w3.org/2004/02/skos/core#definition> "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value." ;
         <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -995,6 +1420,26 @@
 ###  https://purl.org/heals/hao/ResultsCartridge
 :ResultsCartridge rdf:type owl:Class ;
                   rdfs:subClassOf :OutputCartridge ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000175>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000562>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                    owl:someValuesFrom <http://semanticscience.org/resource/StatisticalAssociation>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                    owl:someValuesFrom :Result
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                    owl:someValuesFrom :StatisticalEstimate
+                                  ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://semanticscience.org/resource/hasPart> ;
                                     owl:someValuesFrom :CadreList
@@ -1014,17 +1459,17 @@
              <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
-###  https://purl.org/heals/hao/RiskFactor
-:RiskFactor rdf:type owl:Class ;
-            rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17103> ;
-            rdfs:label "risk factor" ;
-            <http://www.w3.org/2004/02/skos/core#definition> "A risk factor is a variable that has a potential association with a response variable." ;
-            <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
-
-
 ###  https://purl.org/heals/hao/RiskFactorCartridge
 :RiskFactorCartridge rdf:type owl:Class ;
-                     rdfs:subClassOf :InputCartridge ;
+                     rdfs:subClassOf :InputCartridge ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/NCIT_C17103>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/NCIT_C54420>
+                                     ] ;
                      rdfs:label "risk factor cartridge" ;
                      <http://www.w3.org/2004/02/skos/core#definition> "A risk factor cartridge describes categories of semantically similar risk factors and details how they should be modeled." ;
                      <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -1032,7 +1477,11 @@
 
 ###  https://purl.org/heals/hao/RiskFactorCategory
 :RiskFactorCategory rdf:type owl:Class ;
-                    rdfs:subClassOf <http://semanticscience.org/resource/Category> ;
+                    rdfs:subClassOf <http://semanticscience.org/resource/Category> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                      owl:someValuesFrom :FileKey
+                                    ] ;
                     rdfs:label "risk factor category" ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Risk factor category is a category of similar potential risk factors, where 'similarity' is defined by domain experts." ;
                     <http://www.w3.org/2004/02/skos/core#example> "Polyaromatic hydrocarbons" ;
@@ -1041,7 +1490,7 @@
 
 ###  https://purl.org/heals/hao/Sharpness
 :Sharpness rdf:type owl:Class ;
-           rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+           rdfs:subClassOf :Hyperparameter ;
            rdfs:label "sharpness" ;
            <http://www.w3.org/2004/02/skos/core#definition> "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts." .
 
@@ -1062,6 +1511,14 @@
                  <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
+###  https://purl.org/heals/hao/StatisticalEstimate
+:StatisticalEstimate rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25498> ;
+                     rdfs:label "statistical estimate" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable." ;
+                     <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
+
+
 ###  https://purl.org/heals/hao/StudyVariable
 :StudyVariable rdf:type owl:Class ;
                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000258> ;
@@ -1073,7 +1530,23 @@
 
 ###  https://purl.org/heals/hao/SubpopulationCartridge
 :SubpopulationCartridge rdf:type owl:Class ;
-                        rdfs:subClassOf :OutputCartridge ;
+                        rdfs:subClassOf :OutputCartridge ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                          owl:someValuesFrom :BaseRate
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                          owl:someValuesFrom :CadreCount
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                          owl:someValuesFrom :SubpopulationCharacteristic
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://semanticscience.org/resource/hasComponentPart> ;
+                                          owl:someValuesFrom :CadreSizeList
+                                        ] ;
                         <http://purl.org/dc/terms/description> "Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates." ;
                         rdfs:label "subpopulation cartridge" ;
                         <http://www.w3.org/2004/02/skos/core#definition> "A subpopulation cartridges gives 'Table 1s' (cohort-description tables) of discovered subpopulations." ;
@@ -1082,7 +1555,15 @@
 
 ###  https://purl.org/heals/hao/SubpopulationCharacteristic
 :SubpopulationCharacteristic rdf:type owl:Class ;
-                             rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
+                             rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                               owl:someValuesFrom :CovariateMean
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                               owl:someValuesFrom :CovariateStdError
+                                             ] ;
                              rdfs:label "subpopulation characteristic" ;
                              <http://www.w3.org/2004/02/skos/core#definition> "Mean and standard-error-of-mean estimates for each discovered subpopulation." ;
                              <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
@@ -1121,20 +1602,20 @@
            <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
-###  https://purl.org/heals/hao/UseSurveyWeight
-:UseSurveyWeight rdf:type owl:Class ;
-                 rdfs:subClassOf <http://semanticscience.org/resource/Attribute> ;
-                 rdfs:label "use survey weight" ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Whether the survey weight is used in the study." ;
-                 <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
-
-
-###  https://purl.org/heals/hao/useCohort
-:useCohort rdf:type owl:Class ;
+###  https://purl.org/heals/hao/UseCohort
+:UseCohort rdf:type owl:Class ;
            rdfs:subClassOf <http://semanticscience.org/resource/Variable> ;
            rdfs:label "use cohort" ;
            <http://www.w3.org/2004/02/skos/core#definition> "Whether the study uses a cohort." ;
            <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
+
+
+###  https://purl.org/heals/hao/UseSurveyWeight
+:UseSurveyWeight rdf:type owl:Class ;
+                 rdfs:subClassOf <http://semanticscience.org/resource/Parameter> ;
+                 rdfs:label "use survey weight" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Whether the survey weight is used in the study." ;
+                 <http://www.w3.org/ns/prov#wasAttributedTo> :Alex .
 
 
 #################################################################

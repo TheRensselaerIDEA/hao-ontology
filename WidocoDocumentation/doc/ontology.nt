@@ -21,8 +21,50 @@
 # #################################################################
 # 
 # 
+# http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_A11
+<http://purl.obolibrary.org/obo/NCIT_A11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_NHC0
+<http://purl.obolibrary.org/obo/NCIT_NHC0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P106
+<http://purl.obolibrary.org/obo/NCIT_P106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P108
+<http://purl.obolibrary.org/obo/NCIT_P108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P207
+<http://purl.obolibrary.org/obo/NCIT_P207> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P322
+<http://purl.obolibrary.org/obo/NCIT_P322> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P325
+<http://purl.obolibrary.org/obo/NCIT_P325> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P366
+<http://purl.obolibrary.org/obo/NCIT_P366> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P371
+<http://purl.obolibrary.org/obo/NCIT_P371> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_P375
+<http://purl.obolibrary.org/obo/NCIT_P375> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#inSubset
+<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -37,49 +79,291 @@
 # 
 # #################################################################
 # #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Classes
 # #
 # #################################################################
 # 
 # 
+# http://purl.obolibrary.org/obo/NCIT_C102711
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/IAO_0000115> "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease." .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C102711" .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/NCIT_P108> "Social Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/NCIT_P207> "C3538984" .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/NCIT_P322> "CDISC" .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://purl.obolibrary.org/obo/NCIT_P325> "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease." .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "RISKSOC" .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Social Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C103330> .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410> .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830> .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C74559> .
+<http://purl.obolibrary.org/obo/NCIT_C102711> <http://www.w3.org/2000/01/rdf-schema#label> "Social Risk Factor" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C156749
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://purl.obolibrary.org/obo/IAO_0000115> "Any factor, such as age, ethnicity, genetic factor, family history, or environmental factor, that increases a person's chance of developing melanoma." .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C156749" .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://purl.obolibrary.org/obo/NCIT_P108> "Melanoma Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Melanoma Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C156749> <http://www.w3.org/2000/01/rdf-schema#label> "Melanoma Risk Factor" .
+# 
 # http://purl.obolibrary.org/obo/NCIT_C17103
 <http://purl.obolibrary.org/obo/NCIT_C17103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C17103> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C20047> .
+<http://purl.obolibrary.org/obo/NCIT_C17103> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/FactorKey> .
+<http://purl.obolibrary.org/obo/NCIT_C17103> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/RiskFactorCategory> .
+<http://purl.obolibrary.org/obo/NCIT_C17103> <http://www.w3.org/2000/01/rdf-schema#label> "risk factor" .
+<http://purl.obolibrary.org/obo/NCIT_C17103> <http://www.w3.org/2004/02/skos/core#definition> "A risk factor is a variable that has a potential association with a response variable." .
+<http://purl.obolibrary.org/obo/NCIT_C17103> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
-# http://purl.obolibrary.org/obo/NCIT_C25209
-<http://purl.obolibrary.org/obo/NCIT_C25209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://purl.obolibrary.org/obo/NCIT_C18244
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://purl.obolibrary.org/obo/IAO_0000115> "Health hazards at home, in the work place, or in nature (e.g., infectious agents, irritants, respiratory fibrotic agents, asphyxiants, allergens, metabolic poisons, physical agents, mutagens, teratogens, and carcinogens). (Winett et al: Health Psychology and Public Health)" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C18244" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://purl.obolibrary.org/obo/NCIT_P106> "Phenomenon or Process" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://purl.obolibrary.org/obo/NCIT_P108> "Environmental Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://purl.obolibrary.org/obo/NCIT_P207> "C0686732" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://purl.obolibrary.org/obo/NCIT_P366> "Environmental_Risk_Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Environmental Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Environmental Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C18244> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Risk Factor" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C19745
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://purl.obolibrary.org/obo/IAO_0000115> "Increase in the chance of developing a disease, due to hormonal factors." .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C19745" .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://purl.obolibrary.org/obo/NCIT_P106> "Qualitative Concept" .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://purl.obolibrary.org/obo/NCIT_P108> "Hormonal Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://purl.obolibrary.org/obo/NCIT_P207> "C1512492" .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://purl.obolibrary.org/obo/NCIT_P366> "Hormonal_Risk_Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Hormonal Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C19745> <http://www.w3.org/2000/01/rdf-schema#label> "Hormonal Risk Factor" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C20047
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://purl.obolibrary.org/obo/IAO_0000115> "A characteristic of an organism that contributes to the diagnosis or treatment of a disease or to the prediction of clinical outcomes." .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C20047" .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://purl.obolibrary.org/obo/NCIT_P108> "Diagnostic or Prognostic Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://purl.obolibrary.org/obo/NCIT_P207> "C1511887" .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://purl.obolibrary.org/obo/NCIT_P366> "Diagnostic_or_Prognostic_Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Diagnostic or Prognostic Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20047> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic or Prognostic Factor" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C20116
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://purl.obolibrary.org/obo/IAO_0000115> "Any factor, such as age, ethnicity, genetic factor, family history, over-exposure to estrogen, or environmental factors, that increases a person's chance of developing breast cancer." .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C20116" .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://purl.obolibrary.org/obo/NCIT_P106> "Qualitative Concept" .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://purl.obolibrary.org/obo/NCIT_P108> "Breast Cancer Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://purl.obolibrary.org/obo/NCIT_P207> "C1511298" .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://purl.obolibrary.org/obo/NCIT_P366> "Breast_Cancer_Risk_Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Breast Cancer Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20116> <http://www.w3.org/2000/01/rdf-schema#label> "Breast Cancer Risk Factor" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C20199
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C20199" .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://purl.obolibrary.org/obo/NCIT_P106> "Clinical Attribute" .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://purl.obolibrary.org/obo/NCIT_P108> "Unspecified Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://purl.obolibrary.org/obo/NCIT_P207> "C1519813" .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://purl.obolibrary.org/obo/NCIT_P366> "Unspecified_Risk_Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://purl.obolibrary.org/obo/NCIT_P375> "Other specified personal risk factors, not elsewhere classified" .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Unspecified Risk Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C20199> <http://www.w3.org/2000/01/rdf-schema#label> "Unspecified Risk Factor" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C20200
+<http://purl.obolibrary.org/obo/NCIT_C20200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C20200> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
+<http://purl.obolibrary.org/obo/NCIT_C20200> <http://purl.obolibrary.org/obo/IAO_0000115> "The result of an action." .
+<http://purl.obolibrary.org/obo/NCIT_C20200> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C20200> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome" .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C25390
 <http://purl.obolibrary.org/obo/NCIT_C25390> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25664> .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://purl.obolibrary.org/obo/IAO_0000115> "A numerical scale used to compare variables with one another or with some reference number; a number used to select an element of a list, vector, array or other sequence." .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25390" .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://purl.obolibrary.org/obo/NCIT_P106> "Intellectual Product" .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://purl.obolibrary.org/obo/NCIT_P108> "Index" .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://purl.obolibrary.org/obo/NCIT_P207> "C0918012" .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://purl.obolibrary.org/obo/NCIT_P366> "Index" .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Index" .
+<http://purl.obolibrary.org/obo/NCIT_C25390> <http://www.w3.org/2000/01/rdf-schema#label> "Index" .
 # 
-# http://purl.obolibrary.org/obo/NCIT_C25426
-<http://purl.obolibrary.org/obo/NCIT_C25426> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://purl.obolibrary.org/obo/NCIT_C25447
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/IAO_0000115> "The distinguishing qualities or prominent aspect of a person, object, action, process, or substance." .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_A11> <http://purl.obolibrary.org/obo/NCIT_C20189> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25447" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_P108> "Characteristic" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_P207> "C1521970" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_P322> "NICHD" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_P366> "Characteristics" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://purl.obolibrary.org/obo/NCIT_P371> "Characteristic" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Characteristic" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Characteristics" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Feature" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Features" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.w3.org/2000/01/rdf-schema#label> "Characteristic" .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C25498
 <http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/MeasurementValue> .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/IAO_0000115> "To calculate approximately." .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25498" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/NCIT_P106> "Activity" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/NCIT_P108> "Estimate" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/NCIT_P207> "C0680844" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/NCIT_P322> "FDA" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://purl.obolibrary.org/obo/NCIT_P366> "Estimated" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "ESTIMATED" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Estimate" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Estimated" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Estimation" .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447> .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C88088> .
+<http://purl.obolibrary.org/obo/NCIT_C25498> <http://www.w3.org/2000/01/rdf-schema#label> "Estimate" .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C25652
 <http://purl.obolibrary.org/obo/NCIT_C25652> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Entity> .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://purl.obolibrary.org/obo/IAO_0000115> "Something that is a necessary condition; something that is obligatory." .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25652" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://purl.obolibrary.org/obo/NCIT_P106> "Functional Concept" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://purl.obolibrary.org/obo/NCIT_P108> "Requirement" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://purl.obolibrary.org/obo/NCIT_P207> "C1514873" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://purl.obolibrary.org/obo/NCIT_P366> "Required" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Mandatory" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Required" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Requirement" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Requisite" .
+<http://purl.obolibrary.org/obo/NCIT_C25652> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement" .
 # 
-# http://purl.obolibrary.org/obo/NCIT_C41116
-<http://purl.obolibrary.org/obo/NCIT_C41116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://purl.obolibrary.org/obo/NCIT_C25664
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/MathematicalEntity> .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://purl.obolibrary.org/obo/IAO_0000115> "An ordered reference standard used to measure incremental changes." .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C25664" .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://purl.obolibrary.org/obo/NCIT_P106> "Intellectual Product" .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://purl.obolibrary.org/obo/NCIT_P108> "Scale" .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://purl.obolibrary.org/obo/NCIT_P207> "C0349674" .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://purl.obolibrary.org/obo/NCIT_P366> "Scale" .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Scale" .
+<http://purl.obolibrary.org/obo/NCIT_C25664> <http://www.w3.org/2000/01/rdf-schema#label> "Scale" .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C42645
 <http://purl.obolibrary.org/obo/NCIT_C42645> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.obolibrary.org/obo/NCIT_C43418
-<http://purl.obolibrary.org/obo/NCIT_C43418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C42645> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<http://purl.obolibrary.org/obo/NCIT_C42645> <http://www.w3.org/2000/01/rdf-schema#label> "data type" .
+<http://purl.obolibrary.org/obo/NCIT_C42645> <http://www.w3.org/2004/02/skos/core#definition> "A data type is the type of response variable data." .
+<http://purl.obolibrary.org/obo/NCIT_C42645> <http://www.w3.org/2004/02/skos/core#example> "Binary variable" .
+<http://purl.obolibrary.org/obo/NCIT_C42645> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C54156
 <http://purl.obolibrary.org/obo/NCIT_C54156> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/DataItem> .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://purl.obolibrary.org/obo/IAO_0000115> "An extrapolation of given data into the future." .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C54156" .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://purl.obolibrary.org/obo/NCIT_P106> "Idea or Concept" .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://purl.obolibrary.org/obo/NCIT_P108> "Prediction" .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://purl.obolibrary.org/obo/NCIT_P207> "C0681842" .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://purl.obolibrary.org/obo/NCIT_P366> "Prediction" .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Predicted" .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Prediction" .
+<http://purl.obolibrary.org/obo/NCIT_C54156> <http://www.w3.org/2000/01/rdf-schema#label> "Prediction" .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C54420
 <http://purl.obolibrary.org/obo/NCIT_C54420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C54420> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<http://purl.obolibrary.org/obo/NCIT_C54420> <http://www.w3.org/2000/01/rdf-schema#label> "exception" .
+<http://purl.obolibrary.org/obo/NCIT_C54420> <http://www.w3.org/2004/02/skos/core#definition> "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t." .
+<http://purl.obolibrary.org/obo/NCIT_C54420> <http://www.w3.org/2004/02/skos/core#example> "URXUCR" .
+<http://purl.obolibrary.org/obo/NCIT_C54420> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C73619
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25447> .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Variable> .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasProperty> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/FeatureUsage> .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://purl.obolibrary.org/obo/IAO_0000115> "A prominent or identifiable aspect, region, or site of interest." .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C73619" .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://purl.obolibrary.org/obo/NCIT_P106> "Qualitative Concept" .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://purl.obolibrary.org/obo/NCIT_P108> "Feature" .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://purl.obolibrary.org/obo/NCIT_P207> "C2348519" .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://purl.obolibrary.org/obo/NCIT_P366> "Feature" .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Feature" .
+<http://purl.obolibrary.org/obo/NCIT_C73619> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C76125
 <http://purl.obolibrary.org/obo/NCIT_C76125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C76125> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C20200> .
+<http://purl.obolibrary.org/obo/NCIT_C76125> <http://purl.obolibrary.org/obo/IAO_0000115> "\nThe outcome of an experiment or set of experiments, including observations and primary, processed, and analyzed data.\n" .
+<http://purl.obolibrary.org/obo/NCIT_C76125> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C76125> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental Result" .
 # 
 # http://purl.obolibrary.org/obo/NCIT_C80488
 <http://purl.obolibrary.org/obo/NCIT_C80488> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://purl.obolibrary.org/obo/IAO_0000115> "A combination of symbols that represents a value." .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://purl.obolibrary.org/obo/NCIT_NHC0> "C80488" .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://purl.obolibrary.org/obo/NCIT_P106> "Classification" .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://purl.obolibrary.org/obo/NCIT_P108> "Expression" .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://purl.obolibrary.org/obo/NCIT_P207> "C2911684" .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://purl.obolibrary.org/obo/NCIT_P366> "Expression_String" .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Expression" .
+<http://purl.obolibrary.org/obo/NCIT_C80488> <http://www.w3.org/2000/01/rdf-schema#label> "Expression" .
 # 
 # http://purl.obolibrary.org/obo/OBCS_0000039
 <http://purl.obolibrary.org/obo/OBCS_0000039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -153,6 +437,7 @@
 # 
 # http://purl.obolibrary.org/obo/STATO_0000193
 <http://purl.obolibrary.org/obo/STATO_0000193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/STATO_0000193> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Collection> .
 <http://purl.obolibrary.org/obo/STATO_0000193> <http://www.w3.org/2000/01/rdf-schema#label> "study group population" .
 <http://purl.obolibrary.org/obo/STATO_0000193> <http://www.w3.org/2004/02/skos/core#definition> "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference." .
 # 
@@ -218,9 +503,6 @@
 <http://purl.obolibrary.org/obo/STATO_0000565> <http://www.w3.org/2000/01/rdf-schema#label> "regression coefficient" .
 <http://purl.obolibrary.org/obo/STATO_0000565> <http://www.w3.org/2004/02/skos/core#definition> "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number." .
 # 
-# http://purl.obolibrary.org/obo/STATO_DataItem
-<http://purl.obolibrary.org/obo/STATO_DataItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://semanticscience.org/resource/Algorithm
 <http://semanticscience.org/resource/Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://semanticscience.org/resource/Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/MathematicalEntity> .
@@ -281,14 +563,14 @@
 # 
 # http://semanticscience.org/resource/DataAnalysis
 <http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisQuestion> .
-<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasImplementation> .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisWorkflow> .
+<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisQuestion> .
+<http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasImplementation> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisWorkflow> .
 <http://semanticscience.org/resource/DataAnalysis> <http://purl.org/dc/terms/description> "Data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making." .
 <http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
 <http://semanticscience.org/resource/DataAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "data analysis" .
@@ -398,6 +680,23 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # http://semanticscience.org/resource/Model
 <http://semanticscience.org/resource/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://semanticscience.org/resource/Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Representation> .
+<http://semanticscience.org/resource/Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Hyperparameter> .
+<http://semanticscience.org/resource/Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Parameter> .
+<https://purl.org/heals/hao/Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/NCIT_C73619> .
+<http://semanticscience.org/resource/Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Variable> .
 <http://semanticscience.org/resource/Model> <http://purl.org/dc/terms/description> "A model is a representation of some thing." .
 <http://semanticscience.org/resource/Model> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
 <http://semanticscience.org/resource/Model> <http://www.w3.org/2000/01/rdf-schema#label> "model" .
@@ -461,6 +760,18 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # http://semanticscience.org/resource/Variable
 <http://semanticscience.org/resource/Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://semanticscience.org/resource/Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/MathematicalEntity> .
+<http://semanticscience.org/resource/Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/BaseRate> .
+<http://semanticscience.org/resource/Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasProperty> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/NCIT_C42645> .
+<http://semanticscience.org/resource/Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasProperty> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/OBI_0200000> .
 <http://semanticscience.org/resource/Variable> <http://purl.org/dc/terms/description> "A variable is a value that may change within the scope of a given problem or set of operations." .
 <http://semanticscience.org/resource/Variable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticscience.org/ontology/sio.owl> .
 <http://semanticscience.org/resource/Variable> <http://www.w3.org/2000/01/rdf-schema#label> "variable" .
@@ -470,7 +781,7 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # 
 # https://purl.org/heals/hao/AnalysisQuestion
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C41116> .
+<https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Question> .
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "analysis question" .
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2004/02/skos/core#definition> "An analysis question is a natural language description of what question a given analysis answers." .
 <https://purl.org/heals/hao/AnalysisQuestion> <http://www.w3.org/2004/02/skos/core#example> "Are higher exposure amounts of a risk factor significantly associated with the presence of heart disease?" .
@@ -479,14 +790,18 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/AnalysisWorkflow
 <https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Workflow> .
-<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/InputCartridge> .
-<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
-_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/OutputCartridge> .
+<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/InputCartridge> .
+<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/OutputCartridge> .
+<https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isImplementationOf> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Model> .
 <https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2000/01/rdf-schema#label> "analysis workflow" .
 <https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/2004/02/skos/core#definition> "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results." .
 <https://purl.org/heals/hao/AnalysisWorkflow> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -494,6 +809,14 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/BaseRate
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/RateOfChange> .
+<https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CovariateMean> .
+<https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CovariateStdError> .
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2000/01/rdf-schema#label> "base rate" .
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/2004/02/skos/core#definition> "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge." .
 <https://purl.org/heals/hao/BaseRate> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -507,15 +830,31 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # 
 # https://purl.org/heals/hao/Cadre
 <https://purl.org/heals/hao/Cadre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C43418> .
+<https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000203> .
+<https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreSize> .
+<https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CenterParameter> .
+<https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasIdentifier> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreIndex> .
+<https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAssociatedWith> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Parameter> .
 <https://purl.org/heals/hao/Cadre> <http://www.w3.org/2000/01/rdf-schema#label> "cadre" .
 <https://purl.org/heals/hao/Cadre> <http://www.w3.org/2004/02/skos/core#definition> "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are identified via supervised learning and may incorporate feature selection or weighting in their definitions." .
 <https://purl.org/heals/hao/Cadre> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/CadreAssignment
 <https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25426> .
-<https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2000/01/rdf-schema#label> "cadre assignment" .
+<https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Function> .
+<https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2000/01/rdf-schema#label> "cadre assignment function" .
 <https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/2004/02/skos/core#definition> "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres." .
 <https://purl.org/heals/hao/CadreAssignment> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
@@ -536,13 +875,19 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/CadreList
 <https://purl.org/heals/hao/CadreList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CadreList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/List> .
-<https://purl.org/heals/hao/CadreList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Cadre> .
+<https://purl.org/heals/hao/CadreList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Cadre> .
 <https://purl.org/heals/hao/CadreList> <http://www.w3.org/2000/01/rdf-schema#label> "cadre list" .
 <https://purl.org/heals/hao/CadreList> <http://www.w3.org/2004/02/skos/core#definition> "A cadre list contains the information of a list of cadres." .
 <https://purl.org/heals/hao/CadreList> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
+# https://purl.org/heals/hao/CadreModel
+<https://purl.org/heals/hao/CadreModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/CadreModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Model> .
+<https://purl.org/heals/hao/CadreModel> <http://purl.org/dc/terms/description> "A specialized kind of supervized cadre model technique that discovers sub-populations or cadres" .
+<https://purl.org/heals/hao/CadreModel> <http://www.w3.org/2000/01/rdf-schema#label> "cadre model" .
 # 
 # https://purl.org/heals/hao/CadreSize
 <https://purl.org/heals/hao/CadreSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -554,6 +899,10 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/CadreSizeList
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/List> .
+<https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreSize> .
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2000/01/rdf-schema#label> "cadre size list" .
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/2004/02/skos/core#definition> "The number of subjects in the training data assigned to each cadre." .
 <https://purl.org/heals/hao/CadreSizeList> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -583,14 +932,14 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/CohortCartridge
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
-<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/useCohort> .
-<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAbout> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/STATO_0000203> .
+<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/UseCohort> .
+<https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAbout> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/STATO_0000203> .
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "cohort cartridge" .
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A cohort cartridge lists the inclusion criteria used to determine if a given subject may be included in the user’s study." .
 <https://purl.org/heals/hao/CohortCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -632,14 +981,6 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.
 <https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/2004/02/skos/core#definition> "In a subpopulation cartridge, this is the (survey-weighted) standard error of the (survey-weighted) estimate of the mean of a covariate, calculated over the subjects in a specific subpopulation." .
 <https://purl.org/heals/hao/CovariateStdError> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
-# https://purl.org/heals/hao/DataType
-<https://purl.org/heals/hao/DataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/DataType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C42645> .
-<https://purl.org/heals/hao/DataType> <http://www.w3.org/2000/01/rdf-schema#label> "data type" .
-<https://purl.org/heals/hao/DataType> <http://www.w3.org/2004/02/skos/core#definition> "A data type is the type of response variable data." .
-<https://purl.org/heals/hao/DataType> <http://www.w3.org/2004/02/skos/core#example> "Binary variable" .
-<https://purl.org/heals/hao/DataType> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
-# 
 # https://purl.org/heals/hao/ElasticNetMixingWeight
 <https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ElasticNetMixingWeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/Hyperparameter> .
@@ -661,21 +1002,6 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.
 <https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/2004/02/skos/core#definition> "Alpha W, the elastic net mixing weights for the W parameter." .
 <https://purl.org/heals/hao/ElasticNetMixingWeightW> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
-# https://purl.org/heals/hao/Estimate
-<https://purl.org/heals/hao/Estimate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/Estimate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25498> .
-<https://purl.org/heals/hao/Estimate> <http://www.w3.org/2000/01/rdf-schema#label> "estimate" .
-<https://purl.org/heals/hao/Estimate> <http://www.w3.org/2004/02/skos/core#definition> "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable." .
-<https://purl.org/heals/hao/Estimate> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
-# 
-# https://purl.org/heals/hao/Exception
-<https://purl.org/heals/hao/Exception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/Exception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C54420> .
-<https://purl.org/heals/hao/Exception> <http://www.w3.org/2000/01/rdf-schema#label> "exception" .
-<https://purl.org/heals/hao/Exception> <http://www.w3.org/2004/02/skos/core#definition> "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t." .
-<https://purl.org/heals/hao/Exception> <http://www.w3.org/2004/02/skos/core#example> "URXUCR" .
-<https://purl.org/heals/hao/Exception> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
-# 
 # https://purl.org/heals/hao/FactorKey
 <https://purl.org/heals/hao/FactorKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/FactorKey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/InformationContentEntity> .
@@ -686,13 +1012,21 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.
 # https://purl.org/heals/hao/FeatureSelectionParameter
 <https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
-<https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2000/01/rdf-schema#label> "cadre assignment feature selection parameter" .
+<https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2000/01/rdf-schema#label> "feature selection parameter" .
 <https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/2004/02/skos/core#definition> "The name of the parameter d." .
 <https://purl.org/heals/hao/FeatureSelectionParameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # https://purl.org/heals/hao/FeatureUsage
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Usage> .
+<https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreAssignment> .
+<https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/TargetPrediction> .
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2000/01/rdf-schema#label> "feature usage" .
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/2004/02/skos/core#definition> "How to divide supplied features into cadre-assignment and target-prediction categories." .
 <https://purl.org/heals/hao/FeatureUsage> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -707,7 +1041,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.
 # 
 # https://purl.org/heals/hao/GenerateCohortSummaryTable
 <https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
 <https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/2000/01/rdf-schema#label> "generate cohort summary table" .
 <https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/2004/02/skos/core#definition> "Whether the cohort summary table is generated." .
 <https://purl.org/heals/hao/GenerateCohortSummaryTable> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -751,7 +1085,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.
 # 
 # https://purl.org/heals/hao/Metric
 <https://purl.org/heals/hao/Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25209> .
+<https://purl.org/heals/hao/Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/MeasurementValue> .
 <https://purl.org/heals/hao/Metric> <http://www.w3.org/2000/01/rdf-schema#label> "metric" .
 <https://purl.org/heals/hao/Metric> <http://www.w3.org/2004/02/skos/core#definition> "A metric describes how to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error." .
 <https://purl.org/heals/hao/Metric> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -766,10 +1100,14 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.
 # https://purl.org/heals/hao/ModelCartridge
 <https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/OutputCartridge> .
-<https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAbout> .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Model> .
+<https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAbout> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Model> .
 <https://purl.org/heals/hao/ModelCartridge> <http://purl.org/dc/terms/description> "The hyperparameters used to train a model, the parameter estimates learned during training, and the rules by which it is applied to new observations." .
 <https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "model cartridge" .
 <https://purl.org/heals/hao/ModelCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A model cartridge assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. " .
@@ -777,7 +1115,7 @@ _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 # 
 # https://purl.org/heals/hao/ModelParameter
 <https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_DataItem> .
+<https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
 <https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/2000/01/rdf-schema#label> "model parameter" .
 <https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/2004/02/skos/core#definition> "A model parameter is a data item which is part of a model and which is meant to characterize an theoretical or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population." .
 <https://purl.org/heals/hao/ModelParameter> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -792,14 +1130,56 @@ _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 # https://purl.org/heals/hao/OutputCartridge
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/Cartridge> .
+<https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasSource> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/InputCartridge> .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "output cartridge" .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2004/02/skos/core#definition> "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them." .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/2004/02/skos/core#example> "Results cartridge describing environmental risk factors for hypertension in obese women" .
 <https://purl.org/heals/hao/OutputCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
+# https://purl.org/heals/hao/Parameter
+# 
 # https://purl.org/heals/hao/ParametersCartridge
 <https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/MaximalValue> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/MinimalValue> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreCount> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/FeatureUsage> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Metric> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasMeasurementValue> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/MinPositive> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Hyperparameter> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasProperty> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Model> .
+<https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/isAbout> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Parameter> .
 <https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "parameters cartridge" .
 <https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A parameters cartridge contains rules to complete the chosen analysis workflow. " .
 <https://purl.org/heals/hao/ParametersCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -851,6 +1231,30 @@ _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 # https://purl.org/heals/hao/ResponseCartridge
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/OBCS_0000039> .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Variable> .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/AnalysisQuestion> .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/TargetVariable> .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasProperty> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/Model> .
+<https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "response cartridge" .
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A response variable cartridge provides the analysis concepts and background domain axioms necessary to model a given disease" .
 <https://purl.org/heals/hao/ResponseCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -858,6 +1262,10 @@ _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 # https://purl.org/heals/hao/Result
 <https://purl.org/heals/hao/Result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/Result> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C76125> .
+<https://purl.org/heals/hao/Result> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/ResultCount> .
 <https://purl.org/heals/hao/Result> <http://www.w3.org/2000/01/rdf-schema#label> "result" .
 <https://purl.org/heals/hao/Result> <http://www.w3.org/2004/02/skos/core#definition> "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value." .
 <https://purl.org/heals/hao/Result> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -872,10 +1280,30 @@ _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 # https://purl.org/heals/hao/ResultsCartridge
 <https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/OutputCartridge> .
-<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
-_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreList> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/OBI_0000175> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/STATO_0000562> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/StatisticalAssociation> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/Result> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/StatisticalEstimate> .
+<https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasPart> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreList> .
 <https://purl.org/heals/hao/ResultsCartridge> <http://purl.org/dc/terms/description> "Quantification of subpopulation-specific discovered associations between the risk factor and the response variable using regression coefficients, standard errors, and p-values" .
 <https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "results cartridge" .
 <https://purl.org/heals/hao/ResultsCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A results cartridge is a type of output cartridge describing a single study’s statistical findings and constituent input cartridges." .
@@ -889,16 +1317,17 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 <https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/2004/02/skos/core#example> "Most environmental exposure risk factor distributions" .
 <https://purl.org/heals/hao/RightSkewed> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
-# https://purl.org/heals/hao/RiskFactor
-<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C17103> .
-<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/2000/01/rdf-schema#label> "risk factor" .
-<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/2004/02/skos/core#definition> "A risk factor is a variable that has a potential association with a response variable." .
-<https://purl.org/heals/hao/RiskFactor> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
-# 
 # https://purl.org/heals/hao/RiskFactorCartridge
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/InputCartridge> .
+<https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/NCIT_C17103> .
+<https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/NCIT_C54420> .
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "risk factor cartridge" .
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A risk factor cartridge describes categories of semantically similar risk factors and details how they should be modeled." .
 <https://purl.org/heals/hao/RiskFactorCartridge> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -906,6 +1335,10 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/RiskFactorCategory
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Category> .
+<https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/FileKey> .
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2000/01/rdf-schema#label> "risk factor category" .
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2004/02/skos/core#definition> "Risk factor category is a category of similar potential risk factors, where 'similarity' is defined by domain experts." .
 <https://purl.org/heals/hao/RiskFactorCategory> <http://www.w3.org/2004/02/skos/core#example> "Polyaromatic hydrocarbons" .
@@ -913,7 +1346,7 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # 
 # https://purl.org/heals/hao/Sharpness
 <https://purl.org/heals/hao/Sharpness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/Hyperparameter> .
 <https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2000/01/rdf-schema#label> "sharpness" .
 <https://purl.org/heals/hao/Sharpness> <http://www.w3.org/2004/02/skos/core#definition> "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts." .
 # 
@@ -931,6 +1364,13 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 <https://purl.org/heals/hao/Standardization> <http://www.w3.org/2004/02/skos/core#definition> "Mathematical transformation is applied to univariate random variables. The transformed distribution is shifted and scaled so it has a mean of zero and a variance of one." .
 <https://purl.org/heals/hao/Standardization> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
+# https://purl.org/heals/hao/StatisticalEstimate
+<https://purl.org/heals/hao/StatisticalEstimate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/StatisticalEstimate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25498> .
+<https://purl.org/heals/hao/StatisticalEstimate> <http://www.w3.org/2000/01/rdf-schema#label> "statistical estimate" .
+<https://purl.org/heals/hao/StatisticalEstimate> <http://www.w3.org/2004/02/skos/core#definition> "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable." .
+<https://purl.org/heals/hao/StatisticalEstimate> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
 # https://purl.org/heals/hao/StudyVariable
 <https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/StudyVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/STATO_0000258> .
@@ -942,6 +1382,22 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/SubpopulationCartridge
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/hao/OutputCartridge> .
+<https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/BaseRate> .
+<https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreCount> .
+<https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/SubpopulationCharacteristic> .
+<https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasComponentPart> .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CadreSizeList> .
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://purl.org/dc/terms/description> "Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates." .
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2000/01/rdf-schema#label> "subpopulation cartridge" .
 <https://purl.org/heals/hao/SubpopulationCartridge> <http://www.w3.org/2004/02/skos/core#definition> "A subpopulation cartridges gives 'Table 1s' (cohort-description tables) of discovered subpopulations." .
@@ -950,6 +1406,14 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 # https://purl.org/heals/hao/SubpopulationCharacteristic
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CovariateMean> .
+<https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/hasAttribute> .
+_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/hao/CovariateStdError> .
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "subpopulation characteristic" .
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/2004/02/skos/core#definition> "Mean and standard-error-of-mean estimates for each discovered subpopulation." .
 <https://purl.org/heals/hao/SubpopulationCharacteristic> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
@@ -983,19 +1447,19 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/
 <https://purl.org/heals/hao/Threshold> <http://www.w3.org/2004/02/skos/core#definition> "A threshold is the minimal value to show some significance exist." .
 <https://purl.org/heals/hao/Threshold> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
+# https://purl.org/heals/hao/UseCohort
+<https://purl.org/heals/hao/UseCohort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/hao/UseCohort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Variable> .
+<https://purl.org/heals/hao/UseCohort> <http://www.w3.org/2000/01/rdf-schema#label> "use cohort" .
+<https://purl.org/heals/hao/UseCohort> <http://www.w3.org/2004/02/skos/core#definition> "Whether the study uses a cohort." .
+<https://purl.org/heals/hao/UseCohort> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
+# 
 # https://purl.org/heals/hao/UseSurveyWeight
 <https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Attribute> .
+<https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Parameter> .
 <https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/2000/01/rdf-schema#label> "use survey weight" .
 <https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/2004/02/skos/core#definition> "Whether the survey weight is used in the study." .
 <https://purl.org/heals/hao/UseSurveyWeight> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
-# 
-# https://purl.org/heals/hao/useCohort
-<https://purl.org/heals/hao/useCohort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/hao/useCohort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Variable> .
-<https://purl.org/heals/hao/useCohort> <http://www.w3.org/2000/01/rdf-schema#label> "use cohort" .
-<https://purl.org/heals/hao/useCohort> <http://www.w3.org/2004/02/skos/core#definition> "Whether the study uses a cohort." .
-<https://purl.org/heals/hao/useCohort> <http://www.w3.org/ns/prov#wasAttributedTo> <https://purl.org/heals/hao/Alex> .
 # 
 # 
 # 

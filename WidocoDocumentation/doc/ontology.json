@@ -5,19 +5,46 @@
     "@id" : "http://semanticscience.org/resource/hasAttribute"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/hao/AnalysisQuestion"
+    "@id" : "https://purl.org/heals/hao/FactorKey"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/hasImplementation"
+    "@id" : "http://semanticscience.org/resource/hasComponentPart"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/hao/AnalysisWorkflow"
+    "@id" : "http://semanticscience.org/resource/Variable"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/BaseRate"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C42645"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0200000"
+  } ]
+}, {
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/hasComponentPart"
@@ -26,7 +53,7 @@
     "@id" : "https://purl.org/heals/hao/InputCartridge"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/hasComponentPart"
@@ -35,7 +62,79 @@
     "@id" : "https://purl.org/heals/hao/OutputCartridge"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/isImplementationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Model"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CovariateMean"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CovariateStdError"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CadreSize"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/RiskFactorCategory"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CenterParameter"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CadreIndex"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/isAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Parameter"
+  } ]
+}, {
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/hasPart"
@@ -44,16 +143,25 @@
     "@id" : "https://purl.org/heals/hao/Cadre"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CadreSize"
+  } ]
+}, {
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/hasAttribute"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/hao/useCohort"
+    "@id" : "https://purl.org/heals/hao/UseCohort"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/isAbout"
@@ -62,7 +170,43 @@
     "@id" : "http://purl.obolibrary.org/obo/STATO_0000203"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CadreAssignment"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/TargetPrediction"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Variable"
+  } ]
+}, {
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/isAbout"
@@ -71,7 +215,223 @@
     "@id" : "http://semanticscience.org/resource/Model"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasSource"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/InputCartridge"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/MaximalValue"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/MinimalValue"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CadreCount"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/FeatureUsage"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/Metric"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasMeasurementValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/MinPositive"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/Hyperparameter"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Model"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/FeatureUsage"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/isAbout"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Parameter"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBCS_0000039"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Variable"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/AnalysisQuestion"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/TargetVariable"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/Model"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/ResultCount"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0000175"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000562"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/AnalysisQuestion"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/StatisticalAssociation"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/Result"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/StatisticalEstimate"
+  } ]
+}, {
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/hasPart"
@@ -80,44 +440,788 @@
     "@id" : "https://purl.org/heals/hao/CadreList"
   } ]
 }, {
-  "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
 }, {
-  "@id" : "http://purl.obolibrary.org/obo/NCIT_C25209",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C54420"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/FileKey"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/BaseRate"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CadreCount"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/SubpopulationCharacteristic"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasImplementation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/AnalysisWorkflow"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasComponentPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CadreSizeList"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CovariateMean"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/CovariateStdError"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/Hyperparameter"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/hao/Parameter"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/hasComponentPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C73619"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_A11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C102711",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C102711"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Clinical Attribute"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Social Risk Factor"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C3538984"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P322" : [ {
+    "@value" : "CDISC"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P325" : [ {
+    "@value" : "Social factors such as personal behavior, lifestyle, or environment belonging to the subject which are known to increase the likelihood of infection and disease."
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "RISKSOC"
+  }, {
+    "@value" : "Social Risk Factor"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#inSubset" : [ {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C103330"
+  }, {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"
+  }, {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"
+  }, {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C74559"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Social Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C156749",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Any factor, such as age, ethnicity, genetic factor, family history, or environmental factor, that increases a person's chance of developing melanoma."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C156749"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Clinical Attribute"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Melanoma Risk Factor"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Melanoma Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Melanoma Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C20047"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A risk factor is a variable that has a potential association with a response variable."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C18244",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Health hazards at home, in the work place, or in nature (e.g., infectious agents, irritants, respiratory fibrotic agents, asphyxiants, allergens, metabolic poisons, physical agents, mutagens, teratogens, and carcinogens). (Winett et al: Health Psychology and Public Health)"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C18244"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Phenomenon or Process"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Environmental Risk Factor"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C0686732"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Environmental_Risk_Factor"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Environmental Factor"
+  }, {
+    "@value" : "Environmental Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Environmental Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C19745",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Increase in the chance of developing a disease, due to hormonal factors."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C19745"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Qualitative Concept"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Hormonal Risk Factor"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C1512492"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Hormonal_Risk_Factor"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Hormonal Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hormonal Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C20047",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A characteristic of an organism that contributes to the diagnosis or treatment of a disease or to the prediction of clinical outcomes."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C20047"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Clinical Attribute"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Diagnostic or Prognostic Factor"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C1511887"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Diagnostic_or_Prognostic_Factor"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Diagnostic or Prognostic Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diagnostic or Prognostic Factor"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C20116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Any factor, such as age, ethnicity, genetic factor, family history, over-exposure to estrogen, or environmental factors, that increases a person's chance of developing breast cancer."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C20116"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Qualitative Concept"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Breast Cancer Risk Factor"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C1511298"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Breast_Cancer_Risk_Factor"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Breast Cancer Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Breast Cancer Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C20199",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C20199"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Clinical Attribute"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Unspecified Risk Factor"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C1519813"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Unspecified_Risk_Factor"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P375" : [ {
+    "@value" : "Other specified personal risk factors, not elsewhere classified"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Unspecified Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unspecified Risk Factor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C20200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "The result of an action."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/InformationContentEntity"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C25390",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A numerical scale used to compare variables with one another or with some reference number; a number used to select an element of a list, vector, array or other sequence."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C25390"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Intellectual Product"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Index"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C0918012"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Index"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Index"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Index"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25664"
+  } ]
 }, {
-  "@id" : "http://purl.obolibrary.org/obo/NCIT_C25426",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C25447",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "The distinguishing qualities or prominent aspect of a person, object, action, process, or substance."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_A11" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C20189"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C25447"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Conceptual Entity"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Characteristic"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C1521970"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P322" : [ {
+    "@value" : "NICHD"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Characteristics"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P371" : [ {
+    "@value" : "Characteristic"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Characteristic"
+  }, {
+    "@value" : "Characteristics"
+  }, {
+    "@value" : "Feature"
+  }, {
+    "@value" : "Features"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#inSubset" : [ {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506"
+  }, {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Characteristic"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C25498",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "To calculate approximately."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C25498"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Activity"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Estimate"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C0680844"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P322" : [ {
+    "@value" : "FDA"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Estimated"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "ESTIMATED"
+  }, {
+    "@value" : "Estimate"
+  }, {
+    "@value" : "Estimated"
+  }, {
+    "@value" : "Estimation"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#inSubset" : [ {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447"
+  }, {
+    "@id" : "http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C88088"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Estimate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/MeasurementValue"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C25652",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Something that is a necessary condition; something that is obligatory."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C25652"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Functional Concept"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Requirement"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C1514873"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Required"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Mandatory"
+  }, {
+    "@value" : "Required"
+  }, {
+    "@value" : "Requirement"
+  }, {
+    "@value" : "Requisite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Requirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Entity"
+  } ]
 }, {
-  "@id" : "http://purl.obolibrary.org/obo/NCIT_C41116",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C25664",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "An ordered reference standard used to measure incremental changes."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C25664"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Intellectual Product"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Scale"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C0349674"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Scale"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Scale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Scale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/MathematicalEntity"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C42645",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.obolibrary.org/obo/NCIT_C43418",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "data type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Attribute"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A data type is the type of response variable data."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Binary variable"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C54156",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "An extrapolation of given data into the future."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C54156"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Idea or Concept"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Prediction"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C0681842"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Prediction"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Predicted"
+  }, {
+    "@value" : "Prediction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Prediction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/DataItem"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C54420",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "exception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Attribute"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "URXUCR"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C73619",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A prominent or identifiable aspect, region, or site of interest."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C73619"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Qualitative Concept"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Feature"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C2348519"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Feature"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25447"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C76125",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "\nThe outcome of an experiment or set of experiments, including observations and primary, processed, and analyzed data.\n"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Experimental Result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C20200"
+  } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/NCIT_C80488",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A combination of symbols that represents a value."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_NHC0" : [ {
+    "@value" : "C80488"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P106" : [ {
+    "@value" : "Classification"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P108" : [ {
+    "@value" : "Expression"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P207" : [ {
+    "@value" : "C2911684"
+  } ],
+  "http://purl.obolibrary.org/obo/NCIT_P366" : [ {
+    "@value" : "Expression_String"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" : [ {
+    "@value" : "Expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/InformationContentEntity"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P207",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P322",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P325",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P366",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P371",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_P375",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/OBCS_0000039",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -274,6 +1378,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "study group population"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Collection"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference."
   } ]
@@ -409,9 +1516,6 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A regression coefficient is a data item generated by a type of data transformation called a regression, which aims to model a response variable by expression the predictor variables as part of a function where variable terms are modified by a number. A regression coefficient is one such number."
   } ]
-}, {
-  "@id" : "http://purl.obolibrary.org/obo/STATO_DataItem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -553,9 +1657,9 @@
     "@value" : "data analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid5"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid6"
   } ]
 }, {
   "@id" : "http://semanticscience.org/resource/Definition",
@@ -792,6 +1896,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Representation"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
   } ]
 }, {
   "@id" : "http://semanticscience.org/resource/Number",
@@ -927,7 +2039,19 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/MathematicalEntity"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
   } ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -940,6 +2064,9 @@
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasAttributedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "https://purl.org/heals/hao/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -991,7 +2118,7 @@
     "@value" : "analysis question"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41116"
+    "@id" : "http://semanticscience.org/resource/Question"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An analysis question is a natural language description of what question a given analysis answers."
@@ -1011,9 +2138,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Workflow"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid14"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An analysis workflow is a set of steps used to begin and complete an analysis. It includes defining the problem, preparing the data, training a statistical model, and representing the results."
@@ -1029,6 +2158,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/RateOfChange"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge."
@@ -1058,7 +2191,15 @@
     "@value" : "cadre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C43418"
+    "@id" : "http://purl.obolibrary.org/obo/STATO_0000203"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are identified via supervised learning and may incorporate feature selection or weighting in their definitions."
@@ -1070,10 +2211,10 @@
   "@id" : "https://purl.org/heals/hao/CadreAssignment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "cadre assignment"
+    "@value" : "cadre assignment function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25426"
+    "@id" : "http://semanticscience.org/resource/Function"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A cadre assignment function maps a subject record to a probability distribution characterizing that subject's probability of belonging to one of M cadres."
@@ -1120,13 +2261,25 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/List"
   }, {
-    "@id" : "_:genid5"
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A cadre list contains the information of a list of cadres."
   } ],
   "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
     "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/CadreModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "A specialized kind of supervized cadre model technique that discovers sub-populations or cadres"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cadre model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Model"
   } ]
 }, {
   "@id" : "https://purl.org/heals/hao/CadreSize",
@@ -1151,6 +2304,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/List"
+  }, {
+    "@id" : "_:genid24"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The number of subjects in the training data assigned to each cadre."
@@ -1215,9 +2370,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/InputCartridge"
   }, {
-    "@id" : "_:genid6"
+    "@id" : "_:genid25"
   }, {
-    "@id" : "_:genid7"
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A cohort cartridge lists the inclusion criteria used to determine if a given subject may be included in the user’s study."
@@ -1307,24 +2462,6 @@
     "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
-  "@id" : "https://purl.org/heals/hao/DataType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "data type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C42645"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "A data type is the type of response variable data."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@value" : "Binary variable"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://purl.org/heals/hao/Alex"
-  } ]
-}, {
   "@id" : "https://purl.org/heals/hao/ElasticNetMixingWeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1370,39 +2507,6 @@
     "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
-  "@id" : "https://purl.org/heals/hao/Estimate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "estimate"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25498"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable."
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://purl.org/heals/hao/Alex"
-  } ]
-}, {
-  "@id" : "https://purl.org/heals/hao/Exception",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "exception"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C54420"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "An exception is the variable name in risk factor tables that have names that look like risk factors but aren’t."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@value" : "URXUCR"
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://purl.org/heals/hao/Alex"
-  } ]
-}, {
   "@id" : "https://purl.org/heals/hao/FactorKey",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1421,7 +2525,7 @@
   "@id" : "https://purl.org/heals/hao/FeatureSelectionParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "cadre assignment feature selection parameter"
+    "@value" : "feature selection parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Parameter"
@@ -1440,6 +2544,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Usage"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid28"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "How to divide supplied features into cadre-assignment and target-prediction categories."
@@ -1472,7 +2580,7 @@
     "@value" : "generate cohort summary table"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://semanticscience.org/resource/Attribute"
+    "@id" : "http://semanticscience.org/resource/Parameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Whether the cohort summary table is generated."
@@ -1568,7 +2676,7 @@
     "@value" : "metric"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25209"
+    "@id" : "http://semanticscience.org/resource/MeasurementValue"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A metric describes how to choose the best model. For population health, this is the Bayesian Information Criterion (BIC); for other problems, it could be (e.g.) generalization error."
@@ -1603,7 +2711,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/OutputCartridge"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A model cartridge assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "
@@ -1618,7 +2728,7 @@
     "@value" : "model parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/STATO_DataItem"
+    "@id" : "http://semanticscience.org/resource/Parameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A model parameter is a data item which is part of a model and which is meant to characterize an theoretical or unknown population. A model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population."
@@ -1649,6 +2759,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/Cartridge"
+  }, {
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them."
@@ -1660,6 +2772,9 @@
     "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
+  "@id" : "https://purl.org/heals/hao/Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://purl.org/heals/hao/ParametersCartridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1667,6 +2782,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/InputCartridge"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A parameters cartridge contains rules to complete the chosen analysis workflow. "
@@ -1778,6 +2911,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/InputCartridge"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  }, {
+    "@id" : "_:genid46"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A response variable cartridge provides the analysis concepts and background domain axioms necessary to model a given disease"
@@ -1793,6 +2938,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/NCIT_C76125"
+  }, {
+    "@id" : "_:genid47"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value."
@@ -1827,7 +2974,17 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/OutputCartridge"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid50"
+  }, {
+    "@id" : "_:genid51"
+  }, {
+    "@id" : "_:genid52"
+  }, {
+    "@id" : "_:genid53"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A results cartridge is a type of output cartridge describing a single study’s statistical findings and constituent input cartridges."
@@ -1854,21 +3011,6 @@
     "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
-  "@id" : "https://purl.org/heals/hao/RiskFactor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "risk factor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17103"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "A risk factor is a variable that has a potential association with a response variable."
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://purl.org/heals/hao/Alex"
-  } ]
-}, {
   "@id" : "https://purl.org/heals/hao/RiskFactorCartridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1876,6 +3018,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/InputCartridge"
+  }, {
+    "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A risk factor cartridge describes categories of semantically similar risk factors and details how they should be modeled."
@@ -1891,6 +3037,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Category"
+  }, {
+    "@id" : "_:genid56"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Risk factor category is a category of similar potential risk factors, where 'similarity' is defined by domain experts."
@@ -1908,7 +3056,7 @@
     "@value" : "sharpness"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://semanticscience.org/resource/Attribute"
+    "@id" : "https://purl.org/heals/hao/Hyperparameter"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts."
@@ -1944,6 +3092,21 @@
     "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
+  "@id" : "https://purl.org/heals/hao/StatisticalEstimate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "statistical estimate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25498"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "An estimate is a coefficient from a statistical model quantifying the association between a risk factor and a response variable."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
   "@id" : "https://purl.org/heals/hao/StudyVariable",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1972,6 +3135,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/hao/OutputCartridge"
+  }, {
+    "@id" : "_:genid57"
+  }, {
+    "@id" : "_:genid58"
+  }, {
+    "@id" : "_:genid59"
+  }, {
+    "@id" : "_:genid60"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A subpopulation cartridges gives 'Table 1s' (cohort-description tables) of discovered subpopulations."
@@ -1987,6 +3158,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/Attribute"
+  }, {
+    "@id" : "_:genid61"
+  }, {
+    "@id" : "_:genid62"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Mean and standard-error-of-mean estimates for each discovered subpopulation."
@@ -2058,22 +3233,7 @@
     "@id" : "https://purl.org/heals/hao/Alex"
   } ]
 }, {
-  "@id" : "https://purl.org/heals/hao/UseSurveyWeight",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "use survey weight"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://semanticscience.org/resource/Attribute"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Whether the survey weight is used in the study."
-  } ],
-  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
-    "@id" : "https://purl.org/heals/hao/Alex"
-  } ]
-}, {
-  "@id" : "https://purl.org/heals/hao/useCohort",
+  "@id" : "https://purl.org/heals/hao/UseCohort",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "use cohort"
@@ -2083,6 +3243,21 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Whether the study uses a cohort."
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://purl.org/heals/hao/Alex"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/hao/UseSurveyWeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "use survey weight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/Parameter"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Whether the survey weight is used in the study."
   } ],
   "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
     "@id" : "https://purl.org/heals/hao/Alex"
