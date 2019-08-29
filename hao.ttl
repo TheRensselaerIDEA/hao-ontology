@@ -158,7 +158,12 @@ sio:Variable rdf:type owl:Class ;
 		a owl:Restriction ;
     	owl:onProperty sio:hasProperty ;
     	owl:someValuesFrom hao:DataType
-	], sio:MathematicalEntity .
+	], 
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasProperty ;
+    	owl:someValuesFrom obi:0200000
+	], 	sio:MathematicalEntity .
 
 # p-value
 obi:0000175 rdf:type owl:Class ;
@@ -374,7 +379,11 @@ hao:RiskFactorCategory rdf:type owl:Class ;
 	skos:definition "Risk factor category is a category of similar potential risk factors, where 'similarity' is defined by domain experts."^^xsd:string ;
 	skos:example "Polyaromatic hydrocarbons"^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf sio:Category .
+	rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:FileKey
+  ], sio:Category .
 
 hao:Code rdf:type owl:Class ;
     rdfs:label "code"^^xsd:string ;
@@ -410,7 +419,16 @@ hao:RiskFactorCartridge rdf:type owl:Class ;
     rdfs:label "risk factor cartridge"^^xsd:string ;
 	skos:definition "A risk factor cartridge describes categories of semantically similar risk factors and details how they should be modeled."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf hao:InputCartridge .
+    rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom  hao:RiskFactor
+	], 
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom  hao:Exception
+	], hao:InputCartridge .
 
 hao:CohortCartridge rdf:type owl:Class ;
     rdfs:label "cohort cartridge"^^xsd:string ;
@@ -470,7 +488,12 @@ hao:ResponseCartridge rdf:type owl:Class ;
 		a owl:Restriction ;
     	owl:onProperty sio:hasProperty ;
     	owl:someValuesFrom sio:Model
-	], hao:InputCartridge .
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty prov:wasDerivedFrom ;
+    	owl:someValuesFrom xsd:string
+	],	hao:InputCartridge .
 
 hao:ResultsCartridge rdf:type owl:Class ;
     rdfs:label "results cartridge"^^xsd:string ;
@@ -743,7 +766,17 @@ hao:RiskFactor rdf:type owl:Class ;
     rdfs:label "risk factor"^^xsd:string ;
     skos:definition "A risk factor is a variable that has a potential association with a response variable."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf ncit:C17103 .
+	rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:RiskFactorCategory
+  ], 
+  [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:FactorKey
+  ], 
+  ncit:C17103 .
 
 hao:Result rdf:type owl:Class ;
     rdfs:label "result"^^xsd:string ;
