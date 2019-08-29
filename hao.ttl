@@ -290,6 +290,11 @@ sio:Model rdf:type owl:Class ;
 	],
 	[
 		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:Parameter
+	],
+	[
+		a owl:Restriction ;
     	owl:onProperty sio:hasComponentPart ;
     	owl:someValuesFrom sio:Variable
 	],
@@ -426,10 +431,14 @@ hao:InputCartridge rdf:type owl:Class ;
 
 hao:OutputCartridge rdf:type owl:Class ;
     rdfs:label "output cartridge"^^xsd:string ;
-	skos:definition "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them."^^xsd:string ;
+	skos:definition "An output cartridge is a type of cartridge that stores an analysis’ statistical findings and links to input cartridges used to define them."^^xsd:string ;	
 	skos:example "Results cartridge describing environmental risk factors for hypertension in obese women"^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf hao:Cartridge .
+    rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasSource ;
+    	owl:someValuesFrom  hao:InputCartridge
+	], hao:Cartridge.
 
 hao:RiskFactorCartridge rdf:type owl:Class ;
     rdfs:label "risk factor cartridge"^^xsd:string ;
@@ -625,7 +634,12 @@ hao:Cadre rdf:type owl:Class ;
 		a owl:Restriction ;
     	owl:onProperty sio:hasAttribute ;
     	owl:someValuesFrom hao:CadreSize
-	], 
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:isAssociatedWith ;
+    	owl:someValuesFrom sio:Parameter
+	],
 	[
 		a owl:Restriction ;
     	owl:onProperty sio:hasAttribute ;
@@ -783,6 +797,11 @@ hao:ModelCartridge rdf:type owl:Class ;
 		a owl:Restriction ;
     	owl:onProperty sio:isAbout ;
     	owl:someValuesFrom  sio:Model
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom ncit:C17103
 	], hao:OutputCartridge .
 
 hao:SubpopulationCartridge rdf:type owl:Class ;
@@ -1142,7 +1161,7 @@ hao:HyperplaneParameter rdf:type owl:Class ;
     rdfs:subClassOf sio:Parameter .
 
 hao:FeatureSelectionParameter rdf:type owl:Class ;
-    rdfs:label "cadre assignment feature selection parameter"^^xsd:string ;
+    rdfs:label "feature selection parameter"^^xsd:string ;
     skos:definition "The name of the parameter d."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Parameter .
