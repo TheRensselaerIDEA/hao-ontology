@@ -496,7 +496,6 @@ ncit:C73619  a                owl:Class ;
 
 ncit:C25447  a                owl:Class ;
         rdfs:label                "Characteristic" ;
-        rdfs:subClassOf           sio:Attribute;
         obo:IAO_0000115           "The distinguishing qualities or prominent aspect of a person, object, action, process, or substance." ;
         obo:IAO_0000412           obo:ncit.owl ;
         obo:NCIT_A11              obo:NCIT_C20189 ;
@@ -626,11 +625,6 @@ hao:Cadre rdf:type owl:Class ;
 		a owl:Restriction ;
     	owl:onProperty sio:hasAttribute ;
     	owl:someValuesFrom hao:CadreSize
-	], 
-	[
-		a owl:Restriction ;
-    	owl:onProperty sio:isProductOf ;
-    	owl:someValuesFrom hao:AnalysisWorkflow
 	], 
 	[
 		a owl:Restriction ;
@@ -835,7 +829,7 @@ hao:CadreAssignment rdf:type owl:Class ;
 	rdfs:subClassOf sio:Function .
 
 hao:CadreModel rdf:type owl:Class ;
-    rdfs:label "cadre assignment function"^^xsd:string ;
+    rdfs:label "cadre model"^^xsd:string ;
     dct:description "A specialized kind of supervized cadre model technique that discovers sub-populations or cadres"^^xsd:string ;
 	rdfs:subClassOf sio:Model .
 
