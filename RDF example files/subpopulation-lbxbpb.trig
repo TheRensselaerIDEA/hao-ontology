@@ -76,14 +76,14 @@
     :CadreSizes-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreSizeList ;
         rdfs:label "cadre size list"^^xsd:string ;
-        sio:hasPart :Cadre_0-335ea58a52268d9a4eda89694febaaac ,
-            :Cadre_1-335ea58a52268d9a4eda89694febaaac .
-     :Cadre_0-335ea58a52268d9a4eda89694febaaac
+        sio:hasPart :Cadre_1-335ea58a52268d9a4eda89694febaaac ,
+            :Cadre_2-335ea58a52268d9a4eda89694febaaac .
+     :Cadre_1-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreSize;
         rdfs:label "cadre size"^^xsd:string ;
         sio:hasValue    "7303"^^xsd:integer .
 
-     :Cadre_1-335ea58a52268d9a4eda89694febaaac
+     :Cadre_2-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:CadreSize;
         rdfs:label "cadre size"^^xsd:string ;
         sio:hasValue    "5518"^^xsd:integer .
