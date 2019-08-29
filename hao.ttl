@@ -8,6 +8,8 @@
 @prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
 @prefix obcs: <http://purl.obolibrary.org/obo/OBCS_> .
 @prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix hao: <https://purl.org/heals/hao/> .
@@ -281,7 +283,21 @@ sio:Model rdf:type owl:Class ;
 	rdfs:label "model"^^xsd:string ;
 	dct:description "A model is a representation of some thing."^^xsd:string ;
 	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
-    rdfs:subClassOf sio:Representation .
+	rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:Hyperparameter
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasComponentPart ;
+    	owl:someValuesFrom sio:Variable
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasComponentPart ;
+    	owl:someValuesFrom ncit:C73619
+	], sio:Representation .
 
 sio:Representation rdf:type owl:Class ;
 	rdfs:label "representation"^^xsd:string ;
@@ -454,11 +470,94 @@ stato:0000193 rdf:type owl:Class;
 	rdfs:label "study group population";
 	skos:definition "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference." .
 
+
+ncit:C73619  a                owl:Class ;
+        rdfs:label                "Feature" ;
+        rdfs:subClassOf           obo:NCIT_C25447 ;
+        obo:IAO_0000115           "A prominent or identifiable aspect, region, or site of interest." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_NHC0             "C73619" ;
+        obo:NCIT_P106             "Qualitative Concept" ;
+        obo:NCIT_P108             "Feature" ;
+        obo:NCIT_P207             "C2348519" ;
+        obo:NCIT_P366             "Feature" ;
+        rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom  sio:Variable
+	    ],
+	    [
+			a owl:Restriction ;
+	    	owl:onProperty sio:hasProperty ;
+	    	owl:someValuesFrom  hao:FeatureUsage
+	    ];
+        oboInOwl:hasExactSynonym  "Feature" .
+
+ncit:C25447  a                owl:Class ;
+        rdfs:label                "Characteristic" ;
+        obo:IAO_0000115           "The distinguishing qualities or prominent aspect of a person, object, action, process, or substance." ;
+        obo:IAO_0000412           obo:ncit.owl ;
+        obo:NCIT_A11              obo:NCIT_C20189 ;
+        obo:NCIT_NHC0             "C25447" ;
+        obo:NCIT_P106             "Conceptual Entity" ;
+        obo:NCIT_P108             "Characteristic" ;
+        obo:NCIT_P207             "C1521970" ;
+        obo:NCIT_P322             "NICHD" ;
+        obo:NCIT_P366             "Characteristics" ;
+        obo:NCIT_P371             "Characteristic" ;
+        oboInOwl:hasExactSynonym  "Characteristic" , "Features" , "Feature" , "Characteristics" ;
+        oboInOwl:inSubset         <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259> , <http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506> .
+
+
 hao:ParametersCartridge rdf:type owl:Class ;
     rdfs:label "parameters cartridge"^^xsd:string ;
     skos:definition "A parameters cartridge contains rules to complete the chosen analysis workflow. "^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf hao:InputCartridge .
+    rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:isAbout ;
+    	owl:someValuesFrom sio:Parameter
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:Metric
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasMeasurementValue ;
+    	owl:someValuesFrom hao:MinPositive
+	], 
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasPart ;
+    	owl:someValuesFrom hao:Hyperparameter
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:CadreCount
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom sio:MaximalValue
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:FeatureUsage
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom sio:MinimalValue
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasProperty ;
+    	owl:someValuesFrom sio:Model
+	], hao:InputCartridge .
 
 hao:ResponseCartridge rdf:type owl:Class ;
     rdfs:label "response cartridge"^^xsd:string ;
@@ -521,7 +620,21 @@ hao:Cadre rdf:type owl:Class ;
 	rdfs:label "cadre" ;
 	skos:definition "A cadre is a probabilistic subpopulation produced by SCM. Cadres are similar to clusters, but they are identified via supervised learning and may incorporate feature selection or weighting in their definitions."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-	rdfs:subClassOf ncit:C43418 .
+	rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:CadreSize
+	], 
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:CenterParameter
+	], 
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasIdentifier ;
+    	owl:someValuesFrom hao:CadreIndex
+	],	ncit:C43418 .
 
 # significance threshold
 hao:Threshold rdf:type owl:Class ;
@@ -681,7 +794,7 @@ hao:CadreAssignment rdf:type owl:Class ;
 hao:Sharpness rdf:type owl:Class ;
     rdfs:label "sharpness"^^xsd:string ;
     skos:definition "The sharpness hyperparameter affects how quickly, as a subject's attributes shift, their cadre assignment function shifts."^^xsd:string ;
-    rdfs:subClassOf sio:Attribute .
+    rdfs:subClassOf hao:Hyperparameter .
 
 hao:RegularizationStrength rdf:type owl:Class ;
     rdfs:label "regularization strength"^^xsd:string ;
@@ -745,6 +858,11 @@ hao:AnalysisWorkflow rdf:type owl:Class ;
     owl:someValuesFrom hao:InputCartridge
   ],
   [
+		a owl:Restriction ;
+    	owl:onProperty sio:isImplementationOf ;
+    	owl:someValuesFrom sio:Model
+  ],
+  [
     a owl:Restriction ;
     owl:onProperty sio:hasComponentPart ;
     owl:someValuesFrom hao:OutputCartridge
@@ -754,7 +872,16 @@ hao:FeatureUsage rdf:type owl:Class  ;
     rdfs:label "feature usage"^^xsd:string ;
     skos:definition "How to divide supplied features into cadre-assignment and target-prediction categories."^^xsd:string ;
      prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf prov:Usage .
+     rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:TargetPrediction
+  ], 
+  [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:CadreAssignment
+  ], prov:Usage .
 
 hao:Hyperparameter rdf:type owl:Class ;
     rdfs:label "hyperparameter"^^xsd:string ;
@@ -812,7 +939,11 @@ hao:CadreSizeList rdf:type owl:Class ;
     rdfs:label "cadre size list"^^xsd:string ;
     skos:definition "The number of subjects in the training data assigned to each cadre."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf sio:List .
+    rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasPart ;
+    	owl:someValuesFrom hao:CadreSize
+	], sio:List .
 
 hao:CadreIndex rdf:type owl:Class ;
     rdfs:label "cadre index"^^xsd:string ;
@@ -884,13 +1015,13 @@ hao:GenerateCohortSummaryTable rdf:type owl:Class ;
     rdfs:label "generate cohort summary table"^^xsd:string ;
     skos:definition "Whether the cohort summary table is generated."^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf sio:Attribute .
+    rdfs:subClassOf sio:Parameter .
 
 hao:UseSurveyWeight rdf:type owl:Class ;
     rdfs:label "use survey weight"^^xsd:string ;
     skos:definition "Whether the survey weight is used in the study."^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf sio:Attribute .
+    rdfs:subClassOf sio:Parameter .
 
 hao:Source rdf:type owl:Class ;
     rdfs:label "source"^^xsd:string ;
