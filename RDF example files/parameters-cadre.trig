@@ -15,6 +15,10 @@
 
 
 :parameters-cadre-cartridge-f22233185ff332babf78dcae623f0fe6 {
+
+   :parameters-cadre-cartridge-f22233185ff332babf78dcae623f0fe6
+        rdf:type hao:ParametersCartridge.
+
     :scale_factors-f22233185ff332babf78dcae623f0fe6
         rdf:type    hao:Standardization ;
         rdfs:label "scale factor"^^xsd:string ;
