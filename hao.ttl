@@ -613,7 +613,31 @@ hao:ResultsCartridge rdf:type owl:Class ;
 		a owl:Restriction ;
     	owl:onProperty sio:hasPart ;
     	owl:someValuesFrom hao:CadreList
-	], hao:OutputCartridge .
+	], [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom sio:StatisticalAssociation
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:Result
+	], 
+	[
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:StatisticalEstimate
+    ], 
+    [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom obi:0000175
+    ], 
+    [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom stato:0000562
+    ], hao:OutputCartridge .
 
 hao:CadreList rdf:type owl:Class ;
 	rdfs:label "cadre list" ;
@@ -1055,7 +1079,11 @@ hao:Result rdf:type owl:Class ;
     rdfs:label "result"^^xsd:string ;
     skos:definition "A result usually refers to an inference drawn from a statistical model. We often summarize the result of an association between a risk factor and a response variable with a coefficient estimate, standard error, and p-value."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf ncit:C76125 .
+    rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:ResultCount
+    ], ncit:C76125 .
 
 ncit:C76125  a       owl:Class ;
         rdfs:label       "Experimental Result" ;
