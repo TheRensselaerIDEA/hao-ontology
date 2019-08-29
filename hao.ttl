@@ -21,7 +21,7 @@
     dct:modified "2019-08-27T14:30:00"^^xsd:dateTime ;
     dct:description "The Health Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports. It captures the data domain and analysis workflow in cartridges that represent domain knowledge, analytics knowledge, and other components of the analysis pipeline"^^xsd:string ;
     owl:imports 
-        <http://semanticscience.org/ontology/sio-subset-labels.owl>, 
+        <http://semanticscience.org/ontology/sio-subset-labels.owl>,
         <http://purl.obofoundry.org/obo/stato.owl#>;        
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
     owl:versionIRI <https://purl.org/heals/hao/0.9/> .
@@ -413,7 +413,25 @@ hao:CohortCartridge rdf:type owl:Class ;
     rdfs:label "cohort cartridge"^^xsd:string ;
     skos:definition "A cohort cartridge lists the inclusion criteria used to determine if a given subject may be included in the user’s study."^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf hao:InputCartridge .
+    rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom  hao:useCohort
+	], 
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:isAbout ;
+    	owl:someValuesFrom stato:0000203
+	], hao:InputCartridge .
+
+stato:0000203 rdf:type owl:Class;
+	rdfs:subClassOf stato:0000193;
+	rdfs:label "cohort";
+	skos:definition "a cohort is a study group population where the members are human beings which meet inclusion criteria and undergo a longitudinal design" .
+
+stato:0000193 rdf:type owl:Class;
+	rdfs:label "study group population";
+	skos:definition "is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference." .
 
 hao:ParametersCartridge rdf:type owl:Class ;
     rdfs:label "parameters cartridge"^^xsd:string ;
@@ -573,7 +591,11 @@ hao:ModelCartridge rdf:type owl:Class ;
     dct:description "The hyperparameters used to train a model, the parameter estimates learned during training, and the rules by which it is applied to new observations."^^xsd:string ;
     skos:definition "A model cartridge assocatiated with a .pkl file gives the parameters and hyperparameters of the associated SCM. The SCM class contains methods to assign observations to new cadres. "^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf hao:OutputCartridge .
+	rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:isAbout ;
+    	owl:someValuesFrom  sio:Model
+	], hao:OutputCartridge .
 
 hao:SubpopulationCartridge rdf:type owl:Class ;
     rdfs:label "subpopulation cartridge"^^xsd:string ;
