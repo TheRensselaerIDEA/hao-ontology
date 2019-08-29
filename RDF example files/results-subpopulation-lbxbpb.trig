@@ -71,7 +71,7 @@
 
     :Associations-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    sio:StatisticalAssociation ;
-        rdfs:label "association"^^xsd:string ;
+        rdfs:label "statistical association"^^xsd:string ;
         sio:hasPart :result1-5cfaf8476f83c162c89c954b7c74f0a6 ,
             :result2-5cfaf8476f83c162c89c954b7c74f0a6 .
 
