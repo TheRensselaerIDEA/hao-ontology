@@ -1047,7 +1047,7 @@
              :smokes_no2_C-a0142f122e3218f79313f0b76d57b2f6 ,
              :smokes_yes2_C-a0142f122e3218f79313f0b76d57b2f6 .
 
-     :URXUCR0-a0142f122e3218f79313f0b76d57b2f6
+     :URXUCR0_cp-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    ncit:C399;
         rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasAttribute    :URXUCR0_C-a0142f122e3218f79313f0b76d57b2f6 .
@@ -1227,7 +1227,7 @@
         rdfs:label "smoke status yes C parameter"^^xsd:string ;
         sio:hasValue    "-0.0399463065"^^xsd:float .
 
-     :URXUCR1-a0142f122e3218f79313f0b76d57b2f6
+     :URXUCR1_cp-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    ncit:C399;
         rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasAttribute    :URXUCR1_C-a0142f122e3218f79313f0b76d57b2f6 .
@@ -1407,7 +1407,7 @@
         rdfs:label "smoke status yes C parameter"^^xsd:string ;
         sio:hasValue    "0.0920345336"^^xsd:float .
 
-     :URXUCR2-a0142f122e3218f79313f0b76d57b2f6
+     :URXUCR2_cp-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    ncit:C399;
         rdfs:label "urinary creatinine"^^xsd:string ;
         sio:hasAttribute    :URXUCR2_C-a0142f122e3218f79313f0b76d57b2f6 .
