@@ -15,6 +15,9 @@
 
 :riskfactor-clm-cartridge-8af1fba833752f0002336284dbe9ej45 {
 
+   :riskfactor-clm-cartridge-8af1fba833752f0002336284dbe9ej45
+        rdf:type hao:RiskFactorCartridge.
+
       :risk_factor_category-8af1fba833752f0002336284dbe9ej45
           rdf:type    hao:RiskFactorCategory ;
           rdfs:label "risk factor category"^^xsd:string ;
