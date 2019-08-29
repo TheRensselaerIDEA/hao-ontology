@@ -39,7 +39,7 @@
           sio:hasValue "log"^^xsd:string .
 
       :exceptions-8af1fba833752f0002336284dbe9ej45
-          rdf:type    hao:Exception ;
+          rdf:type    ncit:C54420 ;
           rdfs:label "exception"^^xsd:string ;
           sio:hasValue    "URXUCR"^^xsd:string ,
                           "LBXCOT"^^xsd:string ,
