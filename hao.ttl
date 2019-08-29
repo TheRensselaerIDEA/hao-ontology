@@ -163,6 +163,11 @@ sio:Variable rdf:type owl:Class ;
 	], 
 	[
 		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:BaseRate
+	], 
+	[
+		a owl:Restriction ;
     	owl:onProperty sio:hasProperty ;
     	owl:someValuesFrom obi:0200000
 	], 	sio:MathematicalEntity .
@@ -833,7 +838,26 @@ hao:SubpopulationCartridge rdf:type owl:Class ;
     dct:description "Summary statistics characterizing discovered subpopulations, including within-subpopulation variable means and rates."^^xsd:string ;
     skos:definition "A subpopulation cartridges gives 'Table 1s' (cohort-description tables) of discovered subpopulations."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf hao:OutputCartridge .
+    rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:CadreCount
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasComponentPart ;
+    	owl:someValuesFrom hao:CadreSizeList
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:BaseRate
+	], 
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:SubpopulationCharacteristic
+	], hao:OutputCartridge .
 
 hao:ModelParameter rdf:type owl:Class ;
 	rdfs:label "model parameter"^^xsd:string ;
@@ -1204,7 +1228,16 @@ hao:BaseRate rdf:type owl:Class ;
     rdfs:label "base rate"^^xsd:string ;
     skos:definition "Mean and standard-error-of-mean estimates for the entire cohort specified by cohort cartridge."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf sio:RateOfChange .
+    rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:CovariateMean
+  ],
+  [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:CovariateStdError
+  ], sio:RateOfChange .
 
 hao:CovariateMean rdf:type owl:Class ;
     rdfs:label "covariate mean"^^xsd:string ;
@@ -1222,7 +1255,16 @@ hao:SubpopulationCharacteristic rdf:type owl:Class ;
     rdfs:label "subpopulation characteristic"^^xsd:string ;
     skos:definition "Mean and standard-error-of-mean estimates for each discovered subpopulation."^^xsd:string ;
 	prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf sio:Attribute .
+    rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:CovariateMean
+  ],
+  [
+    a owl:Restriction ;
+    owl:onProperty sio:hasAttribute ;
+    owl:someValuesFrom hao:CovariateStdError
+  ], sio:Attribute .
 
 hao:useCohort rdf:type owl:Class ;
     rdfs:label "use cohort"^^xsd:string ;
