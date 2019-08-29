@@ -58,16 +58,13 @@
                         [ rdf:type sco:Education  ] .
 
 
-    :provenance-bcf761c50c19f51ee19c8667eba141f0
-        rdf:type    obcs:0000039 ;
-        rdfs:label "derived from"^^xsd:string ;
-        prov:wasDerivedFrom <https://doi.org/10.1007/s11356-018-1845-1> .
-
-
     :analysis_question-bcf761c50c19f51ee19c8667eba141f0
         rdf:type    hao:AnalysisQuestion;
         rdfs:label "analysis question"^^xsd:string ;
         sio:hasValue "Are higher exposure amounts of a risk factor significantly associated with higher total cholesterol?"^^xsd:string .
 
+    :response-totalcholesterol-cartridge-bcf761c50c19f51ee19c8667eba141f0 rdf:type hao:ResponseCartridge 
+                 prov:wasDerivedFrom <https://doi.org/10.1007/s11356-018-1845-1> .
 
+            
 }
