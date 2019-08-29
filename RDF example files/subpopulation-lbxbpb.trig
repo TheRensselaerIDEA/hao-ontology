@@ -18,6 +18,10 @@
 
 
 :subpopulation-lbxbpb-cartridge-335ea58a52268d9a4eda89694febaaac {
+
+   :subpopulation-lbxbpb-cartridge-335ea58a52268d9a4eda89694febaaac
+        rdf:type hao:SubpopulationCartridge.
+	
     :RiskFactorCartridge-335ea58a52268d9a4eda89694febaaac
         rdf:type    hao:RiskFactorCartridge ;
         rdfs:label "risk factor cartridge"^^xsd:string ;

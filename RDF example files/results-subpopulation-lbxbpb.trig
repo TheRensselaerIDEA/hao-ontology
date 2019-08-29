@@ -1,4 +1,3 @@
-    
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17,6 +16,10 @@
 
 
 :results-subpopulation-lbxbpb-cartridge-5cfaf8476f83c162c89c954b7c74f0a6 {
+
+   :results-subpopulation-lbxbpb-cartridge-5cfaf8476f83c162c89c954b7c74f0a6
+        rdf:type hao:ResultsCartridge.
+        
     :RiskFactorCartridge-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:RiskFactorCartridge ;
         rdfs:label "risk factor cartridge"^^xsd:string ;

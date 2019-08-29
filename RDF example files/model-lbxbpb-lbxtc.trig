@@ -18,6 +18,10 @@
 
 
 :model-lbxbpb-lbxtc-cartridge-a0142f122e3218f79313f0b76d57b2f6 {
+
+   :model-lbxbpb-lbxtc-cartridge-a0142f122e3218f79313f0b76d57b2f6
+        rdf:type hao:ModelCartridge.
+
     :RiskFactorCartridge-a0142f122e3218f79313f0b76d57b2f6
         rdf:type    hao:RiskFactorCartridge ;
         rdfs:label "risk factor cartridge"^^xsd:string ;
