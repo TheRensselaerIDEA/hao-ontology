@@ -21,8 +21,7 @@
     dct:modified "2019-08-27T14:30:00"^^xsd:dateTime ;
     dct:description "The Health Analysis Ontology includes attributes useful for informing analysis design, summarizing analysis results for later comparison, and for generating reports. It captures the data domain and analysis workflow in cartridges that represent domain knowledge, analytics knowledge, and other components of the analysis pipeline"^^xsd:string ;
     owl:imports 
-        <http://semanticscience.org/ontology/sio-subset-labels.owl>,
-        <http://purl.obofoundry.org/obo/stato.owl#>;        
+        <http://semanticscience.org/ontology/sio-subset-labels.owl>;
     dct:license <http://www.apache.org/licenses/LICENSE-2.0> ;
     owl:versionIRI <https://purl.org/heals/hao/0.9/> .
 
@@ -808,11 +807,11 @@ hao:SubpopulationCharacteristic rdf:type owl:Class ;
 	prov:wasAttributedTo hao:Alex ;
     rdfs:subClassOf sio:Attribute .
 
-hao:UseCohort rdf:type owl:Class ;
+hao:useCohort rdf:type owl:Class ;
     rdfs:label "use cohort"^^xsd:string ;
     skos:definition "Whether the study uses a cohort."^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf sio:Attribute .
+    rdfs:subClassOf sio:Variable .
 
 hao:FactorKey rdf:type owl:Class ;
     rdfs:label "factor key"^^xsd:string ;
