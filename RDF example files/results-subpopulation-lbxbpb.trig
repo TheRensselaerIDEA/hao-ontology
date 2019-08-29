@@ -98,7 +98,7 @@
 
      :estimate_1-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:StatisticalEstimate ;
-        rdfs:label "estimate"^^xsd:string ;
+        rdfs:label "statistical estimate"^^xsd:string ;
         sio:hasValue    "3.0665"^^xsd:float .
 
      :std_error_1-5cfaf8476f83c162c89c954b7c74f0a6
@@ -119,7 +119,7 @@
 
      :estimate_2-5cfaf8476f83c162c89c954b7c74f0a6
         rdf:type    hao:StatisticalEstimate ;
-        rdfs:label "estimate"^^xsd:string ;
+        rdfs:label "statistical estimate"^^xsd:string ;
         sio:hasValue    "1.2327"^^xsd:float .
 
      :std_error_2-5cfaf8476f83c162c89c954b7c74f0a6
