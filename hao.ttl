@@ -154,7 +154,11 @@ sio:Variable rdf:type owl:Class ;
 	rdfs:label "variable"^^xsd:string ;
 	dct:description "A variable is a value that may change within the scope of a given problem or set of operations."^^xsd:string ;
 	rdfs:isDefinedBy <http://semanticscience.org/ontology/sio.owl>;
-    rdfs:subClassOf sio:MathematicalEntity .
+	rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasProperty ;
+    	owl:someValuesFrom hao:DataType
+	], sio:MathematicalEntity .
 
 # p-value
 obi:0000175 rdf:type owl:Class ;
@@ -442,7 +446,31 @@ hao:ResponseCartridge rdf:type owl:Class ;
     rdfs:label "response cartridge"^^xsd:string ;
     skos:definition "A response variable cartridge provides the analysis concepts and background domain axioms necessary to model a given disease"^^xsd:string ;
     prov:wasAttributedTo hao:Alex ;
-    rdfs:subClassOf hao:InputCartridge .
+    rdfs:subClassOf [
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:AnalysisQuestion
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom hao:TargetVariable
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom obcs:0000039
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasAttribute ;
+    	owl:someValuesFrom sio:Variable
+	],
+	[
+		a owl:Restriction ;
+    	owl:onProperty sio:hasProperty ;
+    	owl:someValuesFrom sio:Model
+	], hao:InputCartridge .
 
 hao:ResultsCartridge rdf:type owl:Class ;
     rdfs:label "results cartridge"^^xsd:string ;
